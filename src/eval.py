@@ -21,20 +21,24 @@ def compute_metrics(labels):
 
         print(gold_labels.shape)
 
-        # Decode predicted output
-        decoded_preds = [[labels[index] for index in pred_seq if len(labels) > index >= 0] for pred_seq in preds]
+        def decode(pred_label_seq, gold_label_seq):
+            decoded_labels = []
+            decoded_preds = []
+            for pred_label, gold_label in zip(pred_label_seq, gold_label_seq):
+                if gold_label == -100:
+                    continue
+                decoded_labels.append(labels[gold_label] if 0 <= gold_label < len(labels) else labels[-1])
+                decoded_preds.append(labels[pred_label] if 0 <= pred_label < len(labels) else labels[-1])
 
-        # Decode (gold) labels
-        decoded_labels = [[labels[index] for index in label_seq if len(labels) > index >= 0] for label_seq in
-                          gold_labels]
+        decoded_preds, decoded_gold = [decode(pred_seq, gold_seq) for pred_seq, gold_seq in zip(preds, gold_labels)]
 
         # Trim preds to the same length as the labels
-        decoded_preds = [pred_seq[:len(label_seq)] for pred_seq, label_seq in zip(decoded_preds, decoded_labels)]
+        decoded_preds = [pred_seq[:len(label_seq)] for pred_seq, label_seq in zip(decoded_preds, decoded_gold)]
 
         print('Preds:\t', decoded_preds[0])
-        print('Labels:\t', decoded_labels[0])
+        print('Labels:\t', decoded_gold[0])
 
-        return eval_morpheme_glosses(decoded_preds, decoded_labels)
+        return eval_morpheme_glosses(decoded_preds, decoded_gold)
     return _compute_metrics
 
 
