@@ -1,0 +1,906 @@
+\t i tinye' tzilaj taq ab'iix,
+\m i t-in-ye' tzi-laj taq ab'iix
+\p CONJ INC-E1S-VT ADJ-PART PL S
+\g CONJ INC-E1S-dar bueno-PART PL milpa
+\l y me daba buena milpa
+
+\t i taye' tzilaj taq ab'iix,
+\m i t-a-ye' tzi-laj taq ab'iix
+\p CONJ INC-E2S-VT ADJ-PART PL S
+\g CONJ INC-E2S-dar bueno-PART PL milpa
+\l y te dabas buena milpa
+
+\t i tqaye' tzilaj taq ab'iix,
+\m i t-qa-ye' tzi-laj taq ab'iix
+\p CONJ INC-E1P-VT ADJ-PART PL S
+\g CONJ INC-E1P-dar bueno-PART PL milpa
+\l y nos dábamos buena milpa
+
+\t i taye' taq tzilaj taq ab'iix,
+\m i t-a-ye' taq tzi-laj taq ab'iix
+\p CONJ INC-E2S-VT PL ADJ-PART PL S
+\g CONJ INC-E2S-dar PL bueno-PART PL milpa
+\l y se daban buena milpa
+
+\t i tijye' taq tzilaj taq ab'iix,
+\m i ti-j-ye' taq tzi-laj taq ab'iix
+\p CONJ INC-E3S-VT PL ADJ-PART PL S
+\g CONJ INC-E3S-dar PL bueno-PART PL milpa
+\l y se daban buena milpa
+
+\t seb'laj nim jaal tinb'it jun junaab'.
+\m seb'laj nim tyo'x t-in-b'it jun junaab'
+\p ITS ADJ S TAM-E1S-VT NUM S
+\g ITS grande mazorca TAM-E1S-levantar uno año
+\l cosechaba mucho en ese año.
+
+\t seb'laj nim jaal tab'it jun junaab'.
+\m seb'laj nim tyo'x t-a-b'it jun junaab'
+\p ITS ADJ S TAM-E2S-VT NUM S
+\g ITS grande mazorca TAM-E2S-levantar uno año
+\l cosechabas mucho en ese año.
+
+\t seb'laj nim jaal tqab'it jun junaab'.
+\m seb'laj nim tyo'x t-qa-b'it jun junaab'
+\p ITS ADJ S TAM-E1P-VT NUM S
+\g ITS grande mazorca TAM-E1P-levantar uno año
+\l cosechábamos mucho en ese año.
+
+\t seb'laj nim jaal tab'it taq jun junaab'.
+\m seb'laj nim tyo'x t-a-b'it taq jun junaab'
+\p ITS ADJ S TAM-E2S-VT PL NUM S
+\g ITS grande mazorca TAM-E2S-levantar PL uno año
+\l cosechaban mucho en ese año.
+
+\t seb'laj nim jaal tijb'it taq jun junaab'.
+\m seb'laj nim tyo'x ti-j-b'it taq jun junaab'
+\p ITS ADJ S TAM-E3S-VT PL NUM S
+\g ITS grande mazorca TAM-E3S-levantar PL uno año
+\l cosechaban mucho en ese año.
+
+\t nen b'i ri re nen b'aniik xan k'ex uleew tawil aat.
+\m neen b'i ri re neen b'an-iik x-b'an k'ex uleew t-aw-il aat
+\p ADV ??? DEM PART ADV VT-SV COM-VT ADJ S INC-E2S-VT PRON
+\g que ??? DEM PART que hacer-SV COM-hacer dolor tierra INC-E2S-ver tú
+\l como viste que se fue dañando la tierra.
+
+\t nen b'i ri re nen b'aniik xan k'ex uleew tril re.
+\m neen b'i ri re neen b'an-iik x-b'an k'ex uleew t-r-il re
+\p ADV ??? DEM PART ADV VT-SV COM-VT ADJ S INC-E3S-VT PRON
+\g que ??? DEM PART que hacer-SV COM-hacer dolor tierra INC-E3S-ver él
+\l como vio que se fue dañando la tierra.
+
+\t nen b'i ri re nen b'aniik xan k'ex uleew tril re.
+\m neen b'i ri re neen b'an-iik x-b'an k'ex uleew t-r-il re
+\p ADV ??? DEM PART ADV VT-SV COM-VT ADJ S INC-E3S-VT PRON
+\g que ??? DEM PART que hacer-SV COM-hacer dolor tierra INC-E3S-ver ella
+\l como vio que se fue dañando la tierra.
+
+\t nen b'i ri re nen b'aniik xan k'ex uleew tqil ooj.
+\m neen b'i ri re neen b'an-iik x-b'an k'ex uleew t-q-il ooj
+\p ADV ??? DEM PART ADV VT-SV COM-VT ADJ S INC-E1P-VT PRON
+\g que ??? DEM PART que hacer-SV COM-hacer dolor tierra INC-E1P-ver nosotros
+\l como vimos que se fue dañando la tierra.
+
+\t nen b'i ri re nen b'aniik xan k'ex uleew tril taq retaq.
+\m neen b'i ri re neen b'an-iik x-b'an k'ex uleew t-r-il taq retaq
+\p ADV ??? DEM PART ADV VT-SV COM-VT ADJ S INC-E3S-VT PL PRON
+\g que ??? DEM PART que hacer-SV COM-hacer dolor tierra INC-E3S-ver PL ellas
+\l como vieron que se fue dañando la tierra.
+
+\t nen b'i ri re nen b'aniik xan k'ex uleew tril taq retaq.
+\m neen b'i ri re neen b'an-iik x-b'an k'ex uleew t-r-il taq retaq
+\p ADV ??? DEM PART ADV VT-SV COM-VT ADJ S INC-E3S-VT PL PRON
+\g que ??? DEM PART que hacer-SV COM-hacer dolor tierra INC-E3S-ver PL ellos
+\l como vieron que se fue dañando la tierra.
+
+\t ta' chi' loq' inwí'nik.
+\m ta' chi' loq' in-wi'n-ik
+\p NEG PART ADV A1S-VI-SC
+\g NEG PART posible A1S-comer-SC
+\l ya no es posible comer.
+
+\t ta' chi' loq' atwí'nik.
+\m ta' chi' loq' at-wi'n-ik
+\p NEG PART ADV A2S-VI-SC
+\g NEG PART posible A2S-comer-SC
+\l ya no es posible comer.
+
+\t ta' chi' loq' wí'nik.
+\m ta' chi' loq' wi'n-ik
+\p NEG PART ADV VI-SC
+\g NEG PART posible comer-SC
+\l ya no es posible comer.
+
+\t ta' chi' loq' atwí'nik taq.
+\m ta' chi' loq' at-wi'n-ik taq
+\p NEG PART ADV A2S-VI-SC PL
+\g NEG PART posible A2S-comer-SC PL
+\l ya no es posible comer.
+
+\t ta' chi' loq' wí'nik taq.
+\m ta' chi' loq' wi'n-ik taq
+\p NEG PART ADV VI-SC PL 
+\g NEG PART posible comer-SC PL
+\l ya no es posible comer.
+
+\t Xawil na júnkitz ójor,
+\m x-aw-il na júnkitz ójor
+\p COM-E2S-VT PART ADV ADV
+\g COM-E2S-ver tiempo poco tiempo
+\l Viste un poco antes,
+
+\t Xril na júnkitz ójor,
+\m x-r-il na júnkitz ójor
+\p COM-E3S-VT PART ADV ADV
+\g COM-E3S-ver tiempo poco tiempo
+\l Vio un poco antes,
+
+\t Xqil na júnkitz ójor,
+\m x-q-il na júnkitz ójor
+\p COM-E1P-VT PART ADV ADV
+\g COM-E1P-ver tiempo poco tiempo
+\l Vimos un poco antes,
+
+\t Xawil taq na júnkitz ójor,
+\m x-aw-il taq na júnkitz ójor
+\p COM-E2S-VT PL PART ADV ADV
+\g COM-E2S-ver PL tiempo poco tiempo
+\l Vieron un poco antes,
+
+\t Xril taq na júnkitz ójor,
+\m x-r-il taq na júnkitz ójor
+\p COM-E3S-VT PL PART ADV ADV
+\g COM-E3S-ver PL tiempo poco tiempo
+\l Vieron un poco antes,
+
+\t rik'il ya xinnoji'n moos,
+\m r-ik'il ya x-in-noj-i'n moos
+\p E3-SREL VOC COM-A1S-VI-ENF S
+\g E3-SREL ya COM-A1S-llenar-ENF ladino
+\l solo con eso ya me llené
+
+\t rik'il ya xnoji'n moos,
+\m r-ik'il ya x-noj-i'n moos
+\p E3-SREL VOC COM-VI-ENF S
+\g E3-SREL ya COM-llenar-ENF ladino
+\l solo con eso ya se llenó
+
+\t rik'il ya xojnoji'n moos,
+\m r-ik'il ya x-oj-noj-i'n moos
+\p E3-SREL VOC COM-A1P-VI-ENF S
+\g E3-SREL ya COM-A1P-llenar-ENF ladino
+\l solo con eso ya nos llenamos
+
+\t rik'il ya xatnoji'n taq moos,
+\m r-ik'il ya x-at-noj-i'n taq moos
+\p E3-SREL VOC COM-A2S-VI-ENF PL S
+\g E3-SREL ya COM-A2S-llenar-ENF PL ladino
+\l solo con eso ya se llenaron
+
+\t rik'il ya xnoji'n taq moos,
+\m r-ik'il ya x-noj-i'n taq moos
+\p E3-SREL VOC COM-VI-ENF PL S
+\g E3-SREL ya COM-llenar-ENF PL ladino
+\l solo con eso ya se llenaron
+
+\t tawil aat,
+\m t-aw-il aat
+\p INC-E2S-VT PRON
+\g INC-E2S-ver tú
+\l ves
+
+\t tril re,
+\m t-r-il re
+\p INC-E3S-VT PRON
+\g INC-E3S-ver él
+\l ve
+
+\t tril re,
+\m t-r-il re
+\p INC-E3S-VT PRON
+\g INC-E3S-ver ella
+\l ve
+
+\t tqil ooj,
+\m t-q-il ooj
+\p INC-E1P-VT PRON
+\g INC-E1P-ver nosotros
+\l vemos
+
+\t tril taq retaq,
+\m t-q-il taq retaq
+\p INC-E3S-VT PL PRON
+\g INC-E3S-ver PL ellos
+\l ven
+
+\t tril taq retaq,
+\m t-q-il taq retaq
+\p INC-E3S-VT PL PRON
+\g INC-E3S-ver PL ellas
+\l ven
+
+\t syempre wi' yajeel tink'amch,
+\m syempre wi' yaj-eel t-in-k'am-ch
+\p ADV EXS S-SAB INC-E1S-VT-MOV
+\g siempre EXS enfermo-SAB INC-E1S-traer-MOV
+\l siempre traigo enfermedades
+
+\t syempre wi' yajeel tak'amch,
+\m syempre wi' yaj-eel t-a-k'am-ch
+\p ADV EXS S-SAB INC-E2S-VT-MOV
+\g siempre EXS enfermo-SAB INC-E2S-traer-MOV
+\l siempre traes enfermedades
+
+\t syempre wi' yajeel tqak'amch,
+\m syempre wi' yaj-eel t-qa-k'am-ch
+\p ADV EXS S-SAB INC-E1P-VT-MOV
+\g siempre EXS enfermo-SAB INC-E1P-traer-MOV
+\l siempre traemos enfermedades
+
+\t syempre wi' yajeel tak'amch taq,
+\m syempre wi' yaj-eel t-a-k'am-ch taq
+\p ADV EXS S-SAB INC-E2S-VT-MOV PL
+\g siempre EXS enfermo-SAB INC-E2S-traer-MOV PL
+\l siempre traen enfermedades
+
+\t syempre wi' yajeel tijk'amch taq,
+\m syempre wi' yaj-eel ti-j-k'am-ch taq
+\p ADV EXS S-SAB INC-E3S-VT-MOV PL
+\g siempre EXS enfermo-SAB INC-E3S-traer-MOV PL
+\l siempre traen enfermedades
+
+\t inkamsaaj juun inák' per juun chuuch eek',
+\m in-kamsaa-j jun in-ák' peer jun chuuch eek'
+\p E1S-VT-SC ART E1S-S ADV ART S S
+\g E1S-matar-SC un E1S-pollo pero un mamá pollo
+\l Voy a matar una gallina,
+
+\t atkamsaaj juun aták' per juun chuuch eek',
+\m at-kamsaa-j jun at-ák' peer jun chuuch eek'
+\p E2S-VT-SC ART E2S-S ADV ART S S
+\g E2S-matar-SC un E2S-pollo pero un mamá pollo
+\l Vas a matar una gallina,
+
+\t jkamsaaj juun ják' per juun chuuch eek',
+\m j-kamsaa-j jun j-ák' peer jun chuuch eek'
+\p E3S-VT-SC ART E3S-S ADV ART S S
+\g E3S-matar-SC un E3S-pollo pero un mamá pollo
+\l Va a matar una gallina,
+
+\t atkamsaaj taq juun aták'aq per juun chuuch eek',
+\m at-kamsaa-j taq jun at-ák'-aq peer jun chuuch eek'
+\p E2S-VT-SC PL ART E2S-S-PL ADV ART S S
+\g E2S-matar-SC PL un E2S-pollo-PL pero un mamá pollo
+\l Van a matar una gallina,
+
+\t jkamsaaj taq juun ják'aq per juun chuuch eek',
+\m j-kamsaa-j taq jun j-ák'-aq peer jun chuuch eek'
+\p E3S-VT-SC PL ART E3S-S-PL ADV ART S S
+\g E3S-matar-SC PL un E3S-pollo-PL pero un mamá pollo
+\l Van a matar una gallina,
+
+\t ya chaq k'olk'o'ch chaq ab'iix tinb'ij,
+\m ya chaq k'olk'o'ch chaq ab'iix t-in-b'i-j
+\p VOC PART ADV PART S INC-E1S-VT-SC
+\g ya PART tierno PART milpa INC-E1S-decir-SC
+\l ya esta de una manera muy tierna le llamo
+
+\t ya chaq k'olk'o'ch chaq ab'iix tab'ij,
+\m ya chaq k'olk'o'ch chaq ab'iix t-a-b'i-j
+\p VOC PART ADV PART S INC-E2S-VT-SC
+\g ya PART tierno PART milpa INC-E2S-decir-SC
+\l ya esta de una manera muy tierna le llamas
+
+\t ya chaq k'olk'o'ch chaq ab'iix tijb'ij,
+\m ya chaq k'olk'o'ch chaq ab'iix ti-j-b'i-j
+\p VOC PART ADV PART S INC-E3S-VT-SC
+\g ya PART tierno PART milpa INC-E3S-decir-SC
+\l ya esta de una manera muy tierna le llama
+
+\t ya chaq k'olk'o'ch chaq ab'iix tab'ij taq,
+\m ya chaq k'olk'o'ch chaq ab'iix t-a-b'i-j taq
+\p VOC PART ADV PART S INC-E2S-VT-SC PL
+\g ya PART tierno PART milpa INC-E2S-decir-SC PL
+\l ya esta de una manera muy tierna le llaman
+
+\t ya chaq k'olk'o'ch chaq ab'iix tijb'ij taq,
+\m ya chaq k'olk'o'ch chaq ab'iix ti-j-b'i-j taq
+\p VOC PART ADV PART S INC-E3S-VT-SC PL
+\g ya PART tierno PART milpa INC-E3S-decir-SC PL
+\l ya esta de una manera muy tierna le llaman
+
+\t ¿Ri ta' chi xinil b'a tyoox?,
+\m ri ta' chi x-in-il b'a tyoox
+\p DEM ADV PREP COM-E1S-VT S S
+\g DEM no PREP COM-E1S-ver cabeza santo
+\l ¿Tal vez ya no conocí este tipo de hongo?
+
+\t ¿Ri ta' chi xril b'a tyoox?,
+\m ri ta' chi x-r-il b'a tyoox
+\p DEM ADV PREP COM-E3S-VT S S
+\g DEM no PREP COM-E3S-ver cabeza santo
+\l ¿Tal vez ya no conoció este tipo de hongo?
+
+\t ¿Ri ta' chi xqil b'a tyoox?,
+\m ri ta' chi x-q-il b'a tyoox
+\p DEM ADV PREP COM-E1P-VT S S
+\g DEM no PREP COM-E1P-ver cabeza santo
+\l ¿Tal vez ya no conocimos este tipo de hongo?
+
+\t ¿Ri ta' chi xawil taq b'a tyoox?,
+\m ri ta' chi x-aw-il taq b'a tyoox
+\p DEM ADV PREP COM-E2S-VT PL S S
+\g DEM no PREP COM-E2S-ver PL cabeza santo
+\l ¿Tal vez ya no conocieron este tipo de hongo?
+
+\t ¿Ri ta' chi xril taq b'a tyoox?,
+\m ri ta' chi x-r-il taq b'a tyoox
+\p DEM ADV PREP COM-E3S-VT PL S S
+\g DEM no PREP COM-E3S-ver PL cabeza santo
+\l ¿Tal vez ya no conocieron este tipo de hongo?
+
+\t tinpaq' .
+\m t-in-paq'
+\p INC-E1S-VT
+\g INC-E1S-partir
+\l los partía
+
+\t tapaq' .
+\m t-a-paq'
+\p INC-E2S-VT
+\g INC-E2S-partir
+\l los partías
+
+\t tijpaq'.
+\m ti-j-paq'
+\p INC-E3S-VT
+\g INC-E3S-partir
+\l los partía
+
+\t tqapaq'.
+\m t-qa-paq'
+\p INC-E1P-VT
+\g INC-E1P-partir
+\l los partíamos
+
+\t tapaq' taq. 
+\m t-a-paq' taq
+\p INC-E2S-VT PL
+\g INC-E2S-partir PL
+\l los partían
+
+\t per aat ta' tatkoj
+\m peer aat ta' t-at-koj
+\p ADV PRON ADV INC-A2S-VT
+\g pero tú no INC-A2S-creer
+\l pero tú no lo crees
+
+\t per re ta' tkoj
+\m peer re ta' t-koj
+\p ADV PRON ADV INC-VT
+\g pero él no INC-creer
+\l pero él no lo cree
+
+\t per re ta' tkoj
+\m peer re ta' t-koj
+\p ADV PRON ADV INC-VT
+\g pero ella no INC-creer
+\l pero ella no lo cree
+
+\t per ooj ta' tojkoj
+\m peer ooj ta' t-oj-koj
+\p ADV PRON ADV INC-A1P-VT
+\g pero nosotros no INC-A1P-creer
+\l pero nosotros no lo creemos
+
+\t per retaq ta' tkoj taq
+\m peer retaq ta' t-koj taq
+\p ADV PRON ADV INC-VT PL
+\g pero ellos no INC-creer PL
+\l pero ellos no lo creen
+
+\t per retaq ta' tkoj taq
+\m peer retaq ta' t-koj taq
+\p ADV PRON ADV INC-VT PL
+\g pero ellas no INC-creer PL
+\l pero ellas no lo creen
+
+\t por ke b'a tyoox aat tatok a'n y ta' chik i'n nada, nada, nada.
+\m por ke b'a tyoox aat t-a-tok i'n y' ta' chik i'n nada nada nada
+\p ADV PART S S PRON INC-E2S-VT ENF CONJ ADV PART ENF ADV ADV ADV
+\g por que cabeza santo tú INC-E2S-buscar ENF y no PART ENF nada nada nada
+\l por este tipo de hongo tú lo has buscado y ya no lo has encontrado.
+
+\t por ke b'a tyoox re tijtok a'n y ta' chik i'n nada, nada, nada.
+\m por ke b'a tyoox re ti-j-tok i'n y' ta' chik i'n nada nada nada
+\p ADV PART S S PRON INC-E3S-VT ENF CONJ ADV PART ENF ADV ADV ADV
+\g por que cabeza santo él INC-E3S-buscar ENF y no PART ENF nada nada nada
+\l por este tipo de hongo él lo ha buscado y ya no lo ha encontrado.
+
+\t por ke b'a tyoox re tijtok a'n y ta' chik i'n nada, nada, nada.
+\m por ke b'a tyoox re ti-j-tok i'n y' ta' chik i'n nada nada nada
+\p ADV PART S S PRON INC-E3S-VT ENF CONJ ADV PART ENF ADV ADV ADV
+\g por que cabeza santo ella INC-E3S-buscar ENF y no PART ENF nada nada nada
+\l por este tipo de hongo ella lo ha buscado y ya no lo ha encontrado.
+
+\t por ke b'a tyoox ooj tojtok a'n y ta' chik i'n nada, nada, nada.
+\m por ke b'a tyoox ooj t-oj-tok i'n y' ta' chik i'n nada nada nada
+\p ADV PART S S PRON INC-E1P-VT ENF CONJ ADV PART ENF ADV ADV ADV
+\g por que cabeza santo nosotros INC-E1P-buscar ENF y no PART ENF nada nada nada
+\l por este tipo de hongo nosotros lo hemos buscado y ya no lo hemos encontrado.
+
+\t por ke b'a tyoox retaq tijtok taq a'n y ta' chik i'n nada, nada, nada.
+\m por ke b'a tyoox retaq ti-j-tok taq i'n y' ta' chik i'n nada nada nada
+\p ADV PART S S PRON INC-E3S-VT PL ENF CONJ ADV PART ENF ADV ADV ADV
+\g por que cabeza santo ellos INC-E3S-buscar PL ENF y no PART ENF nada nada nada
+\l por este tipo de hongo ellos lo han buscado y ya no lo han encontrado.
+
+\t por ke b'a tyoox retaq tijtok taq a'n y ta' chik i'n nada, nada, nada.
+\m por ke b'a tyoox retaq ti-j-tok taq i'n y' ta' chik i'n nada nada nada
+\p ADV PART S S PRON INC-E3S-VT PL ENF CONJ ADV PART ENF ADV ADV ADV
+\g por que cabeza santo ellas INC-E3S-buscar PL ENF y no PART ENF nada nada nada
+\l por este tipo de hongo ellas lo han buscado y ya no lo han encontrado.
+
+\t xattij i' joob' junaab'
+\m x-at-tij i'n joob' junaab'
+\p COM-A2S-VT ENF NUM S
+\g COM-A2S-comer ENF cinco año
+\l ya hace cinco años
+
+\t xtij i' joob' junaab'
+\m x-tij i'n joob' junaab'
+\p COM-VT ENF NUM S
+\g COM-comer ENF cinco año
+\l ya hace cinco años
+
+\t xojtij i' joob' junaab'
+\m x-oj-tij i'n joob' junaab'
+\p COM-A1P-VT ENF NUM S
+\g COM-A1P-comer ENF cinco año
+\l ya hace cinco años
+
+\t xattij taq i' joob' junaab'
+\m x-at-tij taq i'n joob' junaab'
+\p COM-A2S-VT PL ENF NUM S
+\g COM-A2S-comer PL ENF cinco año
+\l ya hace cinco años
+
+\t xtij taq i' joob' junaab'
+\m x-tij taq i'n joob' junaab'
+\p COM-VT PL ENF NUM S
+\g COM-comer PL ENF cinco año
+\l ya hace cinco años
+
+\t Xatb'an juun ensayo re,
+\m x-at-b'an jun ensayar r-e
+\p COM-A2S-VT ART VT E3-SREL
+\g COM-A2S-hacer un ensayar E3-SREL
+\l hiciste un ensayo con este tipo de hongos
+
+\t Xb'an juun ensayo re,
+\m x-b'an jun ensayar r-e
+\p COM-VT ART VT E3-SREL
+\g COM-hacer un ensayar E3-SREL
+\l hizo un ensayo con este tipo de hongos
+
+\t Xojb'an juun ensayo re,
+\m x-oj-b'an jun ensayar r-e
+\p COM-A1P-VT ART VT E3-SREL
+\g COM-A1P-hacer un ensayar E3-SREL
+\l hicimos un ensayo con este tipo de hongos
+
+\t Xatb'an taq juun ensayo re,
+\m x-at-b'an taq jun ensayar r-e
+\p COM-A2S-VT PL ART VT E3-SREL
+\g COM-A2S-hacer PL un ensayar E3-SREL
+\l hicieron un ensayo con este tipo de hongos
+
+\t Xb'an taq juun ensayo re,
+\m x-b'an taq jun ensayar r-e
+\p COM-VT PL ART VT E3-SREL
+\g COM-hacer PL un ensayar E3-SREL
+\l hicieron un ensayo con este tipo de hongos
+
+\t ta' chi loq' tinyol.
+\m ta' chi loq' t-in-yol
+\p ADV PREP ADV INC-E1S-VT
+\g no PREP posible INC-E1S-platicar
+\l ya no es posible lo cuente
+
+\t ta' chi loq' tayol.
+\m ta' chi loq' t-a-yol
+\p ADV PREP ADV INC-E2S-VT
+\g no PREP posible INC-E2S-platicar
+\l ya no es posible lo cuentes
+
+\t ta' chi loq' tinyol.
+\m ta' chi loq' t-in-yol
+\p ADV PREP ADV INC-E1S-VT
+\g no PREP posible INC-E1S-platicar
+\l ya no es posible lo cuente
+
+\t ta' chi loq' tqayol.
+\m ta' chi loq' t-qa-yol
+\p ADV PREP ADV INC-E1P-VT
+\g no PREP posible INC-E1P-platicar
+\l ya no es posible lo contemos
+
+\t ta' chi loq' tijyol taq.
+\m ta' chi loq' ti-j-yol taq
+\p ADV PREP ADV INC-E3S-VT PL
+\g no PREP posible INC-E3S-platicar PL
+\l ya no es posible lo cuenten
+
+\t Tinb'an li ójir,
+\m t-in-b'an li ójir
+\p INC-E1S-VT DEM ADV
+\g INC-E1S-hacer DEM antes
+\l Como hacía anterior mente
+
+\t Tab'an li ójir,
+\m t-a-b'an li ójir
+\p INC-E2S-VT DEM ADV
+\g INC-E2S-hacer DEM antes
+\l Como hacías anterior mente
+
+\t Tijb'an li ójir,
+\m ti-j-b'an li ójir
+\p INC-E3S-VT DEM ADV
+\g INC-E3S-hacer DEM antes
+\l Como hacía anterior mente
+
+\t Tab'an taq li ójir,
+\m t-a-b'an taq li ójir
+\p INC-E2S-VT PL DEM ADV
+\g INC-E2S-hacer PL DEM antes
+\l Como hacían anterior mente
+
+\t Tijb'an taq li ójir,
+\m ti-j-b'an taq li ójir
+\p INC-E3S-VT PL DEM ADV
+\g INC-E3S-hacer PL DEM antes
+\l Como hacían anterior mente
+
+\t ra Ja'kub'i' tinb'ij,
+\m ra Ja'kub'i' t-in-b'i-j
+\p DIM TOP INC-E1S-VT-SC
+\g DIM Jacubí INC-E1S-decir-SC
+\l al que le llamo Jacubí
+
+\t ra Ja'kub'i' tab'ij,
+\m ra Ja'kub'i' t-a-b'i-j
+\p DIM TOP INC-E2S-VT-SC
+\g DIM Jacubí INC-E2S-decir-SC
+\l al que le llamas Jacubí
+
+\t ra Ja'kub'i' tijb'ij,
+\m ra Ja'kub'i' ti-j-b'i-j
+\p DIM TOP INC-E3S-VT-SC
+\g DIM Jacubí INC-E3S-decir-SC
+\l al que le llama Jacubí
+
+\t ra Ja'kub'i' tab'ij taq,
+\m ra Ja'kub'i' t-a-b'i-j taq
+\p DIM TOP INC-E2S-VT-SC PL
+\g DIM Jacubí INC-E2S-decir-SC PL
+\l al que le llaman Jacubí
+
+\t ra Ja'kub'i' tijb'ij taq,
+\m ra Ja'kub'i' ti-j-b'i-j taq
+\p DIM TOP INC-E3S-VT-SC PL
+\g DIM Jacubí INC-E3S-decir-SC PL
+\l al que le llaman Jacubí
+
+\t b'i intoke',
+\m b'i in-tok-e'
+\p MOV E1S-VT-SC
+\g MOV E1S-buscar-SC
+\l ¿Lo que yo quisiera buscar?
+
+\t b'i atoke',
+\m b'i a-tok-e'
+\p MOV E2S-VT-SC
+\g MOV E2S-buscar-SC
+\l ¿Lo que tú quisieras buscar?
+
+\t b'i jtoke',
+\m b'i j-tok-e'
+\p MOV E3S-VT-SC
+\g MOV E3S-buscar-SC
+\l ¿Lo que él quisiera buscar?
+
+\t b'i jtoke',
+\m b'i j-tok-e'
+\p MOV E3S-VT-SC
+\g MOV E3S-buscar-SC
+\l ¿Lo que ella quisiera buscar?
+
+\t b'i qatoke',
+\m b'i qa-tok-e'
+\p MOV E1P-VT-SC
+\g MOV E1P-buscar-SC
+\l ¿Lo que nosotros quisiéramos buscar?
+
+\t b'i jtoke' taq,
+\m b'i j-tok-e' taq
+\p MOV E3S-VT-SC PL
+\g MOV E3S-buscar-SC PL
+\l ¿Lo que ellos quisiera buscar?
+
+\t b'i jtoke' taq,
+\m b'i j-tok-e' taq
+\p MOV E3S-VT-SC PL
+\g MOV E3S-buscar-SC PL
+\l ¿Lo que ellas quisiera buscar?
+
+\t wi' juun jmeesaq tint'oje' kla'.
+\m wi' juun j-mees-aq t-in-t'oj-e'kla'
+\p EXS NUM E3S-S-PL INC-E1S-VT-SC ADV
+\g EXS uno E3S-basura-PL INC-E1S-tirar-SC allí
+\l tienen una basura lo voy a tirar por allí
+
+\t wi' juun jmeesaq tat'oje'kla'.
+\m wi' juun j-mees-aq t-a-t'oj-e' kla'
+\p EXS NUM E3S-S-PL INC-E2S-VT-SC ADV
+\g EXS uno E3S-basura-PL INC-E2S-tirar-SC allí
+\l tienen una basura lo vas a tirar por allí
+
+\t wi' juun jmeesaq tijt'oje'kla'.
+\m wi' juun j-mees-aq ti-j-t'oj-e' kla'
+\p EXS NUM E3S-S-PL INC-E3S-VT-SCADV
+\g EXS uno E3S-basura-PL INC-E3S-tirar-SC allí
+\l tienen una basura lo va a tirar por allí
+
+\t wi' juun jmeesaq tqat'oje'kla'.
+\m wi' juun j-mees-aq t-q-t'oj-e' kla'
+\p EXS NUM E3S-S-PL INC-E1P-VT-SC ADV
+\g EXS uno E3S-basura-PL INC-E1P-tirar-SC allí
+\l tienen una basura lo vamos a tirar por allí
+
+\t wi' juun jmeesaq tat'oje' taq kla'.
+\m wi' juun j-mees-aq t-a-t'oj-e' taq kla'
+\p EXS NUM E3S-S-PL INC-E2S-VT-SC PL ADV
+\g EXS uno E3S-basura-PL INC-E2S-tirar-SC PL allí
+\l tienen una basura lo van a tirar por allí
+
+\t tinb'it b'i tz'iil.
+\m t-in-b'it b'ik tz'iil
+\p COM-E1S-VT DIR ADJ
+\g COM-E1S-levantar DIR sucio
+\l recojo todo el sucio
+
+\t tab'it b'i tz'iil.
+\m t-a-b'it b'ik tz'iil
+\p COM-E2S-VT DIR ADJ
+\g COM-E2S-levantar DIR sucio
+\l recoges todo el sucio
+
+\t tijb'it b'i tz'iil.
+\m ti-j-b'it b'ik tz'iil
+\p COM-E3S-VT DIR ADJ
+\g COM-E3S-levantar DIR sucio
+\l recoge todo el sucio
+
+\t tqab'it b'i tz'iil.
+\m t-qa-b'it b'ik tz'iil
+\p COM-E1P-VT DIR ADJ
+\g COM-E1P-levantar DIR sucio
+\l recogemos todo el sucio
+
+\t tab'itaq b'i tz'iil.
+\m t-a-b'it-aq b'ik tz'iil
+\p COM-E2S-VT-PL DIR ADJ
+\g COM-E2S-levantar-PL DIR sucio
+\l recogen todo el sucio
+
+\t tinaq'ansaaj maas rijil.
+\m t-in-aq'ansaa-j maas r-ijiil
+\p TAM-E1S-VT-SC ADV E3-S
+\g TAM-E1S-subirlo-SC más E3-precio
+\l le subí mucho de precio
+
+\t tawaq'ansaaj maas rijil.
+\m t-aw-aq'ansaa-j maas r-ijiil
+\p TAM-E2S-VT-SC ADV E3-S
+\g TAM-E2S-subirlo-SC más E3-precio
+\l le subiste mucho de precio
+
+\t tiraq'ansaaj maas rijil.
+\m ti-r-aq'ansaa-j maas r-ijiil
+\p TAM-E3S-VT-SC ADV E3-S
+\g TAM-E3S-subirlo-SC más E3-precio
+\l le subió mucho de precio
+
+\t tiqaq'ansaaj maas rijil.
+\m ti-q-aq'ansaa-j maas r-ijiil
+\p TAM-E1P-VT-SC ADV E3-S
+\g TAM-E1P-subirlo-SC más E3-precio
+\l le subimos mucho de precio
+
+\t tawaq'ansaaj taq maas rijil.
+\m t-aw-aq'ansaa-j taq maas r-ijiil
+\p TAM-E2S-VT-SC PL ADV E3-S
+\g TAM-E2S-subirlo-SC PL más E3-precio
+\l le subieron mucho de precio
+
+\t tiraq'ansaaj taq maas rijil.
+\m ti-r-aq'ansaa-j taq maas r-ijiil
+\p TAM-E3S-VT-SC PL ADV E3-S
+\g TAM-E3S-subirlo-SC PL más E3-precio
+\l le subieron mucho de precio
+
+\t ta' ta' xatk'iw
+\m ta' ta' x-at-k'iw
+\p ADV ADV TAM-A2S-VT
+\g no no TAM-A2S-aguantar
+\l no, no lo soportaste
+
+\t ta' ta' xk'iw
+\m ta' ta' x-k'iw
+\p ADV ADV TAM-VT
+\g no no TAM-aguantar
+\l no, no lo soportó
+
+\t ta' ta' xojk'iw
+\m ta' ta' x-oj-k'iw
+\p ADV ADV TAM-A1P-VT
+\g no no TAM-A1P-aguantar
+\l no, no lo soportamos
+
+
+\t ta' ta' xatk'iw taq
+\m ta' ta' x-at-k'iw taq
+\p ADV ADV TAM-A2S-VT PL
+\g no no TAM-A2S-aguantar PL
+\l no, no lo soportaron
+
+\t ta' ta' xk'iw taq
+\m ta' ta' x-k'iw taq
+\p ADV ADV TAM-VT PL
+\g no no TAM-aguantar PL
+\l no, no lo soportaron
+
+\t o waqaqiib' ke junaab' ke xatk'iwtaq.
+\m o' waq-aq-ib' ke junaab' ke x-at-k'iw
+\p CONJ NUM-PL-PL PART S PART TAM-A2S-VT
+\g o seis-PL-PL que año que TAM-A2S-aguantar
+\l o talves unos ocho años fueron los que resististe
+
+\t o waqaqiib' ke junaab' ke xk'iwtaq.
+\m o' waq-aq-ib' ke junaab' ke x-k'iw
+\p CONJ NUM-PL-PL PART S PART TAM-VT
+\g o seis-PL-PL que año que TAM-aguantar
+\l o talves unos ocho años fueron los que resisitió
+
+\t o waqaqiib' ke junaab' ke xojk'iwtaq.
+\m o' waq-aq-ib' ke junaab' ke x-oj-k'iw
+\p CONJ NUM-PL-PL PART S PART TAM-A1P-VT
+\g o seis-PL-PL que año que TAM-A1P-aguantar
+\l o talves unos ocho años fueron los que resisitimos
+
+\t o waqaqiib' ke junaab' ke xatk'iwtaq taq.
+\m o' waq-aq-ib' ke junaab' ke x-at-k'iw taq
+\p CONJ NUM-PL-PL PART S PART TAM-A2S-VT PL
+\g o seis-PL-PL que año que TAM-A2S-aguantar PL
+\l o talves unos ocho años fueron los que resistieron
+
+\t o waqaqiib' ke junaab' ke xk'iwtaq taq.
+\m o' waq-aq-ib' ke junaab' ke x-k'iw taq
+\p CONJ NUM-PL-PL PART S PART TAM-VT PL
+\g o seis-PL-PL que año que TAM-aguantar PL
+\l o talves unos ocho años fueron los que resisitieron
+
+\t Iin inb'anow,
+\m iin in-b'an-ow
+\p PRON A1S-VT-AP
+\g yo A1S-hacer-AP
+\l Por ejemplo esta mesa que tengo enfrente
+
+\t aat atb'anow,
+\m aat at-b'an-ow
+\p PRON A2S-VT-AP
+\g tú A2S-hacer-AP
+\l Por ejemplo esta mesa que tienes enfrente
+
+\t re b'anow,
+\m re b'an-ow
+\p PRON VT-AP
+\g él hacer-AP
+\l Por ejemplo esta mesa que tiene enfrente
+
+\t re b'anow,
+\m re b'an-ow
+\p PRON VT-AP
+\g ella hacer-AP
+\l Por ejemplo esta mesa que tiene enfrente
+
+\t aat atb'anow taq, 
+\m aat at-b'an-ow taq
+\p PRON A2S-VT-AP PL
+\g ustedes A2S-hacer-AP PL
+\l Por ejemplo esta mesa que tienen enfrente
+
+\t retaq b'anow taq,
+\m retaq b'an-ow taq
+\p PRON VT-AP PL
+\g ellas hacer-AP PL
+\l Por ejemplo esta mesa que tienen enfrente
+
+\t retaq b'anow taq,
+\m retaq b'an-ow taq
+\p PRON VT-AP PL
+\g ellos hacer-AP PL
+\l Por ejemplo esta mesa que tienen enfrente
+
+\t xinetemaji' por ke tijk'utaq chiqawch.
+\m x-in-etama-ji' por ke ti-j-k'ut-aq chiqa-w-ch
+\p TAM-E1S-VT-AFI ADV PART TAM-E3S-VT-PL VT-MOV-MOV
+\g TAM-E1S-saber-AFI por que TAM-E3S-enseñar-PL empujar-MOV-MOV
+\l puedo porque solo no lo enseñaron
+
+\t xawetemaji' por ke tijk'utaq chiqawch.
+\m x-aw-etama-ji' por ke ti-j-k'ut-aq chiqa-w-ch
+\p TAM-E2S-VT-AFI ADV PART TAM-E3S-VT-PL VT-MOV-MOV
+\g TAM-E2S-saber-AFI por que TAM-E3S-enseñar-PL empujar-MOV-MOV
+\l puedes porque solo no lo enseñaron
+
+\t xretemaji' por ke tijk'utaq chiqawch.
+\m x-r-etama-ji' por ke ti-j-k'ut-aq chiqa-w-ch
+\p TAM-E3S-VT-AFI ADV PART TAM-E3S-VT-PL VT-MOV-MOV
+\g TAM-E3S-saber-AFI por que TAM-E3S-enseñar-PL empujar-MOV-MOV
+\l puede porque solo no lo enseñaron
+
+\t xawetemaji' taq por ke tijk'utaq chiqawch.
+\m x-aw-etama-ji' taq por ke ti-j-k'ut-aq chiqa-w-ch
+\p TAM-E2S-VT-AFI PL ADV PART TAM-E3S-VT-PL VT-MOV-MOV
+\g TAM-E2S-saber-AFI PL por que TAM-E3S-enseñar-PL empujar-MOV-MOV
+\l pueden porque solo no lo enseñaron
+
+\t xretemaji' taq por ke tijk'utaq chiqawch.
+\m x-r-etama-ji' taq por ke ti-j-k'ut-aq chiqa-w-ch
+\p TAM-E3S-VT-AFI PL ADV PART TAM-E3S-VT-PL VT-MOV-MOV
+\g TAM-E3S-saber-AFI PL por que TAM-E3S-enseñar-PL empujar-MOV-MOV
+\l pueden porque solo no lo enseñaron
+
+\t por ke iin tinya' luwar.
+\m por ke iin t-in-ye' luwar
+\p ADV PART PRON TAM-E1S-VT S
+\g por que yo TAM-E1S-dar lugar
+\l porque yo estoy dando lugar ha esto
+
+\t por ke aat taya' luwar.
+\m por ke aat t-a-ye' luwar
+\p ADV PART PRON TAM-E2S-VT S
+\g por que tú TAM-E2S-dar lugar
+\l porque tú estás dando lugar ha esto
+
+\t por ke re tijya' luwar.
+\m por ke re ti-j-ye' luwar
+\p ADV PART PRON TAM-E3S-VT S
+\g por que él TAM-E3S-dar lugar
+\l porque él está dando lugar ha esto
+
+\t por ke re tijya' luwar.
+\m por ke re ti-j-ye' luwar
+\p ADV PART PRON TAM-E3S-VT S
+\g por que ella TAM-E3S-dar lugar
+\l porque ella está dando lugar ha esto
+
+\t por ke ataq taya' taq luwar.
+\m por ke ataq t-a-ye' taq luwar
+\p ADV PART PRON TAM-E2S-VT PL S
+\g por que ustedes TAM-E2S-dar PL lugar
+\l porque ustedes están dando lugar ha esto
+
+\t por ke retaq tijya' luwar.
+\m por ke retaq ti-j-ye' taq luwar
+\p ADV PART PRON TAM-E3S-VT PL S
+\g por que ellos TAM-E3S-dar PL lugar
+\l porque ellos están dando lugar ha esto
+
+\t por ke retaq tijya' luwar.
+\m por ke retaq ti-j-ye' taq luwar
+\p ADV PART PRON TAM-E3S-VT PL S
+\g por que ellas TAM-E3S-dar PL lugar
+\l porque ellas están dando lugar ha esto

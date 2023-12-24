@@ -1,0 +1,119 @@
+\t i ri' li tintij 
+\m i ri' li t-in-tij
+\p CONJ DEM DEM INC-E1S-VT
+\g CONJ DEM DEM INC-E1S-comer
+\l Y eso es lo que como
+
+\t i ri' li tatij 
+\m i ri' li t-a-tij
+\p CONJ DEM DEM INC-E2S-VT
+\g CONJ DEM DEM INC-E2S-comer
+\l Y eso es lo que comes
+
+\t i ri' li tqatij 
+\m i ri' li t-qa-tij
+\p CONJ DEM DEM INC-E1P-VT
+\g CONJ DEM DEM INC-E1P-comer
+\l Y eso es lo que comemos
+
+\t i ri' li tatij taq
+\m i ri' li t-a-tij taq
+\p CONJ DEM DEM INC-E2S-VT PL
+\g CONJ DEM DEM INC-E2S- PL
+\l Y eso es lo que comen
+
+\t i ri' li tijtij taq
+\m i ri' li ti-j-tij taq
+\p CONJ DEM DEM INC-E3S-VT PL
+\g CONJ DEM DEM INC-E3S-comer PL
+\l Y eso es lo que comen
+
+\t ya chaq tintiik kapee.
+\m ya chaq t-in-tiik kapee
+\p VOC PART INC-E1S-VT S
+\g ya PART INC-E1S-sembrar cafe
+\l Ya siembro café.
+
+\t ya chaq tatiik kapee.
+\m ya chaq t-a-tiik kapee
+\p VOC PART INC-E2S-VT S
+\g ya PART INC-E2S-sembrar cafe
+\l Ya siembras café.
+
+\t ya chaq tijtiik kapee.
+\m ya chaq ti-j-tiik kapee
+\p VOC PART INC-E3S-VT S
+\g ya PART INC-E3S-sembrar cafe
+\l Ya siembra café.
+
+\t ya chaq tqatiik kapee.
+\m ya chaq t-qa-tiik kapee
+\p VOC PART INC-E1P-VT S
+\g ya PART INC-E1P-sembrar cafe
+\l Ya sembramos café.
+
+\t ya chaq tatiik taq kapee.
+\m ya chaq t-a-tiik kapee
+\p VOC PART INC-E2S-VT S
+\g ya PART INC-E2S-sembrar cafe
+\l Ya siembran café.
+
+\t ta' tinloq' sib'ooy.
+\m ta' t-in-loq' sib'ooy
+\p NEG INC-E1S-VT S
+\g NEG INC-E1S-comprar cebolla
+\l No compraba cebolla.
+
+\t ta' taloq' sib'ooy.
+\m ta' t-a-loq' sib'ooy
+\p NEG INC-E2S-VT S
+\g NEG INC-E2S-comprar cebolla
+\l No comprabas cebolla.
+
+\t ta' tijloq' sib'ooy.
+\m ta' ti-j-loq' sib'ooy
+\p NEG INC-E3S-VT S
+\g NEG INC-E3S-comprar cebolla
+\l No compraba cebolla.
+
+\t ta' tqaloq' sib'ooy.
+\m ta' t-qa-loq' sib'ooy
+\p NEG INC-E1P-VT S
+\g NEG INC-E1P-comprar cebolla
+\l No comprabamos cebolla.
+
+\t ta' taloq' taq sib'ooy.
+\m ta' t-a-loq' taq sib'ooy
+\p NEG INC-E2S-VT PL S
+\g NEG INC-E2S-comprar PL cebolla
+\l No compraban cebolla.
+
+\t ri' li tinen.
+\m ri' li t-in-en
+\p DEM DEM INC-E1S-VT
+\g DEM DEM INC-E1S-hacer
+\l Eso era lo que hacía.
+
+\t ri' li tawen.
+\m ri' li t-aw-en
+\p DEM DEM INC-E2S-VT
+\g DEM DEM INC-E2S-hacer
+\l Eso era lo que hacías.
+
+\t ri' li tren.
+\m ri' li t-r-en
+\p DEM DEM INC-E3S-VT
+\g DEM DEM INC-E3S-hacer
+\l Eso era lo que hacía.
+
+\t ri' li tqen.
+\m ri' li t-q-en
+\p DEM DEM INC-E1P-VT
+\g DEM DEM INC-E1P-hacer
+\l Eso era lo que hacíamos.
+
+\t ri' li tawen taq.
+\m ri' li t-aw-en taq
+\p DEM DEM INC-E2S-VT PL
+\g DEM DEM INC-E2S-hacer PL 
+\l Eso era lo que hacían.

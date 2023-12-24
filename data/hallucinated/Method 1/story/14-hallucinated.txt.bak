@@ -1,0 +1,642 @@
+\t tinil iin.
+\m t-in-il iin
+\p INC-E1S-VT PRON
+\g INC-E1S-ver yo
+\l Miro yo.
+
+\t tawil aat.
+\m t-aw-il aat
+\p INC-E2S-VT PRON
+\g INC-E2S-ver tú
+\l Miras tú.
+
+\t tril re.
+\m t-r-il re
+\p INC-E3S-VT PRON
+\g INC-E3S-ver él
+\l Mira él.
+
+\t tril re.
+\m t-r-il re
+\p INC-E3S-VT PRON
+\g INC-E3S-ver ella
+\l Mira ella.
+
+\t tawil taq ataq.
+\m t-aw-il taq ataq
+\p INC-E2S-VT PL PRON
+\g INC-E2S-ver PL ustedes
+\l Miran ustedes.
+
+\t tril taq retaq.
+\m t-r-il taq retaq
+\p INC-E3S-VT PL PRON
+\g INC-E3S-ver PL ellos
+\l Miran ellos.
+
+\t tril taq retaq.
+\m t-r-il taq retaq
+\p INC-E3S-VT PL PRON
+\g INC-E3S-ver PL ellas
+\l Miran ellas.
+
+\t ta' chwaaj tijchap alaaq',
+\m ta' ch-waaj ti-j-chap alaaq'
+\p NEG INC-VT INC-E3S-VT VT
+\g NEG INC-querer INC-E3S-agarrar robar
+\l No quiero que robe.
+
+\t ta' chwaaj tqachap alaaq',
+\m ta' ch-waaj t-qa-chap alaaq'
+\p NEG INC-VT INC-E1P-VT VT
+\g NEG INC-querer INC-E1P-agarrar robar
+\l No quiero que robemos.
+
+\t ta' chwaaj tachap taq alaaq',
+\m ta' ch-waaj t-a-chap taq alaaq'
+\p NEG INC-VT INC-E2S-VT PL VT
+\g NEG INC-querer INC-E2S-agarrar PL robar
+\l No quiero que roben.
+
+\t ta' chwaaj tijchap taq alaaq',
+\m ta' ch-waaj ti-j-chap taq alaaq'
+\p NEG INC-VT INC-E3S-VT PL VT
+\g NEG INC-querer INC-E3S-agarrar PL robar
+\l No quiero que roben.
+
+\t pensar tinen, pensar tinen,
+\m pensar t-in-en pensar t-in-en
+\p VT INC-E1S-VT VT INC-E1S-VT
+\g pensar INC-E1S-hacer pensar INC-E1S-hacer
+\l Me puse a pensar.
+
+\t pensar tawen, pensar tawen,
+\m pensar t-aw-en pensar t-aw-en
+\p VT INC-E2S-VT VT INC-E2S-VT
+\g pensar INC-E2S-hacer pensar INC-E2S-hacer
+\l Te puses a pensar.
+
+\t pensar tqen, pensar tqen,
+\m pensar t-q-en pensar t-q-en
+\p VT INC-E1P-VT VT INC-E1P-VT
+\g pensar INC-E1P-hacer pensar INC-E1P-hacer
+\l Nos pusimos a pensar.
+
+\t pensar tawen taq, pensar tawen taq,
+\m pensar t-aw-en taq pensar t-aw-en taq
+\p VT INC-E2S-VT PL VT INC-E2S-VT PL
+\g pensar INC-E2S-hacer PL pensar INC-E2S-hacer PL
+\l Se pusieron a pensar.
+
+\t pensar tren taq, pensar tren taq,
+\m pensar t-r-en taq pensar t-r-en taq
+\p VT INC-E3S-VT PL VT INC-E3S-VT PL
+\g pensar INC-E3S-hacer PL pensar INC-E3S-hacer PL
+\l Se pusieron a pensar.
+
+\t Aat xata'ch' juun aportuun.
+\m aat x-a-ta'-ch' jun a-portuun
+\p PRON COM-E2S-VT-DIR NUM E2S-S
+\g tú COM-E2S-encontrar-DIR uno E2S-fortuna
+\l Tú encontraste una tu fortuna.
+
+\t Re xjta'ch' juun jportuun.
+\m re x-j-ta'-ch' jun j-portuun
+\p PRON COM-E3S-VT-DIR NUM E3S-S
+\g él COM-E3S-encontrar-DIR uno E3S-fortuna
+\l Él encontró una tu fortuna.
+
+\t Re xjta'ch' juun jportuun.
+\m re x-j-ta'-ch' jun j-portuun
+\p PRON COM-E3S-VT-DIR NUM E3S-S
+\g ella COM-E3S-encontrar-DIR uno E3S-fortuna
+\l Ella encontró una tu fortuna.
+
+\t Ooj xqata'ch' juun qaportuun.
+\m ooj x-qa-ta'-ch' jun qa-portuun
+\p PRON COM-E1P-VT-DIR NUM E1P-S
+\g nosotros COM-E1P-encontrar-DIR uno E1P-fortuna
+\l Nosotros encontramos una nuestra fortuna.
+
+\t Ataq xata'ch' taq juun aportuun-aq.
+\m ataq x-a-ta'-ch' taq jun a-portuun-aq
+\p PRON COM-E2S-VT-DIR PL NUM E2S-S-PL
+\g ustedes COM-E2S-encontrar-DIR PL uno E2S-fortuna-PL
+\l Ustedes encontraron una su fortuna.
+
+\t Retaq xjta'ch' taq juun jportuun-aq.
+\m retaq x-j-ta'-ch' taq jun j-portuun-aq
+\p PRON COM-E3S-VT-DIR PL NUM E3S-S-PL
+\g ellos COM-E3S-encontrar-DIR PL uno E3S-fortuna-PL
+\l Ellos encontraron una su fortuna.
+
+\t Retaq xjta'ch' taq juun jportuun-aq.
+\m retaq x-j-ta'-ch' taq jun j-portuun-aq
+\p PRON COM-E3S-VT-DIR PL NUM E3S-S-PL
+\g ellas COM-E3S-encontrar-DIR PL uno E3S-fortuna-PL
+\l Ellas encontraron una su fortuna.
+
+\t xinelq'aajch qe rik'il kristyaan,
+\m x-in-elq'-aaj-ch qe r-ik'iil kirtyaan
+\p COM-E1S-VT-AGT-DIR PART E3S-SREL S
+\g COM-E1S-robar-AGT-DIR PART E3S-SREL persona
+\l Peor si lo robé con la gente.
+
+\t xawelq'aajch qe rik'il kristyaan,
+\m x-aw-elq'-aaj-ch qe r-ik'iil kirtyaan
+\p COM-E2S-VT-AGT-DIR PART E3S-SREL S
+\g COM-E2S-robar-AGT-DIR PART E3S-SREL persona
+\l Peor si lo robaste con la gente.
+
+\t xrelq'aajch qe rik'il kristyaan,
+\m x-r-elq'-aaj-ch qe r-ik'iil kirtyaan
+\p COM-E3S-VT-AGT-DIR PART E3S-SREL S
+\g COM-E3S-robar-AGT-DIR PART E3S-SREL persona
+\l Peor si lo robó con la gente.
+
+\t xqelq'aajch qe rik'il kristyaan,
+\m x-q-elq'-aaj-ch qe r-ik'iil kirtyaan
+\p COM-E1P-VT-AGT-DIR PART E3S-SREL S
+\g COM-E1P-robar-AGT-DIR PART E3S-SREL persona
+\l Peor si lo robamos con la gente.
+
+\t xawelq'aajch taq qe rik'il kristyaan,
+\m x-aw-elq'-aaj-ch taq qe r-ik'iil kirtyaan
+\p COM-E2S-VT-AGT-DIR PL PART E3S-SREL S
+\g COM-E2S-robar-AGT-DIR PL PART E3S-SREL persona
+\l Peor si lo robaron con la gente.
+
+\t xrelq'aajch taq qe rik'il kristyaan,
+\m x-r-elq'-aaj-ch taq qe r-ik'iil kirtyaan
+\p COM-E3S-VT-AGT-DIR PL PART E3S-SREL S
+\g COM-E3S-robar-AGT-DIR PL PART E3S-SREL persona
+\l Peor si lo robaron con la gente.
+
+\t laq b'ee iin xinmuq wib' chirij juun chee'.
+\m laq b'ee iin x-in-muq wib' chi-r-ij juun chee'
+\p PREP S PRON COM-E1S-VT SREL PREP-E3S-SREL NUM S
+\g PREP camino yo COM-E1S-enterrar SREL PREP-E3S-SREL uno árbol
+\l En el camino yo me escondí detrás de un árbol.
+
+\t laq b'ee aat xamuq wib' chirij juun chee'.
+\m laq b'ee aat x-a-muq wib' chi-r-ij juun chee'
+\p PREP S PRON COM-E2S-VT SREL PREP-E3S-SREL NUM S
+\g PREP camino tú COM-E2S-enterrar SREL PREP-E3S-SREL uno árbol
+\l En el camino tú te escondiste detrás de un árbol.
+
+\t laq b'ee re xjmuq wib' chirij juun chee'.
+\m laq b'ee re x-j-muq wib' chi-r-ij juun chee'
+\p PREP S PRON COM-E3S-VT SREL PREP-E3S-SREL NUM S
+\g PREP camino él COM-E3S-enterrar SREL PREP-E3S-SREL uno árbol
+\l En el camino él se escondió detrás de un árbol.
+
+\t laq b'ee re xjmuq wib' chirij juun chee'.
+\m laq b'ee re x-j-muq wib' chi-r-ij juun chee'
+\p PREP S PRON COM-E3S-VT SREL PREP-E3S-SREL NUM S
+\g PREP camino ella COM-E3S-enterrar SREL PREP-E3S-SREL uno árbol
+\l En el camino ella se escondió detrás de un árbol.
+
+\t laq b'ee ooj xqamuq wib' chirij juun chee'.
+\m laq b'ee ooj x-qa-muq wib' chi-r-ij juun chee'
+\p PREP S PRON COM-E1P-VT SREL PREP-E3S-SREL NUM S
+\g PREP camino nosotros COM-E1P-enterrar SREL PREP-E3S-SREL uno árbol
+\l En el camino nosotros nos escondimos detrás de un árbol.
+
+\t laq b'ee ataq xamuq wib' taq chirij juun chee'.
+\m laq b'ee ataq x-a-muq wib' taq chi-r-ij juun chee'
+\p PREP S PRON COM-E2S-VT PL SREL PREP-E3S-SREL NUM S
+\g PREP camino ustedes COM-E2S-enterrar PL SREL PREP-E3S-SREL uno árbol
+\l En el camino ustedes se escondieron detrás de un árbol.
+
+\t laq b'ee retaq xjmuq wib' taq chirij juun chee'.
+\m laq b'ee retaq x-j-muq wib' taq chi-r-ij juun chee'
+\p PREP S PRON COM-E3S-VT PL SREL PREP-E3S-SREL NUM S
+\g PREP camino ellos COM-E3S-enterrar PL SREL PREP-E3S-SREL uno árbol
+\l En el camino ellos se escondieron detrás de un árbol.
+
+\t laq b'ee retaq xjmuq wib' taq chirij juun chee'.
+\m laq b'ee retaq x-j-muq wib' taq chi-r-ij juun chee'
+\p PREP S PRON COM-E3S-VT PL SREL PREP-E3S-SREL NUM S
+\g PREP camino ellas COM-E3S-enterrar PL SREL PREP-E3S-SREL uno árbol
+\l En el camino ellas se escondieron detrás de un árbol.
+
+\t i xatk'amch.
+\m i x-at-k'am-ch
+\p CONJ COM-A2S-VT-DIR
+\g CONJ COM-A2S-traer-DIR
+\l Y lo trajiste.
+
+\t i xjk'amch.
+\m i x-j-k'am-ch
+\p CONJ COM-A3S-VT-DIR
+\g CONJ COM-A3S-traer-DIR
+\l Y lo trajo.
+
+\t i xqak'amch.
+\m i x-qa-k'am-ch
+\p CONJ COM-A1P-VT-DIR
+\g CONJ COM-A1P-traer-DIR
+\l Y lo trajimos.
+
+\t i xatk'amch taq.
+\m i x-at-k'am-ch taq
+\p CONJ COM-A2S-VT-DIR PL
+\g CONJ COM-A2S-traer-DIR PL
+\l Y lo trajeron.
+
+\t i xjk'amch taq.
+\m i x-j-k'am-ch taq
+\p CONJ COM-A3S-VT-DIR PL
+\g CONJ COM-A3S-traer-DIR PL
+\l Y lo trajeron.
+
+\t taye' li b'ee
+\m t-a-ye' li b'ee
+\p INC-E2S-VT PREP S
+\g INC-E2S-dar PREP camino
+\l Lo pones en el camino.
+
+\t tijye' li b'ee
+\m ti-j-ye' li b'ee
+\p INC-E3S-VT PREP S
+\g INC-E3S-dar PREP camino
+\l Lo pone en el camino.
+
+\t tqaye' li b'ee
+\m t-qa-ye' li b'ee
+\p INC-E1P-VT PREP S
+\g INC-E1P-dar PREP camino
+\l Lo ponemos en el camino.
+
+\t taye' taq li b'ee
+\m t-a-ye' taq li b'ee
+\p INC-E2S-VT PL PREP S
+\g INC-E2S-dar PL PREP camino
+\l Lo ponen en el camino.
+
+\t tijye' taq li b'ee
+\m ti-j-ye' taq li b'ee
+\p INC-E3S-VT PL PREP S
+\g INC-E3S-dar PL PREP camino
+\l Lo ponen en el camino.
+
+\t xaya' apatb'aa,
+\m x-a-ya' a-patb'a
+\p COM-E2S-VT E2S-S
+\g COM-E2S-dar E2S-sombrero
+\l Diste tu sombrero.
+
+\t xjya' jpatb'aa,
+\m x-j-ya' j-patb'a
+\p COM-E3S-VT E3S-S
+\g COM-E3S-dar E3S-sombrero
+\l Dio su sombrero.
+
+\t xqaya' qapatb'aaq,
+\m x-qa-ya' qa-patb'a-aq
+\p COM-E1P-VT E1P-S-PL
+\g COM-E1P-dar E1P-sombrero-PL
+\l Dimos nuestros sombreros.
+
+\t xaya' taq apatb'aaq,
+\m x-a-ya' taq a-patb'a-aq
+\p COM-E2S-VT PL E2S-S-PL
+\g COM-E2S-dar PL E2S-sombrero-PL
+\l Dieron sus sombreros.
+
+\t xjya' taq jpatb'aaq,
+\m x-j-ya' taq j-patb'a-aq
+\p COM-E3S-VT PL E3S-S-PL
+\g COM-E3S-dar PL E3S-sombrero-PL
+\l Dieron sus sombreros.
+
+\t atz'aam tatye' re.
+\m atz'aam t-at-ye' re
+\p S INC-A2S-VT PRON
+\g sal INC-A2S-dar él/ella
+\l Sal le das a ella.
+
+\t atz'aam tye' re.
+\m atz'aam t-ye' re
+\p S INC-VT PRON
+\g sal INC-dar él/ella
+\l Sal le da a ella.
+
+\t atz'aam tqaye' re.
+\m atz'aam t-qa-ye' re
+\p S INC-A1P-VT PRON
+\g sal INC-A1P-dar él/ella
+\l Sal le damos a ella.
+
+\t atz'aam tatye' taq re.
+\m atz'aam t-at-ye' taq re
+\p S INC-A2S-VT PL PRON
+\g sal INC-A2S-dar PL él/ella
+\l Sal le dan a ella.
+
+\t atz'aam tye' taq re.
+\m atz'aam t-ye' taq re
+\p S INC-VT PL PRON
+\g sal INC-dar PL él/ella
+\l Sal le dan a ella.
+
+\t juntiir lo ke tinkoj
+\m juntiir lo ke t-in-koj
+\p ADV PART PART INC-E1S-VT
+\g todo lo que INC-E1S-meter
+\l todo lo que uso.
+
+\t juntiir lo ke takoj
+\m juntiir lo ke t-a-koj
+\p ADV PART PART INC-E2S-VT
+\g todo lo que INC-E2S-meter
+\l todo lo que usas.
+
+\t juntiir lo ke tijkoj
+\m juntiir lo ke ti-j-koj
+\p ADV PART PART INC-E3S-VT
+\g todo lo que INC-E3S-meter
+\l todo lo que usa.
+
+\t juntiir lo ke tqakoj
+\m juntiir lo ke t-qa-koj
+\p ADV PART PART INC-E1P-VT
+\g todo lo que INC-E1P-meter
+\l todo lo que usamos.
+
+\t juntiir lo ke takoj taq
+\m juntiir lo ke t-a-koj taq
+\p ADV PART PART INC-E2S-VT PL
+\g todo lo que INC-E2S-meter PL
+\l todo lo que usan.
+
+\t juntiir lo ke tijkoj taq
+\m juntiir lo ke ti-j-koj taq
+\p ADV PART PART INC-E3S-VT PL
+\g todo lo que INC-E3S-meter PL
+\l todo lo que usan.
+
+\t I iin chaak tin'an
+\m i iin chaak t-in-'an
+\p CONJ PRON S INC-E1S-VT
+\g CONJ yo trabajo INC-E1S-hacer
+\l Y yo solo trabajando me mantengo.
+
+\t I aat chaak ta'an
+\m i aat chaak t-a-'an
+\p CONJ PRON S INC-E2S-VT
+\g CONJ tú trabajo INC-E2S-hacer
+\l Y tú solo trabajando te mantienes.
+
+\t I re chaak tij'an
+\m i re chaak ti-j-'an
+\p CONJ PRON S INC-E3S-VT
+\g CONJ él trabajo INC-E3S-hacer
+\l Y él solo trabajando se mantiene.
+
+\t I re chaak tij'an
+\m i re chaak ti-j-'an
+\p CONJ PRON S INC-E3S-VT
+\g CONJ ella trabajo INC-E3S-hacer
+\l Y ella solo trabajando se mantiene.
+
+\t I ataq chaak ta'an taq
+\m i ataq chaak t-a-'an taq
+\p CONJ PRON S INC-E2S-VT PL
+\g CONJ ustedes trabajo INC-E2S-hacer PL
+\l Y ustedes solo trabajando se mantienen.
+
+\t I retaq chaak tij'an taq
+\m i retaq chaak ti-j-'an taq
+\p CONJ PRON S INC-E3S-VT PL
+\g CONJ ellos trabajo INC-E3S-hacer PL
+\l Y ellos solo trabajando se mantienen.
+
+\t I retaq chaak tij'an taq
+\m i retaq chaak ti-j-'an taq
+\p CONJ PRON S INC-E3S-VT PL
+\g CONJ ellas trabajo INC-E3S-hacer PL
+\l Y ellas solo trabajando se mantienen.
+
+\t i tin'an burlaar inwich,
+\m i t-in-'an burlaar in-wiich
+\p CONJ INC-E1S-VT VI A1S-S
+\g CONJ INC-E1S-hacer burlar A1S-cara
+\l Y yo me burlo de mi.
+
+\t i ta'an burlaar inwich,
+\m i t-a-'an burlaar in-wiich
+\p CONJ INC-E2S-VT VI A1S-S
+\g CONJ INC-E2S-hacer burlar A1S-cara
+\l Y tú te burlas de mi.
+
+\t i tij'an burlaar inwich,
+\m i ti-j-'an burlaar in-wiich
+\p CONJ INC-E3S-VT VI A1S-S
+\g CONJ INC-E3S-hacer burlar A1S-cara
+\l Y él se burla de mi.
+
+\t i tij'an burlaar inwich,
+\m i ti-j-'an burlaar in-wiich
+\p CONJ INC-E3S-VT VI A1S-S
+\g CONJ INC-E3S-hacer burlar A1S-cara
+\l Y ella se burla de mi.
+
+\t i ta'an taq burlaar inwich,
+\m i t-a-'an taq burlaar in-wiich
+\p CONJ INC-E2S-VT PL VI A1S-S
+\g CONJ INC-E2S-hacer PL burlar A1S-cara
+\l Y ustedes se burlan de mi.
+
+\t i tij'an taq burlaar inwich,
+\m i ti-j-'an taq burlaar in-wiich
+\p CONJ INC-E3S-VT PL VI A1S-S
+\g CONJ INC-E3S-hacer PL burlar A1S-cara
+\l Y ellos se burlan de mi.
+
+\t i tij'an taq burlaar inwich,
+\m i ti-j-'an taq burlaar in-wiich
+\p CONJ INC-E3S-VT PL VI A1S-S
+\g CONJ INC-E3S-hacer PL burlar A1S-cara
+\l Y ellas se burlan de mi.
+
+\t tin'an k'ex chwee,
+\m t-in-'an k'ex ch-we
+\p INC-E1S-VT ADJ PREP-SREL
+\g INC-E1S-hacer daño PREP-SREL
+\l Me hago daño a mi.
+
+\t ta'an k'ex chwee,
+\m t-a-'an k'ex ch-we
+\p INC-E2S-VT ADJ PREP-SREL
+\g INC-E2S-hacer daño PREP-SREL
+\l Me haces daño a mi.
+
+\t tij'an k'ex chwee,
+\m ti-j-'an k'ex ch-we
+\p INC-E3S-VT ADJ PREP-SREL
+\g INC-E3S-hacer daño PREP-SREL
+\l Me hace daño a mi.
+
+\t tqa'an k'ex chwee,
+\m t-qa-'an k'ex ch-we
+\p INC-E1P-VT ADJ PREP-SREL
+\g INC-E1P-hacer daño PREP-SREL
+\l Me hacemos daño a mi.
+
+\t ta'an taq k'ex chwee,
+\m t-a-'an taq k'ex ch-we
+\p INC-E2S-VT PL ADJ PREP-SREL
+\g INC-E2S-hacer PL daño PREP-SREL
+\l Me hacen daño a mi.
+
+\t tij'an taq k'ex chwee,
+\m ti-j-'an taq k'ex ch-we
+\p INC-E3S-VT PL ADJ PREP-SREL
+\g INC-E3S-hacer PL daño PREP-SREL
+\l Me hacen daño a mi.
+
+\t xinloq' awákix
+\m x-in-loq' in-wakix
+\p COM-E1S-VT E1S-S
+\g COM-E1S-comprar E1S-vaca
+\l Compré mis vacas.
+
+\t xaloq' awákix
+\m x-a-loq' at-wakix
+\p COM-E2S-VT E2S-S
+\g COM-E2S-comprar E2S-vaca
+\l Compraste tus vacas.
+
+\t xjloq' jwákix
+\m x-j-loq' j-wakix
+\p COM-E3S-VT E3S-S
+\g COM-E3S-comprar E3S-vaca
+\l Compró sus vacas.
+
+\t xqaloq' qawákix
+\m x-qa-loq' qa-wakix
+\p COM-E1P-VT E3S-S
+\g COM-E1P-comprar E3S-vaca
+\l Compramos nuestros vacas.
+
+\t xaloq' taq awákix-aq
+\m x-a-loq' taq a-wakix-aq
+\p COM-E2S-VT PL E2S-S-PL
+\g COM-E2S-comprar PL E2S-vaca-PL
+\l Compraron sus vacas.
+
+\t xjloq' taq jwákix-aq
+\m x-j-loq' taq j-wakix-aq
+\p COM-E3S-VT PL E3S-S-PL
+\g COM-E3S-comprar PL E3S-vaca-PL
+\l Compraron sus vacas.
+
+\t o aaber neen ab'aniik,
+\m o aaber neen a-b'an-ik
+\p CONJ ADV INT E2S-VT-SC
+\g o haber INT E2S-hacer-SC
+\l O saber como eres.
+
+\t o aaber neen jb'aniik,
+\m o aaber neen j-b'an-ik
+\p CONJ ADV INT E3S-VT-SC
+\g o haber INT E3S-hacer-SC
+\l O saber como es.
+
+\t o aaber neen qab'aniik,
+\m o aaber neen qa-b'an-ik
+\p CONJ ADV INT E1P-VT-SC
+\g o haber INT E1P-hacer-SC
+\l O saber como somos.
+
+\t o aaber neen ab'aniik taq,
+\m o aaber neen a-b'an-ik taq
+\p CONJ ADV INT E2S-VT-SC PL
+\g o haber INT E2S-hacer-SC PL
+\l O saber como son.
+
+\t o aaber neen jb'aniik taq,
+\m o aaber neen j-b'an-ik taq
+\p CONJ ADV INT E3S-VT-SC PL
+\g o haber INT E3S-hacer-SC PL
+\l O saber como son.
+
+\t ¿Nemoo xin'an chik?.
+\m neen-moo x-in-'an chik
+\p INT-ADV COM-E1S-VT PART
+\g INT-modo COM-E1S-hacer PART
+\l Pero como hice otra vez.
+
+\t ¿Nemoo xa'an chik?.
+\m neen-moo x-a-'an chik
+\p INT-ADV COM-E2S-VT PART
+\g INT-modo COM-E2S-hacer PART
+\l Pero como hiciste otra vez.
+
+\t ¿Nemoo xj'an chik?.
+\m neen-moo x-j-'an chik
+\p INT-ADV COM-E3S-VT PART
+\g INT-modo COM-E3S-hacer PART
+\l Pero como hizo otra vez.
+
+\t ¿Nemoo xqa'an chik?.
+\m neen-moo x-qa-'an chik
+\p INT-ADV COM-E1P-VT PART
+\g INT-modo COM-E1P-hacer PART
+\l Pero como hicimos otra vez.
+
+\t ¿Nemoo xa'an taq chik?.
+\m neen-moo x-a-'an taq chik
+\p INT-ADV COM-E2S-VT PL PART
+\g INT-modo COM-E2S-hacer PL PART
+\l Pero como hicieron otra vez.
+
+\t ¿Nemoo xj'an taq chik?.
+\m neen-moo x-j-'an taq chik
+\p INT-ADV COM-E3S-VT PL PART
+\g INT-modo COM-E3S-hacer PL PART
+\l Pero como hicieron otra vez.
+
+\t aat xaq li tab'iij chawe,
+\m aat xaq li t-a-b'iij ch-aw-e
+\p PRON PART DEM INC-E2S-VI PREP-E2S-SREL
+\g tú PART DEM INC-E2S-decir PREP-E2S-SREL
+\l Solo eso te puedes decir.
+
+\t re xaq li tijb'iij chawe,
+\m re xaq li ti-j-b'iij ch-aw-e
+\p PRON PART DEM INC-E3S-VI PREP-E2S-SREL
+\g él PART DEM INC-E3S-decir PREP-E2S-SREL
+\l Solo eso te puede decir.
+
+\t re xaq li tijb'iij chawe,
+\m re xaq li ti-j-b'iij ch-aw-e
+\p PRON PART DEM INC-E3S-VI PREP-E2S-SREL
+\g ella PART DEM INC-E3S-decir PREP-E2S-SREL
+\l Solo eso te puede decir.
+
+\t ooj xaq li tqab'iij chawe,
+\m ooj xaq li t-qa-b'iij ch-aw-e
+\p PRON PART DEM INC-E1P-VI PREP-E2S-SREL
+\g nosotros PART DEM INC-E1P-decir PREP-E2S-SREL
+\l Solo eso te puede decir.
+
+\t ataq xaq li tab'iij taq chawe,
+\m ataq xaq li t-a-b'iij taq ch-aw-e
+\p PRON PART DEM INC-E2S-VI PL PREP-E2S-SREL
+\g ustedes PART DEM INC-E2S-decir PL PREP-E2S-SREL
+\l Solo eso te pueden decir.
+
+\t Retaq xaq li tijb'iij taq chawe,
+\m retaq xaq li ti-j-b'iij taq ch-aw-e
+\p PRON PART DEM INC-E3S-VI PL PREP-E2S-SREL
+\g ellos PART DEM INC-E3S-decir PL PREP-E2S-SREL
+\l Solo eso te pueden decir.
+
+\t Retaq xaq li tijb'iij taq chawe,
+\m retaq xaq li ti-j-b'iij taq ch-aw-e
+\p PRON PART DEM INC-E3S-VI PL PREP-E2S-SREL
+\g ellas PART DEM INC-E3S-decir PL PREP-E2S-SREL
+\l Solo eso te pueden decir.
+

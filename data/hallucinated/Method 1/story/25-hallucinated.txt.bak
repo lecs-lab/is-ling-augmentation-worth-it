@@ -1,0 +1,510 @@
+\t Xintze'j jwich.
+\m x-in-tze'-j j-wiich
+\p COM-A1S-VI-SC E3S-SREL
+\g COM-A1S-reir-SC E3S-SREL
+\l Me reí de él.
+
+\t Xattze'j jwich.
+\m x-at-tze'-j j-wiich
+\p COM-A2S-VI-SC E3S-SREL
+\g COM-A2S-reir-SC E3S-SREL
+\l Te reiste de él.
+
+\t Xojze'j jwich.
+\m x-oj-tze'-j j-wiich
+\p COM-A1P-VI-SC E3S-SREL
+\g COM-A1P-reir-SC E3S-SREL
+\l Nos reímos de él.
+
+\t Xattze'j taq jwich.
+\m x-at-tze'-j taq j-wiich
+\p COM-A2S-VI-SC PL E3S-SREL
+\g COM-A2S-reir-SC PL E3S-SREL
+\l Se rieron de él.
+
+\t Xtze'j taq jwich.
+\m x-tze'-j taq j-wiich
+\p COM-VI-SC PL E3S-SREL
+\g COM-reir-SC PL E3S-SREL
+\l Se rieron de él.
+
+\t xinya' re.
+\m x-in-ya' r-e
+\p COM-A1S-VT E3S-SREL
+\g COM-A1S-dar E3S-SREL
+\l Me lo di a él.
+
+\t xatya' re.
+\m x-at-ya' r-e
+\p COM-A2S-VT E3S-SREL
+\g COM-A2S-dar E3S-SREL
+\l Te lo diste a él.
+
+\t xqaya' re.
+\m x-qa-ya' r-e
+\p COM-A1P-VT E3S-SREL
+\g COM-A1P-dar E3S-SREL
+\l Nos lo dimos a él.
+
+\t xatya' taq re.
+\m x-at-ya' taq r-e
+\p COM-A2S-VT PL E3S-SREL
+\g COM-A2S-dar PL E3S-SREL
+\l Se lo dieron a él.
+
+\t xya' taq re.
+\m x-ya' taq r-e
+\p COM-VT PL E3S-SREL
+\g COM-dar PL E3S-SREL
+\l Se lo dieron a él.
+
+\t ta' xink'ul tamb'iyeen,
+\m ta' x-in-k'ul tamb'iyeen
+\p NEG COM-A1S-VT ADV
+\g NEG COM-A1S-recibir tambien
+\l No quise recibir tambien.
+
+\t ta' xatk'ul tamb'iyeen,
+\m ta' x-at-k'ul tamb'iyeen
+\p NEG COM-A2S-VT ADV
+\g NEG COM-A2S-recibir tambien
+\l No quisiste recibir tambien.
+
+\t ta' xojk'ul tamb'iyeen,
+\m ta' x-oj-k'ul tamb'iyeen
+\p NEG COM-A1P-VT ADV
+\g NEG COM-A1P-recibir tambien
+\l No quisimos recibir tambien.
+
+\t ta' xatk'ul taq tamb'iyeen,
+\m ta' x-at-k'ul taq tamb'iyeen
+\p NEG COM-A2S-VT PL ADV
+\g NEG COM-A2S-recibir PL tambien
+\l No quisieron recibir tambien.
+
+\t ta' xk'ul taq tamb'iyeen,
+\m ta' x-k'ul taq tamb'iyeen
+\p NEG COM-VT PL ADV
+\g NEG COM-recibir PL tambien
+\l No quisieron recibir tambien.
+
+\t ruk' re' tinqasaj chik reqa'n man jun,
+\m ruk' re' t-in-q'a-sáj chik r-eqa'n man jun
+\p PART ENF INC-E1S-VT-PAS PART E3S-S ART NUM
+\g PART ENF INC-E1S-bajar-PAS PART E3S-carga ART uno
+\l Entonces bajo la carga del otro.
+
+\t ruk' re' taqasaj chik reqa'n man jun,
+\m ruk' re' t-a-q'a-sáj chik r-eqa'n man jun
+\p PART ENF INC-E2S-VT-PAS PART E3S-S ART NUM
+\g PART ENF INC-E2S-bajar-PAS PART E3S-carga ART uno
+\l Entonces bajas la carga del otro.
+
+\t ruk' re' tijqasaj chik reqa'n man jun,
+\m ruk' re' ti-j-q'a-sáj chik r-eqa'n man jun
+\p PART ENF INC-E3S-VT-PAS PART E3S-S ART NUM
+\g PART ENF INC-E3S-bajar-PAS PART E3S-carga ART uno
+\l Entonces baja la carga del otro.
+
+\t ruk' re' taqasaj taq chik reqa'n man jun,
+\m ruk' re' t-a-q'a-sáj taq chik r-eqa'n man jun
+\p PART ENF INC-E2S-VT-PAS PL PART E3S-S ART NUM
+\g PART ENF INC-E2S-bajar-PAS PL PART E3S-carga ART uno
+\l Entonces bajan la carga del otro.
+
+\t ruk' re' tijqasaj taq chik reqa'n man jun,
+\m ruk' re' ti-j-q'a-sáj taq chik r-eqa'n man jun
+\p PART ENF INC-E3S-VT-PAS PL PART E3S-S ART NUM
+\g PART ENF INC-E3S-bajar-PAS PL PART E3S-carga ART uno
+\l Entonces bajan la carga del otro.
+
+\t xinok chi' puwert li,
+\m x-in-ok chi' puwert li
+\p COM-A1S-VI S S DEM
+\g COM-A1S-entrar boca puerta DEM
+\l Entré en la puerta pues.
+
+\t xatok chi' puwert li,
+\m x-at-ok chi' puwert li
+\p COM-A2S-VI S S DEM
+\g COM-A2S-entrar boca puerta DEM
+\l Entraste en la puerta pues.
+
+\t xok chi' puwert li,
+\m x-ok chi' puwert li
+\p COM-VI S S DEM
+\g COM-entrar boca puerta DEM
+\l Entró en la puerta pues.
+
+\t xojok chi' puwert li,
+\m x-oj-ok chi' puwert li
+\p COM-A1P-VI S S DEM
+\g COM-A1P-entrar boca puerta DEM
+\l Entramos en la puerta pues.
+
+\t xatok taq chi' puwert li,
+\m x-at-ok taq chi' puwert li
+\p COM-A2S-VI PL S S DEM
+\g COM-A2S-entrar PL boca puerta DEM
+\l Entraron en la puerta pues.
+
+\t xinel b'ik
+\m x-in-el b'ik
+\p COM-A1S-VI DIR
+\g COM-A1S-salir DIR
+\l Me salí yo.
+
+\t xatel b'ik
+\m x-at-el b'ik
+\p COM-A2S-VI DIR
+\g COM-A2S-salir DIR
+\l Te saliste tú.
+
+\t xel b'ik
+\m x-el b'ik
+\p COM-VI DIR
+\g COM-salir DIR
+\l Se salió él.
+
+\t xel b'ik
+\m x-el b'ik
+\p COM-VI DIR
+\g COM-salir DIR
+\l Se salió ella.
+
+\t xatel taq b'ik
+\m x-at-el taq b'ik
+\p COM-A2S-VI PL DIR
+\g COM-A2S-salir PL DIR
+\l Se salieron ustedes.
+
+\t Ta' akun tino'jaj
+\m ta' a-kwin ti-no'j-aj
+\p NEG E2S-VI INC-S-PART
+\g NEG E2S-poder INC-conocimiento-PART
+\l Talvbez que tú no tengas tus ideas.
+
+\t Ta' jkun tino'jaj
+\m ta' j-kwin ti-no'j-aj
+\p NEG E3S-VI INC-S-PART
+\g NEG E3S-poder INC-conocimiento-PART
+\l Talvbez que él no tenga sus ideas.
+
+\t Ta' jkun tino'jaj
+\m ta' j-kwin ti-no'j-aj
+\p NEG E3S-VI INC-S-PART
+\g NEG E3S-poder INC-conocimiento-PART
+\l Talvbez que ella no tenga sus ideas.
+
+\t Ta' qakun tino'jaj
+\m ta' qa-kwin ti-no'j-aj
+\p NEG E1P-VI INC-S-PART
+\g NEG E1P-poder INC-conocimiento-PART
+\l Talvbez que nosotros no tengamos nuestros ideas.
+
+\t Ta' akun taq tino'jaj
+\m ta' a-kwin taq ti-no'j-aj
+\p NEG E2S-VI PL INC-S-PART
+\g NEG E2S-poder PL INC-conocimiento-PART
+\l Talvbez que ustedes no tengan sus ideas.
+
+\t Ta' jkun taq tino'jaj
+\m ta' j-kwin taq ti-no'j-aj
+\p NEG E3S-VI PL INC-S-PART
+\g NEG E3S-poder PL INC-conocimiento-PART
+\l Talvbez que ellos no tengan sus ideas.
+
+\t Ta' jkun taq tino'jaj
+\m ta' j-kwin taq ti-no'j-aj
+\p NEG E3S-VI PL INC-S-PART
+\g NEG E3S-poder PL INC-conocimiento-PART
+\l Talvbez que ellas no tengan sus ideas.
+
+\t ya xakosi' laq chaak.
+\m ya x-a-kos-i' laq chaak
+\p VOC COM-E2S-VI-ENF PREP S
+\g ya COM-E2S-cansar-ENF PREP trabajo
+\l Ya te cansaste en el trabajo.
+
+\t ya xjkosi' laq chaak.
+\m ya x-j-kos-i' laq chaak
+\p VOC COM-E3S-VI-ENF PREP S
+\g ya COM-E3S-cansar-ENF PREP trabajo
+\l Ya se cansó en el trabajo.
+
+\t ya xqakosi' laq chaak.
+\m ya x-qa-kos-i' laq chaak
+\p VOC COM-E1P-VI-ENF PREP S
+\g ya COM-E1P-cansar-ENF PREP trabajo
+\l Ya nos cansamos en el trabajo.
+
+\t ya xakosi' taq laq chaak.
+\m ya x-a-kos-i' taq laq chaak
+\p VOC COM-E2S-VI-ENF PL PREP S
+\g ya COM-E2S-cansar-ENF PL PREP trabajo
+\l Ya se cansaron en el trabajo.
+
+\t ya xjkosi' taq laq chaak.
+\m ya x-j-kos-i' taq laq chaak
+\p VOC COM-E3S-VI-ENF PL PREP S
+\g ya COM-E3S-cansar-ENF PL PREP trabajo
+\l Ya se cansaron en el trabajo.
+
+\t Jwi'l pobril xape rk'i kompayr rik,
+\m j-wi'l pobre-il x-a-pe r-ki' kompayr rik
+\p E3S-SREL ADJ-SAB COM-E2S-VI E3S-SREL S ADJ
+\g E3S-SREL pobre-SAB COM-E2S-venir E3S-SREL compadre rico
+\l Por pobreza fuiste con el compadre rico.
+
+\t Jwi'l pobril xjpe rk'i kompayr rik,
+\m j-wi'l pobre-il x-j-pe r-ki' kompayr rik
+\p E3S-SREL ADJ-SAB COM-E3S-VI E3S-SREL S ADJ
+\g E3S-SREL pobre-SAB COM-E3S-venir E3S-SREL compadre rico
+\l Por pobreza fue con el compadre rico.
+
+\t Jwi'l pobril xqape rk'i kompayr rik,
+\m j-wi'l pobre-il x-qa-pe r-ki' kompayr rik
+\p E3S-SREL ADJ-SAB COM-E1P-VI E3S-SREL S ADJ
+\g E3S-SREL pobre-SAB COM-E1P-venir E3S-SREL compadre rico
+\l Por pobreza fuimos con el compadre rico.
+
+\t Jwi'l pobril xape taq rk'i kompayr rik,
+\m j-wi'l pobre-il x-a-pe taq r-ki' kompayr rik
+\p E3S-SREL ADJ-SAB COM-E2S-VI PL E3S-SREL S ADJ
+\g E3S-SREL pobre-SAB COM-E2S-venir PL E3S-SREL compadre rico
+\l Por pobreza fueron con el compadre rico.
+
+\t Jwi'l pobril xjpe taq rk'i kompayr rik,
+\m j-wi'l pobre-il x-j-pe taq r-ki' kompayr rik
+\p E3S-SREL ADJ-SAB COM-E3S-VI PL E3S-SREL S ADJ
+\g E3S-SREL pobre-SAB COM-E3S-venir PL E3S-SREL compadre rico
+\l Por pobreza fueron con el compadre rico.
+
+\t xine'k'.
+\m x-in-e-k'
+\p COM-A1S-VI-SC
+\g COM-A1S-ir-SC
+\l Me fui.
+
+\t xate'k'.
+\m x-at-e-k'
+\p COM-A2S-VI-SC
+\g COM-A2S-ir-SC
+\l Te fuiste.
+
+\t xoje'k'.
+\m x-oj-e-k'
+\p COM-A1P-VI-SC
+\g COM-A1P-ir-SC
+\l Nos fuimos.
+
+\t xate'k' taq.
+\m x-at-e-k' taq
+\p COM-A2S-VI-SC PL
+\g COM-A2S-ir-SC PL
+\l Se fueron.
+
+\t xe'k' taq.
+\m x-e-k' taq
+\p COM-VI-SC PL
+\g COM-ir-SC PL
+\l Se fueron.
+
+\t ta' xinq'ab'erk,
+\m ta' x-in-q'ab'er-k
+\p NEG COM-A1S-VT-SC
+\g NEG COM-A1S-embolar-SC
+\l ¿No me embolé?
+
+\t ta' xatq'ab'erk,
+\m ta' x-at-q'ab'er-k
+\p NEG COM-A2S-VT-SC
+\g NEG COM-A2S-embolar-SC
+\l ¿No te embolaste?
+
+\t ta' xojq'ab'erk,
+\m ta' x-oj-q'ab'er-k
+\p NEG COM-A3S-VT-SC
+\g NEG COM-A3S-embolar-SC
+\l ¿No se emboló?
+
+\t ta' xqaq'ab'erk,
+\m ta' x-qa-q'ab'er-k
+\p NEG COM-A1P-VT-SC
+\g NEG COM-A1P-embolar-SC
+\l ¿No nos embolamos?
+
+\t ta' xatq'ab'erk taq,
+\m ta' x-at-q'ab'er-k taq
+\p NEG COM-A2S-VT-SC PL
+\g NEG COM-A2S-embolar-SC PL
+\l ¿No se embolaron?
+
+\t ta' xojq'ab'erk taq,
+\m ta' x-oj-q'ab'er-k taq
+\p NEG COM-A3S-VT-SC PL
+\g NEG COM-A3S-embolar-SC PL
+\l ¿No se embolaron?
+
+\t lori ajki' tinil.
+\m lori ajki' t-in-il
+\p ADV PART INC-E1S-VT
+\g ahora PART INC-E1S-ver
+\l Ahora no lo he visto.
+
+\t lori ajki' tawil.
+\m lori ajki' t-aw-il
+\p ADV PART INC-E2S-VT
+\g ahora PART INC-E2S-ver
+\l Ahora no lo has visto.
+
+\t lori ajki' tril.
+\m lori ajki' t-r-il
+\p ADV PART INC-E3S-VT
+\g ahora PART INC-E3S-ver
+\l Ahora no lo ha visto.
+
+\t lori ajki' tawil taq.
+\m lori ajki' t-aw-il taq
+\p ADV PART INC-E2S-VT PL
+\g ahora PART INC-E2S-ver PL
+\l Ahora no lo han visto.
+
+\t lori ajki' tril taq.
+\m lori ajki' t-r-il taq
+\p ADV PART INC-E3S-VT PL
+\g ahora PART INC-E3S-ver PL
+\l Ahora no lo han visto.
+
+\t incha' iin,
+\m in-cha' iin
+\p A1S-VT PRON
+\g A1S-decir yo
+\l Que digo yo.
+
+\t cha' re,
+\m cha' re
+\p VT PRON
+\g decir él
+\l Que dice él.
+
+\t cha' re,
+\m cha' re
+\p VT PRON
+\g decir ella
+\l Que dice ella.
+
+\t ojcha' ooj,
+\m oj-cha' ooj
+\p A1P-VT PRON
+\g A1P-decir nosotros
+\l Que decimos nosotros.
+
+\t atcha' taq ataq,
+\m at-cha' taq ataq
+\p A2S-VT PL PRON
+\g A2S-decir PL ustedes
+\l Que dicen ustedes.
+
+\t cha' taq retaq,
+\m cha' taq retaq
+\p VT PL PRON
+\g decir ellos
+\l Que dicen ellos.
+
+\t cha' taq retaq,
+\m cha' taq retaq
+\p VT PL PRON
+\g decir ellas
+\l Que dicen ellas.
+
+\t Si puwes xinloq' ulew,
+\m si pwes x-in-loq' uleew
+\p CONJ ADV COM-E1S-VT S
+\g CONJ pues COM-E1S-comprar tierra
+\l Si pues compré terreno.
+
+\t Si puwes xaloq' ulew,
+\m si pwes x-a-loq' uleew
+\p CONJ ADV COM-E2S-VT S
+\g CONJ pues COM-E2S-comprar tierra
+\l Si pues compraste terreno.
+
+\t Si puwes xloq' ulew,
+\m si pwes x-loq' uleew
+\p CONJ ADV COM-VT S
+\g CONJ pues COM-comprar tierra
+\l Si pues compró terreno.
+
+\t Si puwes xqaloq' ulew,
+\m si pwes x-qa-loq' uleew
+\p CONJ ADV COM-E1P-VT S
+\g CONJ pues COM-E1P-comprar tierra
+\l Si pues compramos terreno.
+
+\t Si puwes xaloq' taq ulew,
+\m si pwes x-a-loq' taq uleew
+\p CONJ ADV COM-E2S-VT PL S
+\g CONJ pues COM-E2S-comprar PL tierra
+\l Si pues compraron terreno.
+
+\t xawa'x b'aa ab'aj xata'ch chi,
+\m x-a-wa'x b'aa ab'aj x-a-ta'-ch chi
+\p COM-E2S-VI SREL S COM-E2S-VT-DIR PREP
+\g COM-E2S-estar SREL piedra COM-E2S-oír-DIR PREP
+\l Estuviste sobre la piedra para oír.
+
+\t xjwa'x b'aa ab'aj xjta'ch chi,
+\m x-j-wa'x b'aa ab'aj x-j-ta'-ch chi
+\p COM-E3S-VI SREL S COM-E3S-VT-DIR PREP
+\g COM-E3S-estar SREL piedra COM-E3S-oír-DIR PREP
+\l Estuvo sobre la piedra para oír.
+
+\t xqawa'x b'aa ab'aj xqata'ch chi,
+\m x-qa-wa'x b'aa ab'aj x-qa-ta'-ch chi
+\p COM-E1P-VI SREL S COM-E1P-VT-DIR PREP
+\g COM-E1P-estar SREL piedra COM-E1P-oír-DIR PREP
+\l Estuvimos sobre la piedra para oír.
+
+\t xawa'x taq b'aa ab'aj xata'ch taq chi,
+\m x-a-wa'x taq b'aa ab'aj x-a-ta'-ch taq chi
+\p COM-E2S-VI PL SREL S COM-E2S-VT-DIR PL PREP
+\g COM-E2S-estar PL SREL piedra COM-E2S-oír-DIR PL PREP
+\l Estuvieron sobre la piedra para oír.
+
+\t xjwa'x taq b'aa ab'aj xjta'ch taq chi,
+\m x-j-wa'x taq b'aa ab'aj x-j-ta'-ch taq chi
+\p COM-E3S-VI PL SREL S COM-E3S-VT-DIR PL PREP
+\g COM-E3S-estar PL SREL piedra COM-E3S-oír-DIR PL PREP
+\l Estuvieron sobre la piedra para oír.
+
+\t xinte' rka' jaa, ab'aj
+\m x-in-te' rka' jaa ab'aj
+\p COM-E1S-VT PART S S
+\g COM-E1S-encontrar PART casa piedra
+\l Si fui a encontrar la casa de piedra.
+
+\t xate' rka' jaa, ab'aj
+\m x-a-te' rka' jaa ab'aj
+\p COM-E2S-VT PART S S
+\g COM-E2S-encontrar PART casa piedra
+\l Si fuiste a encontrar la casa de piedra.
+
+\t xqate' rka' jaa, ab'aj
+\m x-qa-te' rka' jaa ab'aj
+\p COM-E1P-VT PART S S
+\g COM-E1P-encontrar PART casa piedra
+\l Si fuimos a encontrar la casa de piedra.
+
+\t xate' taq rka' jaa, ab'aj
+\m x-a-te' taq rka' jaa ab'aj
+\p COM-E2S-VT PL PART S S
+\g COM-E2S-encontrar PL PART casa piedra
+\l Si fueron a encontrar la casa de piedra.
+
+\t xjte' taq rka' jaa, ab'aj
+\m x-j-te' taq rka' jaa ab'aj
+\p COM-E3S-VT PL PART S S
+\g COM-E3S-encontrar PL PART casa piedra
+\l Si fueron a encontrar la casa de piedra.
+

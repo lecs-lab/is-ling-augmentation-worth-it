@@ -1,0 +1,6101 @@
+(From Uspanteko dict, pg.32)
+\t xinq'alajínik
+\m x-in-q'-alajín-ik
+\p COM-A1S-E1P-VT-SC
+\g COM-A1S-E1P-aparecer-SC
+\l Volví a aparecer.
+\t xatq'alajínik
+\m x-at-q'-alajín-ik
+\p COM-A2S-E1P-VT-SC
+\g COM-A2S-E1P-aparecer-SC
+\l Volviste a aparecer.
+
+\t xq'alajínik
+\m x-q'-alajín-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-aparecer-SC
+\l Volvió a aparecer.
+
+\t xojq'alajínik
+\m x-oj-q'-alajín-ik
+\p COM-A1P-E1P-VT-SC
+\g COM-A1P-E1P-aparecer-SC
+\l Volvimos a aparecer.
+
+\t xatq'alajínik taq
+\m x-at-q'-alajín-ik taq
+\p COM-A2S-E1P-VT-SC PL
+\g COM-A2S-E1P-aparecer-SC PL
+\l Volvieron a aparecer.
+(????Do we get rid of suffix in plural???)
+\t xq'alajínik taq
+\m x-q'-alajín-ik taq
+\p COM-E1P-VT-SC PL
+\g COM-E1P-aparecer-SC PL
+\l Volvieron a aparecer.
+
+\t tinq'alajínik
+\m t-in-q'-alajín-ik
+\p INC-A1S-E1P-VT-SC
+\g INC-A1S-E1P-aparecer-SC
+\l Vuelvo a aparecer.
+
+\t tatq'alajínik
+\m t-at-q'-alajín-ik
+\p INC-A2S-E1P-VT-SC
+\g INC-A2S-E1P-aparecer-SC
+\l Vuelves a aparecer.
+
+\t tq'alajínik
+\m t-q'-alajín-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-aparecer-SC
+\l Vuelve a aparecer.
+
+\t tojq'alajínik
+\m t-oj-q'-alajín-ik
+\p INC-A1P-E1P-VT-SC
+\g INC-A1P-E1P-aparecer-SC
+\l Volvemos a aparecer.
+
+\t tatq'alajínik taq
+\m t-at-q'-alajín-ik taq
+\p INC-A2S-E1P-VT-SC PL
+\g INC-A2S-E1P-aparecer-SC PL
+\l Vuelven a aparecer.
+
+\t tq'alajínik taq
+\m t-q'-alajín-ik taq
+\p INC-E1P-VT-SC PL
+\g INC-E1P-aparecer-SC PL
+\l Vuelven a aparecer.
+
+\t tijin tinq'alajínik
+\m tijin t-in-q'-alajín-ik
+\p PROG INC-A1S-E1P-VT-SC
+\g PROG INC-A1S-E1P-aparecer-SC
+\l Estoy volviendo a aparecer.
+
+\t tijin tatq'alajínik
+\m tijin t-at-q'-alajín-ik
+\p PROG INC-A2S-E1P-VT-SC
+\g PROG INC-A2S-E1P-aparecer-SC
+\l Estás volviendo a aparecer.
+
+\t tijin tq'alajínik
+\m tijin t-q'-alajín-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-aparecer-SC
+\l Está volviendo a aparecer.
+
+\t tijin tojq'alajínik
+\m tijin t-oj-q'-alajín-ik
+\p PROG INC-A1P-E1P-VT-SC
+\g PROG INC-A1P-E1P-aparecer-SC
+\l Estamos volviendo a aparecer.
+
+\t tijin tatq'alajínik taq
+\m tijin t-at-q'-alajín-ik taq
+\p PROG INC-A2S-E1P-VT-SC PL
+\g PROG INC-A2S-E1P-aparecer-SC PL
+\l Están volviendo a aparecer.
+
+\t tijin tq'alajínik taq
+\m tijin t-q'-alajín-ik taq
+\p PROG INC-E1P-VT-SC PL
+\g PROG INC-E1P-aparecer-SC PL
+\l Están volviendo a aparecer.
+(From Uspanteko dict pg 33)
+\t ti'elechí'nik
+\m ti-'elechí'n-ik
+\p INC-VT-SC
+\g INC-bromear-SC
+\l Lo bromea
+
+\t t'inelechí'nik
+\m t-in-'elechí'n-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-bromear-SC
+\l Lo bromeo
+
+\t t'awelechí'nik
+\m t-aw-'elechí'n-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-bromear-SC
+\l Lo bromeas
+
+\t t'qelechí'nik
+\m t-q-'elechí'n-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-bromear-SC 
+\l Lo bromeamos
+
+\t t'awelechí'nik taq
+\m t-aw-'elechí'n-ik taq
+\p INC-E2S-VT-SC PL
+\g INC-E2S-bromear-SC PL
+\l Lo bromean
+
+\t ti'elechí'nik taq
+\m ti-'elechí'n-ik taq
+\p INC-VT-SC PL
+\g INC-bromear-SC PL
+\l Lo bromean
+
+\t x'inelechí'nik
+\m x-in-'elechí'n-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-bromear-SC
+\l Lo bromeé
+
+\t x'awelechí'nik
+\m x-aw-'elechí'n-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-bromear-SC
+\l Lo bromeaste
+
+\t x'elechí'nik
+\m x-'elechí'n-ik
+\p COM-VT-SC
+\g COM-bromear-SC
+\l Lo bromeó
+
+\t x'qelechí'nik
+\m x-q-'elechí'n-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-bromear-SC 
+\l Lo bromeamos
+
+\t x'awelechí'nik taq
+\m x-aw-'elechí'n-ik taq
+\p COM-E2S-VT-SC PL
+\g COM-E2S-bromear-SC PL
+\l Lo bromearon
+
+\t x'elechí'nik taq
+\m x-'elechí'n-ik taq
+\p COM-VT-SC PL
+\g COM-bromear-SC PL
+\l Lo bromearon
+
+\t tijin t'inelechí'nik
+\m tijin t-in-'elechí'n-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-bromear-SC
+\l Lo estoy bromeando
+
+\t tijin t'awelechí'nik
+\m tijin t-aw-'elechí'n-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-bromear-SC
+\l Lo estás bromeando
+
+\t tijin ti'elechí'nik
+\m tijin ti-'elechí'n-ik
+\p PROG INC-VT-SC
+\g PROG INC-bromear-SC
+\l Lo está bromeando
+
+\t tijin t'qelechí'nik
+\m tijin t-q-'elechí'n-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-bromear-SC
+\l Lo estamos bromeando
+
+\t tijin t'awelechí'nik taq
+\m tijin t-aw-'elechí'n-ik taq
+\p PROG INC-E2S-VT-SC PL
+\g PROG INC-E2S-bromear-SC PL
+\l Lo están bromeando
+
+\t tijin ti'elechí'nik taq
+\m tijin ti-'elechí'n-ik taq
+\p PROG INC-VT-SC PL
+\g PROG INC-bromear-SC PL
+\l Lo están bromeando 
+
+\t m'awelechí'nik
+\m m-aw-'elechí'n-ik
+\p IMP-E2S-VT-SC
+\g IMP-E2S-bromear-SC
+\l No lo bromees
+
+\t m'elechí'nik
+\m m-'elechí'n-ik
+\p IMP-VT-SC
+\g IMP-bromear-SC
+\l No lo bromee
+
+\t m'qelechí'nik
+\m m-q-'elechí'n-ik
+\p IMP-E1P-VT-SC
+\g IMP-E1P-bromear-SC
+\l No lo bromeemos
+
+\t m'awelechí'nik taq
+\m m-aw-'elechí'n-ik taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-bromear-SC PL
+\l No lo bromeen
+
+\t m'elechí'nik taq
+\m m-'elechí'n-ik taq
+\p IMP-VT-SC PL
+\g IMP-bromear-SC PL
+\l No lo bromeen
+(****REVIEW IK ENDING)
+\t k'awelechí'ne'
+\m k-aw-'elechí'n-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-bromear-SC
+\l Lo bromea
+
+\t awelechí'n
+\m aw-'elechí'n
+\p IMP-E3S-VT
+\g IMP-E3S-bromear-SC
+\l Lo bromee
+
+\t qelechí'n
+\m q-'elechí'n
+\p IMP-E1P-VT
+\g IMP-E1P-bromear-SC
+\l Lo bromeemos
+
+\t k'awelechí'ne' taq
+\m k-aw-'elechí'n-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-bromear-SC PL
+\l Lo bromeen
+
+\t awelechí'n taq
+\m aw-'elechí'n taq
+\p IMP-E3S-VT PL
+\g IMP-E3S-bromear-SC PL
+\l Lo bromeen
+
+\t in'alejínik
+\m in-alejín-ik
+\p E1S-VT-SC
+\g E1S-reaparecer-SC
+\l Voy a reaparecer
+
+\t aw'alejínik
+\m aw-alejín-ik
+\p E2S-VT-SC
+\g E2S-reaparecer-SC
+\l Vas a reaparecer
+
+\t r'alejínik
+\m r-alejín-ik
+\p E3S-VT-SC
+\g E3S-reaparecer-SC
+\l Va a reaparecer
+
+\t q'alejínik
+\m q-alejín-ik
+\p E1P-VT-SC
+\g E1P-reaparecer-SC
+\l Vamos a reaparecer
+
+\t aw'alejínik taq
+\m aw-alejín-ik taq
+\p E2S-VT-SC PL
+\g E2S-reaparecer-SC PL
+\l Van a reaparecer
+
+\t r'alejínik taq
+\m r-alejín-ik taq
+\p E3S-VT-SC PL
+\g E3S-reaparecer-SC PL
+\l Van a reaparecer
+
+\t xin'alejínik
+\m x-in-alejín-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-reaparecer-SC
+\l Fui a reaparecer
+
+\t xaw'alejínik
+\m x-aw-alejín-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-reaparecer-SC
+\l Fuiste a reaparecer
+
+\t xr'alejínik
+\m x-r-alejín-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-reaparecer-SC
+\l Fue a reaparecer
+
+\t xq'alejínik
+\m x-q-alejín-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-reaparecer-SC
+\l Fuimos a reaparecer
+
+\t xan'alejínik taq
+\m x-aw-alejín-ik taq
+\p COM-E2S-VT-SC PL
+\g COM-E2S-reaparecer-SC PL
+\l Fueron a reaparecer
+
+\t xr'alejínik taq
+\m x-r-alejín-ik taq
+\p COM-E3S-VT-SC PL
+\g COM-E3S-reaparecer-SC PL
+\l Fueron a reaparecer
+
+\t tin'alejínik
+\m t-in-alejín-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-reaparecer-SC
+\l Iba a reaparecer
+
+\t taw'alejínik
+\m t-aw-alejín-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-reaparecer-SC
+\l Ibas a reaparecer
+
+\t tr'alejínik
+\m t-r-alejín-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-reaparecer-SC
+\l Iba a reaparecer
+
+\t tq'alejínik
+\m t-q-alejín-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-reaparecer-SC
+\l Ibamos a reaparecer
+
+\t taw'alejínik taq
+\m t-aw-alejín-ik taq
+\p INC-E2S-VT-SC PL
+\g INC-E2S-reaparecer-SC PL
+\l Iban a reaparecer
+
+\t tr'alejínik taq
+\m t-r-alejín-ik taq
+\p INC-E3S-VT-SC PL
+\g INC-E3S-reaparecer-SC PL
+\l Iban a reaparecer
+
+\t tijin tin'alejínik
+\m tijin t-in-alejín-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-reaparecer-SC
+\l Estoy yendo a reaparecer
+
+\t tijin taw'alejínik
+\m tijin t-aw-alejín-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-reaparecer-SC
+\l Estás yendo a reaparecer
+
+\t tijin tr'alejínik
+\m tijin t-r-alejín-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-reaparecer-SC
+\l Está yendo a reaparecer
+
+\t tijin tq'alejínik
+\m tijin t-q-alejín-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-reaparecer-SC
+\l Estamos yendo a reaparecer
+
+\t tijin taw'alejínik taq
+\m tijin t-aw-alejín-ik taq
+\p PROG INC-E2S-VT-SC PL 
+\g PROG INC-E2S-reaparecer-SC PL
+\l Están yendo a reaparecer
+
+\t tijin tr'alejínik taq
+\m tijin t-r-alejín-ik taq
+\p PROG INC-E3S-VT-SC PL
+\g PROG INC-E3S-reaparecer-SC PL
+\l Están yendo a reaparecer
+
+\t maw'alejínik
+\m m-aw-alejín-ik
+\p IMP-E2S-VT-SC
+\g IMP-E2S-reaparecer-SC
+\l No vayas a reaparecer
+
+\t mar'alejínik
+\m ma-r-alejín-ik
+\p IMP-E3S-VT-SC
+\g IMP-E3S-reaparecer-SC
+\l No vaya a reaparecer
+
+\t mq'alejínik
+\m m-q-alejín-ik
+\p IMP-E1P-VT-SC
+\g IMP-E1P-reaparecer-SC
+\l No vayamos a reaparecer
+
+\t maw'alejínik taq
+\m m-aw-alejín-ik taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-reaparecer-SC PL
+\l No vayan a reaparecer
+
+\t mar'alejínik taq
+\m ma-r-alejín-ik taq
+\p IMP-E3S-VT-SC PL
+\g IMP-E3S-reaparecer-SC PL
+\l No vayan a reaparecer
+***CHECK imperative forms****
+\t kaw'alejíne'
+\m k-aw-alejín-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-reaparecer-SC
+\l Ve a reaparecer
+
+\t r'alejíne'
+\m r-alejín-e'
+\p E3S-VT-SC
+\g E3S-reaparecer-SC
+\l Vaya a reaparecer
+
+\t q'alejíne'
+\m q-alejín-e'
+\p E1P-VT-SC
+\g E1P-reaparecer-SC
+\l Vayamos a reaparecer
+
+\t kaw'alejíne' taq
+\m k-aw-alejín-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-reaparecer-SC PL
+\l Vayan a reaparecer
+
+\t r'alejíne' taq
+\m r-alejín-e' taq
+\p E3S-VT-SC PL
+\g E3S-reaparecer-SC PL
+\l Vayan a reaparecer
+
+\t tin'autuwanik
+\m t-in-autwan-ik
+\p INC-A1S-VI-SC
+\g INC-A1S-aullar-SC
+\l Aúllo
+
+\t tat'autuwanik
+\m t-at-autwan-ik
+\p INC-A2S-VI-SC
+\g INC-A2S-aullar-SC
+\l Aúllas
+
+\t ti'autuwanik
+\m ti-autwan-ik
+\p INC-VI-SC
+\g INC-aullar-SC
+\l Aúlla
+
+\t toj'autuwanik
+\m t-oj-autwan-ik
+\p INC-A1P-VI-SC
+\g INC-A1P-aullar-SC
+\l Aullamos
+
+\t tat'autuwanik taq
+\m t-at-autwan-ik taq
+\p INC-A2S-VI PL 
+\g INC-A2S-aullar PL
+\l Aúllan
+
+\t ti'autuwan taq
+\m ti-autwan taq
+\p INC-VI PL
+\g INC-aullar PL
+\l Aúllan
+
+\t xin'autuwanik
+\m x-in-autwan-ik
+\p COM-A1S-VI-SC
+\g COM-A1S-aullar-SC
+\l Aúllé
+
+\t xat'autuwanik
+\m x-at-autwan-ik
+\p COM-A2S-VI-SC
+\g COM-A2S-aullar-SC
+\l Aúllaste
+
+\t x'autuwanik
+\m x-autwan-ik
+\p COM-VI-SC
+\g COM-aullar-SC
+\l Aúlló
+
+\t xat'autuwan taq
+\m x-at-autwan taq
+\p COM-A2S-VI PL
+\g COM-A2S-aullar PL
+\l Aúllaron
+
+\t x'autuwan taq
+\m x-autwan taq
+\p COM-VI PL
+\g COM-aullar PL
+\l Aúllaron
+
+\t tijin tin'autuwanik
+\m tijin t-in-autwan-ik
+\p PROG INC-A1S-VI-SC
+\g PROG INC-A1S-aullar-SC
+\l Estoy aullando
+
+\t tijin tat'autuwanik
+\m tijin t-at-autwan-ik
+\p PROG INC-A2S-VI-SC
+\g PROG INC-A2S-aullar-SC
+\l Estás aullando
+
+\t tijin t'autuwanik
+\m tijin t-autwan-ik
+\p PROG INC-VI-SC
+\g PROG INC-aullar-SC
+\l Está aullando
+
+\t tijin tq'autuwanik
+\m tijin t-q-autwan-ik
+\p PROG INC-A1P-VI-SC
+\g PROG INC-A1P-aullar-SC
+\l Estamos aullando
+
+\t tijin tat'autuwan taq
+\m tijin t-at-autwan taq
+\p PROG INC-A2S-VI-SC PL
+\g PROG INC-A2S-aullar-SC PL
+\l Están aullando
+
+\t tijin t'autuwan taq
+\m tijin t-autwan taq
+\p PROG INC-VI-SC PL
+\g PROG INC-aullar-SC PL
+\l Están aullando
+
+\t mat'autuwanik
+\m m-at-autwan-ik
+\p IMP-A2S-VI-SC
+\g IMP-A2S-aullar-SC
+\l No aúlles
+
+\t m'autuwanik
+\m m-autwan-ik
+\p IMP-VI-SC
+\g IMP-aullar-SC
+\l No aúlle
+
+\t mat'autuwanik
+\m m-at-autwan-ik
+\p IMP-A2S-VI-SC
+\g IMP-A2S-aullar-SC
+\l No aullemos
+
+\t mat'autuwan taq
+\m m-at-autwan taq
+\p IMP-A2S-VI PL
+\g IMP-A2S-aullar PL
+\l No aúllen
+
+\t m'autuwan taq
+\m m-autwan taq
+\p IMP-VI PL
+\g IMP-aullar PL
+\l No aúllen
+
+\t at'autuwanoq
+\m at-autwan-oq
+\p A2S-VI-SC
+\g A2S-aullar-SC
+\l Aúlla
+
+\t autuwanoq
+\m autwan-oq
+\p VI-SC
+\g aullar-SC
+\l Aúlle
+
+\t q'autuwanoq
+\m q-autwan-oq
+\p A1P-VI-SC
+\g A1P-aullar-SC
+\l Aullemos
+
+\t at'autuwan taq
+\m at-autwan taq
+\p A2S-VI PL
+\g A2S-aullar PL
+\l Aúllen
+
+\t autuwan taq
+\m autwan taq
+\p VI PL
+\g aullar PL
+\l Aúllen
+(Uspanteko dict pg 35)
+\t tin'at'iximán-ik
+\m t-in-at'iximán-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-estornudar-SC
+\l Estaba estornudando 
+
+\t taw'at'iximán-ik
+\m t-aw-at'iximán-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-estornudar-SC
+\l Estabas estornudando 
+
+\t ti'at'iximán-ik
+\m ti-at'iximán-ik
+\p INC-VT-SC
+\g INC-estornudar-SC
+\l Estaba estornudando
+
+\t tq'at'iximán-ik
+\m t-q-at'iximán-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-estornudar-SC
+\l Estabamos estornudando 
+
+\t taw'at'iximán taq
+\m t-aw-at'iximán taq
+\p INC-E2S-VT PL
+\g INC-E2S-estornudar PL
+\l Estaban estornudando 
+
+\t ti'at'iximán taq
+\m ti-at'iximán taq
+\p INC-VT PL
+\g INC-estornudar PL
+\l Estaban estornudando
+
+\t xin'at'iximán-ik
+\m x-in-at'iximán-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-estornudar-SC
+\l Estornudé
+
+\t xaw'at'iximán-ik
+\m x-aw-at'iximán-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-estornudar-SC
+\l Estornudaste
+
+\t xr'at'iximán-ik
+\m x-r-at'iximán-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-estornudar-SC
+\l Estornudó
+
+\t xq'at'iximán-ik
+\m x-q-at'iximán-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-estornudar-SC
+\l Estornudamos
+
+\t xaw'at'iximán taq
+\m x-aw-at'iximán taq
+\p COM-E2S-VT PL
+\g COM-E2S-estornudar PL
+\l Estornudaron
+
+\t xr'at'iximán taq
+\m x-r-at'iximán taq
+\p COM-E3S-VT PL
+\g COM-E3S-estornudar PL
+\l Estornudaron
+
+\t xinatz'amájik
+\m x-in-atz'amáj-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-salarlo-SC
+\l Lo salé
+
+\t xawatz'amájik
+\m x-aw-atz'amáj-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-salarlo-SC
+\l Lo salaste
+
+\t xratz'amájik
+\m x-r-atz'amáj-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-salarlo-SC
+\l Lo saló
+
+\t xqatz'amájik
+\m x-q-atz'amáj-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-salarlo-SC
+\l Lo salamos
+
+\t xawatz'amáj taq
+\m x-aw-atz'amáj taq
+\p COM-E2S-VT PL
+\g COM-E2S-salarlo PL
+\l Lo salaron
+
+\t xratz'amáj taq
+\m x-r-atz'amáj taq
+\p COM-E3S-VT PL
+\g COM-E3S-salarlo PL
+\l Lo salaron
+
+\t tinatz'amájik
+\m t-in-atz'amáj-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-salarlo-SC
+\l Lo salo
+
+\t tawatz'amájik
+\m t-aw-atz'amáj-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-salarlo-SC
+\l Lo salas
+
+\t tijwatz'amájik
+\m ti-j-atz'amáj-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-salarlo-SC
+\l Lo sala
+
+\t tqatz'amájik
+\m t-q-atz'amáj-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-salarlo-SC
+\l Lo salamos
+
+\t tawatz'amáj taq
+\m t-aw-atz'amáj taq
+\p INC-E2S-VT PL
+\g INC-E2S-salarlo PL
+\l Lo salan
+
+\t tijwatz'amáj taq
+\m ti-j-atz'amáj taq
+\p INC-E3S-VT PL
+\g INC-E3S-salarlo PL
+\l Lo salan
+
+\t tijin tinatz'amájik
+\m tijin t-in-atz'amáj-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-salarlo-SC
+\l Lo estoy salando
+
+\t tijin tawatz'amájik
+\m tijin t-aw-atz'amáj-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-salarlo-SC
+\l Lo estás salando
+
+\t tijin tijatz'amájik
+\m tijin ti-j-atz'amáj-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-salarlo-SC
+\l Lo está salandoc
+
+\t tijin tqatz'amájik
+\m tijin t-q-atz'amáj-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-salarlo-SC
+\l Lo estamos salando
+
+\t tijin tawatz'amáj taq
+\m tijin t-aw-atz'amáj taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-salarlo PL
+\l Lo están salando
+
+\t tijin tijatz'amáj taq
+\m tijin ti-j-atz'amáj taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-salarlo PL
+\l Lo están salando
+
+\t mawatz'amájik
+\m m-aw-atz'amáj-ik
+\p IMP-E2S-VT-SC
+\g IMP-E2S-salarlo-SC
+\l No lo sales
+
+\t mratz'amájik
+\m m-r-atz'amáj-ik
+\p IMP-E3S-VT-SC
+\g IMP-E3S-salarlo-SC
+\l No lo sale
+
+\t mqatz'amájik
+\m m-q-atz'amájik
+\p IMP-E1P-VT-SC
+\g IMP-E1P-salarlo-SC
+\l No lo salemos
+
+\t mawatz'amáj taq
+\m m-aw-atz'amáj taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-salarlo PL
+\l No lo salen
+
+\t mratz'amáj taq
+\m m-r-atz'amáj taq
+\p IMP-E3S-VT PL
+\g IMP-E3S-salarlo PL
+\l No lo salen
+
+\t kawatz'amáje'
+\m k-aw-atz'amáj-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-salarlo-SC
+\l Lo sala
+
+\t ratz'amáje'
+\m r-atz'amáj-e'
+\p E3S-VT-SC
+\g E3S-salarlo-SC
+\l Lo sale
+
+\t qatz'amáje'
+\m q-atz'amáj-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-salarlo-SC
+\l Lo salemos
+
+\t kawatz'amáj taq
+\m k-aw-atz'amáj taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-salarlo PL
+\l Lo salen
+
+\t ratz'amáj taq
+\m r-atz'amáj taq
+\p E3S-VT PL
+\g E3S-salarlo PL
+\l Lo salen
+
+\t tinb'ach'sájik
+\m t-in-b'ach'sáj-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-enrollarlo-SC
+\l Lo enrollo
+
+\t tab'ach'sájik
+\m t-a-b'ach'sáj-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-enrollarlo-SC
+\l Lo enrollas
+
+\t tijb'ach'sájik
+\m ti-j-b'ach'sáj-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-enrollarlo-SC
+\l Lo enrolla
+
+\t tqab'ach'sájik
+\m t-qa-b'ach'sáj-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-enrollarlo-SC
+\l Lo enrollamos
+
+\t tab'ach'sáj taq
+\m t-a-b'ach'sáj taq
+\p INC-E2S-VT PL
+\g INC-E2S-enrollarlo PL
+\l Lo enrollan
+
+\t tijb'ach'sáj taq
+\m ti-j-b'ach'sáj taq
+\p INC-E3S-VT PL
+\g INC-E3S-enrollarlo PL
+\l Lo enrollan
+
+\t tijin tinb'ach'sájik
+\m tijin t-in-b'ach'sáj-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-enrollarlo-SC
+\l Lo estoy enrollando
+
+\t tijin tab'ach'sájik
+\m tijin t-a-b'ach'sáj-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-enrollarlo-SC
+\l Lo estás enrollando
+
+\t tijin tijb'ach'sájik
+\m tijin ti-j-b'ach'sáj-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-enrollarlo-SC
+\l Lo está enrollando
+
+\t tijin tqab'ach'sájik
+\m tijin t-qa-b'ach'sáj-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-enrollarlo-SC
+\l Lo estamos enrollando
+
+\t tijin tab'ach'sáj taq
+\m tijin t-a-b'ach'sáj taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-enrollarlo PL
+\l Lo están enrollando
+
+\t tijin tijb'ach'sáj taq
+\m tijin ti-j-b'ach'sáj taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-enrollarlo PL
+\l Lo están enrollando
+
+\t xinb'ach'sájik
+\m x-in-b'ach'sáj-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-enrollarlo-SC
+\l Lo enrollé
+
+\t xab'ach'sájik
+\m x-a-b'ach'sáj-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-enrollarlo-SC
+\l Lo enrollaste
+
+\t xjb'ach'sájik
+\m x-j-b'ach'sáj-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-enrollarlo-SC
+\l Lo enrolló
+
+\t xqab'ach'sájik
+\m x-qa-b'ach'sáj-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-enrollarlo-SC
+\l Lo enrollamos
+
+\t xab'ach'sáj taq
+\m x-a-b'ach'sáj taq
+\p COM-E2S-VT PL
+\g COM-E2S-enrollarlo PL
+\l Lo enrollaron
+
+\t xjb'ach'sáj taq
+\m x-j-b'ach'sáj taq
+\p COM-E3S-VT PL
+\g COM-E3S-enrollarlo PL
+\l Lo enrollaron
+
+\t maab'ach'sáj
+\m ma-a-b'ach'sáj
+\p IMP-E2S-VT
+\g IMP-E2S-enrollarlo
+\l No lo enrolles
+
+\t majb'ach'sáj
+\m ma-j-b'ach'sáj
+\p IMP-E3S-VT
+\g IMP-E3S-enrollarlo
+\l No lo enrolle
+
+\t mqab'ach'sáj
+\m m-qa-b'ach'sáj
+\p IMP-E1P-VT
+\g IMP-E1P-enrollarlo
+\l No lo enrollemos
+
+\t maab'ach'sáj taq
+\m ma-a-b'ach'sáj taq
+\p IMP-E2S-VT PL 
+\g IMP-E2S-enrollarlo PL
+\l No lo enrollen
+
+\t majb'ach'sáj taq
+\m ma-j-b'ach'sáj taq
+\p IMP-E3S-VT PL 
+\g IMP-E3S-enrollarlo PL
+\l No lo enrollen
+
+\t kab'ach'sáje'
+\m k-a-b'ach'sáj-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-enrollarlo-SC
+\l Lo enrolla
+
+\t jb'ach'sáje'
+\m j-b'ach'sáj-e'
+\p E3S-VT-SC
+\g E3S-enrollarlo-SC
+\l Lo enrolle
+
+\t qab'ach'sáje'
+\m qa-b'ach'sáj-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-enrollarlo-SC
+\l Lo enrollemos
+
+\t kab'ach'sáje' taq
+\m k-a-b'ach'sáj-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-enrollarlo-SC PL
+\l Lo enrollen
+
+\t b'ach'sáje' taq
+\m b'ach'sáj-e' taq
+\p VT-SC PL
+\g enrollarlo-SC PL
+\l Lo enrollen
+(From Uspanteko dict pg 41)
+\t Matb'alq'atink
+\m M-at-balq'atin-ik
+\p IMP-A2S-VI-SC
+\g IMP-A2S-rodarse-SC
+\l No vayas a rodar
+
+\t Mb'alq'atink
+\m M-balq'atin-ik
+\p IMP-VI-SC
+\g IMP-rodarse-SC
+\l No vaya a rodar
+
+\t Maojb'alq'atink
+\m Ma-oj-balq'atin-ik
+\p IMP-A1P-VI-SC
+\g IMP-A1P-rodarse-SC
+\l No vayamos a rodar
+
+\t Matb'alq'atin taq
+\m M-at-balq'atin taq
+\p IMP-A2S-VI PL
+\g IMP-A2S-rodarse PL
+\l No vayan a rodar
+
+\t Mb'alq'atin taq
+\m M-balq'atin taq
+\p IMP-VI PL
+\g IMP-rodarse PL
+\l No vayan a rodar
+
+\t Katb'alq'atine'
+\m K-at-balq'atin-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-rodarse-SC
+\l Ve a rodar
+
+\t b'alq'atine'
+\m balq'atin-e'
+\p VI-SC
+\g rodarse-SC
+\l Vaya a rodar
+
+\t ojb'alq'atine'
+\m oj-balq'atin-e'
+\p A1P-VI-SC
+\g A1P-rodarse-SC
+\l Vayamos a rodar
+
+\t Katb'alq'atine' taq
+\m K-at-balq'atin-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-rodarse-SC PL
+\l Vayan a rodar
+
+\t b'alq'atine' taq
+\m balq'atin-e' taq
+\p VI-SC PL
+\g rodarse-SC PL
+\l Vayan a rodar
+
+\t Tinb'alq'atink
+\m t-in-balq'atin-ik
+\p INC-A1S-VI-SC
+\g INC-A1S-rodarse-SC
+\l Me ruedo
+
+\t Tatb'alq'atink
+\m t-at-balq'atin-ik
+\p INC-A2S-VI-SC
+\g INC-A2S-rodarse-SC
+\l Te ruedas
+
+\t Tb'alq'atink
+\m t-balq'atin-ik
+\p INC-VI-SC
+\g INC-rodarse-SC
+\l Se rueda
+
+\t Tojb'alq'atink
+\m t-oj-balq'atin-ik
+\p INC-A1P-VI-SC
+\g INC-A1P-rodarse-SC
+\l Nos rodamos
+
+\t Tatb'alq'atin taq
+\m t-at-balq'atin taq
+\p INC-A2S-VI PL
+\g INC-A2S-rodarse PL
+\l Se ruedan
+
+\t Tb'alq'atin taq
+\m t-balq'atin taq
+\p INC-VI PL
+\g INC-rodarse PL
+\l Se ruedan
+
+\t tijin tinb'alq'atink
+\m tijin t-in-balq'atin-ik
+\p PROG INC-A1S-VI-SC
+\g PROG INC-A1S-rodarse-SC
+\l Me estoy rodando
+
+\t tijin tatb'alq'atink
+\m tijin t-at-balq'atin-ik
+\p PROG INC-A2S-VI-SC
+\g PROG INC-A2S-rodarse-SC
+\l Te estás rodando
+
+\t tijin tb'alq'atink
+\m tijin t-balq'atin-ik
+\p PROG INC-VI-SC
+\g PROG INC-rodarse-SC
+\l Se está rodando
+
+\t tijin tojb'alq'atink
+\m tijin t-oj-balq'atin-ik
+\p PROG INC-A1P-VI-SC
+\g PROG INC-A1P-rodarse-SC
+\l Nos estamos rodando
+
+\t tijin tatb'alq'atin taq
+\m tijin t-at-balq'atin taq
+\p PROG INC-A2S-VI PL
+\g PROG INC-A2S-rodarse PL
+\l Se están rodando
+
+\t tijin tb'alq'atin taq
+\m tijin t-balq'atin taq
+\p PROG INC-VI PL
+\g PROG INC-rodarse PL
+\l Se están rodando
+
+\t xinb'alq'atink
+\m x-in-balq'atin-ik
+\p COM-A1S-VI-SC
+\g COM-A1S-rodarse-SC
+\l Me rodé
+
+\t xatb'alq'atink
+\m x-at-balq'atin-ik
+\p COM-A2S-VI-SC
+\g COM-A2S-rodarse-SC
+\l Te rodaste
+
+\t xb'alq'atink
+\m x-balq'atin-ik
+\p COM-VI-SC
+\g COM-rodarse-SC
+\l Se rodó
+
+\t xojb'alq'atink
+\m x-oj-balq'atin-ik
+\p COM-A1P-VI-SC
+\g COM-A1P-rodarse-SC
+\l Nos rodamos
+
+\t xatb'alq'atin taq
+\m x-at-balq'atin taq
+\p COM-A2S-VI PL
+\g COM-A2S-rodarse PL
+\l Se rodaron
+
+\t xb'alq'atin taq
+\m x-balq'atin taq
+\p COM-VI PL
+\g COM-rodarse PL
+\l Se rodaron
+(Uspanteko dict)
+\t tinb'ananaaj
+\m t-in-b'ananaaj
+\p INC-E1S-VI
+\g INC-E1S-creído
+\l Soy creída
+
+\t tab'ananaaj
+\m t-a-b'ananaaj
+\p INC-E2S-VI
+\g INC-E2S-creído
+\l Eres creída
+
+\t tijb'ananaaj
+\m ti-j-b'ananaaj
+\p INC-E3S-VI
+\g INC-E3S-creído
+\l Es creída
+
+\t tqab'ananaaj
+\m t-qa-b'ananaaj
+\p INC-E1P-VI
+\g INC-E1P-creído
+\l Somos creída
+
+\t tab'ananaaj taq
+\m t-a-b'ananaaj taq
+\p INC-E2S-VI PL
+\g INC-E2S-creído PL
+\l Son creídas
+
+\t tijb'ananaaj taq
+\m ti-j-b'ananaaj taq
+\p INC-E3S-VI PL
+\g INC-E3S-creído PL
+\l Son creídas
+(Uspanteko dict pg 43)
+\t tijin tib'aqab'
+\m tijin ti-b'aqab'
+\p PROG INC-VI
+\g PROG INC-adelgazar
+\l Está adelgazando
+
+\t tijin tinb'aqab'
+\m tijin t-in-b'aqab'
+\p PROG INC-A1S-VI
+\g PROG INC-A1S-adelgazar
+\l Estoy adelgazando
+
+\t tijin tatb'aqab'
+\m tijin t-at-b'aqab'
+\p PROG INC-A2S-VI
+\g PROG INC-A2S-adelgazar
+\l Estás adelgazando
+
+\t tijin tojb'aqab'
+\m tijin t-oj-b'aqab'
+\p PROG INC-A1P-VI
+\g PROG INC-A1P-adelgazar
+\l Estamos adelgazando
+
+\t tijin tatb'aqab' taq
+\m tijin t-at-b'aqab' taq
+\p PROG INC-A2S-VI PL
+\g PROG INC-A2S-adelgazar PL
+\l Están adelgazando
+
+\t tijin tib'aqab' taq
+\m tijin ti-b'aqab' taq
+\p PROG INC-VI PL
+\g PROG INC-adelgazar PL
+\l Están adelgazando
+
+\t tinb'aqab'
+\m t-in-b'aqab'
+\p INC-A1S-VI
+\g INC-A1S-adelgazar
+\l Adelgazo
+
+\t tatb'aqab'
+\m t-at-b'aqab'
+\p INC-A2S-VI
+\g INC-A2S-adelgazar
+\l Adelgazas
+
+\t tb'aqab'
+\m t-b'aqab'
+\p INC-VI
+\g INC-adelgazar
+\l Adelgaza
+
+\t tojb'aqab'
+\m t-oj-b'aqab'
+\p INC-A1P-VI
+\g INC-A1P-adelgazar 
+\l Adelgazamos
+
+\t tatb'aqab' taq
+\m t-at-b'aqab' taq
+\p INC-A2S-VI PL
+\g INC-A2S-adelgazar PL
+\l Adelgazan
+
+\t tb'aqab' taq
+\m t-b'aqab' taq
+\p INC-VI PL
+\g INC-adelgazar PL
+\l Adelgazan
+
+\t xinb'aqab'
+\m x-in-b'aqab'
+\p COM-A1S-VI
+\g COM-A1S-adelgazar
+\l Adelgacé
+
+\t xatb'aqab'
+\m x-at-b'aqab'
+\p COM-A2S-VI
+\g COM-A2S-adelgazar
+\l Adelgazaste
+
+\t xb'aqab'
+\m x-b'aqab'
+\p COM-VI
+\g COM-adelgazar
+\l Adelgazó
+
+\t xojb'aqab'
+\m x-oj-b'aqab'
+\p COM-A1P-VI
+\g COM-A1P-adelgazar
+\l Adelgazamos
+
+\t xatb'aqab' taq
+\m x-at-b'aqab' taq
+\p COM-A2S-VI PL
+\g COM-A2S-adelgazar PL
+\l Adelgazaron
+
+\t xb'aqab' taq
+\m x-b'aqab' taq
+\p COM-VI PL
+\g COM-adelgazar PL
+\l Adelgazaron
+
+\t maatb'aqab'
+\m ma-at-b'aqab'
+\p IMP-A2S-VI
+\g IMP-A2S-adelgazar
+\l No adelgaces
+
+\t mb'aqab'
+\m m-b'aqab'
+\p IMP-VI
+\g IMP-adelgazar
+\l No adelgace
+
+\t maojb'aqab'
+\m ma-oj-b'aqab'
+\p IMP-A1P-VI
+\g IMP-A1P-adelgazar
+\l No adelgacemos
+
+\t maatb'aqab' taq
+\m ma-at-b'aqab' taq
+\p IMP-A2S-VI PL
+\g IMP-A2S-adelgazar PL
+\l No adelgacen
+
+\t mb'aqab' taq
+\m m-b'aqab' taq
+\p IMP-VI PL
+\g IMP-adelgazar PL
+\l No adelgacen
+
+\t katb'aqab'e'
+\m k-at-b'aqab'-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-adelgazar-SC
+\l Adelgaza
+
+\t b'aqab'e'
+\m b'aqab'-e'
+\p VI-SC
+\g adelgazar-SC
+\l Adelgace
+
+\t ojtb'aqab'e'
+\m oj-b'aqab'-e'
+\p IMP-A1P-VI-SC
+\g IMP-A1P-adelgazar-SC
+\l Adelgacemos
+
+\t katb'aqab'e' taq
+\m k-at-b'aqab'-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-adelgazar-SC PL
+\l Adelgacen
+
+\t b'aqab'e' taq
+\m b'aqab'-e' taq
+\p VI-SC PL
+\g adelgazar-SC PL
+\l Adelgacen
+(Uspanteko dict pg 46)
+\t tib'enb'eej
+\m ti-b'enb'ee-j
+\p INC-VI-SC
+\g INC-caminar-SC
+\l Camina
+
+\t tinb'enb'eej
+\m t-in-b'enb'ee-j
+\p INC-A1S-VI-SC
+\g INC-A1S-caminar-SC
+\l Camino
+
+\t tatb'enb'eej
+\m t-at-b'enb'ee-j
+\p INC-A2S-VI-SC
+\g INC-A2S-caminar-SC
+\l Caminas
+
+\t tojb'enb'eej
+\m t-oj-b'enb'ee-j
+\p INC-A1P-VI-SC
+\g INC-A1P-caminar-SC
+\l Caminamos
+
+\t tatb'enb'ee taq
+\m t-at-b'enb'ee taq
+\p INC-A2S-VI PL
+\g INC-A2S-caminar PL
+\l Caminan
+
+\t tib'enb'ee taq
+\m ti-b'enb'ee taq
+\p INC-VI PL
+\g INC-caminar PL
+\l Caminan
+
+\t xinb'enb'eej
+\m x-in-b'enb'ee-j
+\p COM-A1S-VI-SC
+\g COM-A1S-caminar-SC
+\l Caminé
+
+\t xatb'enb'eej
+\m x-at-b'enb'ee-j
+\p COM-A2S-VI-SC
+\g COM-A2S-caminar-SC
+\l Caminaste
+
+\t xb'enb'eej
+\m x-b'enb'ee-j
+\p COM-VI-SC
+\g COM-caminar-SC
+\l Caminó
+
+\t xojb'enb'eej
+\m x-oj-b'enb'ee-j
+\p COM-A1P-VI-SC
+\g COM-A1P-caminar-SC
+\l Caminamos
+
+\t xatb'enb'ee taq
+\m x-at-b'enb'ee taq
+\p COM-A2S-VI PL
+\g COM-A2S-caminar PL
+\l Caminaron
+
+\t xb'enb'ee taq
+\m x-b'enb'ee taq
+\p COM-VI PL
+\g COM-caminar PL
+\l Caminaron
+
+\t tijin tinb'enb'eej
+\m tijin t-in-b'enb'ee-j
+\p PROG INC-A1S-VI-SC
+\g PROG INC-A1S-caminar-SC
+\l Estoy caminando
+
+\t tijin tatb'enb'eej
+\m tijin t-at-b'enb'ee-j
+\p PROG INC-A2S-VI-SC
+\g PROG INC-A2S-caminar-SC
+\l Estás caminando
+
+\t tijin tb'enb'eej
+\m tijin t-b'enb'ee-j
+\p PROG INC-VI-SC
+\g PROG INC-caminar-SC
+\l Está caminando
+
+\t tijin tojb'enb'eej
+\m tijin t-oj-b'enb'ee-j
+\p PROG INC-A1P-VI-SC
+\g PROG INC-A1P-caminar-SC
+\l Estamos caminando
+
+\t tijin tatb'enb'ee taq
+\m tijin t-at-b'enb'ee taq
+\p PROG INC-A2S-VI PL
+\g PROG INC-A2S-caminar PL
+\l Están caminando
+
+\t tijin tb'enb'ee taq
+\m tijin t-b'enb'ee taq
+\p PROG INC-VI PL
+\g PROG INC-caminar PL
+\l Están caminando
+
+\t maatb'enb'eee'
+\m ma-at-b'enb'ee-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-caminar-SC
+\l No camines
+
+\t mb'enb'eee'
+\m m-b'enb'ee-e'
+\p IMP-VI-SC
+\g IMP-caminar-SC
+\l No camine
+
+\t maojb'enb'eee'
+\m ma-oj-b'enb'ee-e'
+\p IMP-A1P-VI-SC
+\g IMP-A1P-caminar-SC
+\l No caminemos
+
+\t maatb'enb'eee' taq
+\m ma-at-b'enb'ee-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-caminar-SC PL
+\l No caminen
+
+\t mb'enb'eee' taq
+\m m-b'enb'ee-e' taq
+\p IMP-VI-SC PL
+\g IMP-caminar-SC PL
+\l No caminen
+
+\t katb'enb'eee'
+\m k-at-b'enb'ee-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-caminar-SC
+\l Camina
+
+\t b'enb'eee'
+\m b'enb'ee-e'
+\p VI-SC
+\g caminar-SC
+\l Camine
+
+\t ojb'enb'eee'
+\m oj-b'enb'ee-e'
+\p A1P-VI-SC
+\g A1P-caminar-SC
+\l Caminemos
+
+\t katb'enb'eee' taq
+\m k-at-b'enb'ee-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-caminar-SC PL
+\l Caminen
+
+\t b'enb'eee' taq
+\m b'enb'ee-e' taq
+\p VI-SC PL
+\g caminar-SC PL
+\l Caminen
+
+\t tin'b'iq'ik
+\m t-in-'b'iq'-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-tragar-SC
+\l Lo trago
+
+\t tat'b'iq'ik
+\m t-at-'b'iq'-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-tragar-SC
+\l Lo tragas
+
+\t tij'b'iq'ik
+\m ti-j-'b'iq'-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-tragar-SC
+\l Lo traga
+
+\t tqa'b'iq'ik
+\m t-qa-'b'iq'-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-tragar-SC
+\l Lo tragamos
+
+\t tat'b'iq' taq
+\m t-at-'b'iq' taq
+\p INC-E2S-VT PL
+\g INC-E2S-tragar PL
+\l Lo tragan
+
+\t tij'b'iq' taq
+\m ti-j-'b'iq' taq
+\p INC-E3S-VT PL
+\g INC-E3S-tragar PL
+\l Lo tragan
+
+\t tijin tin'b'iq'ik
+\m tijin t-in-'b'iq'-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-tragar-SC
+\l Lo estoy tragando
+
+\t tijin ta'b'iq'ik
+\m tijin t-a-'b'iq'-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-tragar-SC
+\l Lo estás tragando
+
+\t tijin tij'b'iq'ik
+\m tijin ti-j-'b'iq'-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-tragar-SC
+\l Lo está tragando
+
+\t tijin tqa'b'iq'ik
+\m tijin t-qa-'b'iq'-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-tragar-SC
+\l Lo estamos tragando
+
+\t tijin ta'b'iq' taq
+\m tijin t-a-'b'iq' taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-tragar PL
+\l Lo están tragando
+
+\t tijin tij'b'iq' taq
+\m tijin ti-j-'b'iq' taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-tragar PL
+\l Lo están tragando
+
+\t xin'b'iq'ik
+\m x-in-'b'iq'-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-tragar-SC
+\l Lo tragué
+
+\t xa'b'iq'ik
+\m x-a-'b'iq'-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-tragar-SC
+\l Lo tragaste
+
+\t xj'b'iq'ik
+\m x-j-'b'iq'-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-tragar-SC
+\l Lo tragó
+
+\t xqa'b'iq'ik
+\m x-qa-'b'iq'-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-tragar-SC
+\l Lo tragamos
+
+\t xa'b'iq' taq
+\m x-a-'b'iq' taq
+\p COM-E2S-VT PL
+\g COM-E2S-tragar PL
+\l Lo tragaron
+
+\t xj'b'iq' taq
+\m x-j-'b'iq' taq
+\p COM-E3S-VT PL
+\g COM-E3S-tragar PL
+\l Lo tragaron
+
+\t maa'b'iq'e'
+\m ma-a-'b'iq'-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-tragar-SC
+\l No lo tragues
+
+\t mj'b'iq'e'
+\m m-j-'b'iq'-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-tragar-SC
+\l No lo trague
+
+\t mqa'b'iq'e'
+\m m-qa-'b'iq'-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-tragar-SC
+\l No lo traguemos
+
+\t maa'b'iq' taq
+\m ma-a-'b'iq' taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-tragar PL
+\l No lo traguen
+
+\t mj'b'iq' taq
+\m m-j-'b'iq' taq
+\p IMP-E3S-VT PL
+\g IMP-E3S-tragar PL
+\l No lo traguen
+
+\t ka'b'iq'e'
+\m k-a-'b'iq'-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-tragar-SC
+\l Lo traga
+
+\t j'b'iq'e'
+\m j-'b'iq'-e'
+\p E3S-VT-SC
+\g E3S-tragar-SC
+\l Lo trague
+
+\t qa'b'iq'e'
+\m qa-'b'iq'-e'
+\p E1P-VT-SC
+\g E1P-tragar-SC
+\l Lo traguemos
+
+\t ka'b'iq'e' taq
+\m k-a-'b'iq'-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-tragar-SC PL
+\l Lo traguen
+
+\t j'b'iq'e' taq
+\m j-'b'iq'-e' taq
+\p E3S-VT-SC PL
+\g E3S-tragar-SC PL
+\l Lo traguen
+
+\t tininb'ujuwik
+\m t-in-in-b'ujuw-ik
+\p INC-A1S-E1S-VT-SC
+\g INC-A1S-E1S-golpear-SC
+\l Me golpeo
+
+\t tatinb'ujuwik
+\m t-at-in-b'ujuw-ik
+\p INC-A2S-E1S-VT-SC
+\g INC-A2S-E1S-golpear-SC
+\l Te golpeo
+
+\t tinb'ujuwik
+\m t-in-b'ujuw-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-golpear-SC
+\l Lo golpeo
+
+\t tojinb'ujuwik
+\m t-oj-in-b'ujuw-ik
+\p INC-A1P-E1S-VT-SC
+\g INC-A1P-E1S-golpear-SC
+\l Nos golpeo
+
+\t tatinb'ujuwik taq
+\m t-at-in-b'ujuw-ik taq
+\p INC-A2S-E1S-VT-SC PL
+\g INC-A2S-E1S-golpear-SC PL
+\l Los golpeo
+
+\t tinb'ujuwik taq
+\m t-in-b'ujuw-ik taq
+\p INC-E1S-VT-SC PL 
+\g INC-E1S-golpear-SC PL
+\l Los golpeo
+
+\t tinab'ujuwik
+\m t-in-a-b'ujuw-ik
+\p INC-A1S-E2S-VT-SC
+\g INC-A1S-E2S-golpear-SC
+\l Me golpeas
+
+\t tatab'ujuwik
+\m t-at-a-b'ujuw-ik
+\p INC-A2S-E2S-VT-SC
+\g INC-A2S-E2S-golpear-SC
+\l Te golpeas
+
+\t tab'ujuwik
+\m t-a-b'ujuw-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-golpear-SC
+\l Lo golpeas
+
+\t tojab'ujuwik
+\m t-oj-a-b'ujuw-ik
+\p INC-A1P-E2S-VT-SC
+\g INC-A1P-E2S-golpear-SC
+\l Nos golpeas
+
+\t tatab'ujuwik taq
+\m t-at-a-b'ujuw-ik taq
+\p INC-A2S-E2S-VT-SC PL
+\g INC-A2S-E2S-golpear-SC PL
+\l Los golpeas
+
+\t tab'ujuwik taq
+\m t-a-b'ujuw-ik taq
+\p INC-E2S-VT-SC PL
+\g INC-E2S-golpear-SC PL
+\l Los golpeas
+
+\t tinjb'ujuwik
+\m t-in-j-b'ujuw-ik
+\p INC-A1S-E3S-VT-SC
+\g INC-A1S-E3S-golpear-SC
+\l Me golpea
+
+\t tatjb'ujuwik
+\m t-at-j-b'ujuw-ik
+\p INC-A2S-E3S-VT-SC
+\g INC-A2S-E3S-golpear-SC
+\l Te golpea
+
+\t tijb'ujuwik
+\m ti-j-b'ujuw-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-golpear-SC
+\l Lo golpea
+
+\t tojjb'ujuwik
+\m t-oj-j-b'ujuw-ik
+\p INC-A1P-E3S-VT-SC
+\g INC-A1P-E3S-golpear-SC
+\l Nos golpea
+
+\t tatjb'ujuwik taq
+\m t-at-j-b'ujuw-ik taq
+\p INC-A2S-E3S-VT-SC PL
+\g INC-A2S-E3S-golpear-SC PL
+\l Los golpea
+
+\t tijb'ujuwik taq
+\m ti-j-b'ujuw-ik taq
+\p INC-E3S-VT-SC PL
+\g INC-E3S-golpear-SC PL
+\l Los golpea
+
+\t tinqab'ujuwik
+\m t-in-qa-b'ujuw-ik
+\p INC-A1S-E1P-VT-SC
+\g INC-A1S-E1P-golpear-SC
+\l Me golpeamos
+
+\t tatqab'ujuwik
+\m t-at-qa-b'ujuw-ik
+\p INC-A2S-E1P-VT-SC
+\g INC-A2S-E1P-golpear-SC
+\l Te golpeamos
+
+\t tqab'ujuwik
+\m t-qa-b'ujuw-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-golpear-SC
+\l Lo golpeamos
+
+\t tojqab'ujuwik
+\m t-oj-qa-b'ujuw-ik
+\p INC-A1P-E1P-VT-SC
+\g INC-A1P-E1P-golpear-SC
+\l Nos golpeamos
+
+\t tatqab'ujuwik taq
+\m t-at-qa-b'ujuw-ik taq
+\p INC-A2S-E1P-VT-SC PL
+\g INC-A2S-E1P-golpear-SC PL
+\l Los golpeamos
+
+\t tqab'ujuwik taq
+\m t-qa-b'ujuw-ik taq
+\p INC-E1P-VT-SC PL
+\g INC-E1P-golpear-SC PL
+\l Los golpeamos
+
+\t tinab'ujuw taq
+\m t-in-a-b'ujuw taq
+\p INC-A1S-E2S-VTPL
+\g INC-A1S-E2S-golpear PL
+\l Me golpean
+
+\t tatab'ujuw taq
+\m t-at-a-b'ujuw taq
+\p INC-A2S-E2S-VT PL
+\g INC-A2S-E2S-golpear PL
+\l Te golpean
+
+\t tab'ujuw taq
+\m t-a-b'ujuw taq
+\p INC-E2S-VT PL
+\g INC-E2S-golpear PL
+\l Lo golpean
+
+\t tojab'ujuw taq
+\m t-oj-a-b'ujuw taq
+\p INC-A1P-E2S-VT PL
+\g INC-A1P-E2S-golpear PL
+\l Nos golpean
+
+\t tatab'ujuw taq taq
+\m t-at-a-b'ujuw taq taq
+\p INC-A2S-E2S-VT PL PL
+\g INC-A2S-E2S-golpear PL PL
+\l Los golpean
+
+\t tab'ujuw taq taq
+\m t-a-b'ujuw taq taq
+\p INC-E2S-VT PL PL
+\g INC-E2S-golpear PL PL
+\l Los golpean
+
+\t tinjb'ujuw taq
+\m t-in-j-b'ujuw taq
+\p INC-A1S-E3S-VT PL
+\g INC-A1S-E3S-golpear PL
+\l Me golpean
+
+\t tatjb'ujuw taq
+\m t-at-j-b'ujuw taq
+\p INC-A2S-E3S-VT PL
+\g INC-A2S-E3S-golpear PL
+\l Te golpean
+
+\t tijb'ujuw taq
+\m ti-j-b'ujuw taq
+\p INC-E3S-VT PL
+\g INC-E3S-golpear PL
+\l Lo golpean
+
+\t tojjb'ujuw taq
+\m t-oj-j-b'ujuw taq
+\p INC-A1P-E3S-VT PL
+\g INC-A1P-E3S-golpear PL
+\l Nos golpean
+
+\t tatjb'ujuw taq taq
+\m t-at-j-b'ujuw taq taq
+\p INC-A2S-E3S-VT PL PL
+\g INC-A2S-E3S-golpear PL PL
+\l Los golpean
+
+\t tijb'ujuwik taq taq
+\m ti-j-b'ujuw taq taq
+\p INC-E3S-VT PL PL
+\g INC-E3S-golpear PL PL
+\l Los golpean
+
+\t tijin tininb'ujuwik
+\m tijin t-in-in-b'ujuw-ik
+\p PROG INC-A1S-E1S-VT-SC
+\g PROG INC-A1S-E1S-golpear-SC
+\l Me estoy golpeando
+
+\t tijin tatinb'ujuwik
+\m tijin t-at-in-b'ujuw-ik
+\p PROG INC-A2S-E1S-VT-SC
+\g PROG INC-A2S-E1S-golpear-SC
+\l Te estoy golpeando
+
+\t tijin tinb'ujuwik
+\m tijin t-in-b'ujuw-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-golpear-SC
+\l Lo estoy golpeando
+
+\t tijin tojinb'ujuwik
+\m tijin t-oj-in-b'ujuw-ik
+\p PROG INC-A1P-E1S-VT-SC
+\g PROG INC-A1P-E1S-golpear-SC
+\l Nos estoy golpeando
+
+\t tijin tatinb'ujuwik taq
+\m tijin t-at-in-b'ujuw-ik taq
+\p PROG INC-A2S-E1S-VT-SC PL
+\g PROG INC-A2S-E1S-golpear-SC PL
+\l Los estoy golpeando
+
+\t tijin tinb'ujuwik taq
+\m tijin t-in-b'ujuw-ik taq
+\p PROG INC-E1S-VT-SC PL 
+\g PROG INC-E1S-golpear-SC PL
+\l Los estoy golpeando
+
+\t tijin tinab'ujuwik
+\m tijin t-in-a-b'ujuw-ik
+\p PROG INC-A1S-E2S-VT-SC
+\g PROG INC-A1S-E2S-golpear-SC
+\l Me estás golpeando
+
+\t tijin tatab'ujuwik
+\m tijin t-at-a-b'ujuw-ik
+\p PROG INC-A2S-E2S-VT-SC
+\g PROG INC-A2S-E2S-golpear-SC
+\l Te estás golpeando
+
+\t tijin tab'ujuwik
+\m tijin t-a-b'ujuw-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-golpear-SC
+\l Lo estás golpeando
+
+\t tijin tojab'ujuwik
+\m tijin t-oj-a-b'ujuw-ik
+\p PROG INC-A1P-E2S-VT-SC
+\g PROG INC-A1P-E2S-golpear-SC
+\l Nos estás golpeando
+
+\t tijin tatab'ujuwik taq
+\m tijin t-at-a-b'ujuw-ik taq
+\p PROG INC-A2S-E2S-VT-SC PL
+\g PROG INC-A2S-E2S-golpear-SC PL
+\l Los estás golpeando
+
+\t tijin tab'ujuwik taq
+\m tijin t-a-b'ujuw-ik taq
+\p PROG INC-E2S-VT-SC PL 
+\g PROG INC-E2S-golpear-SC PL
+\l Los estás golpeando
+
+\t tijin tinjb'ujuwik
+\m tijin t-in-j-b'ujuw-ik
+\p PROG INC-A1S-E3S-VT-SC
+\g PROG INC-A1S-E3S-golpear-SC
+\l Me está golpeando
+
+\t tijin tatjb'ujuwik
+\m tijin t-at-j-b'ujuw-ik
+\p PROG INC-A2S-E3S-VT-SC
+\g PROG INC-A2S-E3S-golpear-SC
+\l Te está golpeando
+
+\t tijin tijb'ujuwik
+\m tijin ti-j-b'ujuw-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-golpear-SC
+\l Lo está golpeando
+
+\t tijin tojjb'ujuwik
+\m tijin t-oj-j-b'ujuw-ik
+\p PROG INC-A1P-E3S-VT-SC
+\g PROG INC-A1P-E3S-golpear-SC
+\l Nos está golpeando
+
+\t tijin tatjb'ujuwik taq
+\m tijin t-at-j-b'ujuw-ik taq
+\p PROG INC-A2S-E3S-VT-SC PL
+\g PROG INC-A2S-E3S-golpear-SC PL
+\l Los está golpeando
+
+\t tijin tijb'ujuwik taq
+\m tijin ti-j-b'ujuw-ik taq
+\p PROG INC-E3S-VT-SC PL 
+\g PROG INC-E3S-golpear-SC PL
+\l Los está golpeando
+
+\t tijin tinqab'ujuwik
+\m tijin t-in-qa-b'ujuw-ik
+\p PROG INC-A1S-E1P-VT-SC
+\g PROG INC-A1S-E1P-golpear-SC
+\l Me estamos golpeando
+
+\t tijin tatqab'ujuwik
+\m tijin t-at-qa-b'ujuw-ik
+\p PROG INC-A2S-E1P-VT-SC
+\g PROG INC-A2S-E1P-golpear-SC
+\l Te estamos golpeando
+
+\t tijin tqab'ujuwik
+\m tijin t-qa-b'ujuw-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-golpear-SC
+\l Lo estamos golpeando
+
+\t tijin tojqab'ujuwik
+\m tijin t-oj-qa-b'ujuw-ik
+\p PROG INC-A1P-E1P-VT-SC
+\g PROG INC-A1P-E1P-golpear-SC
+\l Nos estamos golpeando
+
+\t tijin tatqab'ujuwik taq
+\m tijin t-at-qa-b'ujuw-ik taq
+\p PROG INC-A2S-E1P-VT-SC PL
+\g PROG INC-A2S-E1P-golpear-SC PL
+\l Los estamos golpeando
+
+\t tijin tqab'ujuwik taq
+\m tijin t-qa-b'ujuw-ik taq
+\p PROG INC-E1P-VT-SC PL 
+\g PROG INC-E1P-golpear-SC PL
+\l Los estamos golpeando
+
+\t tijin tinab'ujuw taq
+\m tijin t-in-a-b'ujuw taq
+\p PROG INC-A1S-E2S-VT PL
+\g PROG INC-A1S-E2S-golpear PL
+\l Me están golpeando
+
+\t tijin tatab'ujuw taq
+\m tijin t-at-a-b'ujuw taq
+\p PROG INC-A2S-E2S-VT PL
+\g PROG INC-A2S-E2S-golpear PL
+\l Te están golpeando
+
+\t tijin tab'ujuw taq
+\m tijin t-a-b'ujuw taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-golpear PL
+\l Lo están golpeando
+
+\t tijin tojab'ujuw taq
+\m tijin t-oj-a-b'ujuw taq
+\p PROG INC-A1P-E2S-VT PL
+\g PROG INC-A1P-E2S-golpear PL
+\l Nos están golpeando
+
+\t tijin tatab'ujuw taq taq
+\m tijin t-at-a-b'ujuw taq taq
+\p PROG INC-A2S-E2S-VT PL PL
+\g PROG INC-A2S-E2S-golpear PL PL
+\l Los están golpeando
+
+\t tijin tab'ujuw taq taq
+\m tijin t-a-b'ujuw taq taq
+\p PROG INC-E2S-VT PL PL
+\g PROG INC-E2S-golpear PL PL
+\l Los están 
+
+\t tijin tinjb'ujuw taq
+\m tijin t-in-j-b'ujuw taq
+\p PROG INC-A1S-E3S-VT PL
+\g PROG INC-A1S-E3S-golpear PL
+\l Me están golpeando
+
+\t tijin tatjb'ujuw taq
+\m tijin t-at-j-b'ujuw taq
+\p PROG INC-A2S-E3S-VT PL
+\g PROG INC-A2S-E3S-golpear PL
+\l Te están golpeando
+
+\t tijin tijb'ujuw taq
+\m tijin ti-j-b'ujuw taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-golpear PL
+\l Lo están golpeando
+
+\t tijin tojjb'ujuw taq
+\m tijin t-oj-j-b'ujuw taq
+\p PROG INC-A1P-E3S-VT PL
+\g PROG INC-A1P-E3S-golpear PL
+\l Nos están golpeando
+
+\t tijin tatjb'ujuw taq taq
+\m tijin t-at-j-b'ujuw taq taq
+\p PROG INC-A2S-E3S-VT PL PL
+\g PROG INC-A2S-E3S-golpear PL PL
+\l Los están golpeando
+
+\t tijin tijb'ujuw taq taq
+\m tijin ti-j-b'ujuw taq taq
+\p PROG INC-E3S-VT PL PL 
+\g PROG INC-E3S-golpear PL PL
+\l Los están golpeando
+
+\t xininb'ujuwik
+\m x-in-in-b'ujuw-ik
+\p COM-A1S-E1S-VT-SC
+\g COM-A1S-E1S-golpear-SC
+\l Me golpeé
+
+\t xatinb'ujuwik
+\m x-at-in-b'ujuw-ik
+\p COM-A2S-E1S-VT-SC
+\g COM-A2S-E1S-golpear-SC
+\l Te golpeé
+
+\t xinb'ujuwik
+\m x-in-b'ujuw-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-golpear-SC
+\l Lo golpeé
+
+\t xojinb'ujuwik
+\m x-oj-in-b'ujuw-ik
+\p COM-A1P-E1S-VT-SC
+\g COM-A1P-E1S-golpear-SC
+\l Nos golpeé
+
+\t xatinb'ujuw taq
+\m x-at-in-b'ujuw taq
+\p COM-A2S-E1S-VT PL
+\g COM-A2S-E1S-golpear PL
+\l Los golpeé
+
+\t xinb'ujuw taq
+\m x-in-b'ujuw taq
+\p COM-E1S-VT PL
+\g COM-E1S-golpear PL
+\l Los golpeé
+
+\t xinab'ujuwik
+\m x-in-a-b'ujuw-ik
+\p COM-A1S-E2S-VT-SC
+\g COM-A1S-E2S-golpear-SC
+\l Me golpeaste
+
+\t xatab'ujuwik
+\m x-at-a-b'ujuw-ik
+\p COM-A2S-E2S-VT-SC
+\g COM-A2S-E2S-golpear-SC
+\l Te golpeaste
+
+\t xab'ujuwik
+\m x-a-b'ujuw-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-golpear-SC
+\l Lo golpeaste
+
+\t xojab'ujuwik
+\m x-oj-a-b'ujuw-ik
+\p COM-A1P-E2S-VT-SC
+\g COM-A1P-E2S-golpear-SC
+\l Nos golpeaste
+
+\t xatab'ujuw taq
+\m x-at-a-b'ujuw taq
+\p COM-A2S-E2S-VT PL
+\g COM-A2S-E2S-golpear PL
+\l Los golpeaste
+
+\t xab'ujuw taq
+\m x-a-b'ujuw taq
+\p COM-E2S-VT PL
+\g COM-E2S-golpear PL
+\l Los golpeaste
+
+\t xinjb'ujuwik
+\m x-in-j-b'ujuw-ik
+\p COM-A1S-E3S-VT-SC
+\g COM-A1S-E3S-golpear-SC
+\l Me golpeó
+
+\t xatjb'ujuwik
+\m x-at-j-b'ujuw-ik
+\p COM-A2S-E3S-VT-SC
+\g COM-A2S-E3S-golpear-SC
+\l Te golpeó
+
+\t xjb'ujuwik
+\m x-j-b'ujuw-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-golpear-SC
+\l Lo golpeó
+
+\t xojjb'ujuwik
+\m x-oj-j-b'ujuw-ik
+\p COM-A1P-E3S-VT-SC
+\g COM-A1P-E3S-golpear-SC
+\l Nos golpeó
+
+\t xatjb'ujuw taq
+\m x-at-j-b'ujuw taq
+\p COM-A2S-E3S-VT PL
+\g COM-A2S-E3S-golpear PL
+\l Los golpeó
+
+\t xjb'ujuw taq
+\m x-j-b'ujuw taq
+\p COM-E3S-VT PL
+\g COM-E3S-golpear PL
+\l Los golpeó
+
+\t xinqab'ujuwik
+\m x-in-qa-b'ujuw-ik
+\p COM-A1S-E1P-VT-SC
+\g COM-A1S-E1P-golpear-SC
+\l Me golpeamos
+
+\t xatqab'ujuwik
+\m x-at-qa-b'ujuw-ik
+\p COM-A2S-E1P-VT-SC
+\g COM-A2S-E1P-golpear-SC
+\l Te golpeamos
+
+\t xqab'ujuwik
+\m x-qa-b'ujuw-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-golpear-SC
+\l Lo golpeamos
+
+\t xojqab'ujuwik
+\m x-oj-qa-b'ujuw-ik
+\p COM-A1P-E1P-VT-SC
+\g COM-A1P-E1P-golpear-SC
+\l Nos golpeamos
+
+\t xatqab'ujuw taq
+\m x-at-qa-b'ujuw taq
+\p COM-A2S-E1P-VT PL
+\g COM-A2S-E1P-golpear PL
+\l Los golpeamos
+
+\t xqab'ujuw taq
+\m x-qa-b'ujuw taq
+\p COM-E1P-VT PL
+\g COM-E1P-golpear PL
+\l Los golpeamos
+
+\t xinab'ujuw taq
+\m x-in-a-b'ujuw taq
+\p COM-A1S-E2S-VT PL
+\g COM-A1S-E2S-golpear PL
+\l Me golpearon
+
+\t xatab'ujuw taq
+\m x-at-a-b'ujuw taq
+\p COM-A2S-E2S-VT PL
+\g COM-A2S-E2S-golpear PL
+\l Te golpearon
+
+\t xab'ujuw taq
+\m x-a-b'ujuw taq
+\p COM-E2S-VT PL
+\g COM-E2S-golpear PL
+\l Lo golpearon
+
+\t xojab'ujuw taq
+\m x-oj-a-b'ujuw taq
+\p COM-A1P-E2S-VT PL
+\g COM-A1P-E2S-golpear PL
+\l Nos golpearon
+
+\t xatab'ujuw taq
+\m x-at-a-b'ujuw taq
+\p COM-A2S-E2S-VT PL
+\g COM-A2S-E2S-golpear PL
+\l Los golpearon
+
+\t xab'ujuw taq taq
+\m x-a-b'ujuw taq taq
+\p COM-E2S-VT PL PL
+\g COM-E2S-golpear PL PL
+\l Los golpearon
+
+\t xinjb'ujuw taq 
+\m x-in-j-b'ujuw taq
+\p COM-A1S-E3S-VT PL
+\g COM-A1S-E3S-golpear PL
+\l Me golpearon
+
+\t xatjb'ujuw taq
+\m x-at-j-b'ujuw taq
+\p COM-A2S-E3S-VT PL
+\g COM-A2S-E3S-golpear PL
+\l Te golpearon
+
+\t xjb'ujuw taq
+\m x-j-b'ujuw taq 
+\p COM-E3S-VT PL
+\g COM-E3S-golpear PL
+\l Lo golpearon
+
+\t xojjb'ujuw taq
+\m x-oj-j-b'ujuw taq
+\p COM-A1P-E3S-VT PL
+\g COM-A1P-E3S-golpear PL
+\l Nos golpearon
+
+\t xatjb'ujuw taq taq
+\m x-at-j-b'ujuw taq taq 
+\p COM-A2S-E3S-VT PL PL
+\g COM-A2S-E3S-golpear PL PL
+\l Los golpearon
+
+\t xjb'ujuw taq taq
+\m x-j-b'ujuw taq taq
+\p COM-E3S-VT PL PL
+\g COM-E3S-golpear PL PL 
+\l Los golpearon
+
+\t tinb'ukaj
+\m t-in-b'uka-j
+\p INC-E1S-VT-SC
+\g INC-E1S-cobijar-SC
+\l Lo cobijo
+
+\t tab'ukaj
+\m t-a-b'uka-j
+\p INC-E2S-VT-SC
+\g INC-E2S-cobijar-SC
+\l Lo cobijas
+
+\t tijb'ukaj
+\m ti-j-b'uka-j
+\p INC-E3S-VT-SC
+\g INC-E3S-cobijar-SC
+\l Lo cobija
+
+\t tqab'ukaj
+\m t-qa-b'uka-j
+\p INC-E1P-VT-SC
+\g INC-E1P-cobijar-SC
+\l Lo cobijamos
+
+\t tab'uka taq
+\m t-a-b'uka taq
+\p INC-E2S-VT PL
+\g INC-E2S-cobijar PL
+\l Lo cobijan
+
+\t tijb'uka taq
+\m ti-j-b'uka taq
+\p INC-E3S-VT PL
+\g INC-E3S-cobijar PL
+\l Lo cobijan
+
+\t xinb'ukaj
+\m x-in-b'uka-j
+\p COM-E1S-VT-SC
+\g COM-E1S-cobijar-SC
+\l Lo cobijé
+
+\t xab'ukaj
+\m x-a-b'uka-j
+\p COM-E2S-VT-SC
+\g COM-E2S-cobijar-SC
+\l Lo cobijaste
+
+\t xjb'ukaj
+\m x-j-b'uka-j
+\p COM-E3S-VT-SC
+\g COM-E3S-cobijar-SC
+\l Lo cobijó
+
+\t xqab'ukaj
+\m x-qa-b'uka-j
+\p COM-E1P-VT-SC
+\g COM-E1P-cobijar-SC
+\l Lo cobijamos
+
+\t xab'uka taq
+\m x-a-b'uka taq
+\p COM-E2S-VT PL
+\g COM-E2S-cobijar PL
+\l Lo cobijaron
+
+\t xjb'uka taq
+\m x-j-b'uka taq
+\p COM-E3S-VT PL
+\g COM-E3S-cobijar PL
+\l Lo cobijaron
+
+\t tijin tinb'ukaj
+\m tijin t-in-b'uka-j
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-cobijar-SC
+\l Lo estoy cobijando
+
+\t tijin tab'ukaj
+\m tijin t-a-b'uka-j
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-cobijar-SC
+\l Lo estás cobijando
+
+\t tijin tijb'ukaj
+\m tijin ti-j-b'uka-j
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-cobijar-SC
+\l Lo está cobijando
+
+\t tijin tqab'ukaj
+\m tijin t-qa-b'uka-j
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-cobijar-SC
+\l Lo estamos cobijando
+
+\t tijin tab'uka taq
+\m tijin t-a-b'uka taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-cobijar PL
+\l Lo están cobijando
+
+\t tijin tijb'uka taq
+\m tijin ti-j-b'uka taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-cobijar PL
+\l Lo están cobijando
+
+\t maab'ukae'
+\m ma-a-b'uka-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-cobijar-SC
+\l No lo cobijes
+
+\t kab'ukae'
+\m k-a-b'uka-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-cobijar-SC
+\l Lo cobija
+
+\t mjb'ukae'
+\m m-j-b'uka-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-cobijar-SC
+\l No lo cobije
+
+\t jb'ukae'
+\m j-b'uka-e'
+\p E3S-VT-SC
+\g E3S-cobijar-SC
+\l Lo cobije
+
+\t jb'ukae' taq
+\m j-b'uka-e' taq
+\p E3S-VT-SC PL
+\g E3S-cobijar-SC PL
+\l Lo cobijen
+
+\t maab'ukae' taq
+\m ma-a-b'uka-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-cobijar-SC PL
+\l No lo cobijen
+
+\t kab'ukae' taq
+\m k-a-b'uka-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-cobijar-SC PL
+\l Lo cobijen
+
+\t mjb'ukae' taq
+\m m-j-b'uka-e' taq
+\p IMP-E3S-VT-SC PL
+\g IMP-E3S-cobijar-SC PL
+\l No lo cobijen
+
+\t tinchaq'eem
+\m t-in-chaq'eem
+\p INC-A1S-VI
+\g INC-A1S-madurar
+\l Maduro
+
+\t tatchaq'eem
+\m t-at-chaq'eem
+\p INC-A2S-VI
+\g INC-A2S-madurar
+\l Maduras
+
+\t tchaq'eem
+\m t-chaq'eem
+\p INC-VI
+\g INC-madurar
+\l Madura
+
+\t tojchaq'eem
+\m t-oj-chaq'eem
+\p INC-A1P-VI
+\g INC-A1P-madurar
+\l Maduramos
+
+\t tatchaq'eem taq
+\m t-at-chaq'eem taq
+\p INC-A2S-VI PL
+\g INC-A2S-madurar PL
+\l Maduran
+
+\t tchaq'eem taq
+\m t-chaq'eem taq
+\p INC-VI PL
+\g INC-madurar PL
+\l Maduran
+
+\t tijin tinchaq'eem
+\m tijin t-in-chaq'eem
+\p PROG INC-A1S-VI
+\g PROG INC-A1S-madurar
+\l Estoy madurando
+
+\t tijin tatchaq'eem
+\m tijin t-at-chaq'eem
+\p PROG INC-A2S-VI
+\g PROG INC-A2S-madurar
+\l Estás madurando
+
+\t tijin tchaq'eem
+\m tijin t-chaq'eem
+\p PROG INC-VI
+\g PROG INC-madurar
+\l Está madurando
+
+\t tijin tojchaq'eem
+\m tijin t-oj-chaq'eem
+\p PROG INC-A1P-VI
+\g PROG INC-A1P-madurar
+\l Estamos madurando
+
+\t tijin tatchaq'eem taq
+\m tijin t-at-chaq'eem taq
+\p PROG INC-A2S-VI PL
+\g PROG INC-A2S-madurar PL
+\l Están madurando
+
+\t tijin tchaq'eem taq
+\m tijin t-chaq'eem taq
+\p PROG INC-VI PL
+\g PROG INC-madurar PL
+\l Están madurando
+
+\t xinchaq'eem
+\m x-in-chaq'eem
+\p COM-A1S-VI
+\g COM-A1S-madurar
+\l Maduré
+
+\t xatchaq'eem
+\m x-at-chaq'eem
+\p COM-A2S-VI
+\g COM-A2S-madurar
+\l Maduraste
+
+\t xjchaq'eem
+\m x-j-chaq'eem
+\p COM-A3S-VI
+\g COM-A3S-madurar
+\l Maduró
+
+\t xojchaq'eem
+\m x-oj-chaq'eem
+\p COM-A1P-VI
+\g COM-A1P-madurar
+\l Maduramos
+
+\t xatchaq'eem taq
+\m x-at-chaq'eem taq
+\p COM-A2S-VI PL
+\g COM-A2S-madurar PL
+\l Maduraron
+
+\t xjchaq'eem taq 
+\m x-j-chaq'eem taq
+\p COM-A3S-VI PL
+\g COM-A3S-madurar PL
+\l Maduraron
+
+\t matchaq'eeme'
+\m m-at-chaq'eem-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-madurar-SC
+\l No madures
+
+\t katchaq'eeme'
+\m k-at-chaq'eem-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-madurar-SC
+\l Madura
+
+\t mchaq'eeme'
+\m m-chaq'eem-e'
+\p IMP-VI-SC
+\g IMP-madurar-SC
+\l No madure
+
+\t chaq'eeme'
+\m chaq'eem-e'
+\p VI-SC
+\g madurar-SC
+\l Madure
+
+\t matchaq'eeme' taq
+\m m-at-chaq'eem-e' taq
+\p IMP-A2S-VI-SC PL 
+\g IMP-A2S-madurar-SC PL
+\l No maduren
+
+\t katchaq'eeme' taq
+\m k-at-chaq'eem-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-madurar-SC PL
+\l Maduren
+
+\t mchaq'eeme' taq
+\m m-chaq'eem-e' taq
+\p IMP-VI-SC PL
+\g IMP-madurar-SC PL
+\l No maduren
+
+\t chaq'eeme' taq
+\m chaq'eem-e' taq
+\p VI-SC PL
+\g madurar-SC PL
+\l Maduren
+
+\t tinchub'ajik
+\m t-in-chub'aj-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-escupirlo-SC
+\l Lo escupo
+
+\t tachub'ajik
+\m t-a-chub'aj-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-escupirlo-SC
+\l Lo escupes        
+
+\t tijchub'ajik
+\m ti-j-chub'aj-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-escupirlo-SC
+\l Lo escupe   
+
+\t tqachub'ajik
+\m t-qa-chub'aj-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-escupirlo-SC
+\l Lo escupimos   
+
+\t tachub'aj taq
+\m t-a-chub'aj taq
+\p INC-E2S-VT PL
+\g INC-E2S-escupirlo PL
+\l Lo escupen 
+
+\t tijchub'aj taq
+\m ti-j-chub'aj taq
+\p INC-E3S-VT PL
+\g INC-E3S-escupirlo PL
+\l Lo escupen
+
+\t tijin tinchub'ajik
+\m tijin t-in-chub'aj-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-escupirlo-SC
+\l Lo estoy escupiendo
+
+\t tijin tachub'ajik
+\m tijin t-a-chub'aj-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-escupirlo-SC
+\l Lo estás escupiendo
+
+\t tijin tijchub'ajik
+\m tijin ti-j-chub'aj-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-escupirlo-SC
+\l Lo está escupiendo
+
+\t tijin tqachub'ajik
+\m tijin t-qa-chub'aj-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-escupirlo-SC
+\l Lo estamos escupiendo
+
+\t tijin tachub'aj taq
+\m tijin t-a-chub'aj taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-escupirlo PL
+\l Lo están escupiendo
+
+\t tijin tijchub'aj taq
+\m tijin ti-j-chub'aj taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-escupirlo PL
+\l Lo están escupiendo
+
+\t xinchub'ajik
+\m x-in-chub'aj-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-escupirlo-SC
+\l Lo escupí
+
+\t xachub'ajik
+\m x-a-chub'aj-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-escupirlo-SC
+\l Lo escupiste
+
+\t xjchub'ajik
+\m x-j-chub'aj-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-escupirlo-SC
+\l Lo escupió
+
+\t xqachub'ajik
+\m x-qa-chub'aj-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-escupirlo-SC
+\l Lo escupimos
+
+\t xachub'aj taq
+\m x-a-chub'aj taq
+\p COM-E2S-VT PL
+\g COM-E2S-escupirlo PL
+\l Lo escupieron
+
+\t xjchub'aj taq
+\m x-j-chub'aj taq
+\p COM-E3S-VT PL
+\g COM-E3S-escupirlo PL
+\l Lo escupieron
+
+\t maachub'aje'
+\m ma-a-chub'aj-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-escupirlo-SC
+\l No lo escupas
+
+\t kachub'aje'
+\m k-a-chub'aj-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-escupirlo-SC
+\l Lo escupe
+
+\t majchub'aje'
+\m ma-j-chub'aj-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-escupirlo-SC
+\l No lo escupa
+
+\t mqachub'aje'
+\m m-qa-chub'aj-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-escupirlo-SC
+\l No lo escupamos
+
+\t qachub'aje'
+\m qa-chub'aj-e'
+\p E1P-VT-SC
+\g E1P-escupirlo-SC
+\l Lo escupamos
+
+\t jchub'aje'
+\m j-chub'aj-e'
+\p E3S-VT-SC
+\g E3S-escupirlo-SC
+\l Lo escupa
+
+\t kachub'aje' taq
+\m k-a-chub'aj-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-escupirlo-SC PL
+\l Lo escupan
+
+\t jchub'aje' taq
+\m j-chub'aj-e' taq
+\p E3S-VT-SC PL 
+\g E3S-escupirlo-SC PL
+\l Lo escupan
+
+\t xinchij
+\m x-in-chi-j
+\p COM-A1S-VI-SC
+\g COM-A1S-prometer-SC
+\l Prometí
+
+\t xatchij
+\m x-at-chi-j
+\p COM-A2S-VI-SC
+\g COM-A2S-prometer-SC
+\l Prometiste
+
+\t xchij
+\m x-chi-j
+\p COM-VI-SC
+\g COM-prometer-SC
+\l Prometió
+
+\t xojchij
+\m x-oj-chi-j
+\p COM-A1P-VI-SC
+\g COM-A1P-prometer-SC
+\l Prometimos
+
+\t xatchi taq
+\m x-at-chi taq
+\p COM-A2S-VI PL
+\g COM-A2S-prometer PL
+\l Prometieron
+
+\t xchi taq
+\m x-chi taq
+\p COM-VI PL
+\g COM-prometer PL
+\l Prometieron
+
+\t tinchij
+\m t-in-chi-j
+\p INC-A1S-VI-SC
+\g INC-A1S-prometer-SC
+\l Prometo
+
+\t tatchij
+\m t-at-chi-j
+\p INC-A2S-VI-SC
+\g INC-A2S-prometer-SC
+\l Prometes
+
+\t tchij
+\m t-chi-j
+\p INC-VI-SC
+\g INC-prometer-SC
+\l Promete
+
+\t tojchij
+\m t-oj-chi-j
+\p INC-A1P-VI-SC
+\g INC-A1P-prometer-SC
+\l Prometemos
+
+\t tatchi taq
+\m t-at-chi taq
+\p INC-A2S-VI PL
+\g INC-A2S-prometer PL
+\l Prometen
+
+\t tchi taq
+\m t-chi taq
+\p INC-VI PL
+\g INC-prometer PL
+\l Prometen
+
+\t tijin tinchij
+\m tijin t-in-chi-j
+\p PROG INC-A1S-VI-SC
+\g PROG INC-A1S-prometer-SC
+\l Estoy prometiendo
+
+\t tijin tatchij
+\m tijin t-at-chi-j
+\p PROG INC-A2S-VI-SC
+\g PROG INC-A2S-prometer-SC
+\l Estás prometiendo
+
+\t tijin tchij
+\m tijin t-chi-j
+\p PROG INC-VI-SC
+\g PROG INC-prometer-SC
+\l Está prometiendo
+
+\t tijin tojchij
+\m tijin t-oj-chi-j
+\p PROG INC-A1P-VI-SC
+\g PROG INC-A1P-prometer-SC
+\l Estamos prometiendo
+
+\t tijin tatchi taq
+\m tijin t-at-chi taq
+\p PROG INC-A2S-VI PL
+\g PROG INC-A2S-prometer PL
+\l Están prometiendo
+
+\t tijin tchi taq
+\m tijin t-chi taq
+\p PROG INC-VI PL
+\g PROG INC-prometer PL
+\l Están prometiendo
+
+\t maatchie'
+\m ma-at-chi-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-prometer-SC
+\l No prometas
+
+\t katchie'
+\m k-at-chi-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-prometer-SC
+\l Promete
+
+\t machie'
+\m ma-chi-e'
+\p IMP-VI-SC
+\g IMP-prometer-SC
+\l No prometa
+
+\t chie'
+\m chi-e'
+\p VI-SC
+\g prometer-SC
+\l Prometa
+
+\t maojchie'
+\m ma-A1P-chi-e'
+\p IMP-A1P-VI-SC
+\g IMP-A1P-prometer-SC
+\l No prometamos
+
+\t ojchie'
+\m A1P-chi-e'
+\p A1P-VI-SC
+\g A1P-prometer-SC
+\l prometamos
+
+\t maatchie' taq
+\m ma-at-chi-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-prometer-SC PL
+\l No prometan
+
+\t katchie' taq
+\m k-at-chi-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-prometer-SC PL
+\l Prometan
+
+\t machie' taq
+\m ma-chi-e' taq
+\p IMP-VI-SC PL
+\g IMP-prometer-SC PL
+\l No prometan
+
+\t chie' taq
+\m chi-e' taq
+\p VI-SC PL
+\g prometer-SC PL
+\l Prometan
+(Uspaneko dic pg 70)
+\t tich'ankakánk
+\m ti-ch'ankakán-ik
+\p INC-VI-SC
+\g INC-andar desnudo-SC
+\l Está desnudo
+
+\t tinch'ankakánk
+\m t-in-ch'ankakán-ik
+\p INC-A1S-VI-SC
+\g INC-A1S-andar desnudo-SC
+\l Estoy desnudo
+
+\t tatch'ankakánk
+\m t-at-ch'ankakán-ik
+\p INC-A2S-VI-SC
+\g INC-A2S-andar desnudo-SC
+\l Estás desnudo
+
+\t tojch'ankakánk
+\m t-oj-ch'ankakán-ik
+\p INC-A1P-VI-SC
+\g INC-A1P-andar desnudo-SC
+\l Estamos desnudo
+
+\t tatch'ankakán taq
+\m t-at-ch'ankakán taq
+\p INC-A2S-VI PL
+\g INC-A2S-andar desnudo PL
+\l Están desnudos
+
+\t tich'ankakán taq
+\m ti-ch'ankakán taq
+\p INC-VI PL
+\g INC-andar desnudo PL
+\l Están desnudos
+
+\t xch'ankakánk
+\m x-ch'ankakán-ik
+\p COM-VI-SC
+\g COM-andar desnudo-SC
+\l Estuvo desnudo
+
+\t xinch'ankakánk
+\m x-in-ch'ankakán-ik
+\p COM-A1S-VI-SC
+\g COM-A1S-andar desnudo-SC
+\l Estuve desnudo
+
+\t xatch'ankakánk
+\m x-at-ch'ankakán-ik
+\p COM-A2S-VI-SC
+\g COM-A2S-andar desnudo-SC
+\l Estuviste desnudo
+
+\t xojch'ankakánk
+\m x-oj-ch'ankakán-ik
+\p COM-A1P-VI-SC
+\g COM-A1P-andar desnudo-SC
+\l Estuvimos desnudo
+
+\t xatch'ankakán taq
+\m x-at-ch'ankakán taq
+\p COM-A2S-VI PL
+\g COM-A2S-andar desnudo PL
+\l Estuvieron desnudos
+
+\t xch'ankakán taq
+\m x-ch'ankakán taq
+\p COM-VI PL
+\g COM-andar desnudo PL
+\l Estuvieron desnudos
+
+\t tinch'ojajik
+\m t-in-ch'ojaj-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-disputarlo-SC
+\l Lo disputo
+
+\t tach'ojajik
+\m t-a-ch'ojaj-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-disputarlo-SC
+\l Lo disputas
+
+\t tijch'ojajik
+\m ti-j-ch'ojaj-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-disputarlo-SC
+\l Lo disputa
+
+\t tqach'ojajik
+\m t-qa-ch'ojaj-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-disputarlo-SC
+\l Lo disputamos
+
+\t tach'ojaj taq
+\m t-a-ch'ojaj taq
+\p INC-E2S-VT PL
+\g INC-E2S-disputarlo PL
+\l Lo disputan
+
+\t tijch'ojaj taq
+\m ti-j-ch'ojaj taq
+\p INC-E3S-VT PL
+\g INC-E3S-disputarlo PL
+\l Lo disputan
+
+\t tijin tinch'ojajik
+\m tijin t-in-ch'ojaj-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-disputarlo-SC
+\l Lo estoy disputando
+
+\t tijin tach'ojajik
+\m tijin t-a-ch'ojaj-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-disputarlo-SC
+\l Lo estás disputando
+
+\t tijin tijch'ojajik
+\m tijin ti-j-ch'ojaj-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-disputarlo-SC
+\l Lo está disputando
+
+\t tijin tqach'ojajik
+\m tijin t-qa-ch'ojaj-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-disputarlo-SC
+\l Lo estamos disputando
+
+\t tijin tach'ojaj taq
+\m tijin t-a-ch'ojaj taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-disputarlo PL
+\l Lo están disputando
+
+\t tijin tijch'ojaj taq
+\m tijin ti-j-ch'ojaj taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-disputarlo PL
+\l Lo están disputando
+
+\t xinch'ojajik
+\m x-in-ch'ojaj-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-disputarlo-SC
+\l Lo disputé
+
+\t xach'ojajik
+\m x-a-ch'ojaj-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-disputarlo-SC
+\l Lo disputaste
+
+\t xjch'ojajik
+\m x-j-ch'ojaj-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-disputarlo-SC
+\l Lo disputó
+
+\t xqach'ojajik
+\m x-qa-ch'ojaj-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-disputarlo-SC
+\l Lo disputamos
+
+\t xach'ojaj taq
+\m x-a-ch'ojaj taq
+\p COM-E2S-VT PL
+\g COM-E2S-disputarlo PL
+\l Lo disputaron
+
+\t xjch'ojaj taq
+\m x-j-ch'ojaj taq
+\p COM-E3S-VT PL
+\g COM-E3S-disputarlo PL
+\l Lo disputaron
+
+\t maach'ojaje'
+\m ma-a-ch'ojaj-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-disputarlo-SC
+\l No lo disputes
+
+\t kach'ojaje'
+\m k-a-ch'ojaj-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-disputarlo-SC
+\l Lo disputa
+
+\t mjch'ojaje'
+\m m-j-ch'ojaj-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-disputarlo-SC
+\l No lo dispute
+
+\t jch'ojaje'
+\m j-ch'ojaj-e'
+\p E3S-VT-SC
+\g E3S-disputarlo-SC
+\l Lo dispute
+
+\t maach'ojaje' taq
+\m ma-a-ch'ojaj-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-disputarlo-SC PL
+\l No lo disputan
+
+\t kach'ojaje' taq
+\m k-a-ch'ojaj-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-disputarlo-SC PL
+\l Lo disputen
+
+\t mjch'ojaje' taq
+\m m-j-ch'ojaj-e' taq
+\p IMP-E3S-VT-SC PL
+\g IMP-E3S-disputarlo-SC PL
+\l No lo disputen
+
+\t jch'ojaje' taq
+\m j-ch'ojaj-e' taq
+\p E3S-VT-SC PL
+\g E3S-disputarlo-SC PL
+\l Lo disputen
+
+\t tinitz'benik
+\m t-in-itz'ben-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-jugar-SC
+\l Lo juego
+
+\t tawitz'benik
+\m t-aw-itz'ben-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-jugar-SC
+\l Lo juegas
+
+\t tritz'benik
+\m t-r-itz'ben-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-jugar-SC
+\l Lo juega
+
+\t tqitz'benik
+\m t-q-itz'ben-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-jugar-SC
+\l Lo jugamos
+
+\t tawitz'ben taq
+\m t-aw-itz'ben taq
+\p INC-E2S-VT PL
+\g INC-E2S-jugar PL
+\l Lo juegan
+
+\t tritz'ben taq
+\m t-r-itz'ben taq
+\p INC-E3S-VT PL
+\g INC-E3S-jugar PL
+\l Lo juegan
+
+\t tijin tinitz'benik
+\m tijin t-in-itz'ben-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-jugar-SC
+\l Lo estoy jugando
+
+\t tijin tawitz'benik
+\m tijin t-aw-itz'ben-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-jugar-SC
+\l Lo estás jugando
+
+\t tijin tritz'benik
+\m tijin t-r-itz'ben-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-jugar-SC
+\l Lo está jugando
+
+\t tijin tqitz'benik
+\m tijin t-q-itz'ben-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-jugar-SC
+\l Lo estamos jugando
+
+\t tijin tawitz'ben taq
+\m tijin t-aw-itz'ben taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-jugar PL
+\l Lo están jugando
+
+\t tijin tritz'ben taq
+\m tijin t-r-itz'ben taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-jugar PL
+\l Lo están jugando
+
+\t xinitz'benik
+\m x-in-itz'ben-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-jugar-SC
+\l Lo jugué
+
+\t xawitz'benik
+\m x-aw-itz'ben-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-jugar-SC
+\l Lo jugaste
+
+\t xritz'benik
+\m x-r-itz'ben-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-jugar-SC
+\l Lo jugó
+
+\t xqitz'benik
+\m x-q-itz'ben-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-jugar-SC
+\l Lo jugamos
+
+\t xawitz'ben taq
+\m x-aw-itz'ben taq
+\p COM-E2S-VT PL
+\g COM-E2S-jugar PL
+\l Lo jugaron
+
+\t xritz'ben taq
+\m x-r-itz'ben taq
+\p COM-E3S-VT PL
+\g COM-E3S-jugar PL
+\l Lo jugaron
+
+\t maawitz'bene'
+\m ma-aw-itz'ben-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-jugar-SC
+\l No lo juegues
+
+\t kawitz'bene'
+\m k-aw-itz'ben-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-jugar-SC
+\l Lo juega
+
+\t mritz'bene'
+\m m-r-itz'ben-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-jugar-SC
+\l No lo juegue
+
+\t ritz'bene'
+\m r-itz'ben-e'
+\p E3S-VT-SC
+\g E3S-jugar-SC
+\l Lo juegue
+
+\t mqitz'bene'
+\m m-q-itz'ben-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-jugar-SC
+\l No lo juguemos
+
+\t mqitz'bene'
+\m m-q-itz'ben-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-jugar-SC
+\l Lo juguemos
+
+\t maawitz'bene' taq
+\m ma-aw-itz'ben-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-jugar-SC PL
+\l No lo jueguen
+
+\t kawitz'bene' taq
+\m k-aw-itz'ben-e' taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-jugar PL
+\l Lo jueguen
+
+\t ritz'bene' taq
+\m r-itz'ben-e' taq
+\p E3S-VT-SC PL 
+\g E3S-jugar-SC PL
+\l Lo jueguen
+
+\t mritz'bene' taq
+\m m-r-itz'ben-e' taq
+\p IMP-E3S-VT-SC PL
+\g IMP-E3S-jugar-SC PL
+\l No lo jueguen
+
+\t tininixk'eqinik
+\m t-in-in-ixk'eqinik
+\p INC-A1S-E1S-VT-SC
+\g INC-A1S-E1S-pellizcar-SC
+\l Me pellizco 
+
+\t tatinixk'eqinik
+\m t-at-in-ixk'eqinik
+\p INC-A2S-E1S-VT-SC
+\g INC-A2S-E1S-pellizcar-SC
+\l Te pellizco 
+
+\t tinixk'eqinik
+\m t-in-ixk'eqinik
+\p INC-E1S-VT-SC
+\g INC-E1S-pellizcar-SC
+\l Lo pellizco 
+
+\t tojinixk'eqinik
+\m t-oj-in-ixk'eqinik
+\p INC-A1P-E1S-VT-SC
+\g INC-A1P-E1S-pellizcar-SC
+\l Nos pellizco
+
+\t tatinixk'eqin taq
+\m t-at-in-ixk'eqin taq
+\p INC-A2S-E1S-VT PL
+\g INC-A2S-E1S-pellizcar PL
+\l Los pellizco 
+
+\t tinixk'eqin taq
+\m t-in-ixk'eqin taq
+\p INC-E1S-VT PL
+\g INC-E1S-pellizcar PL
+\l Los pellizco 
+
+\t tinawixk'eqinik
+\m t-in-aq-ixk'eqinik
+\p INC-A1S-E2S-VT-SC
+\g INC-A1S-E2S-pellizcar-SC
+\l Me pellizcas 
+
+\t tatawixk'eqinik
+\m t-at-aw-ixk'eqinik
+\p INC-A2S-E2S-VT-SC
+\g INC-A2S-E2S-pellizcar-SC
+\l Te pellizcas 
+
+\t tawixk'eqinik
+\m t-aw-ixk'eqinik
+\p INC-E2S-VT-SC
+\g INC-E2S-pellizcar-SC
+\l Lo pellizcas
+
+\t tojawixk'eqinik
+\m t-oj-aw-ixk'eqinik
+\p INC-A1P-E2S-VT-SC
+\g INC-A1P-E2S-pellizcar-SC
+\l Nos pellizcas
+
+\t tatawixk'eqin taq
+\m t-at-aw-ixk'eqin taq
+\p INC-A2S-E2S-VT PL
+\g INC-A2S-E2S-pellizcar PL
+\l Los pellizcas
+
+\t tawixk'eqin taq
+\m t-aw-ixk'eqin taq
+\p INC-E2S-VT PL
+\g INC-E2S-pellizcar PL
+\l Los pellizcas
+
+\t tinrwixk'eqinik
+\m t-in-r-ixk'eqinik
+\p INC-A1S-E3S-VT-SC
+\g INC-A1S-E3S-pellizcar-SC
+\l Me pellizca
+
+\t tatrixk'eqinik
+\m t-at-r-ixk'eqinik
+\p INC-A2S-E3S-VT-SC
+\g INC-A2S-E3S-pellizcar-SC
+\l Te pellizca
+
+\t trixk'eqinik
+\m t-r-ixk'eqinik
+\p INC-E3S-VT-SC
+\g INC-E3S-pellizcar-SC
+\l Lo pellizca
+
+\t tojrixk'eqinik
+\m t-oj-r-ixk'eqinik
+\p INC-A1P-E3S-VT-SC
+\g INC-A1P-E3S-pellizcar-SC
+\l Nos pellizca
+
+\t tatrixk'eqin taq
+\m t-at-r-ixk'eqin taq
+\p INC-A2S-E3S-VT PL
+\g INC-A2S-E3S-pellizcar PL
+\l Los pellizca
+
+\t trixk'eqin taq
+\m t-r-ixk'eqin taq
+\p INC-E3S-VT PL
+\g INC-E3S-pellizcar PL
+\l Los pellizca
+
+\t tinqwixk'eqinik
+\m t-in-q-ixk'eqinik
+\p INC-A1S-E1P-VT-SC
+\g INC-A1S-E1P-pellizcar-SC
+\l Me pellizcamos
+
+\t tatqixk'eqinik
+\m t-at-q-ixk'eqinik
+\p INC-A2S-E1P-VT-SC
+\g INC-A2S-E1P-pellizcar-SC
+\l Te pellizcamos
+
+\t tqixk'eqinik
+\m t-q-ixk'eqinik
+\p INC-E1P-VT-SC
+\g INC-E1P-pellizcar-SC
+\l Lo pellizcamos
+
+\t tojqixk'eqinik
+\m t-oj-q-ixk'eqinik
+\p INC-A1P-E1P-VT-SC
+\g INC-A1P-E1P-pellizcar-SC
+\l Nos pellizcamos
+
+\t tatqixk'eqin taq
+\m t-at-q-ixk'eqin taq
+\p INC-A2S-E1P-VT PL
+\g INC-A2S-E1P-pellizcar PL
+\l Los pellizcamos
+
+\t tqixk'eqin taq
+\m t-q-ixk'eqin taq
+\p INC-E1P-VT PL
+\g INC-E1P-pellizcar PL
+\l Los pellizcamos
+
+\t tinawixk'eqin taq
+\m t-in-aq-ixk'eqin taq
+\p INC-A1S-E2S-VT PL
+\g INC-A1S-E2S-pellizcar PL
+\l Me pellizcan 
+
+\t tatawixk'eqin taq
+\m t-at-aw-ixk'eqin taq
+\p INC-A2S-E2S-VT PL
+\g INC-A2S-E2S-pellizcar PL
+\l Te pellizcan 
+
+\t tawixk'eqin taq
+\m t-aw-ixk'eqin taq
+\p INC-E2S-VT PL
+\g INC-E2S-pellizcar PL
+\l Lo pellizcan
+
+\t tojawixk'eqin taq
+\m t-oj-aw-ixk'eqin taq
+\p INC-A1P-E2S-VT PL
+\g INC-A1P-E2S-pellizcar PL
+\l Nos pellizcan
+
+\t tatawixk'eqin taq taq
+\m t-at-aw-ixk'eqin taq taq
+\p INC-A2S-E2S-VT PL PL 
+\g INC-A2S-E2S-pellizcar PL PL
+\l Los pellizcan
+
+\t tawixk'eqin taq taq
+\m t-aw-ixk'eqin taq tsq
+\p INC-E2S-VT PL PL
+\g INC-E2S-pellizcar PL PL
+\l Los pellizcan
+
+\t tinrwixk'eqin taq
+\m t-in-r-ixk'eqin taq
+\p INC-A1S-E3S-VT PL
+\g INC-A1S-E3S-pellizcar PL
+\l Me pellizcan
+
+\t tatrixk'eqin taq
+\m t-at-r-ixk'eqin taq
+\p INC-A2S-E3S-VT PL
+\g INC-A2S-E3S-pellizcar PL
+\l Te pellizcan
+
+\t trixk'eqin taq
+\m t-r-ixk'eqin taq
+\p INC-E3S-VT PL
+\g INC-E3S-pellizcar PL
+\l Lo pellizcan
+
+\t tojrixk'eqin taq
+\m t-oj-r-ixk'eqin taq
+\p INC-A1P-E3S-VT PL
+\g INC-A1P-E3S-pellizcar PL
+\l Nos pellizcan
+
+\t tatrixk'eqin taq taq
+\m t-at-r-ixk'eqin taq taq
+\p INC-A2S-E3S-VT PL PL
+\g INC-A2S-E3S-pellizcar PL PL
+\l Los pellizcan
+
+\t trixk'eqin taq taq
+\m t-r-ixk'eqin taq taq
+\p INC-E3S-VT PL PL
+\g INC-E3S-pellizcar PL PL
+\l Los pellizcan
+
+\t tijin tininixk'eqinik
+\m tijin t-in-in-ixk'eqinik
+\p PROG INC-A1S-E1S-VT-SC
+\g PROG INC-A1S-E1S-pellizcar-SC
+\l Me estoy pellizcando
+
+\t tijin tatinixk'eqinik
+\m tijin t-at-in-ixk'eqinik
+\p PROG INC-A2S-E1S-VT-SC
+\g PROG INC-A2S-E1S-pellizcar-SC
+\l Te estoy pellizcando 
+
+\t tijin tinixk'eqinik
+\m tijin t-in-ixk'eqinik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-pellizcar-SC
+\l Lo estoy pellizcando 
+
+\t tijin tojinixk'eqinik
+\m tijin t-oj-in-ixk'eqinik
+\p PROG INC-A1P-E1S-VT-SC
+\g PROG INC-A1P-E1S-pellizcar-SC
+\l Nos estoy pellizcando
+
+\t tijin tatinixk'eqin taq
+\m tijin t-at-in-ixk'eqin taq
+\p PROG INC-A2S-E1S-VT PL
+\g PROG INC-A2S-E1S-pellizcar PL
+\l Los estoy pellizcando 
+
+\t tijin tinixk'eqin taq
+\m tijin t-in-ixk'eqin taq
+\p PROG INC-E1S-VT PL
+\g PROG INC-E1S-pellizcar PL
+\l Los estoy pellizcando
+
+\t tijin tinawixk'eqinik
+\m tijin t-in-aw-ixk'eqinik
+\p PROG INC-A1S-E2S-VT-SC
+\g PROG INC-A1S-E2S-pellizcar-SC
+\l Me estás pellizcando
+
+\t tijin tatawixk'eqinik
+\m tijin t-at-aw-ixk'eqinik
+\p PROG INC-A2S-E2S-VT-SC
+\g PROG INC-A2S-E2S-pellizcar-SC
+\l Te estás pellizcando 
+
+\t tijin tawixk'eqinik
+\m tijin t-aw-ixk'eqinik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-pellizcar-SC
+\l Lo estás pellizcando 
+
+\t tijin tojawixk'eqinik
+\m tijin t-oj-aw-ixk'eqinik
+\p PROG INC-A1P-E2S-VT-SC
+\g PROG INC-A1P-E2S-pellizcar-SC
+\l Nos estás pellizcando
+
+\t tijin tatawixk'eqin taq
+\m tijin t-at-aw-ixk'eqin taq
+\p PROG INC-A2S-E2S-VT PL
+\g PROG INC-A2S-E2S-pellizcar PL
+\l Los estás pellizcando 
+
+\t tijin tawixk'eqin taq
+\m tijin t-aw-ixk'eqin taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-pellizcar PL
+\l Los estás pellizcando
+
+\t tijin tinrixk'eqinik
+\m tijin t-in-r-ixk'eqinik
+\p PROG INC-A1S-E3S-VT-SC
+\g PROG INC-A1S-E3S-pellizcar-SC
+\l Me está pellizcando
+
+\t tijin tatrixk'eqinik
+\m tijin t-at-r-ixk'eqinik
+\p PROG INC-A2S-E3S-VT-SC
+\g PROG INC-A2S-E3S-pellizcar-SC
+\l Te está pellizcando 
+
+\t tijin trixk'eqinik
+\m tijin t-r-ixk'eqinik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-pellizcar-SC
+\l Lo está pellizcando 
+
+\t tijin tojrixk'eqinik
+\m tijin t-oj-r-ixk'eqinik
+\p PROG INC-A1P-E3S-VT-SC
+\g PROG INC-A1P-E3S-pellizcar-SC
+\l Nos está pellizcando
+
+\t tijin tatrixk'eqin taq
+\m tijin t-at-r-ixk'eqin taq
+\p PROG INC-A2S-E3S-VT PL
+\g PROG INC-A2S-E3S-pellizcar PL
+\l Los está pellizcando 
+
+\t tijin tirixk'eqin taq
+\m tijin ti-r-ixk'eqin taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-pellizcar PL
+\l Los está pellizcando
+
+\t tijin tinqixk'eqinik
+\m tijin t-in-q-ixk'eqinik
+\p PROG INC-A1S-E1P-VT-SC
+\g PROG INC-A1S-E1P-pellizcar-SC
+\l Me estamos pellizcando
+
+\t tijin tatqixk'eqinik
+\m tijin t-at-q-ixk'eqinik
+\p PROG INC-A2S-E1P-VT-SC
+\g PROG INC-A2S-E1P-pellizcar-SC
+\l Te estamos pellizcando 
+
+\t tijin tqixk'eqinik
+\m tijin t-q-ixk'eqinik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-pellizcar-SC
+\l Lo estamos pellizcando 
+
+\t tijin tojqixk'eqinik
+\m tijin t-oj-q-ixk'eqinik
+\p PROG INC-A1P-E1P-VT-SC
+\g PROG INC-A1P-E1P-pellizcar-SC
+\l Nos estamos pellizcando
+
+\t tijin tatqixk'eqin taq
+\m tijin t-at-q-ixk'eqin taq
+\p PROG INC-A2S-E1P-VT PL
+\g PROG INC-A2S-E1P-pellizcar PL
+\l Los estamos pellizcando 
+
+\t tijin tqixk'eqin taq
+\m tijin t-q-ixk'eqin taq
+\p PROG INC-E1P-VT PL
+\g PROG INC-E1P-pellizcar PL
+\l Los estamos pellizcando
+
+\t tijin tinawixk'eqin taq
+\m tijin t-in-aw-ixk'eqin taq
+\p PROG INC-A1S-E2S-VT PL
+\g PROG INC-A1S-E2S-pellizcar PL
+\l Me están pellizcando
+
+\t tijin tatawixk'eqin taq
+\m tijin t-at-aw-ixk'eqin taq
+\p PROG INC-A2S-E2S-VT PL
+\g PROG INC-A2S-E2S-pellizcar PL
+\l Te están pellizcando 
+
+\t tijin tawixk'eqin taq
+\m tijin t-aw-ixk'eqin taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-pellizcar PL
+\l Lo están pellizcando 
+
+\t tijin tojawixk'eqin taq
+\m tijin t-oj-aw-ixk'eqin taq
+\p PROG INC-A1P-E2S-VT PL
+\g PROG INC-A1P-E2S-pellizcar PL
+\l Nos están pellizcando
+
+\t tijin tatawixk'eqin taq taq
+\m tijin t-at-aw-ixk'eqin taq taq
+\p PROG INC-A2S-E2S-VT PL PL
+\g PROG INC-A2S-E2S-pellizcar PL PL
+\l Los están pellizcando 
+
+\t tijin tawixk'eqin taq taq
+\m tijin t-aw-ixk'eqin taq taq
+\p PROG INC-E2S-VT PL PL
+\g PROG INC-E2S-pellizcar PL PL
+\l Los están pellizcando
+
+\t tijin tinrixk'eqin taq
+\m tijin t-in-r-ixk'eqin taq
+\p PROG INC-A1S-E3S-VT PL
+\g PROG INC-A1S-E3S-pellizcar PL
+\l Me están pellizcando
+
+\t tijin tatrixk'eqin taq
+\m tijin t-at-r-ixk'eqin taq
+\p PROG INC-A2S-E3S-VT PL
+\g PROG INC-A2S-E3S-pellizcar PL
+\l Te están pellizcando 
+
+\t tijin trixk'eqin taq
+\m tijin t-r-ixk'eqin taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-pellizcar PL
+\l Lo están pellizcando 
+
+\t tijin tojrixk'eqin taq
+\m tijin t-oj-r-ixk'eqin taq
+\p PROG INC-A1P-E3S-VT PL
+\g PROG INC-A1P-E3S-pellizcar PL
+\l Nos están pellizcando
+
+\t tijin tatrixk'eqin taq taq
+\m tijin t-at-r-ixk'eqin taq taq
+\p PROG INC-A2S-E3S-VT PL PL
+\g PROG INC-A2S-E3S-pellizcar PL PL
+\l Los están pellizcando 
+
+\t tijin tirixk'eqin taq taq
+\m tijin ti-r-ixk'eqin taq taq
+\p PROG INC-E3S-VT PL PL
+\g PROG INC-E3S-pellizcar PL PL
+\l Los están pellizcando
+
+\t xininixk'eqinik
+\m x-in-in-ixk'eqinik
+\p COM-A1S-E1S-VT-SC
+\g COM-A1S-E1S-pellizcar-SC
+\l Me pellizqué 
+
+\t xatinixk'eqinik
+\m x-at-in-ixk'eqinik
+\p COM-A2S-E1S-VT-SC
+\g COM-A2S-E1S-pellizcar-SC
+\l Te pellizqué  
+
+\t xinixk'eqinik
+\m x-in-ixk'eqinik
+\p COM-E1S-VT-SC
+\g COM-E1S-pellizcar-SC
+\l Lo pellizqué  
+
+\t xojinixk'eqinik
+\m x-oj-in-ixk'eqinik
+\p COM-A1P-E1S-VT-SC
+\g COM-A1P-E1S-pellizcar-SC
+\l Nos pellizqué  
+
+\t xatinixk'eqin taq
+\m x-at-in-ixk'eqin taq
+\p COM-A2S-E1S-VT PL
+\g COM-A2S-E1S-pellizcar PL
+\l Los pellizqué  
+
+\t xinixk'eqin taq
+\m x-in-ixk'eqin taq
+\p COM-E1S-VT PL
+\g COM-E1S-pellizcar PL
+\l Los pellizqué  
+
+\t xinawixk'eqinik
+\m x-in-aw-ixk'eqinik
+\p COM-A1S-E2S-VT-SC
+\g COM-A1S-E2S-pellizcar-SC
+\l Me pellizcaste
+
+\t xatawixk'eqinik
+\m x-at-a-ixk'eqinik
+\p COM-A2S-E2S-VT-SC
+\g COM-A2S-E2S-pellizcar-SC
+\l Te pellizcaste 
+
+\t xawixk'eqinik
+\m x-aw-ixk'eqinik
+\p COM-E2S-VT-SC
+\g COM-E2S-pellizcar-SC
+\l Lo pellizcaste  
+
+\t xojawixk'eqinik
+\m x-oj-aw-ixk'eqinik
+\p COM-A1P-E2S-VT-SC
+\g COM-A1P-E2S-pellizcar-SC
+\l Nos pellizcaste 
+
+\t xatawixk'eqin taq
+\m x-at-aw-ixk'eqin taq
+\p COM-A2S-E2S-VT PL
+\g COM-A2S-E2S-pellizcar PL
+\l Los pellizcaste  
+
+\t xawixk'eqin taq
+\m x-aw-ixk'eqin taq
+\p COM-E2S-VT PL
+\g COM-E2S-pellizcar PL
+\l Los pellizcaste
+
+\t xinrixk'eqinik
+\m x-in-r-ixk'eqinik
+\p COM-A1S-E3S-VT-SC
+\g COM-A1S-E3S-pellizcar-SC
+\l Me pellizcó
+
+\t xatrixk'eqinik
+\m x-at-r-ixk'eqinik
+\p COM-A2S-E3S-VT-SC
+\g COM-A2S-E3S-pellizcar-SC
+\l Te pellizcó 
+
+\t xrixk'eqinik
+\m x-r-ixk'eqinik
+\p COM-E3S-VT-SC
+\g COM-E3S-pellizcar-SC
+\l Lo pellizcó  
+
+\t xojrixk'eqinik
+\m x-oj-r-ixk'eqinik
+\p COM-A1P-E3S-VT-SC
+\g COM-A1P-E3S-pellizcar-SC
+\l Nos pellizcó 
+
+\t xatrixk'eqin taq
+\m x-at-r-ixk'eqin taq
+\p COM-A2S-E3S-VT PL
+\g COM-A2S-E3S-pellizcar PL
+\l Los pellizcó  
+
+\t xrixk'eqin taq
+\m x-r-ixk'eqin taq
+\p COM-E3S-VT PL
+\g COM-E3S-pellizcar PL
+\l Los pellizcó
+
+\t xinqixk'eqinik
+\m x-in-q-ixk'eqinik
+\p COM-A1S-E1P-VT-SC
+\g COM-A1S-E1P-pellizcar-SC
+\l Me pellizcamos
+
+\t xatqixk'eqinik
+\m x-at-q-ixk'eqinik
+\p COM-A2S-E1P-VT-SC
+\g COM-A2S-E1P-pellizcar-SC
+\l Te pellizcamos
+
+\t xqixk'eqinik
+\m x-q-ixk'eqinik
+\p COM-E1P-VT-SC
+\g COM-E1P-pellizcar-SC
+\l Lo pellizcamos 
+
+\t xojqixk'eqinik
+\m x-oj-q-ixk'eqinik
+\p COM-A1P-E1P-VT-SC
+\g COM-A1P-E1P-pellizcar-SC
+\l Nos pellizcamos 
+
+\t xatqixk'eqin taq
+\m x-at-q-ixk'eqin taq
+\p COM-A2S-E1P-VT PL
+\g COM-A2S-E1P-pellizcar PL
+\l Los pellizcamos  
+
+\t xqixk'eqin taq
+\m x-q-ixk'eqin taq
+\p COM-E1P-VT PL
+\g COM-E1P-pellizcar PL
+\l Los pellizcamos
+
+\t xinawixk'eqin taq
+\m x-in-aw-ixk'eqin taq
+\p COM-A1S-E2S-VT PL
+\g COM-A1S-E2S-pellizcar PL
+\l Me pellizcaron
+
+\t xatawixk'eqin taq
+\m x-at-a-ixk'eqin taq
+\p COM-A2S-E2S-VT PL
+\g COM-A2S-E2S-pellizcar PL
+\l Te pellizcaron 
+
+\t xawixk'eqin taq
+\m x-aw-ixk'eqin taq
+\p COM-E2S-VT PL
+\g COM-E2S-pellizcar PL
+\l Lo pellizcaron 
+
+\t xojawixk'eqin taq
+\m x-oj-aw-ixk'eqin taq
+\p COM-A1P-E2S-VT PL
+\g COM-A1P-E2S-pellizcar PL
+\l Nos pellizcaron
+
+\t xatawixk'eqin taq taq
+\m x-at-aw-ixk'eqin taq taq
+\p COM-A2S-E2S-VT PL PL 
+\g COM-A2S-E2S-pellizcar PL PL
+\l Los pellizcaron  
+
+\t xawixk'eqin taq taq
+\m x-aw-ixk'eqin taq taq
+\p COM-E2S-VT PL PL
+\g COM-E2S-pellizcar PL PL
+\l Los pellizcaron
+
+\t xinrixk'eqin taq
+\m x-in-r-ixk'eqin taq
+\p COM-A1S-E3S-VT PL
+\g COM-A1S-E3S-pellizcar PL
+\l Me pellizcaron
+
+\t xatrixk'eqin taq
+\m x-at-r-ixk'eqin taq
+\p COM-A2S-E3S-VT PL
+\g COM-A2S-E3S-pellizcar PL
+\l Te pellizcaron 
+
+\t xrixk'eqin taq
+\m x-r-ixk'eqin taq
+\p COM-E3S-VT PL
+\g COM-E3S-pellizcar PL
+\l Lo pellizcaron  
+
+\t xojrixk'eqin taq
+\m x-oj-r-ixk'eqin taq
+\p COM-A1P-E3S-VT PL
+\g COM-A1P-E3S-pellizcar PL
+\l Nos pellizcaron
+
+\t xatrixk'eqin taq taq
+\m x-at-r-ixk'eqin taq taq
+\p COM-A2S-E3S-VT PL PL
+\g COM-A2S-E3S-pellizcar PL PL
+\l Los pellizcaron 
+
+\t xrixk'eqin taq taq
+\m x-r-ixk'eqin taq taq
+\p COM-E3S-VT PL PL 
+\g COM-E3S-pellizcar PL PL
+\l Los pellizcaron
+
+\t mainawixk'eqine'
+\m ma-in-aw-ixk'eqin-e'
+\p IMP-A1S-E2S-VT-SC
+\g IMP-A1S-E2S-pellizcar-SC
+\l No me pellizques
+
+\t maatawixk'eqine'
+\m ma-at-aw-ixk'eqin-e'
+\p IMP-A2S-E2S-VT-SC
+\g IMP-A2S-E2S-pellizcar-SC
+\l No te pellizques
+
+\t maawixk'eqine'
+\m ma-aw-ixk'eqin-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-pellizcar-SC
+\l No lo pellizques
+
+\t maojawixk'eqine'
+\m ma-oj-aw-ixk'eqin-e'
+\p IMP-A1P-E2S-VT-SC
+\g IMP-A1P-E2S-pellizcar-SC
+\l No nos pellizques
+
+\t maatawixk'eqine' taq
+\m ma-at-aw-ixk'eqin-e' taq
+\p IMP-A2S-E2S-VT-SC PL
+\g IMP-A2S-E2S-pellizcar-SC PL
+\l No los pellizques
+
+\t maawixk'eqine' taq
+\m ma-aw-ixk'eqin-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-pellizcar-SC PL
+\l No los pellizques
+
+\t mainrixk'eqine'
+\m ma-in-r-ixk'eqin-e'
+\p IMP-A1S-E3S-VT-SC
+\g IMP-A1S-E3S-pellizcar-SC
+\l No me pellizque
+
+\t maatrixk'eqine'
+\m ma-at-r-ixk'eqin-e'
+\p IMP-A2S-E3S-VT-SC
+\g IMP-A2S-E3S-pellizcar-SC
+\l No te pellizque
+
+\t marixk'eqine'
+\m ma-r-ixk'eqin-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-pellizcar-SC
+\l No lo pellizque
+
+\t maojrixk'eqine'
+\m ma-oj-r-ixk'eqin-e'
+\p IMP-A1P-E3S-VT-SC
+\g IMP-A1P-E3S-pellizcar-SC
+\l No nos pellizque
+
+\t marixk'eqine' taq
+\m ma-at-r-ixk'eqin-e' taq
+\p IMP-A2S-E3S-VT-SC PL
+\g IMP-A2S-E3S-pellizcar-SC PL
+\l No los pellizque
+
+\t marixk'eqine' taq
+\m ma-r-ixk'eqin-e' taq
+\p IMP-E3S-VT-SC PL
+\g IMP-E3S-pellizcar-SC PL
+\l No los pellizque
+
+\t mainqixk'eqine'
+\m ma-in-q-ixk'eqin-e'
+\p IMP-A1S-E1P-VT-SC
+\g IMP-A1S-E1P-pellizcar-SC
+\l No me pellizquemos
+
+\t maatqixk'eqine'
+\m ma-at-q-ixk'eqin-e'
+\p IMP-A2S-E1P-VT-SC
+\g IMP-A2S-E1P-pellizcar-SC
+\l No te pellizquemos
+
+\t maqixk'eqine'
+\m ma-q-ixk'eqin-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-pellizcar-SC
+\l No lo pellizquemos
+
+\t maojqixk'eqine'
+\m ma-oj-q-ixk'eqin-e'
+\p IMP-A1P-E1P-VT-SC
+\g IMP-A1P-E1P-pellizcar-SC
+\l No nos pellizquemos
+
+\t maqixk'eqine' taq
+\m ma-at-q-ixk'eqin-e' taq
+\p IMP-A2S-E1P-VT-SC PL
+\g IMP-A2S-E1P-pellizcar-SC PL
+\l No los pellizquemos
+
+\t maqixk'eqine' taq
+\m ma-q-ixk'eqin-e' taq
+\p IMP-E1P-VT-SC PL
+\g IMP-E1P-pellizcar-SC PL
+\l No los pellizquemos
+
+\t mainawixk'eqine' taq
+\m ma-in-aw-ixk'eqin-e' taq
+\p IMP-A1S-E2S-VT-SC PL
+\g IMP-A1S-E2S-pellizcar-SC PL
+\l No me pellizquen
+
+\t maatawixk'eqine' taq
+\m ma-at-aw-ixk'eqin-e' taq
+\p IMP-A2S-E2S-VT-SC PL
+\g IMP-A2S-E2S-pellizcar-SC PL
+\l No te pellizquen
+
+\t maawixk'eqine' taq 
+\m ma-aw-ixk'eqin-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-pellizcar-SC PL
+\l No lo pellizquen
+
+\t maojawixk'eqine' taq
+\m ma-oj-aw-ixk'eqin-e' taq
+\p IMP-A1P-E2S-VT-SC PL
+\g IMP-A1P-E2S-pellizcar-SC PL
+\l No nos pellizquen
+
+\t maatawixk'eqine' taq taq
+\m ma-at-aw-ixk'eqin-e' taq taq
+\p IMP-A2S-E2S-VT-SC PL PL
+\g IMP-A2S-E2S-pellizcar-SC PL PL
+\l No los pellizquen
+
+\t maawixk'eqine' taq taq
+\m ma-aw-ixk'eqin-e' taq taq
+\p IMP-E2S-VT-SC PL PL
+\g IMP-E2S-pellizcar-SC PL PL
+\l No los pellizquen
+
+\t mainrixk'eqine' taq
+\m ma-in-r-ixk'eqin-e' taq
+\p IMP-A1S-E3S-VT-SC PL
+\g IMP-A1S-E3S-pellizcar-SC PL
+\l No me pellizquen
+
+\t maatrixk'eqine' taq
+\m ma-at-r-ixk'eqin-e' taq 
+\p IMP-A2S-E3S-VT-SC PL
+\g IMP-A2S-E3S-pellizcar-SC PL
+\l No te pellizquen
+
+\t marixk'eqine' taq
+\m ma-r-ixk'eqin-e' taq
+\p IMP-E3S-VT-SC PL
+\g IMP-E3S-pellizcar-SC PL
+\l No lo pellizquen
+
+\t maojrixk'eqine' taq
+\m ma-oj-r-ixk'eqin-e' taq
+\p IMP-A1P-E3S-VT-SC L PL
+\g IMP-A1P-E3S-pellizcar-SC PL
+\l No nos pellizquen
+
+\t marixk'eqine' taq taq
+\m ma-at-r-ixk'eqin-e' taq taq
+\p IMP-A2S-E3S-VT-SC PL PL
+\g IMP-A2S-E3S-pellizcar-SC PL PL
+\l No los pellizquen
+
+\t marixk'eqine' taq taq
+\m ma-r-ixk'eqin-e' taq taq
+\p IMP-E3S-VT-SC PL PL
+\g IMP-E3S-pellizcar-SC PL PL
+\l No los pellizquen
+
+\t kinawixk'eqine'
+\m k-in-aw-ixk'eqin-e'
+\p IMP-A1S-E2S-VT-SC
+\g IMP-A1S-E2S-pellizcar-SC
+\l Me pellizca
+
+\t katawixk'eqine'
+\m k-at-aw-ixk'eqin-e'
+\p IMP-A2S-E2S-VT-SC
+\g IMP-A2S-E2S-pellizcar-SC
+\l Te pellizca
+
+\t kawixk'eqine'
+\m k-aw-ixk'eqin-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-pellizcar-SC
+\l Lo pellizca
+
+\t kqawixk'eqine'
+\m k-q-aw-ixk'eqin-e'
+\p IMP-A1P-E2S-VT-SC
+\g IMP-A1P-E2S-pellizcar-SC
+\l Nos pellizca
+
+\t katawixk'eqine' taq
+\m k-at-aw-ixk'eqin-e' taq
+\p IMP-A2S-E2S-VT-SC PL
+\g IMP-A2S-E2S-pellizcar-SC PL
+\l Los pellizca
+
+\t kawixk'eqine' taq
+\m k-aw-ixk'eqin-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-pellizcar-SC PL
+\l Los pellizca
+
+\t inrixk'eqine'
+\m in-r-ixk'eqin-e'
+\p A1S-E3S-VT-SC
+\g A1S-E3S-pellizcar-SC
+\l Me pellizque
+
+\t atrixk'eqine'
+\m at-r-ixk'eqin-e'
+\p A2S-E3S-VT-SC
+\g A2S-E3S-pellizcar-SC
+\l Te pellizque
+
+\t rixk'eqine'
+\m r-ixk'eqin-e'
+\p E3S-VT-SC
+\g E3S-pellizcar-SC
+\l Lo pellizque
+
+\t qarixk'eqine'
+\m qa-r-ixk'eqin-e'
+\p A1P-E3S-VT-SC
+\g A1P-E3S-pellizcar-SC
+\l Nos pellizque
+
+\t atrixk'eqine' taq
+\m at-r-ixk'eqin-e' taq
+\p A2S-E3S-VT-SC PL
+\g A2S-E3S-pellizcar-SC PL
+\l Los pellizque
+
+\t rixk'eqine' taq
+\m r-ixk'eqin-e' taq
+\p E3S-VT-SC PL
+\g E3S-pellizcar-SC PL
+\l Los pellizque
+
+\t inqixk'eqine'
+\m in-q-ixk'eqin-e'
+\p A1S-E1P-VT-SC
+\g A1S-E1P-pellizcar-SC
+\l Me pellizquemos
+
+\t atqixk'eqine'
+\m at-q-ixk'eqin-e'
+\p A2S-E1P-VT-SC
+\g A2S-E1P-pellizcar-SC
+\l Te pellizquemos
+
+\t qixk'eqine'
+\m q-ixk'eqin-e'
+\p E1P-VT-SC
+\g E1P-pellizcar-SC
+\l Lo pellizquemos
+
+\t qaqixk'eqine'
+\m qa-q-ixk'eqin-e'
+\p A1P-E1P-VT-SC
+\g A1P-E1P-pellizcar-SC
+\l Nos pellizquemos
+
+\t atqixk'eqine' taq
+\m at-q-ixk'eqin-e' taq
+\p A2S-E1P-VT-SC PL
+\g A2S-E1P-pellizcar-SC PL
+\l Los pellizquemos
+
+\t qixk'eqine' taq
+\m q-ixk'eqin-e' taq
+\p E1P-VT-SC PL
+\g E1P-pellizcar-SC PL
+\l Los pellizquemos
+
+\t kinawixk'eqine' taq
+\m k-in-aw-ixk'eqin-e' taq
+\p IMP-A1S-E2S-VT-SC PL
+\g IMP-A1S-E2S-pellizcar-SC PL
+\l Me pellizquen
+
+\t katawixk'eqine' taq
+\m k-at-aw-ixk'eqin-e' taq
+\p IMP-A2S-E2S-VT-SC PL
+\g IMP-A2S-E2S-pellizcar-SC PL
+\l Te pellizquen
+
+\t kawixk'eqine' taq
+\m k-aw-ixk'eqin-e' taq
+\p IMP-E2S-VT-SC PL 
+\g IMP-E2S-pellizcar-SC PL
+\l Lo pellizquen
+
+\t kqawixk'eqine' taq
+\m k-q-aw-ixk'eqin-e' taq
+\p IMP-A1P-E2S-VT-SC PL
+\g IMP-A1P-E2S-pellizcar-SC PL
+\l Nos pellizquen
+
+\t katawixk'eqine' taq taq
+\m k-at-aw-ixk'eqin-e' taq taq
+\p IMP-A2S-E2S-VT-SC PL PL
+\g IMP-A2S-E2S-pellizcar-SC PL PL
+\l Los pellizquen
+
+\t kawixk'eqine' taq taq
+\m k-aw-ixk'eqin-e' taq taq
+\p IMP-E2S-VT-SC PL PL
+\g IMP-E2S-pellizcar-SC PL PL
+\l Los pellizquen
+
+\t inrixk'eqine' taq
+\m in-r-ixk'eqin-e' taq
+\p A1S-E3S-VT-SC PL
+\g A1S-E3S-pellizcar-SC PL
+\l Me pellizquen
+
+\t atrixk'eqine' taq
+\m at-r-ixk'eqin-e' taq
+\p A2S-E3S-VT-SC PL
+\g A2S-E3S-pellizcar-SC PL
+\l Te pellizquen 
+
+\t rixk'eqine' taq
+\m r-ixk'eqin-e' taq
+\p E3S-VT-SC PL
+\g E3S-pellizcar-SC PL
+\l Lo pellizquen
+
+\t qarixk'eqine' taq
+\m qa-r-ixk'eqin-e' taq 
+\p A1P-E3S-VT-SC PL
+\g A1P-E3S-pellizcar-SC PL
+\l Nos pellizquen
+
+\t atrixk'eqine' taq taq
+\m at-r-ixk'eqin-e' taq taq
+\p A2S-E3S-VT-SC PL PL
+\g A2S-E3S-pellizcar-SC PL PL
+\l Los pellizquen
+
+\t rixk'eqine' taq taq
+\m r-ixk'eqin-e' taq taq
+\p E3S-VT-SC PL PL
+\g E3S-pellizcar-SC PL PL
+\l Los pellizquen
+
+\t tinjalmanik
+\m t-in-jalman-ik
+\p INC-A1S-VI-SC
+\g INC-A1S-mejorar-SC
+\l Mejoro
+
+\t tatjalmanik
+\m t-at-jalman-ik
+\p INC-A2S-VI-SC
+\g INC-A2S-mejorar-SC
+\l Mejoras
+
+\t tjalmanik
+\m t-jalman-ik
+\p INC-VI-SC
+\g INC-mejorar-SC
+\l Mejora
+
+\t tojjalmanik
+\m t-oj-jalman-ik
+\p INC-A1P-VI-SC
+\g INC-A1P-mejorar-SC
+\l Mejoramos
+
+\t tatjalman taq
+\m t-at-jalman taq
+\p INC-A2S-VI PL
+\g INC-A2S-mejorar PL
+\l Mejoran
+
+\t tjalman taq
+\m t-jalman taq
+\p INC-VI PL
+\g INC-mejorar PL
+\l Mejoran
+
+\t xinjalmanik
+\m x-in-jalman-ik
+\p COM-A1S-VI-SC
+\g COM-A1S-mejorar-SC
+\l Mejoré
+
+\t xatjalmanik
+\m x-at-jalman-ik
+\p COM-A2S-VI-SC
+\g COM-A2S-mejorar-SC
+\l Mejoraste
+
+\t xjalmanik
+\m x-jalman-ik
+\p COM-VI-SC
+\g COM-mejorar-SC
+\l Mejoró
+
+\t xojjalmanik
+\m x-oj-jalman-ik
+\p COM-A1P-VI-SC
+\g COM-A1P-mejorar-SC
+\l Mejoramos
+
+\t xatjalman taq
+\m x-at-jalman taq
+\p COM-A2S-VI PL
+\g COM-A2S-mejorar PL
+\l Mejoraron
+
+\t xjalman taq
+\m x-jalman taq
+\p COM-VI PL
+\g COM-mejorar PL
+\l Mejoraron
+
+\t tijin tinjalmanik
+\m tijin t-in-jalman-ik
+\p PROG INC-A1S-VI-SC
+\g PROG INC-A1S-mejorar-SC
+\l Estoy mejorando
+
+\t tijin tatjalmanik
+\m tijin t-at-jalman-ik
+\p PROG INC-A2S-VI-SC
+\g PROG INC-A2S-mejorar-SC
+\l Estás mejorando
+
+\t tijin tjalmanik
+\m tijin t-jalman-ik
+\p PROG INC-VI-SC
+\g PROG INC-mejorar-SC
+\l Está mejorando
+
+\t tijin tojjalmanik
+\m tijin t-oj-jalman-ik
+\p PROG INC-A1P-VI-SC
+\g PROG INC-A1P-mejorar-SC
+\l Estamos mejorando
+
+\t tijin tatjalman taq
+\m tijin t-at-jalman taq
+\p PROG INC-A2S-VI PL
+\g PROG INC-A2S-mejorar PL
+\l Están mejorando
+
+\t tijin tjalman taq
+\m tijin t-jalman taq
+\p PROG INC-VI PL
+\g PROG INC-mejorar PL
+\l Están mejorando
+
+\t maatjalmane'
+\m ma-at-jalman-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-mejorar-SC
+\l No mejores
+
+\t majalmane'
+\m ma-jalman-e'
+\p IMP-VI-SC
+\g IMP-mejorar-SC
+\l No mejore
+
+\t maojjalmane'
+\m ma-oj-jalman-e'
+\p IMP-A1P-VI-SC
+\g IMP-A1P-mejorar-SC
+\l No mejoremos
+
+\t maatjalmane' taq
+\m ma-at-jalman-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-mejorar-SC PL
+\l No mejoren
+
+\t majalmane' taq
+\m ma-jalman-e' taq
+\p IMP-VI-SC PL
+\g IMP-mejorar-SC PL
+\l No mejoren
+
+\t katjalmane'
+\m k-at-jalman-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-mejorar-SC
+\l Mejora
+
+\t jalmane'
+\m jalman-e'
+\p VI-SC
+\g mejorar-SC
+\l Mejore
+
+\t ojjalmane'
+\m oj-jalman-e'
+\p A1P-VI-SC
+\g A1P-mejorar-SC
+\l Mejoremos
+
+\t katjalmane' taq
+\m k-at-jalman-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-mejorar-SC PL
+\l Mejoren
+
+\t jalmane' taq
+\m jalman-e' taq
+\p VI-SC PL
+\g mejorar-SC PL
+\l Mejoren 
+
+\t tinjek'oweem
+\m t-in-jek'oweem
+\p INC-A1S-VI
+\g INC-A1S-agonizar
+\l Agonizo
+
+\t tatjek'oweem
+\m t-at-jek'oweem
+\p INC-A2S-VI
+\g INC-A2S-agonizar
+\l Agonizas
+
+\t tjek'oweem
+\m t-jek'oweem
+\p INC-VI
+\g INC-agonizar
+\l Agoniza
+
+\t tojjek'oweem
+\m t-oj-jek'oweem
+\p INC-A1P-VI
+\g INC-A1P-agonizar
+\l Agonizamos
+
+\t tatjek'oweem taq
+\m t-at-jek'oweem taq
+\p INC-A2S-VI PL
+\g INC-A2S-agonizar PL
+\l Agonizan
+
+\t tjek'oweem taq
+\m t-jek'oweem taq
+\p INC-VI PL
+\g INC-agonizar PL
+\l Agonizan
+
+\t tijin tinjek'oweem
+\m tijin t-in-jek'oweem
+\p PROG INC-A1S-VI
+\g PROG INC-A1S-agonizar
+\l Estoy agonizando
+
+\t tijin tatjek'oweem
+\m tijin t-at-jek'oweem
+\p PROG INC-A2S-VI
+\g PROG INC-A2S-agonizar
+\l Estás agonizando
+
+\t tijin tjek'oweem
+\m tijin t-jek'oweem
+\p PROG INC-VI
+\g PROG INC-agonizar
+\l Está agonizando
+
+\t tijin tojjek'oweem
+\m tijin t-oj-jek'oweem
+\p PROG INC-A1P-VI
+\g PROG INC-A1P-agonizar
+\l Estamos agonizando
+
+\t tijin tatjek'oweem taq
+\m tijin t-at-jek'oweem taq
+\p PROG INC-A2S-VI PL
+\g PROG INC-A2S-agonizar PL
+\l Están agonizando
+
+\t tijin tjek'oweem taq
+\m tijin t-jek'oweem taq
+\p PROG INC-VI PL
+\g PROG INC-agonizar PL
+\l Están agonizando
+
+\t xinjek'oweem
+\m x-in-jek'oweem
+\p COM-A1S-VI
+\g COM-A1S-agonizar
+\l Agonicé
+
+\t xatjek'oweem
+\m x-at-jek'oweem
+\p COM-A2S-VI
+\g COM-A2S-agonizar
+\l Agonizaste
+
+\t xjek'oweem
+\m x-jek'oweem
+\p COMS-VI
+\g COM-agonizar
+\l Agonizó
+
+\t xojjek'oweem
+\m x-oj-jek'oweem
+\p COM-A1P-VI
+\g COM-A1P-agonizar
+\l Agonizamos
+
+\t xatjek'oweem taq
+\m x-at-jek'oweem taq
+\p COM-A2S-VI PL
+\g COM-A2S-agonizar PL
+\l Agonizaron
+
+\t xjek'oweem taq
+\m x-jek'oweem taq
+\p COM-VI PL
+\g COM-agonizar PL
+\l Agonizaron
+
+\t tinjib'ib'eej
+\m t-in-jib'ib'ee-j
+\p INC-E1S-VT-SC
+\g INC-E1S-chicotear-SC
+\l Lo chicoteo
+
+\t tajib'ib'eej
+\m t-a-jib'ib'ee-j
+\p INC-E2S-VT-SC
+\g INC-E2S-chicotear-SC
+\l Lo chicoteas
+
+\t tijjib'ib'eej
+\m ti-j-jib'ib'ee-j
+\p INC-E3S-VT-SC
+\g INC-E3S-chicotear-SC
+\l Lo chicotea
+
+\t tqajib'ib'eej
+\m t-qa-jib'ib'ee-j
+\p INC-E1P-VT-SC
+\g INC-E1P-chicotear-SC
+\l Lo chicoteamos
+
+\t tajib'ib'ee taq
+\m t-a-jib'ib'ee taq
+\p INC-E2S-VT PL
+\g INC-E2S-chicotear PL
+\l Lo chicotean
+
+\t tijjib'ib'ee taq
+\m ti-j-jib'ib'ee taq
+\p INC-E3S-VT PL
+\g INC-E3S-chicotear PL
+\l Lo chicotean
+
+\t tijin tinjib'ib'eej
+\m tijin t-in-jib'ib'ee-j
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-chicotear-SC
+\l Lo estoy chicoteando
+
+\t tijin tajib'ib'eej
+\m tijin t-a-jib'ib'ee-j
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-chicotear-SC
+\l Lo estás chicoteando
+
+\t tijin tijjib'ib'eej
+\m tijin ti-j-jib'ib'ee-j
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-chicotear-SC
+\l Lo está chicoteando
+
+\t tijin tqajib'ib'eej
+\m tijin t-qa-jib'ib'ee-j
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-chicotear-SC
+\l Lo estamos chicoteando
+
+\t tijin tajib'ib'ee taq
+\m tijin t-a-jib'ib'ee taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-chicotear PL
+\l Lo están chicoteando
+
+\t tijin tijjib'ib'ee taq
+\m tijin ti-j-jib'ib'ee taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-chicotear PL
+\l Lo están chicoteando
+
+\t xinjib'ib'eej
+\m x-in-jib'ib'ee-j
+\p COM-E1S-VT-SC
+\g COM-E1S-chicotear-SC
+\l Lo chicoteé
+
+\t xajib'ib'eej
+\m x-a-jib'ib'ee-j
+\p COM-E2S-VT-SC
+\g COM-E2S-chicotear-SC
+\l Lo chicoteaste
+
+\t xjjib'ib'eej
+\m x-j-jib'ib'ee-j
+\p COM-E3S-VT-SC
+\g COM-E3S-chicotear-SC
+\l Lo chicoteó
+
+\t xqajib'ib'eej
+\m x-qa-jib'ib'ee-j
+\p COM-E1P-VT-SC
+\g COM-E1P-chicotear-SC
+\l Lo chicoteamos
+
+\t xajib'ib'ee taq
+\m x-a-jib'ib'ee taq
+\p COM-E2S-VT PL
+\g COM-E2S-chicotear PL
+\l Lo chicotearon
+
+\t xjjib'ib'ee taq
+\m x-j-jib'ib'ee taq
+\p COM-E3S-VT PL
+\g COM-E3S-chicotear PL
+\l Lo chicotearon
+
+\t tinjoriik
+\m t-in-jori-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-perforar-SC
+\l Lo perforo
+
+\t tajoriik
+\m t-a-jori-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-perforar-SC
+\l Lo perforas
+
+\t tijjoriik
+\m ti-j-jori-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-perforar-SC
+\l Lo perfora
+
+\t tqajoriik
+\m t-qa-jori-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-perforar-SC
+\l Lo perforamos
+
+\t tajori taq
+\m t-a-jori taq
+\p INC-E2S-VT PL
+\g INC-E2S-perforar PL
+\l Lo perforan
+
+\t tijjori taq
+\m ti-j-jori taq
+\p INC-E3S-VT PL
+\g INC-E3S-perforar PL
+\l Lo perforan
+
+\t tijin tinjoriik
+\m tijin t-in-jori-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-perforar-SC
+\l Lo estoy perforando
+
+\t tijin tajoriik
+\m tijin t-a-jori-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-perforar-SC
+\l Lo estás perforando
+
+\t tijin tijjoriik
+\m tijin ti-j-jori-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-perforar-SC
+\l Lo está perforando
+
+\t tijin tqajoriik
+\m tijin t-qa-jori-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-perforar-SC
+\l Lo estamos perforando
+
+\t tijin tajori taq
+\m tijin t-a-jori taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-perforar PL
+\l Lo están perforando
+
+\t tijin tijjori taq
+\m tijin ti-j-jori taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-perforar PL
+\l Lo están perforando
+
+\t xinjoriik
+\m x-in-jori-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-perforar-SC
+\l Lo perforé
+
+\t xajoriik
+\m x-a-jori-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-perforar-SC
+\l Lo perforaste
+
+\t xjjoriik
+\m x-j-jori-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-perforar-SC
+\l Lo perforó
+
+\t xqajoriik
+\m x-qa-jori-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-perforar-SC
+\l Lo perforamos
+
+\t xajori taq
+\m x-a-jori taq
+\p COM-E2S-VT PL
+\g COM-E2S-perforar PL
+\l Lo perforaron
+
+\t xjjori taq
+\m x-j-jori taq
+\p COM-E3S-VT PL
+\g COM-E3S-perforar PL
+\l Lo perforaron
+
+\t maajorie'
+\m ma-a-jori-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-perforar-SC
+\l No lo perfores
+
+\t mjjorie'
+\m m-j-jori-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-perforar-SC
+\l No lo perfore
+
+\t mqajorie'
+\m m-qa-jori-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-perforar-SC
+\l No lo perforemos
+
+\t maajori taq
+\m ma-a-jori taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-perforar PL
+\l No lo perforen
+
+\t mjjori taq
+\m m-j-jori taq
+\p IMP-E3S-VT PL
+\g IMP-E3S-perforar PL
+\l No lo perforen
+
+\t kajorie'
+\m k-a-jori-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-perforar-SC
+\l Lo perfora
+
+\t jorie'
+\m j-jori-e'
+\p E3S-VT-SC
+\g E3S-perforar-SC
+\l Lo perfore
+
+\t qajorie'
+\m qa-jori-e'
+\p E1P-VT-SC
+\g E1P-perforar-SC
+\l Lo perforemos
+
+\t kajori taq
+\m k-a-jori taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-perforar PL
+\l Lo perforen
+
+\t jjori taq
+\m j-jori taq
+\p E3S-VT PL
+\g E3S-perforar PL
+\l Lo perforen
+
+\t tinjpaqchi'jik
+\m t-in-jpaqchi'j-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-contradecirlo-SC
+\l Lo contradigo
+
+\t tajpaqchi'jik
+\m t-a-jpaqchi'j-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-contradecirlo-SC
+\l Lo contradices
+
+\t tijjpaqchi'jik
+\m ti-j-jpaqchi'j-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-contradecirlo-SC
+\l Lo contradice
+
+\t tqajpaqchi'jik
+\m t-qa-jpaqchi'j-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-contradecirlo-SC
+\l Lo contradecimos
+
+\t tajpaqchi'j taq
+\m t-a-jpaqchi'j taq
+\p INC-E2S-VT PL
+\g INC-E2S-contradecirlo PL
+\l Lo contradicen
+
+\t tijjpaqchi'j taq
+\m ti-j-jpaqchi'j taq
+\p INC-E3S-VT PL
+\g INC-E3S-contradecirlo PL
+\l Lo contradicen
+
+\t tijin tinjpaqchi'jik
+\m tijin t-in-jpaqchi'j-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-contradecirlo-SC
+\l Lo estoy contradiciendo
+
+\t tijin tajpaqchi'jik
+\m tijin t-a-jpaqchi'j-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-contradecirlo-SC
+\l Lo estás contradiciendo
+
+\t tijin tijjpaqchi'jik
+\m tijin ti-j-jpaqchi'j-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-contradecirlo-SC
+\l Lo está contradiciendo
+
+\t tijin tqajpaqchi'jik
+\m tijin t-qa-jpaqchi'j-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-contradecirlo-SC
+\l Lo estamos contradiciendo
+
+\t tijin tajpaqchi'j taq
+\m tijin t-a-jpaqchi'j taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-contradecirlo PL
+\l Lo están contradiciendo
+
+\t tijin tijjpaqchi'j taq
+\m tijin ti-j-jpaqchi'j taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-contradecirlo PL
+\l Lo están contradiciendo
+
+\t xinjpaqchi'jik
+\m x-in-jpaqchi'j-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-contradecirlo-SC
+\l Lo contradije
+
+\t xajpaqchi'jik
+\m x-a-jpaqchi'j-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-contradecirlo-SC
+\l Lo contradijiste
+
+\t xjjpaqchi'jik
+\m x-j-jpaqchi'j-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-contradecirlo-SC
+\l Lo contradijo
+
+\t xqajpaqchi'jik
+\m x-qa-jpaqchi'j-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-contradecirlo-SC
+\l Lo contradijimos
+
+\t xajpaqchi'j taq
+\m x-a-jpaqchi'j taq
+\p COM-E2S-VT PL
+\g COM-E2S-contradecirlo PL
+\l Lo contradijeron
+
+\t xjjpaqchi'j taq
+\m x-j-jpaqchi'j taq
+\p COM-E3S-VT PL
+\g COM-E3S-contradecirlo PL
+\l Lo contradijeron
+
+\t maajpaqchi'je'
+\m ma-a-jpaqchi'j-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-contradecirlo-SC
+\l No lo contradigas
+
+\t mjjpaqchi'je'
+\m m-j-jpaqchi'j-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-contradecirlo-SC
+\l No lo contradiga
+
+\t mqajpaqchi'je'
+\m m-qa-jpaqchi'j-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-contradecirlo-SC
+\l No lo contradigamos
+
+\t maajpaqchi'j taq
+\m ma-a-jpaqchi'j taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-contradecirlo PL
+\l No lo contradigan
+
+\t mjjpaqchi'j taq
+\m m-j-jpaqchi'j taq
+\p IMP-E3S-VT PL
+\g IMP-E3S-contradecirlo PL
+\l No lo contradigan
+
+\t kajpaqchi'je'
+\m k-a-jpaqchi'j-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-contradecirlo-SC
+\l Lo contradice
+
+\t jjpaqchi'je'
+\m j-jpaqchi'j-e'
+\p E3S-VT-SC
+\g E3S-contradecirlo-SC
+\l Lo contradiga
+
+\t qajpaqchi'je'
+\m qa-jpaqchi'j-e'
+\p E1P-VT-SC
+\g E1P-contradecirlo-SC
+\l Lo contradigamos
+
+\t kajpaqchi'j taq
+\m k-a-jpaqchi'j taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-contradecirlo PL
+\l Lo contradigan
+
+\t jjpaqchi'j taq
+\m j-jpaqchi'j taq
+\p E3S-VT PL
+\g E3S-contradecirlo PL
+\l Lo contradigan
+
+\t tinjq'ab'aal
+\m t-in-jq'ab'aal
+\p INC-A1S-VI
+\g INC-A1S-comprometerse
+\l Me comprometo
+
+\t tatjq'ab'aal
+\m t-at-jq'ab'aal
+\p INC-A2S-VI
+\g INC-A2S-comprometerse
+\l Te comprometas
+
+\t tjq'ab'aal
+\m t-jq'ab'aal
+\p INC-VI
+\g INC-comprometerse
+\l Se comprometa
+
+\t tqajq'ab'aal
+\m t-qa-jq'ab'aal
+\p INC-A1P-VI
+\g INC-A1P-comprometerse
+\l Nos comprometamos
+
+\t tatjq'ab'aal taq
+\m t-at-jq'ab'aal taq
+\p INC-A2S-VI PL
+\g INC-A2S-comprometerse PL
+\l Se comprometan
+
+\t tjq'ab'aal taq
+\m t-jq'ab'aal taq
+\p INC-VI PL
+\g INC-comprometerse PL
+\l Se comprometan
+
+\t tijin tinjq'ab'aal
+\m tijin t-in-jq'ab'aal
+\p PROG INC-A1S-VI
+\g PROG INC-A1S-comprometerse
+\l Me estoy comprometiendo
+
+\t tijin tatjq'ab'aal
+\m tijin t-at-jq'ab'aal
+\p PROG INC-A2S-VI
+\g PROG INC-A2S-comprometerse
+\l Te estás comprometiendo
+
+\t tijin tjq'ab'aal
+\m tijin t-jq'ab'aal
+\p PROG INC-VI
+\g PROG INC-comprometerse
+\l Se está comprometiendo
+
+\t tijin tqajq'ab'aal
+\m tijin t-qa-jq'ab'aal
+\p PROG INC-A1P-VI
+\g PROG INC-A1P-comprometerse
+\l Nos estamos comprometiendo
+
+\t tijin tatjq'ab'aal taq
+\m tijin t-at-jq'ab'aal taq
+\p PROG INC-A2S-VI PL
+\g PROG INC-A2S-comprometerse PL
+\l Se están comprometiendo
+
+\t tijin tjq'ab'aal taq
+\m tijin t-jq'ab'aal taq
+\p PROG INC-VI PL
+\g PROG INC-comprometerse PL
+\l Se están comprometiendo
+
+\t xinjq'ab'aal
+\m x-in-jq'ab'aal
+\p COM-A1S-VI
+\g COM-A1S-comprometerse
+\l Me comprometé
+
+\t xatjq'ab'aal
+\m x-at-jq'ab'aal
+\p COM-A2S-VI
+\g COM-A2S-comprometerse
+\l Te comprometaste
+
+\t xjq'ab'aal
+\m x-jq'ab'aal
+\p COM-VI
+\g COM-comprometerse
+\l Se comprometó
+
+\t xqajq'ab'aal
+\m x-qa-jq'ab'aal
+\p COM-A1P-VI
+\g COM-A1P-comprometerse
+\l Nos comprometamos
+
+\t xatjq'ab'aal taq
+\m x-at-jq'ab'aal taq
+\p COM-A2S-VI PL
+\g COM-A2S-comprometerse PL
+\l Se comprometaron
+
+\t xjq'ab'aal taq
+\m x-jq'ab'aal taq
+\p COM-VI PL
+\g COM-comprometerse PL
+\l Se comprometaron
+
+\t maatjq'ab'aale'
+\m ma-at-jq'ab'aal-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-comprometerse-SC
+\l No te comprometas
+
+\t mjq'ab'aale'
+\m m-jq'ab'aal-e'
+\p IMP-VI-SC
+\g IMP-comprometerse-SC
+\l No se comprometa
+
+\t mqajq'ab'aale'
+\m m-qa-jq'ab'aal-e'
+\p IMP-A1P-VI-SC
+\g IMP-A1P-comprometerse-SC
+\l No nos comprometamos
+
+\t maatjq'ab'aale' taq
+\m ma-at-jq'ab'aal-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-comprometerse-SC PL
+\l No se comprometan
+
+\t mjq'ab'aale' taq
+\m m-jq'ab'aal-SC taq
+\p IMP-VI-SC PL
+\g IMP-comprometerse-SC PL
+\l No se comprometan
+
+\t katjq'ab'aale'
+\m k-at-jq'ab'aal-e'
+\p IMP-A2S-VI-SC
+\g IMP-A2S-comprometerse-SC
+\l Comprométete
+
+\t jq'ab'aale'
+\m jq'ab'aal-e'
+\p VI-SC
+\g comprometerse-SC
+\l Comprométase
+
+\t qajq'ab'aale'
+\m qa-jq'ab'aal-e'
+\p A1P-VI-SC
+\g A1P-comprometerse-SC
+\l Comprometámonos
+
+\t katjq'ab'aale' taq
+\m k-at-jq'ab'aal-e' taq
+\p IMP-A2S-VI-SC PL
+\g IMP-A2S-comprometerse-SC PL
+\l Comprométanse
+
+\t jq'ab'aale' taq
+\m jq'ab'aal-e' taq
+\p VI-SC PL
+\g comprometerse-SC PL
+\l Comprométanse
+
+\t tinjsujiik
+\m t-in-jsuji-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-ofrecer-SC
+\l Lo ofrezco
+
+\t tajsujiik
+\m t-a-jsuji-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-ofrecer-SC
+\l Lo ofreces
+
+\t tijjsujiik
+\m ti-j-jsuji-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-ofrecer-SC
+\l Lo ofrece
+
+\t tqajsujiik
+\m t-qa-jsuji-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-ofrecer-SC
+\l Lo ofrecemos
+
+\t tajsuji taq
+\m t-a-jsuji taq
+\p INC-E2S-VT PL
+\g INC-E2S-ofrecer PL
+\l Lo ofrecen
+
+\t tijjsuji taq
+\m ti-j-jsuji taq
+\p INC-E3S-VT PL
+\g INC-E3S-ofrecer PL
+\l Lo ofrecen
+
+\t tijin tinjsujiik
+\m tijin t-in-jsuji-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-ofrecer-SC
+\l Lo estoy ofreciendo
+
+\t tijin tajsujiik
+\m tijin t-a-jsuji-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-ofrecer-SC
+\l Lo estás ofreciendo
+
+\t tijin tijjsujiik
+\m tijin ti-j-jsuji-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-ofrecer-SC
+\l Lo está ofreciendo
+
+\t tijin tqajsujiik
+\m tijin t-qa-jsuji-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-ofrecer-SC
+\l Lo estamos ofreciendo
+
+\t tijin tajsuji taq
+\m tijin t-a-jsuji taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-ofrecer PL
+\l Lo están ofreciendo
+
+\t tijin tijjsuji taq
+\m tijin ti-j-jsuji taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-ofrecer PL
+\l Lo están ofreciendo
+
+\t xinjsujiik
+\m x-in-jsuji-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-ofrecer-SC
+\l Lo ofrecí
+
+\t xajsujiik
+\m x-a-jsuji-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-ofrecer-SC
+\l Lo ofreciste
+
+\t xjjsujiik
+\m x-j-jsuji-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-ofrecer-SC
+\l Lo ofreció
+
+\t xqajsujiik
+\m x-qa-jsuji-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-ofrecer-SC
+\l Lo ofrecimos
+
+\t xajsuji taq
+\m x-a-jsuji taq
+\p COM-E2S-VT PL
+\g COM-E2S-ofrecer PL
+\l Lo ofrecieron
+
+\t xjjsuji taq
+\m x-j-jsuji taq
+\p COM-E3S-VT PL
+\g COM-E3S-ofrecer PL
+\l Lo ofrecieron
+
+\t maajsujie'
+\m ma-a-jsuji-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-ofrecer-SC
+\l No lo ofrezcas
+
+\t mjjsujie'
+\m m-j-jsuji-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-ofrecer-SC
+\l No lo ofrezca
+
+\t mqajsujie'
+\m m-qa-jsuji-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-ofrecer-SC
+\l No lo ofrezcamos
+
+\t maajsuji taq
+\m ma-a-jsuji taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-ofrecer PL
+\l No lo ofrezcan
+
+\t mjjsuji taq
+\m m-j-jsuji taq
+\p IMP-E3S-VT PL
+\g IMP-E3S-ofrecer PL
+\l No lo ofrezcan
+
+\t kajsujie'
+\m k-a-jsuji-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-ofrecer-SC
+\l Lo ofrece
+
+\t jsujie'
+\m j-jsuji-e'
+\p E3S-VT-SC
+\g E3S-ofrecer-SC
+\l Lo ofrezca
+
+\t qajsujie'
+\m qa-jsuji-e'
+\p E1P-VT-SC
+\g E1P-ofrecer-SC
+\l Lo ofrezcamos
+
+\t kajsuji taq
+\m k-a-jsuji taq
+\p IMP-E2S-VT PL
+\g IMP-E2S-ofrecer PL
+\l Lo ofrezcan
+
+\t jjsuji taq
+\m j-jsuji taq
+\p E3S-VT PL
+\g E3S-ofrecer PL
+\l Lo ofrezcan
+
+\t tinjurajik
+\m t-in-juraj-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-jalarlo-SC
+\l Lo jalo
+
+\t tajurajik
+\m t-a-juraj-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-jalarlo-SC
+\l Lo jalas
+
+\t tijjurajik
+\m ti-j-juraj-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-jalarlo-SC
+\l Lo jala
+
+\t tqajurajik
+\m t-qa-juraj-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-jalarlo-SC
+\l Lo jalamos
+
+\t tajuraj taq
+\m t-a-juraj taq
+\p INC-E2S-VT PL
+\g INC-E2S-jalarlo PL
+\l Lo jalan
+
+\t tijjuraj taq
+\m ti-j-juraj taq
+\p INC-E3S-VT PL
+\g INC-E3S-jalarlo PL
+\l Lo jalan
+
+\t tijin tinjurajik
+\m tijin t-in-juraj-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-jalarlo-SC
+\l Lo estoy jalando
+
+\t tijin tajurajik
+\m tijin t-a-juraj-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-jalarlo-SC
+\l Lo estás jalando
+
+\t tijin tijjurajik
+\m tijin ti-j-juraj-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-jalarlo-SC
+\l Lo está jalando
+
+\t tijin tqajurajik
+\m tijin t-qa-juraj-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-jalarlo-SC
+\l Lo estamos jalando
+
+\t tijin tajuraj taq
+\m tijin t-a-juraj taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-jalarlo PL
+\l Lo están jalando
+
+\t tijin tijjuraj taq
+\m tijin ti-j-juraj taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-jalarlo PL
+\l Lo están jalando
+
+\t xinjurajik
+\m x-in-juraj-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-jalarlo-SC
+\l Lo jalé
+
+\t xajurajik
+\m x-a-juraj-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-jalarlo-SC
+\l Lo jalaste
+
+\t xjjurajik
+\m x-j-juraj-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-jalarlo-SC
+\l Lo jaló
+
+\t xqajurajik
+\m x-qa-juraj-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-jalarlo-SC
+\l Lo jalamos
+
+\t xajuraj taq
+\m x-a-juraj taq
+\p COM-E2S-VT PL
+\g COM-E2S-jalarlo PL
+\l Lo jalaron
+
+\t xjjuraj taq
+\m x-j-juraj taq
+\p COM-E3S-VT PL
+\g COM-E3S-jalarlo PL
+\l Lo jalaron
+
+\t maajuraje'
+\m ma-a-juraj-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-jalarlo-SC
+\l No lo jales
+
+\t mjjuraje'
+\m m-j-juraj-e'
+\p IMP-E3S-VT-SC
+\g IMP-E3S-jalarlo-SC
+\l No lo jale
+
+\t mqajuraje'
+\m m-qa-juraj-e'
+\p IMP-E1P-VT-SC
+\g IMP-E1P-jalarlo-SC
+\l No lo jalemos
+
+\t maajuraje' taq
+\m ma-a-juraj-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-jalarlo PL
+\l No lo jalen
+
+\t mjjuraje' taq
+\m m-j-juraj-e' taq
+\p IMP-E3S-VT-SC PL
+\g IMP-E3S-jalarlo-SC PL
+\l No lo jalen
+
+\t kajuraje'
+\m k-a-juraj-e'
+\p IMP-E2S-VT-SC
+\g IMP-E2S-jalarlo-SC
+\l Lo jala
+
+\t jjuraje'
+\m j-juraj-e'
+\p E3S-VT-SC
+\g E3S-jalarlo-SC
+\l Lo jale
+
+\t qajuraje'
+\m qa-juraj-e'
+\p E1P-VT-SC
+\g E1P-jalarlo-SC
+\l Lo jalemos
+
+\t kajuraje' taq
+\m k-a-juraj-e' taq
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-jalarlo PL
+\l Lo jalen
+
+\t jjuraje' taq
+\m j-juraj-e' taq
+\p E3S-VT-SC PL
+\g E3S-jalarlo-SC PL
+\l Lo jalen
+
+\t tinja'rsanik
+\m t-in-ja'rsan-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-aguadarlo-SC
+\l Lo aguado
+
+\t taja'rsanik
+\m t-a-ja'rsan-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-aguadarlo-SC
+\l Lo aguadas
+
+\t tijja'rsanik
+\m ti-j-ja'rsan-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-aguadarlo-SC
+\l Lo aguada
+
+\t tqaja'rsanik
+\m t-qa-ja'rsan-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-aguadarlo-SC
+\l Lo aguadamos
+
+\t taja'rsan taq
+\m t-a-ja'rsan taq
+\p INC-E2S-VT PL
+\g INC-E2S-aguadarlo PL
+\l Lo aguadan
+
+\t tijja'rsan taq
+\m ti-j-ja'rsan taq
+\p INC-E3S-VT PL
+\g INC-E3S-aguadarlo PL
+\l Lo aguadan
+
+\t tijin tinja'rsanik
+\m tijin t-in-ja'rsan-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-aguadarlo-SC
+\l Lo estoy aguadando
+
+\t tijin taja'rsanik
+\m tijin t-a-ja'rsan-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-aguadarlo-SC
+\l Lo estás aguadando
+
+\t tijin tijja'rsanik
+\m tijin ti-j-ja'rsan-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-aguadarlo-SC
+\l Lo está aguadando
+
+\t tijin tqaja'rsanik
+\m tijin t-qa-ja'rsan-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-aguadarlo-SC
+\l Lo estamos aguadando
+
+\t tijin taja'rsan taq
+\m tijin t-a-ja'rsan taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-aguadarlo PL
+\l Lo están aguadando
+
+\t tijin tijja'rsan taq
+\m tijin ti-j-ja'rsan taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-aguadarlo PL
+\l Lo están aguadando
+
+\t xinja'rsanik
+\m x-in-ja'rsan-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-aguadarlo-SC
+\l Lo aguadé
+
+\t xaja'rsanik
+\m x-a-ja'rsan-ik
+\p COM-E2S-VT-SC
+\g COMC-E2S-aguadarlo-SC
+\l Lo aguadaste
+
+\t xjja'rsanik
+\m x-j-ja'rsan-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-aguadarlo-SC
+\l Lo aguadó
+
+\t xqaja'rsanik
+\m x-qa-ja'rsan-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-aguadarlo-SC
+\l Lo aguadamos
+
+\t xaja'rsan taq
+\m x-a-ja'rsan taq
+\p COM-E2S-VT PL
+\g COM-E2S-aguadarlo PL
+\l Lo aguadaron
+
+\t xjja'rsan taq
+\m x-j-ja'rsan taq
+\p COM-E3S-VT PL
+\g COM-E3S-aguadarlo PL
+\l Lo aguadaron
+
+\t tinkatiik
+\m t-in-kati-ik
+\p INC-E1S-VT-SC
+\g INC-E1S-cortar-SC
+\l Lo corto
+
+\t takatiik
+\m t-a-kati-ik
+\p INC-E2S-VT-SC
+\g INC-E2S-cortar-SC
+\l Lo cortas
+
+\t tijkatiik
+\m ti-j-kati-ik
+\p INC-E3S-VT-SC
+\g INC-E3S-cortar-SC
+\l Lo corta
+
+\t tqakatiik
+\m t-qa-kati-ik
+\p INC-E1P-VT-SC
+\g INC-E1P-cortar-SC
+\l Lo cortamos
+
+\t takati taq
+\m t-a-kati taq
+\p INC-E2S-VT PL
+\g INC-E2S-cortar PL
+\l Lo cortan
+
+\t tijkati taq
+\m ti-j-kati taq
+\p INC-E3S-VT PL
+\g INC-E3S-cortar PL
+\l Lo cortan
+
+\t tijin tinkatiik
+\m tijin t-in-kati-ik
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-cortar-SC
+\l Lo estoy cortando
+
+\t tijin takatiik
+\m tijin t-a-kati-ik
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-cortar-SC
+\l Lo estás cortando
+
+\t tijin tijkatiik
+\m tijin ti-j-kati-ik
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-cortar-SC
+\l Lo está cortando
+
+\t tijin tqakatiik
+\m tijin t-qa-kati-ik
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-cortar-SC
+\l Lo estamos cortando
+
+\t tijin takati taq
+\m tijin t-a-kati taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-cortar PL
+\l Lo están cortando
+
+\t tijin tijkati taq
+\m tijin ti-j-kati taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-cortar PL
+\l Lo están cortando
+
+\t xinkatiik
+\m x-in-kati-ik
+\p COM-E1S-VT-SC
+\g COM-E1S-cortar-SC
+\l Lo corté
+
+\t xakatiik
+\m x-a-kati-ik
+\p COM-E2S-VT-SC
+\g COM-E2S-cortar-SC
+\l Lo cortaste
+
+\t xjkatiik
+\m x-j-kati-ik
+\p COM-E3S-VT-SC
+\g COM-E3S-cortar-SC
+\l Lo cortó
+
+\t xqakatiik
+\m x-qa-kati-ik
+\p COM-E1P-VT-SC
+\g COM-E1P-cortar-SC
+\l Lo cortamos
+
+\t xakati taq
+\m x-a-kati taq
+\p COM-E2S-VT PL
+\g COM-E2S-cortar PL
+\l Lo cortaron
+
+\t xjkati taq
+\m x-j-kati taq
+\p COM-E3S-VT PL
+\g COM-E3S-cortar PL
+\l Lo cortaron
+
+\t tink'ayeej
+\m t-in-k'ayee-j
+\p INC-E1S-VT-SC
+\g INC-E1S-vender-SC
+\l Lo vendo
+
+\t tak'ayeej
+\m t-a-k'ayee-j
+\p INC-E2S-VT-SC
+\g INC-E2S-vender-SC
+\l Lo vendes
+
+\t tijk'ayeej
+\m ti-j-k'ayee-j
+\p INC-E3S-VT-SC
+\g INC-E3S-vender-SC
+\l Lo vende
+
+\t tqak'ayeej
+\m t-qa-k'ayee-j
+\p INC-E1P-VT-SC
+\g INC-E1P-vender-SC
+\l Lo vendemos
+
+\t tak'ayee taq
+\m t-a-k'ayee taq
+\p INC-E2S-VT PL
+\g INC-E2S-vender PL
+\l Lo venden
+
+\t tijk'ayee taq
+\m ti-j-k'ayee taq
+\p INC-E3S-VT PL
+\g INC-E3S-vender PL
+\l Lo venden
+
+\t tijin tink'ayeej
+\m tijin t-in-k'ayee-j
+\p PROG INC-E1S-VT-SC
+\g PROG INC-E1S-vender-SC
+\l Lo estoy vendiendo
+
+\t tijin tak'ayeej
+\m tijin t-a-k'ayee-j
+\p PROG INC-E2S-VT-SC
+\g PROG INC-E2S-vender-SC
+\l Lo estás vendiendo
+
+\t tijin tijk'ayeej
+\m tijin ti-j-k'ayee-j
+\p PROG INC-E3S-VT-SC
+\g PROG INC-E3S-vender-SC
+\l Lo está vendiendo
+
+\t tijin tqak'ayeej
+\m tijin t-qa-k'ayee-j
+\p PROG INC-E1P-VT-SC
+\g PROG INC-E1P-vender-SC
+\l Lo estamos vendiendo
+
+\t tijin tak'ayee taq
+\m tijin t-a-k'ayee taq
+\p PROG INC-E2S-VT PL
+\g PROG INC-E2S-vender PL
+\l Lo están vendiendo
+
+\t tijin tijk'ayee taq
+\m tijin ti-j-k'ayee taq
+\p PROG INC-E3S-VT PL
+\g PROG INC-E3S-vender PL
+\l Lo están vendiendo
+
+\t xink'ayeej
+\m x-in-k'ayee-j
+\p COM-E1S-VT-SC
+\g COM-E1S-vender-SC
+\l Lo vendí
+
+\t xak'ayeej
+\m x-a-k'ayee-j
+\p COM-E2S-VT-SC
+\g COM-E2S-vender-SC
+\l Lo vendiste
+
+\t xjk'ayeej
+\m x-j-k'ayee-j
+\p COM-E3S-VT-SC
+\g COM-E3S-vender-SC
+\l Lo vendió
+
+\t xqak'ayeej
+\m x-qa-k'ayee-j
+\p COM-E1P-VT-SC
+\g COM-E1P-vender-SC
+\l Lo vendimos
+
+\t xak'ayee taq
+\m x-a-k'ayee taq
+\p COM-E2S-VT PL
+\g COM-E2S-vender PL
+\l Lo vendieron
+
+\t xjk'ayee taq
+\m x-j-k'ayee taq
+\p COM-E3S-VT PL
+\g COM-E3S-vender PL
+\l Lo vendieron
+
+\t tink'isi'ik
+\m t-in-k'isi'-ik
+\p INC-A1S-VI-SC
+\g INC-A1S-vivir-SC
+\l Vivo
+
+\t tatk'isi'ik
+\m t-at-k'isi'-ik
+\p INC-A2S-VI-SC
+\g INC-A2S-vivir-SC
+\l Vives
+
+\t tk'isi'ik
+\m t-k'isi'-ik
+\p INC-VI-SC
+\g INC-vivir-SC
+\l Vive
+
+\t tojk'isi'ik
+\m t-oj-k'isi'-ik
+\p INC-A1P-VI-SC
+\g INC-A1P-vivir-SC
+\l Vivemos
+
+\t tatk'isi' taq
+\m t-at-k'isi' taq
+\p INC-A2S-VI PL
+\g INC-A2S-vivir PL
+\l Viven
+
+\t tk'isi' taq
+\m t-k'isi' taq
+\p INC-VI PL
+\g INC-vivir PL
+\l Viven
+
+\t tijin tink'isi'ik
+\m tijin t-in-k'isi'-ik
+\p PROG INC-A1S-VI-SC
+\g PROG INC-A1S-vivir-SC
+\l Estoy viviendo
+
+\t tijin tatk'isi'ik
+\m tijin t-at-k'isi'-ik
+\p PROG INC-A2S-VI-SC
+\g PROG INC-A2S-vivir-SC
+\l Estás viviendo
+
+\t tijin tk'isi'ik
+\m tijin t-k'isi'-ik
+\p PROG NC-VI-SC
+\g PROG INC-vivir-SC
+\l Está viviendo
+
+\t tijin tojk'isi'ik
+\m tijin t-oj-k'isi'-ik
+\p PROG INC-A1P-VI-SC
+\g PROG INC-A1P-vivir-SC
+\l Estamos viviendo
+
+\t tijin tatk'isi' taq
+\m tijin t-at-k'isi' taq
+\p PROG INC-A2S-VI PL
+\g PROG INC-A2S-vivir PL
+\l Están viviendo
+
+\t tijin tk'isi' taq
+\m tijin t-k'isi' taq
+\p PROG INC-VI PL
+\g PROG INC-vivir PL
+\l Están viviendo
+
+\t xink'isi'ik
+\m x-in-k'isi'-ik
+\p COM-A1S-VI-SC
+\g COM-A1S-vivir-SC
+\l Viví
+
+\t xatk'isi'ik
+\m x-at-k'isi'-ik
+\p COM-A2S-VI-SC
+\g COM-A2S-vivir-SC
+\l Viviste
+
+\t xk'isi'ik
+\m x-k'isi'-ik
+\p COM-VI-SC
+\g COM-vivir-SC
+\l Vivió
+
+\t xojk'isi'ik
+\m x-oj-k'isi'-ik
+\p COM-A1P-VI-SC
+\g COM-A1P-vivir-SC
+\l Vivimos
+
+\t xatk'isi' taq
+\m x-at-k'isi' taq
+\p COM-A2S-VI PL
+\g COM-A2S-vivir PL
+\l Vivieron
+
+\t xk'isi' taq
+\m x-k'isi' taq
+\p COM-VI PL
+\g COM-vivir PL
+\l Vivieron

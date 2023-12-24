@@ -1,0 +1,210 @@
+\t Kwand xatk'uli'k',
+\m kwand x-at-k'uli'-ik
+\p ADV COM-A2S-VI-SC
+\g cuando COM-A2S-casarse-SC
+\l Cuando te casaste.
+
+\t Kwand xk'uli'k',
+\m kwand x-k'uli'-ik
+\p ADV COM-VI-SC
+\g cuando COM-casarse-SC
+\l Cuando se casó.
+
+\t Kwand xojtk'uli'k' taq,
+\m kwand x-oj-k'uli'-ik taq
+\p ADV COM-A1P-VI-SC PL
+\g cuando COM-A1P-casarse-SC PL
+\l Cuando nos casamos.
+
+\t Kwand xatk'uli'k' taq,
+\m kwand x-at-k'uli'-ik taq
+\p ADV COM-A2S-VI-SC PL
+\g cuando COM-A2S-casarse-SC PL
+\l Cuando se casaron.
+
+\t Kwand xk'uli'k' taq,
+\m kwand x-k'uli'-ik taq
+\p ADV COM-VI-SC PL
+\g cuando COM-casarse-SC PL
+\l Cuando se casaron.
+
+\t Tos re kond xatk'uli' b'ik, de katorse yaañ,
+\m entoons re kwand x-at-k'uli' b'ik de katorse año
+\p ADV PART ADV COM-A2S-VI DIR PREP NUM S
+\g entonces PART cuando COM-A2S-casarse DIR de catorse años
+\l Cuando te casaste de catorse años.
+
+\t Tos re kond xk'uli' b'ik, de katorse yaañ,
+\m entoons re kwand x-k'uli' b'ik de katorse año
+\p ADV PART ADV COM-VI DIR PREP NUM S
+\g entonces PART cuando COM-casarse DIR de catorse años
+\l Cuando se casó de catorse años.
+
+\t Tos re kond xojk'uli' b'ik, de katorse yaañ,
+\m entoons re kwand x-oj-k'uli' b'ik de katorse año
+\p ADV PART ADV COM-A1P-VI DIR PREP NUM S
+\g entonces PART cuando COM-A1P-casarse DIR de catorse años
+\l Cuando nos casamos de catorse años.
+
+\t Tos re kond xatk'uli' taq b'ik, de katorse yaañ,
+\m entoons re kwand x-at-k'uli' taq b'ik de katorse año
+\p ADV PART ADV COM-A2S-VI PL DIR PREP NUM S
+\g entonces PART cuando COM-A2S-casarse PL DIR de catorse años
+\l Cuando se casaron de catorse años.
+
+\t Tos re kond xk'uli' taq b'ik, de katorse yaañ,
+\m entoons re kwand x-k'uli' taq b'ik de katorse año
+\p ADV PART ADV COM-VI PL DIR PREP NUM S
+\g entonces PART cuando COM-casarse PL DIR de catorse años
+\l Cuando se casaron de catorse años.
+
+\t juntiir xatb'an.
+\m juntiir x-at-b'an
+\p ADV COM-A2S-VT
+\g todo COM-A2S-hacer
+\l Todo lo hices.
+
+\t juntiir xb'an.
+\m juntiir x-b'an
+\p ADV COM-VT
+\g todo COM-hacer
+\l Todo lo hizo.
+
+\t juntiir xojb'an.
+\m juntiir x-oj-b'an
+\p ADV COM-A1P-VT
+\g todo COM-A1P-hacer
+\l Todo lo hicimos.
+
+\t juntiir xatb'an taq.
+\m juntiir x-at-b'an taq
+\p ADV COM-A2S-VT PL 
+\g todo COM-A2S-hacer PL
+\l Todo lo hicen.
+
+\t juntiir xb'an taq.
+\m juntiir x-b'an taq
+\p ADV COM-VT PL
+\g todo COM-hacer PL
+\l Todo lo hicen.
+
+\t ke tab'an qus,
+\m ke t-a-b'an qus
+\p PART INC-E2S-VT ADJ
+\g que INC-E2S-hacer bueno
+\l Que hicieras bueno. (potarse bien)
+
+\t ke tijb'an qus,
+\m ke ti-j-b'an qus
+\p PART INC-E3S-VT ADJ
+\g que INC-E3S-hacer bueno
+\l Que hiciera bueno. (potarse bien)
+
+\t ke tqab'an qus,
+\m ke t-qa-b'an qus
+\p PART INC-E1P-VT ADJ
+\g que INC-E1P-hacer bueno
+\l Que hiciéramos bueno. (potarse bien)
+
+\t ke tab'an taq qus,
+\m ke t-a-b'an taq qus
+\p PART INC-E2S-VT PL ADJ
+\g que INC-E2S-hacer PL bueno
+\l Que hicieran bueno. (potarse bien)
+
+\t ke tijb'an taq qus,
+\m ke ti-j-b'an taq qus
+\p PART INC-E3S-VT PL ADJ
+\g que INC-E3S-hacer PL bueno
+\l Que hicieran bueno. (potarse bien)
+
+\t i tab'an utziil.
+\m i t-a-b'an utz-iil
+\p CONJ INC-E2S-VT ADV-SAB
+\g CONJ INC-E2S-hacer bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t i tijb'an utziil.
+\m i ti-j-b'an utz-iil
+\p CONJ INC-E3S-VT ADV-SAB
+\g CONJ INC-E3S-hacer bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t i tqab'an utziil.
+\m i t-qa-b'an utz-iil
+\p CONJ INC-E1P-VT ADV-SAB
+\g CONJ INC-E1P-hacer bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t i tab'an taq utziil.
+\m i t-a-b'an taq utz-iil
+\p CONJ INC-E2S-VT PL ADV-SAB
+\g CONJ INC-E2S-hacer PL bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t i tijb'an taq utziil.
+\m i ti-j-b'an taq utz-iil
+\p CONJ INC-E3S-VT PL ADV-SAB
+\g CONJ INC-E3S-hacer PL bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t Bay xab'an kumpliir,
+\m baa x-a-b'an kumpliir
+\p VOC COM-E2S-VT VI
+\g baya COM-E2S-hacer cumplir
+\l Vaya cumpliste.
+
+\t Bay xjb'an kumpliir,
+\m baa x-j-b'an kumpliir
+\p VOC COM-E3S-VT VI
+\g baya COM-E3S-hacer cumplir
+\l Vaya cumplió.
+
+\t Bay xqab'an kumpliir,
+\m baa x-qa-b'an kumpliir
+\p VOC COM-E1P-VT VI
+\g baya COM-E1P-hacer cumplir
+\l Vaya cumplimos.
+
+\t Bay xab'an taq kumpliir,
+\m baa x-a-b'an taq kumpliir
+\p VOC COM-E2S-VT PL VI
+\g baya COM-E2S-hacer PL cumplir
+\l Vaya cumplieron.
+
+\t Bay xjb'an taq kumpliir,
+\m baa x-j-b'an taq kumpliir
+\p VOC COM-E3S-VT PL VI
+\g baya COM-E3S-hacer PL cumplir
+\l Vaya cumplieron.
+
+\t xab'an kumpliir,
+\m x-a-b'an kumpliir
+\p COM-E2S-VT VI
+\g COM-E2S-hacer cumplir
+\l (Hice cumpli) cumpliste.
+
+\t xjb'an kumpliir,
+\m x-j-b'an kumpliir
+\p COM-E3S-VT VI
+\g COM-E3S-hacer cumplir
+\l (Hice cumpli) cumplió.
+
+\t xqab'an kumpliir,
+\m x-qa-b'an kumpliir
+\p COM-E1P-VT VI
+\g COM-E1P-hacer cumplir
+\l (Hice cumpli) cumplimos.
+
+\t xab'an taq kumpliir,
+\m x-a-b'an taq kumpliir
+\p COM-E2S-VT PL VI
+\g COM-E2S-hacer PL cumplir
+\l (Hice cumpli) cumplieron.
+
+\t xjb'an taq kumpliir,
+\m x-j-b'an taq kumpliir
+\p COM-E3S-VT PL VI
+\g COM-E3S-hacer PL cumplir
+\l (Hice cumpli) cumplieron.
+

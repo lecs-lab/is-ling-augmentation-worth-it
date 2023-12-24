@@ -1,0 +1,930 @@
+\t Kwand xatk'uli'k',
+\m kwand x-at-k'uli'-ik
+\p ADV COM-A2S-VI-SC
+\g cuando COM-A2S-casarse-SC
+\l Cuando te casaste.
+
+\t Kwand xk'uli'k',
+\m kwand x-k'uli'-ik
+\p ADV COM-VI-SC
+\g cuando COM-casarse-SC
+\l Cuando se casó.
+
+\t Kwand xojtk'uli'k' taq,
+\m kwand x-oj-k'uli'-ik taq
+\p ADV COM-A1P-VI-SC PL
+\g cuando COM-A1P-casarse-SC PL
+\l Cuando nos casamos.
+
+\t Kwand xatk'uli'k' taq,
+\m kwand x-at-k'uli'-ik taq
+\p ADV COM-A2S-VI-SC PL
+\g cuando COM-A2S-casarse-SC PL
+\l Cuando se casaron.
+
+\t Kwand xk'uli'k' taq,
+\m kwand x-k'uli'-ik taq
+\p ADV COM-VI-SC PL
+\g cuando COM-casarse-SC PL
+\l Cuando se casaron.
+
+\t Tos re kond xatk'uli' b'ik, de katorse yaañ,
+\m entoons re kwand x-at-k'uli' b'ik de katorse año
+\p ADV PART ADV COM-A2S-VI DIR PREP NUM S
+\g entonces PART cuando COM-A2S-casarse DIR de catorse años
+\l Cuando te casaste de catorse años.
+
+\t Tos re kond xk'uli' b'ik, de katorse yaañ,
+\m entoons re kwand x-k'uli' b'ik de katorse año
+\p ADV PART ADV COM-VI DIR PREP NUM S
+\g entonces PART cuando COM-casarse DIR de catorse años
+\l Cuando se casó de catorse años.
+
+\t Tos re kond xojk'uli' b'ik, de katorse yaañ,
+\m entoons re kwand x-oj-k'uli' b'ik de katorse año
+\p ADV PART ADV COM-A1P-VI DIR PREP NUM S
+\g entonces PART cuando COM-A1P-casarse DIR de catorse años
+\l Cuando nos casamos de catorse años.
+
+\t Tos re kond xatk'uli' taq b'ik, de katorse yaañ,
+\m entoons re kwand x-at-k'uli' taq b'ik de katorse año
+\p ADV PART ADV COM-A2S-VI PL DIR PREP NUM S
+\g entonces PART cuando COM-A2S-casarse PL DIR de catorse años
+\l Cuando se casaron de catorse años.
+
+\t Tos re kond xk'uli' taq b'ik, de katorse yaañ,
+\m entoons re kwand x-k'uli' taq b'ik de katorse año
+\p ADV PART ADV COM-VI PL DIR PREP NUM S
+\g entonces PART cuando COM-casarse PL DIR de catorse años
+\l Cuando se casaron de catorse años.
+
+\t juntiir xatb'an.
+\m juntiir x-at-b'an
+\p ADV COM-A2S-VT
+\g todo COM-A2S-hacer
+\l Todo lo hices.
+
+\t juntiir xb'an.
+\m juntiir x-b'an
+\p ADV COM-VT
+\g todo COM-hacer
+\l Todo lo hizo.
+
+\t juntiir xojb'an.
+\m juntiir x-oj-b'an
+\p ADV COM-A1P-VT
+\g todo COM-A1P-hacer
+\l Todo lo hicimos.
+
+\t juntiir xatb'an taq.
+\m juntiir x-at-b'an taq
+\p ADV COM-A2S-VT PL 
+\g todo COM-A2S-hacer PL
+\l Todo lo hicen.
+
+\t juntiir xb'an taq.
+\m juntiir x-b'an taq
+\p ADV COM-VT PL
+\g todo COM-hacer PL
+\l Todo lo hicen.
+
+\t ke tab'an qus,
+\m ke t-a-b'an qus
+\p PART INC-E2S-VT ADJ
+\g que INC-E2S-hacer bueno
+\l Que hicieras bueno. (potarse bien)
+
+\t ke tijb'an qus,
+\m ke ti-j-b'an qus
+\p PART INC-E3S-VT ADJ
+\g que INC-E3S-hacer bueno
+\l Que hiciera bueno. (potarse bien)
+
+\t ke tqab'an qus,
+\m ke t-qa-b'an qus
+\p PART INC-E1P-VT ADJ
+\g que INC-E1P-hacer bueno
+\l Que hiciéramos bueno. (potarse bien)
+
+\t ke tab'an taq qus,
+\m ke t-a-b'an taq qus
+\p PART INC-E2S-VT PL ADJ
+\g que INC-E2S-hacer PL bueno
+\l Que hicieran bueno. (potarse bien)
+
+\t ke tijb'an taq qus,
+\m ke ti-j-b'an taq qus
+\p PART INC-E3S-VT PL ADJ
+\g que INC-E3S-hacer PL bueno
+\l Que hicieran bueno. (potarse bien)
+
+\t i tab'an utziil.
+\m i t-a-b'an utz-iil
+\p CONJ INC-E2S-VT ADV-SAB
+\g CONJ INC-E2S-hacer bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t i tijb'an utziil.
+\m i ti-j-b'an utz-iil
+\p CONJ INC-E3S-VT ADV-SAB
+\g CONJ INC-E3S-hacer bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t i tqab'an utziil.
+\m i t-qa-b'an utz-iil
+\p CONJ INC-E1P-VT ADV-SAB
+\g CONJ INC-E1P-hacer bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t i tab'an taq utziil.
+\m i t-a-b'an taq utz-iil
+\p CONJ INC-E2S-VT PL ADV-SAB
+\g CONJ INC-E2S-hacer PL bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t i tijb'an taq utziil.
+\m i ti-j-b'an taq utz-iil
+\p CONJ INC-E3S-VT PL ADV-SAB
+\g CONJ INC-E3S-hacer PL bueno-SAB
+\l Hacer bueno. (conmportarse muy bien)
+
+\t Bay xab'an kumpliir,
+\m baa x-a-b'an kumpliir
+\p VOC COM-E2S-VT VI
+\g baya COM-E2S-hacer cumplir
+\l Vaya cumpliste.
+
+\t Bay xjb'an kumpliir,
+\m baa x-j-b'an kumpliir
+\p VOC COM-E3S-VT VI
+\g baya COM-E3S-hacer cumplir
+\l Vaya cumplió.
+
+\t Bay xqab'an kumpliir,
+\m baa x-qa-b'an kumpliir
+\p VOC COM-E1P-VT VI
+\g baya COM-E1P-hacer cumplir
+\l Vaya cumplimos.
+
+\t Bay xab'an taq kumpliir,
+\m baa x-a-b'an taq kumpliir
+\p VOC COM-E2S-VT PL VI
+\g baya COM-E2S-hacer PL cumplir
+\l Vaya cumplieron.
+
+\t Bay xjb'an taq kumpliir,
+\m baa x-j-b'an taq kumpliir
+\p VOC COM-E3S-VT PL VI
+\g baya COM-E3S-hacer PL cumplir
+\l Vaya cumplieron.
+
+\t xab'an kumpliir,
+\m x-a-b'an kumpliir
+\p COM-E2S-VT VI
+\g COM-E2S-hacer cumplir
+\l (Hice cumpli) cumpliste.
+
+\t xjb'an kumpliir,
+\m x-j-b'an kumpliir
+\p COM-E3S-VT VI
+\g COM-E3S-hacer cumplir
+\l (Hice cumpli) cumplió.
+
+\t xqab'an kumpliir,
+\m x-qa-b'an kumpliir
+\p COM-E1P-VT VI
+\g COM-E1P-hacer cumplir
+\l (Hice cumpli) cumplimos.
+
+\t xab'an taq kumpliir,
+\m x-a-b'an taq kumpliir
+\p COM-E2S-VT PL VI
+\g COM-E2S-hacer PL cumplir
+\l (Hice cumpli) cumplieron.
+
+\t xjb'an taq kumpliir,
+\m x-j-b'an taq kumpliir
+\p COM-E3S-VT PL VI
+\g COM-E3S-hacer PL cumplir
+\l (Hice cumpli) cumplieron.
+
+\t kond xink'iiy,
+\m kwand x-in-k'iy
+\p ADV COM-A1S-VI
+\g cuando COM-A1S-crecer
+\l Cuando crecí.
+
+\t kond xatk'iiy,
+\m kwand x-at-k'iy
+\p ADV COM-A2S-VI
+\g cuando COM-A2S-crecer
+\l Cuando creciste.
+
+\t kond xk'iiy,
+\m kwand x-k'iy
+\p ADV COM-VI
+\g cuando COM-crecer
+\l Cuando creció.
+
+\t kond xatk'iiy taq, 
+\m kwand x-at-k'iy taq
+\p ADV COM-A2S-VI PL
+\g cuando COM-A2S-crecer PL
+\l Cuando crecieron.
+
+\t kond xk'iiy taq,
+\m kwand x-k'iy taq
+\p ADV COM-VI PL
+\g cuando COM-crecer PL
+\l Cuando crecieron.
+
+\t Re xinkojoni'n,
+\m re x-in-kojó-i'n
+\p ??? COM-A1S-VI-ENF
+\g ??? COM-A1S-aceptar-ENF
+\l Lo respeté.
+
+\t Re xatkojoni'n,
+\m re x-at-kojó-i'n
+\p ??? COM-A2S-VI-ENF
+\g ??? COM-A2S-aceptar-ENF
+\l Lo respetaste.
+
+\t Re xkojoni'n,
+\m re x-kojó-i'n
+\p ??? COM-VI-ENF
+\g ??? COM-aceptar-ENF
+\l Lo respetó.
+
+\t Re xatkojoni'n taq,
+\m re x-at-kojó-i'n taq
+\p ??? COM-A2S-VI-ENF PL
+\g ??? COM-A2S-aceptar-ENF PL
+\l Lo respetaron.
+
+\t Re xkojoni'n taq,
+\m re x-kojó-i'n taq
+\p ??? COM-VI-ENF PL
+\g ??? COM-aceptar-ENF PL
+\l Lo respetaron.
+
+\t syempre tinb'ana' sufrir aalgo,
+\m syempre t-in-b'an-a' sufrir algo
+\p ADV INC-E1S-VT-MOV VI ADV
+\g siempre INC-E1S-hacer-MOV sufrir algo
+\l (Siempre hago sufriir algo) siempre sufro algo.
+
+\t syempre tab'ana' sufrir aalgo,
+\m syempre t-a-b'an-a' sufrir algo
+\p ADV INC-E2S-VT-MOV VI ADV
+\g siempre INC-E2S-hacer-MOV sufrir algo
+\l (Siempre haces sufriir algo) siempre sufres algo.
+
+\t syempre tij'ana' sufrir aalgo,
+\m syempre ti-j-b'an-a' sufrir algo
+\p ADV INC-E3S-VT-MOV VI ADV
+\g siempre INC-E3S-hacer-MOV sufrir algo
+\l (Siempre hace sufriir algo) siempre sufre algo.
+
+\t syempre tab'ana' taq sufrir aalgo,
+\m syempre t-a-b'an-a' taq sufrir algo
+\p ADV INC-E2S-VT-MOV PL VI ADV
+\g siempre INC-E2S-hacer-MOV PL sufrir algo
+\l (Siempre hacen sufriir algo) siempre sufren algo.
+
+\t syempre tij'ana' taq sufrir aalgo,
+\m syempre ti-j-b'an-a' taq sufrir algo
+\p ADV INC-E3S-VT-MOV PL VI ADV
+\g siempre INC-E3S-hacer-MOV PL sufrir algo
+\l (Siempre hacen sufriir algo) siempre sufren algo.
+
+\t re xatb'an ójr,
+\m re x-at-b'an ójor
+\p PART COM-A2S-VT ADV
+\g PART COM-A2S-hacer antiguamente
+\l Lo que hiciste antes
+
+\t re xb'an ójr,
+\m re x-b'an ójor
+\p PART COM-VT ADV
+\g PART COM-hacer antiguamente
+\l Lo que hizo antes
+
+\t re xojb'an ójr,
+\m re x-oj-b'an ójor
+\p PART COM-A1P-VT ADV
+\g PART COM-A1P-hacer antiguamente
+\l Lo que hicimos antes
+
+\t re xatb'an taq ójr,
+\m re x-at-b'an taq ójor
+\p PART COM-A2S-VT PL ADV
+\g PART COM-A2S-hacer PL antiguamente
+\l Lo que hicieron antes
+
+\t re xb'an taq ójr,
+\m re x-b'an taq ójor
+\p PART COM-VT PL ADV
+\g PART COM-hacer PL antiguamente
+\l Lo que hicieron antes
+
+\t I tandas xatb'an aprender b'aniik poop,
+\m i taant x-at-b'an aprender neen poop
+\p CONJ ADV COM-A2S-VT VT VT S
+\g CONJ tantas COM-A2S-hacer aprender hacer petate
+\l (Y tantas hiciste aprender hacer petate) tanto aprendiste hacer petate.
+
+\t I tandas xb'an aprender b'aniik poop,
+\m i taant x-b'an aprender neen poop
+\p CONJ ADV COM-VT VT VT S
+\g CONJ tantas COM-hacer aprender hacer petate
+\l (Y tantas hizo aprender hacer petate) tanto aprendió hacer petate.
+
+\t I tandas xojb'an aprender b'aniik poop,
+\m i taant x-oj-b'an aprender neen poop
+\p CONJ ADV COM-A1P-VT VT VT S
+\g CONJ tantas COM-A1P-hacer aprender hacer petate
+\l (Y tantas hicimos aprender hacer petate) tanto aprendimos hacer petate.
+
+\t I tandas xatb'an taq aprender b'aniik poop,
+\m i taant x-at-b'an taq aprender neen poop
+\p CONJ ADV COM-A2S-VT PL VT VT S
+\g CONJ tantas COM-A2S-hacer PL aprender hacer petate
+\l (Y tantas hicieron aprender hacer petate) tanto aprendieron hacer petate.
+
+\t I tandas xb'an taq aprender b'aniik poop,
+\m i taant x-b'an taq aprender neen poop
+\p CONJ ADV COM-VT PL VT VT S
+\g CONJ tantas COM-hacer PL aprender hacer petate
+\l (Y tantas hicieron aprender hacer petate) tanto aprendieron hacer petate.
+
+\t awetemaaj treens,
+\m aw-etama-j treens
+\p E2S-VT-SC S
+\g E2S-saber-SC trenzas
+\l Aprendiste hacer trenzas.
+
+\t retemaaj treens,
+\m r-etama-j treens
+\p E3S-VT-SC S
+\g E3S-saber-SC trenzas
+\l Aprendió hacer trenzas.
+
+\t qetemaaj treens,
+\m q-etama-j treens
+\p E1P-VT-SC S
+\g E1P-saber-SC trenzas
+\l Aprendimos hacer trenzas.
+
+\t awetemaaj taq treens,
+\m aw-etama-j taq treens
+\p E2S-VT-SC PL S
+\g E2S-saber-SC PL trenzas
+\l Aprendieron hacer trenzas.
+
+\t retemaaj taq treens,
+\m r-etama-j taq treens
+\p E3S-VT-SC PL S
+\g E3S-saber-SC PL trenzas
+\l Aprendieron hacer trenzas.
+
+\t Per ta' ch akwínik,
+\m peer ta' chi a-kwin-ik
+\p ADV NEG PREP E2S-VI-SC
+\g pero NEG PREP E2S-poder-SC
+\l Pero ya no puedes.
+
+\t Per ta' ch jkwínik,
+\m peer ta' chi j-kwin-ik
+\p ADV NEG PREP E3S-VI-SC
+\g pero NEG PREP E3S-poder-SC
+\l Pero ya no puede.
+
+\t Per ta' ch qakwínik,
+\m peer ta' chi qa-kwin-ik
+\p ADV NEG PREP E1P-VI-SC
+\g pero NEG PREP E1P-poder-SC
+\l Pero ya no podemos.
+
+\t Per ta' ch akwínik taq,
+\m peer ta' chi a-kwin-ik taq
+\p ADV NEG PREP E2S-VI-SC PL
+\g pero NEG PREP E2S-poder-SC PL
+\l Pero ya no pueden.
+
+\t Per ta' ch jkwínik taq,
+\m peer ta' chi j-kwin-ik taq
+\p ADV NEG PREP E3S-VI-SC PL
+\g pero NEG PREP E3S-poder-SC PL
+\l Pero ya no pueden.
+
+\t Xatpe baq loom,
+\m x-at-pet b'aq loom
+\p COM-A2S-VI ??? S
+\g COM-A2S-venir ??? cerro
+\l (Viniste sobre los cerros) fuiste sobre los cerros.
+
+\t Xpe baq loom,
+\m x-pet b'aq loom
+\p COM-VI ??? S
+\g COM-venir ??? cerro
+\l (Vino sobre los cerros) fue sobre los cerros.
+
+\t Xojpe baq loom,
+\m x-oj-pet b'aq loom
+\p COM-A1P-VI ??? S
+\g COM-A1P-venir ??? cerro
+\l (Vinimos sobre los cerros) fuimos sobre los cerros.
+
+
+\t Xatpe taq baq loom,
+\m x-at-pet taq b'aq loom
+\p COM-A2S-VI PL ??? S
+\g COM-A2S-venir PL ??? cerro
+\l (Vinieron sobre los cerros) fueron sobre los cerros.
+
+\t Xpe taq baq loom,
+\m x-pet taq b'aq loom
+\p COM-VI PL ??? S
+\g COM-venir PL ??? cerro
+\l (Vinieron sobre los cerros) fueron sobre los cerros.
+
+\t ontikeer laad xatpe'w,
+\m ontikeer laad x-at-pet-w
+\p ADV ADV COM-A2S-VI-MOV
+\g dondequiera lado COM-A2S-venir-MOV
+\l (Dondequiera lado viniste) por dondequiera fuiste.
+
+\t ontikeer laad xpe'w,
+\m ontikeer laad x-pet-w
+\p ADV ADV COM-VI-MOV
+\g dondequiera lado COM-venir-MOV
+\l (Dondequiera lado vino) por dondequiera fue.
+
+\t ontikeer laad xojpe'w,
+\m ontikeer laad x-oj-pet-w
+\p ADV ADV COM-A1P-VI-MOV
+\g dondequiera lado COM-A1P-venir-MOV
+\l (Dondequiera lado vinimos) por dondequiera fuimos.
+
+\t ontikeer laad xatpe'w taq,
+\m ontikeer laad x-at-pet-w taq
+\p ADV ADV COM-A2S-VI-MOV PL
+\g dondequiera lado COM-A2S-venir-MOV PL
+\l (Dondequiera lado vinieron) por dondequiera fueron.
+
+\t ontikeer laad xpe'w taq,
+\m ontikeer laad x-pet-w taq
+\p ADV ADV COM-VI-MOV PL
+\g dondequiera lado COM-venir-MOV PL
+\l (Dondequiera lado vinieron) por dondequiera fueron.
+
+\t xatélk,
+\m x-at-el-ik
+\p COM-A2S-VI-SC
+\g COM-A2S-salir-SC
+\l Saliste.
+
+\t xélk,
+\m x-el-ik
+\p COM-VI-SC
+\g COM-salir-SC
+\l Salió.
+
+\t xojélk,
+\m x-oj-el-ik
+\p COM-A1P-VI-SC
+\g COM-A1P-salir-SC
+\l Salimos.
+
+\t xatélk taq,
+\m x-at-el-ik taq
+\p COM-A2S-VI-SC PL
+\g COM-A2S-salir-SC PL
+\l Salieron.
+
+\t xélk  taq,
+\m x-el-ik taq
+\p COM-VI-SC PL
+\g COM-salir-SC PL
+\l Salieron.
+
+\t Syempre xinkojooni'n,
+\m syempre x-in-kojón-i'n
+\p ADV COM-A1S-VI-ENF
+\g siempre COM-A1S-aceptar-ENF
+\l Siempre obedecí.
+
+\t Syempre xatkojooni'n,
+\m syempre x-at-kojón-i'n
+\p ADV COM-A2S-VI-ENF
+\g siempre COM-A2S-aceptar-ENF
+\l Siempre obedeciste.
+
+\t Syempre xkojooni'n,
+\m syempre x-kojón-i'n
+\p ADV COM-VI-ENF
+\g siempre COM-aceptar-ENF
+\l Siempre obedeció.
+
+\t Syempre xatkojooni'n taq,
+\m syempre x-at-kojón-i'n taq
+\p ADV COM-A2S-VI-ENF PL
+\g siempre COM-A2S-aceptar-ENF PL
+\l Siempre obedecieron.
+
+\t Syempre xkojooni'n taq,
+\m syempre x-kojón-i'n taq
+\p ADV COM-VI-ENF PL
+\g siempre COM-aceptar-ENF PL
+\l Siempre obedecieron.
+
+\t mism naq xakoja'n
+\m miim naq x-a-koj-i'n
+\p ADV PP COM-E2S-VT-ENF
+\g lomismo PP COM-E2S-creer-ENF
+\l También los respetaste.
+
+\t mism naq xjkoja'n
+\m miim naq x-j-koj-i'n
+\p ADV PP COM-E3S-VT-ENF
+\g lomismo PP COM-E3S-creer-ENF
+\l También los respetó.
+
+\t mism naq xqakoja'n
+\m miim naq x-qa-koj-i'n
+\p ADV PP COM-E1P-VT-ENF
+\g lomismo PP COM-E1P-creer-ENF
+\l También los respetamos.
+
+\t mism naq xakoja'n taq
+\m miim naq x-a-koj-i'n taq
+\p ADV PP COM-E2S-VT-ENF PL
+\g lomismo PP COM-E2S-creer-ENF PL
+\l También los respetaron.
+
+\t mism naq xjkoja'n taq
+\m miim naq x-j-koj-i'n taq
+\p ADV PP COM-E3S-VT-ENF PL
+\g lomismo PP COM-E3S-creer-ENF PL
+\l También los respetaron.
+
+\t dyes aañ xatb'an rij rij kub'i' li.
+\m dyees año x-at-b'an ri ri kub'i' li
+\p NUM S COM-A2S-VT SREL SREL TOP DEM
+\g diez años COM-A2S-hacer SREL SREL Cubi DEM
+\l (Diez años estuviste detras de jacubí) diez años estuviste al otro lado de jacubí.
+
+\t dyes aañ xb'an rij rij kub'i' li.
+\m dyees año x-b'an ri ri kub'i' li
+\p NUM S COM-VT SREL SREL TOP DEM
+\g diez años COM-hacer SREL SREL Cubi DEM
+\l (Diez años estuvo detras de jacubí) diez años estuvo al otro lado de jacubí.
+
+\t dyes aañ xojb'an rij rij kub'i' li.
+\m dyees año x-oj-b'an ri ri kub'i' li
+\p NUM S COM-A1P-VT SREL SREL TOP DEM
+\g diez años COM-A1P-hacer SREL SREL Cubi DEM
+\l (Diez años estuvimos detras de jacubí) diez años estuvimos al otro lado de jacubí.
+
+\t dyes aañ xatb'an taq rij rij kub'i' li.
+\m dyees año x-at-b'an taq ri ri kub'i' li
+\p NUM S COM-A2S-VT PL SREL SREL TOP DEM
+\g diez años COM-A2S-hacer PL SREL SREL Cubi DEM
+\l (Diez años estuvieron detras de jacubí) diez años estuvieron al otro lado de jacubí.
+
+\t dyes aañ xb'an taq rij rij kub'i' li.
+\m dyees año x-b'an taq ri ri kub'i' li
+\p NUM S COM-VT PL SREL SREL TOP DEM
+\g diez años COM-hacer PL SREL SREL Cubi DEM
+\l (Diez años estuvieron detras de jacubí) diez años estuvieron al otro lado de jacubí.
+
+\t Jmm' xatwa'xi'n,
+\m ??? x-at-wa'x-i'n
+\p ??? COM-A2S-VI-ENF
+\g ??? COM-A2S-estar-ENF
+\l Estuviste.
+
+\t Jmm' xwa'xi'n,
+\m ??? x-wa'x-i'n
+\p ??? COM-VI-ENF
+\g ??? COM-estar-ENF
+\l Estuvo.
+
+\t Jmm' xojwa'xi'n,
+\m ??? x-oj-wa'x-i'n
+\p ??? COM-A1P-VI-ENF
+\g ??? COM-A1P-estar-ENF
+\l Estuvimos.
+
+\t Jmm' xatwa'xi'n taq,
+\m ??? x-at-wa'x-i'n taq
+\p ??? COM-A2S-VI-ENF PL
+\g ??? COM-A2S-estar-ENF PL
+\l Estuvieron.
+
+\t Jmm' xwa'xi'n taq,
+\m ??? x-wa'x-i'n taq
+\p ??? COM-VI-ENF PL
+\g ??? COM-estar-ENF PL
+\l Estuvieron.
+
+\t T'e xinila'n
+\m t'e x-in-il-a'n
+\p ??? COM-E1S-VT-ENF
+\g ??? COM-E1S-ver-ENF
+\l Si lo vi.
+
+\t T'e xawila'n
+\m t'e x-aw-il-a'n
+\p ??? COM-E2S-VT-ENF
+\g ??? COM-E2S-ver-ENF
+\l Si lo viste.
+
+\t T'e xrila'n
+\m t'e x-r-il-a'n
+\p ??? COM-E3S-VT-ENF
+\g ??? COM-E3S-ver-ENF
+\l Si lo vio.
+
+\t T'e xawila'n taq
+\m t'e x-aw-il-a'n
+\p ??? COM-E2S-VT-ENF PL taq
+\g ??? COM-E2S-ver-ENF PL
+\l Si lo vieron.
+
+\t T'e xrila'n taq
+\m t'e x-r-il-a'n taq
+\p ??? COM-E3S-VT-ENF PL
+\g ??? COM-E3S-ver-ENF PL
+\l Si lo vieron.
+
+\t Par tinkuya'n,
+\m peer t-in-kuy-a'n
+\p ADV INC-E1S-VT-ENF
+\g pero INC-E1S-aguantar-ENF
+\l Pero aguanto.
+
+\t Par takuya'n,
+\m peer t-a-kuy-a'n
+\p ADV INC-E2S-VT-ENF
+\g pero INC-E2S-aguantar-ENF
+\l Pero aguantas.
+
+\t Par tijkuya'n,
+\m peer ti-j-kuy-a'n
+\p ADV INC-E3S-VT-ENF
+\g pero INC-E3S-aguantar-ENF
+\l Pero aguanta.
+
+\t Par takuya'n taq,
+\m peer t-a-kuy-a'n taq
+\p ADV INC-E2S-VT-ENF PL
+\g pero INC-E2S-aguantar-ENF PL
+\l Pero aguantan.
+
+\t Par tijkuya'n taq, 
+\m peer ti-j-kuy-a'n taq
+\p ADV INC-E3S-VT-ENF PL
+\g pero INC-E3S-aguantar-ENF PL
+\l Pero aguantan.
+
+\t mawalq'aj jun jal,
+\m m-aw-alq'á-j jun jal
+\p NEG-E2S-VT-SC ART S
+\g NEG-E2S-robar-SC un mazorca
+\l No robar una mazorca.
+
+\t maralq'aj jun jal,
+\m ma-r-alq'á-j jun jal
+\p NEG-E3S-VT-SC ART S
+\g NEG-E3S-robar-SC un mazorca
+\l No robar una mazorca.
+
+\t mawalq'aj taq jun jal,
+\m m-aw-alq'á-j taq jun jal
+\p NEG-E2S-VT-SC PL ART S
+\g NEG-E2S-robar-SC PL un mazorca
+\l No robar una mazorca.
+
+\t maralq'aj taq jun jal,
+\m ma-r-alq'á-j taq jun jal
+\p NEG-E3S-VT-SC PL ART S
+\g NEG-E3S-robar-SC PL un mazorca
+\l No robar una mazorca.
+
+\t aay dyoos pok xatb'éenik,
+\m ay dyoos pok x-at-b'en-ik
+\p VOC S ADV COM-A2S-VT-SC
+\g ¡hay! Dios poco COM-A2S-caminar-SC
+\l Hay dios si caminaste mucho.
+
+\t aay dyoos pok xb'éenik,
+\m ay dyoos pok x-b'en-ik
+\p VOC S ADV COM-VT-SC
+\g ¡hay! Dios poco COM-caminar-SC
+\l Hay dios si caminó mucho.
+
+\t aay dyoos pok xojb'éenik,
+\m ay dyoos pok x-oj-b'en-ik
+\p VOC S ADV COM-A1P-VT-SC
+\g ¡hay! Dios poco COM-A1P-caminar-SC
+\l Hay dios si caminamos mucho.
+
+\t aay dyoos pok xatb'éenik taq,
+\m ay dyoos pok x-at-b'en-ik taq
+\p VOC S ADV COM-A2S-VT-SC PL
+\g ¡hay! Dios poco COM-A2S-caminar-SC PL
+\l Hay dios si caminaron mucho.
+
+\t aay dyoos pok xb'éenik taq,
+\m ay dyoos pok x-b'en-ik taq
+\p VOC S ADV COM-VT-SC PL
+\g ¡hay! Dios poco COM-caminar-SC PL
+\l Hay dios si caminaron mucho.
+
+\t xatpeeti'n.
+\m x-at-pet-i'n
+\p COM-A2S-VI-ENF
+\g COM-A2S-venir-ENF
+\l Si has ido.
+
+\t xpeeti'n.
+\m x-pet-i'n
+\p COM-VI-ENF
+\g COM-venir-ENF
+\l Si ha ido.
+
+\t xojpeeti'n.
+\m x-oj-pet-i'n
+\p COM-A1P-VI-ENF
+\g COM-A1P-venir-ENF
+\l Si hemos ido.
+
+\t xatpeeti'n taq.
+\m x-at-pet-i'n taq
+\p COM-A2S-VI-ENF PL
+\g COM-A2S-venir-ENF PL
+\l Si han ido.
+
+\t xpeeti'n taq.
+\m x-pet-i'n taq
+\p COM-VI-ENF PL
+\g COM-venir-ENF PL
+\l Si han ido.
+
+\t tiq b'i atsolaj,
+\m tiq b'ik at-solá-j
+\p PART DIR A2S-VT-SC
+\g solo DIR A2S-visitar-SC
+\l Solo la vas a visitar.
+
+\t tiq b'i solaj,
+\m tiq b'ik solá-j
+\p PART DIR VT-SC
+\g solo DIR visitar-SC
+\l Solo la va a visitar.
+
+\t tiq b'i ojsolaj,
+\m tiq b'ik oj-solá-j
+\p PART DIR A1P-VT-SC
+\g solo DIR A1P-visitar-SC
+\l Solo la vamos a visitar.
+
+\t tiq b'i atsolaj taq, 
+\m tiq b'ik at-solá-j taq
+\p PART DIR A2S-VT-SC PL
+\g solo DIR A2S-visitar-SC PL
+\l Solo la van a visitar.
+
+\t tiq b'i solaj taq,
+\m tiq b'ik solá-j taq
+\p PART DIR VT-SC PL 
+\g solo DIR visitar-SC PL
+\l Solo la van a visitar.
+
+\t mojoor tatb'an jwers,
+\m (mojoor) t-at-b'an (jwers)
+\p ??? INC-A2S-VT ???
+\g ??? INC-A2S-hacer ???
+\l Mejor haces el esfuerzo.
+
+\t mojoor tb'an jwers,
+\m (mojoor) t-b'an (jwers)
+\p ??? INC-VT ???
+\g ??? INC-hacer ???
+\l Mejor hace el esfuerzo.
+
+\t mojoor tojb'an jwers,
+\m (mojoor) t-oj-b'an (jwers)
+\p ??? INC-A1P-VT ???
+\g ??? INC-A1P-hacer ???
+\l Mejor hacemos el esfuerzo.
+
+\t mojoor tatb'an taq jwers,
+\m (mojoor) t-at-b'an taq (jwers)
+\p ??? INC-A2S-VT PL ???
+\g ??? INC-A2S-hacer PL ???
+\l Mejor hacen el esfuerzo.
+
+\t mojoor tb'an taq jwers,
+\m (mojoor) t-b'an taq (jwers)
+\p ??? INC-VT PL ???
+\g ??? INC-hacer PL ???
+\l Mejor hacen el esfuerzo.
+
+\t juntiir aat atilb'enaq rechaq,
+\m juntiir aat at-ilb'e-naq rechaq
+\p ADV PRON A2S-VT-PP PRON
+\g todo tú A2S-esperar-PP ellos/ellas
+\l A todos tú les has asistido.
+
+\t juntiir re ilb'enaq rechaq,
+\m juntiir re ilb'e-naq rechaq
+\p ADV PRON VT-PP PRON
+\g todo ella esperar-PP ellos/ellas
+\l A todos ella les ha asistido.
+
+\t juntiir re ilb'enaq rechaq,
+\m juntiir re ilb'e-naq rechaq
+\p ADV PRON VT-PP PRON
+\g todo él esperar-PP ellos/ellas
+\l A todos él les ha asistido.
+
+\t juntiir ooj ojilb'enaq rechaq,
+\m juntiir ooj oj-ilb'e-naq rechaq
+\p ADV PRON A1P-VT-PP PRON
+\g todo nosotros A1P-esperar-PP ellos/ellas
+\l A todos nosotros les hemos asistido.
+
+\t juntiir retaq ilb'enaq taq rechaq,
+\m juntiir retaq ilb'e-naq taq rechaq
+\p ADV PRON VT-PP PL PRON
+\g todo ellos esperar-PP PL ellos/ellas
+\l A todos ellos les han asistido.
+
+\t juntiir retaq ilb'enaq taq rechaq,
+\m juntiir retaq ilb'e-naq taq rechaq
+\p ADV PRON VT-PP PL PRON
+\g todo ellas esperar-PP PL ellos/ellas
+\l A todos ellas les han asistido.
+
+\t stentisinko ketzaal xinye'w,
+\m setentisinko ketzales x-in-ye'-w
+\p NUM S COM-E1S-VT-MOV
+\g setenta@y@cinco quetzal COM-E1S-dar-MOV
+\l Setenta y cinco quetzales me costó.
+
+\t stentisinko ketzaal xaye'w,
+\m setentisinko ketzales x-a-ye'-w
+\p NUM S COM-E2S-VT-MOV
+\g setenta@y@cinco quetzal COM-E2S-dar-MOV
+\l Setenta y cinco quetzales te costó.
+
+\t stentisinko ketzaal xjye'w,
+\m setentisinko ketzales x-j-ye'-w
+\p NUM S COM-E3S-VT-MOV
+\g setenta@y@cinco quetzal COM-E3S-dar-MOV
+\l Setenta y cinco quetzales lo costó.
+
+\t stentisinko ketzaal xaye'w taq,
+\m setentisinko ketzales x-a-ye'-w taq
+\p NUM S COM-E2S-VT-MOV PL
+\g setenta@y@cinco quetzal COM-E2S-dar-MOV PL
+\l Setenta y cinco quetzales los costó.
+
+\t stentisinko ketzaal xjye'w taq, 
+\m setentisinko ketzales x-j-ye'-w taq
+\p NUM S COM-E3S-VT-MOV PL
+\g setenta@y@cinco quetzal COM-E3S-dar-MOV PL
+\l Setenta y cinco quetzales los costó.
+
+\t pe ri kwand xinchep k'eex,
+\m peer ri kwand x-in-chap k'eex
+\p ADV DEM ADV COM-A1S-VT S
+\g pero DEM cuando COM-A1S-agarrar trueque
+\l Pero cuando me agarró la necesidad.
+
+\t pe ri kwand xatchep k'eex,
+\m peer ri kwand x-at-chap k'eex
+\p ADV DEM ADV COM-A2S-VT S
+\g pero DEM cuando COM-A2S-agarrar trueque
+\l Pero cuando te agarró la necesidad.
+
+\t pe ri kwand xchep k'eex,
+\m peer ri kwand x-chap k'eex
+\p ADV DEM ADV COM-VT S
+\g pero DEM cuando COM-agarrar trueque
+\l Pero cuando lo agarró la necesidad.
+
+\t pe ri kwand xatchep taq k'eex,
+\m peer ri kwand x-at-chap taq k'eex
+\p ADV DEM ADV COM-A2S-VT PL S
+\g pero DEM cuando COM-A2S-agarrar PL trueque
+\l Pero cuando los agarró la necesidad.
+
+\t pe ri kwand xchep taq k'eex,
+\m peer ri kwand x-chap taq k'eex
+\p ADV DEM ADV COM-VT PL S
+\g pero DEM cuando COM-agarrar PL trueque
+\l Pero cuando los agarró la necesidad.

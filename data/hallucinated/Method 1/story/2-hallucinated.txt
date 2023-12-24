@@ -1,0 +1,329 @@
+\t x-in-esaa-j-ch juun t'u'y laj laj k'aat.
+\m x-in-esaa-j-ch juun t'u'y laj laj k'aat
+\p COM-E1S-VT-SC-DIR NUM S PREP PREP S
+\g COM-E1S-sacar-SC-DIR uno ollita PRE PRE red
+\l Saqué una olla de su red.
+
+\t x-a-esaa-j-ch juun t'u'y laj laj k'aat.
+\m x-a-esaa-j-ch juun t'u'y laj laj k'aat
+\p COM-E2S-VT-SC-DIR NUM S PREP PREP S
+\g COM-E2S-sacar-SC-DIR uno ollita PRE PRE red
+\l Sacaste una olla de su red.
+
+\t x-qa-esaa-j-ch juun t'u'y laj laj k'aat.
+\m x-qa-esaa-j-ch juun t'u'y laj laj k'aat
+\p COM-E1P-VT-SC-DIR NUM S PREP PREP S
+\g COM-E1P-sacar-SC-DIR uno ollita PRE PRE red
+\l Sacamos una olla de su red.
+
+\t x-a-esaa-j-ch taq juun t'u'y laj laj k'aat.
+\m x-a-esaa-j-ch taq juun t'u'y laj laj k'aat
+\p COM-E2S-VT-SC-DIR PL NUM S PREP PREP S
+\g COM-E2S-sacar-SC-DIR PL uno ollita PRE PRE red
+\l Sacaron una olla de su red.
+
+\t x-r-esaa-j-ch taq juun t'u'y laj laj k'aat.
+\m x-r-esaa-j-ch taq juun t'u'y laj laj k'aat
+\p COM-E3S-VT-SC-DIR PL NUM S PREP PREP S
+\g COM-E3S-sacar-SC-DIR PL uno ollita PRE PRE red
+\l Sacaron una olla de su red.
+
+\t ta' tijtiij
+\m ta' ti-j-tiij
+\p NEG INC-E3S-VT
+\g NEG INC-E3S-comer
+\l No lo comas,
+
+\t ta' tqatiij
+\m ta' t-qa-tiij
+\p NEG INC-E1P-VT
+\g NEG INC-E1P-comer
+\l No lo comamos,
+
+\t ta' tatiij taq
+\m ta' t-a-tiijt taq
+\p NEG INC-E2S-VT PL 
+\g NEG INC-E2S-comer PL
+\l No lo coman,
+
+\t ta' tijtiij taq
+\m ta' ti-j-tiij taq
+\p NEG INC-E3S-VT PL
+\g NEG INC-E3S-comer PL
+\l No lo coman,
+
+\t aat ta' tatiij
+\m aat ta' t-a-tiij
+\p PRON NEG INC-E2S-VT
+\g tú NEG INC-E2S-comer
+\l tú no lo vas a comer
+
+\t re ta' tijtiij
+\m re ta' ti-j-tiij
+\p PRON NEG INC-E3S-VT
+\g él NEG INC-E3S-comer
+\l él no lo va a comer
+
+\t re ta' tijtiij
+\m re ta' ti-j-tiij
+\p PRON NEG INC-E3S-VT
+\g ella NEG INC-E3S-comer
+\l ella no lo va a comer
+
+\t ooj ta' tqatiij
+\m ooj ta' t-qa-tiij
+\p PRON NEG INC-E1P-VT
+\g nosotros NEG INC-E1P-comer
+\l nosotros no lo va a comer
+
+\t ataq ta' tatiij taq
+\m ataq ta' t-a-tiij taq
+\p PRON NEG INC-E2S-VT PL
+\g ustedes NEG INC-E2S-comer PL
+\l ustedes no lo van a comer
+
+\t retaq ta' tijtiij taq
+\m retaq ta' ti-j-tiij taq
+\p PRON NEG INC-E3S-VT PL
+\g ellos NEG INC-E3S-comer PL
+\l ellos no lo van a comer
+
+\t retaq ta' tijtiij taq
+\m retaq ta' ti-j-tiij taq
+\p PRON NEG INC-E3S-VT PL
+\g ellas NEG INC-E3S-comer PL
+\l ellas no lo van a comer
+
+\t Tak'is b'i juntir ch aw-ch
+\m t-a-k'is b'i juntiir chi aw-ch
+\p INC-E2S-VT DIR ADV PREP E2S-SREL
+\g INC-E2S-terminar DIR todo PREP E2S-SR
+\l Lo vas a terminar, y no te dejas nada,
+
+\t Tijk'is b'i juntir ch aw-ch
+\m ti-j-k'is b'i juntiir chi aw-ch
+\p INC-E3S-VT DIR ADV PREP E2S-SREL
+\g INC-E3S-terminar DIR todo PREP E2S-SR
+\l Lo va a terminar, y no te deja nada,
+
+\t Tqak'is b'i juntir ch aw-ch
+\m t-qa-k'is b'i juntiir chi aw-ch
+\p INC-E1P-VT DIR ADV PREP E2S-SREL
+\g INC-E1P-terminar DIR todo PREP E2S-SR
+\l Lo vamos a terminar, y no te dejamos nada,
+
+\t Tak'is taq b'i juntir ch aw-ch
+\m t-a-k'is taq b'i juntiir chi aw-ch
+\p INC-E2S-VT PL DIR ADV PREP E2S-SREL
+\g INC-E2S-terminar PL DIR todo PREP E2S-SR
+\l Lo van a terminar, y no te dejan nada,
+
+\t Tijk'is taq b'i juntir ch aw-ch
+\m ti-j-k'is taq b'i juntiir chi aw-ch
+\p INC-E3S-VT PL DIR ADV PREP E2S-SREL
+\g INC-E3S-terminar PL DIR todo PREP E2S-SR
+\l Lo van a terminar, y no te dejan nada,
+
+\t ta' inkwiin, ch-in-k'am-iik,
+\m ta' in-kwin ch-in-k'am-iik
+\p NEG A1S-VI PREP-E1S-VT-SV
+\g NEG A1S-poder PREP-E1S-recibir-SV
+\l No puedo llevarme
+
+\t ta' atkwiin, ch-in-k'am-iik,
+\m ta' at-kwin ch-in-k'am-iik
+\p NEG A2S-VI PREP-E1S-VT-SV
+\g NEG A2S-poder PREP-E1S-recibir-SV
+\l No puedes llevarme
+
+\t ta' jkwiin, ch-in-k'am-iik,
+\m ta' j-kwin ch-in-k'am-iik
+\p NEG A3S-VI PREP-E1S-VT-SV
+\g NEG A3S-poder PREP-E1S-recibir-SV
+\l No puede llevarme
+
+\t ta' qakwiin, ch-in-k'am-iik,
+\m ta' qa-kwin ch-in-k'am-iik
+\p NEG A1P-VI PREP-E1S-VT-SV
+\g NEG A1P-poder PREP-E1S-recibir-SV
+\l No podemos llevarme
+
+\t ta' jkwiin, taq ch-in-k'am-iik,
+\m ta' j-kwin taq ch-in-k'am-iik
+\p NEG A3S-VI PL PREP-E1S-VT-SV
+\g NEG A3S-poder PL PREP-E1S-recibir-SV
+\l No pueden llevarme
+
+\t xinkam wi' rexteew,
+\m x-in-kam wi' rexteew
+\p COM-A1S-VI EXS S
+\g COM-A1S-morir EXS paludismo
+\l Me morí por paludismo.
+
+\t xatkam wi' rexteew,
+\m x-at-kam wi' rexteew
+\p COM-A2S-VI EXS S
+\g COM-A2S-morir EXS paludismo
+\l Te moriste por paludismo.
+
+\t xkam wi' rexteew,
+\m x-kam wi' rexteew
+\p COM-VI EXS S
+\g COM-morir EXS paludismo
+\l Se murió por paludismo.
+
+\t xojkam wi' rexteew,
+\m x-oj-kam wi' rexteew
+\p COM-A1P-VI EXS S
+\g COM-A1P-morir EXS paludismo
+\l Nos morimos por paludismo.
+
+\t xatkam taq wi' rexteew,
+\m x-at-kam taq wi' rexteew
+\p COM-A2S-VI PL EXS S
+\g COM-A2S-morir PL EXS paludismo
+\l Se murieron por paludismo.
+
+\t tinmaja' rexteew.
+\m t-in-maj-a' rexteew
+\p INC-A1S-VT-SC S
+\g INC-A1S-comenzar-SC paludismo
+\l Me pega paludismo
+
+\t tatmaja' rexteew.
+\m t-at-maj-a' rexteew
+\p INC-A2S-VT-SC S
+\g INC-A2S-comenzar-SC paludismo
+\l Te pega paludismo
+
+\t tqamaja' rexteew.
+\m t-qa-maj-a' rexteew
+\p INC-A1P-VT-SC S
+\g INC-A1P-comenzar-SC paludismo
+\l Nos pega paludismo
+
+\t tatmaja' taq rexteew.
+\m t-at-maj-a' taq rexteew
+\p INC-A2S-VT-SC PL S
+\g INC-A2S-comenzar-SC PL paludismo
+\l Les pega paludismo
+
+\t timaja' taq rexteew.
+\m t-maj-a' taq rexteew
+\p INC-VT-SC PL S
+\g INC-comenzar-SC PL paludismo
+\l Les pega paludismo
+
+\t Xintiij saqmo'l,
+\m x-in-tiij saqmólb'
+\p COM-A1S-S S
+\g COM-A1S-comer huevo
+\l Comí huevo
+
+\t Xattiij saqmo'l,
+\m x-at-tiij saqmólb'
+\p COM-A2S-S S
+\g COM-A2S-comer huevo
+\l Comiste huevo
+
+\t Xojtiij saqmo'l,
+\m x-oj-tiij saqmólb'
+\p COM-A1P-S S
+\g COM-A1P-comer huevo
+\l Comimos huevo
+
+\t Xatiij taq saqmo'l,
+\m x-at-tiij taq saqmólb'
+\p COM-A2S-S PL S
+\g COM-A2S-comer PL huevo
+\l Comieron huevo
+
+\t Xtiij taq saqmo'l,
+\m x-tiij taq saqmólb'
+\p COM-S PL S
+\g COM-comer PL huevo
+\l Comieron huevo
+
+\t xinwuux kumetz,
+\m x-in-wux kumatz
+\p COM-A1S-VI S
+\g COM-A1S-convertir culebra
+\l Me convertí en culebra.
+
+\t xatwuux kumetz,
+\m x-at-wux kumatz
+\p COM-A2S-VI S
+\g COM-A2S-convertir culebra
+\l Te convertiste en culebra.
+
+\t xwuux kumetz,
+\m x-wux kumatz
+\p COM-VI S
+\g COM-convertir culebra
+\l Se convirtió en culebra.
+
+\t xojwuux kumetz,
+\m x-oj-wux kumatz
+\p COM-A1P-VI S
+\g COM-A1P-convertir culebra
+\l Nos convertimos en culebra.
+
+\t xatwuux taq kumetz,
+\m x-at-wux taq kumatz
+\p COM-A2S-VI PL S
+\g COM-A2S-convertir PL culebra
+\l Se convirtieron en culebra.
+
+\t xwuux taq kumetz,
+\m x-wux taq kumatz
+\p COM-VI PL S
+\g COM-convertir PL culebra
+\l Se convirtieron en culebra.
+
+\t neen chakuuj at-a-k'am taq b'ik
+\m neen chaak-uu-j at-a-k'am taq b'ik
+\p INT S-???-SC A2S-E2S-VT PL DIR
+\g INT trabajo-TR-SC A2S-E2S-recibir PL DIR
+\l Para qué te llevan
+
+\t neen chakuuj a-k'am taq b'ik
+\m neen chaak-uu-j a-k'am taq b'ik
+\p INT S-???-SC E2S-VT PL DIR
+\g INT trabajo-TR-SC -E2S-recibir PL DIR
+\l Para qué se llevan
+
+\t neen chakuuj oj-a-k'am taq b'ik
+\m neen chaak-uu-j oj-a-k'am taq b'ik
+\p INT S-???-SC A1P-E2S-VT PL DIR
+\g INT trabajo-TR-SC A1P-E2S-recibir PL DIR
+\l Para qué nos llevan
+
+\t sib'laj tinmayon.
+\m seb'laj t-in-may-on
+\p ITS INC-A1S-VI-AP
+\g ITS INC-A1S-extrañarse-AP
+\l Cómo me extrañaba
+
+\t sib'laj tamayon.
+\m seb'laj t-a-may-on
+\p ITS INC-A2S-VI-AP
+\g ITS INC-A2S-extrañarse-AP
+\l Cómo te extrañabas
+
+\t sib'laj timayon.
+\m seb'laj t-may-on
+\p ITS INC-VI-AP
+\g ITS INC-extrañarse-AP
+\l Cómo se extrañaba
+
+\t sib'laj tqamayon.
+\m seb'laj t-qa-may-on
+\p ITS INC-A1P-VI-AP
+\g ITS INC-A1P-extrañarse-AP
+\l Cómo nos extrañábamos
+
+\t sib'laj tamayon taq.
+\m seb'laj t-a-may-on taq
+\p ITS INC-A2S-VI-AP PL
+\g ITS INC-A2S-extrañarse-AP PL
+\l Cómo se extrañaban

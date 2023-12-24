@@ -1,0 +1,582 @@
+\t antonses chib'aanik tab'ij iin.
+\m antonses chi-b'an-ik t-a-b'ij aat
+\p ADV INC-VT-SC INC-E2S-VI PRON
+\g entonces INC-hacer-SC INC-E2S-decir tú
+\l Entonces así como dices tú.
+
+\t antonses chib'aanik tijb'ij re.
+\m antonses chi-b'an-ik ti-j-b'ij re
+\p ADV INC-VT-SC INC-E3S-VI PRON
+\g entonces INC-hacer-SC INC-E3S-decir ella
+\l Entonces así como dice ella.
+
+\t antonses chib'aanik tijb'ij re.
+\m antonses chi-b'an-ik ti-j-b'ij re
+\p ADV INC-VT-SC INC-E3S-VI PRON
+\g entonces INC-hacer-SC INC-E3S-decir él
+\l Entonces así como dice él.
+
+\t antonses chib'aanik tqab'ij ooj.
+\m antonses chi-b'an-ik t-qa-b'ij ooj
+\p ADV INC-VT-SC INC-E1P-VI PRON
+\g entonces INC-hacer-SC INC-E1P-decir nosotros
+\l Entonces así como decimos nosotros.
+*********
+\t antonses chib'aanik tab'ij taq ataq.
+\m antonses chi-b'an-ik t-a-b'ij taq ataq
+\p ADV INC-VT-SC INC-E2S-VI PL PRON
+\g entonces INC-hacer-SC INC-E2S-decir PL ustedes
+\l Entonces así como dicen ustedes.
+
+\t antonses chib'aanik tijb'ij taq retaq.
+\m antonses chi-b'an-ik ti-j-b'ij taq retaq
+\p ADV INC-VT-SC INC-E3S-VI PL PRON
+\g entonces INC-hacer-SC INC-E3S-decir PL ellos
+\l Entonces así como dicen ellos.
+
+\t antonses chib'aanik tijb'ij taq retaq.
+\m antonses chi-b'an-ik ti-j-b'ij taq retaq
+\p ADV INC-VT-SC INC-E3S-VI PL PRON
+\g entonces INC-hacer-SC INC-E3S-decir PL ellas
+\l Entonces así como dicen ellas.
+
+\t xink'iyk inb'enaa li sii'.
+\m x-in-k'iy-ik in-b'en-aa li sii'
+\p COM-A1S-VI-SC A1S-VI-PART PREP S
+\g COM-A1S-crecer-SC A1S-ir-PART PREP leña
+\l Cuando crezco tengo que ir a traer leña.
+
+\t xatk'iyk atb'enaa li sii'.
+\m x-at-k'iy-ik at-b'en-aa li sii'
+\p COM-A2S-VI-SC A2S-VI-PART PREP S
+\g COM-A2S-crecer-SC A2S-ir-PART PREP leña
+\l Cuando creces tienes que ir a traer leña.
+
+\t xk'iyk b'enaa li sii'.
+\m x-k'iy-ik b'en-aa li sii'
+\p COM-VI-SC VI-PART PREP S
+\g COM-crecer-SC ir-PART PREP leña
+\l Cuando crece tiene que ir a traer leña.
+
+\t xatk'iyk taq atb'enaa taq li sii'.
+\m x-at-k'iy-ik taq at-b'en-aa taq li sii'
+\p COM-A2S-VI-SC PL A2S-VI-PART PL PREP S
+\g COM-A2S-crecer-SC PL A2S-ir-PART PL PREP leña
+\l Cuando crecen tienen que ir a traer leña.
+
+\t xk'iyk taq b'enaa taq li sii'.
+\m x-k'iy-ik taq b'en-aa taq li sii'
+\p COM-VI-SC PL VI-PART PL PREP S
+\g COM-crecer-SC PL ir-PART PL PREP leña
+\l Cuando crecen tienen que ir a traer leña.
+*************
+\t per maka maq ra chee'.
+\m peer m-a-ka maq ra chee'
+\p ADV IMP-E2S-VT ART DIM S
+\g pero IMP-E2S-cortar ART DIM árbol
+\l Pero no vayas cortar los árbolito.
+*********
+\t per mjka maq ra chee'.
+\m peer m-j-ka maq ra chee'
+\p ADV IMP-E3S-VT ART DIM S
+\g pero IMP-E3S-cortar ART DIM árbol
+\l Pero no vaya cortar los árbolito.
+
+\t per mjka maq ra chee'.
+\m peer m-j-ka maq ra chee'
+\p ADV IMP-E3S-VT ART DIM S
+\g pero IMP-E3S-cortar ART DIM árbol
+\l Pero no vaya cortar los árbolito.
+
+\t per mjkataq maq ra chee'.
+\m peer m-j-kat-aq maq ra chee'
+\p ADV IMP-E3S-VT-PL ART DIM S
+\g pero IMP-E3S-cortar-PL ART DIM árbol
+\l Pero no vayan cortar los árbolito.
+
+\t Ri' li inyuter lajinsok,
+\m ri' li in-yut-er laj-in-sook
+\p AFI DEM A1S-???-ITR PREP-E1S-S
+\g AFI DEM A1S-talixte-ITR PREP-E1S-nido
+\l Si no me vuelvo paralíticos en mi cama.
+
+\t Ri' li atyuter lajasok,
+\m ri' li at-yut-er laj-a-sook
+\p AFI DEM A2S-???-ITR PREP-E2S-S
+\g AFI DEM A2S-talixte-ITR PREP-E2S-nido
+\l Si no te vuelves paralíticos en tu cama.
+
+\t Ri' li yuter lajinsok,
+\m ri' li yut-er laj-sook
+\p AFI DEM ???-ITR PREP-S
+\g AFI DEM talixte-ITR PREP-nido
+\l Si no se vuelve paralíticos en su cama.
+
+\t Ri' li ojyuter lajqasok,
+\m ri' li oj-yut-er laj-qa-sook
+\p AFI DEM A1P-???-ITR PREP-E1P-S
+\g AFI DEM A1P-talixte-ITR PREP-E1P-nido
+\l Si no nos volvemos paralíticos en nuestros camas.
+
+\t Ri' li yuter taq lajsok,
+\m ri' li yut-er taq laj-sook
+\p AFI DEM A3S-???-ITR PL PREP-E3S-S
+\g AFI DEM A3S-talixte-ITR PL PREP-E3S-nido
+\l Si no se vuelven paralíticos en sus camas.
+*******
+\t tinyoq', taq ra jfoot qaqaaj Diyoos.
+\m t-in-yoq' taq ra j-foot qa-qaaj Dyoos
+\p INC-E1S-VT PL DIM E3S-S E1P-S S
+\g INC-E1S-maltrar PL DIM E3S-foto E1P-papá Dios
+\l Maltrato la foto de nuestro padre Dios. (imagen)
+
+\t tayoq', taq ra jfoot qaqaaj Diyoos.
+\m t-a-yoq' taq ra j-foot qa-qaaj Dyoos
+\p INC-E2S-VT PL DIM E3S-S E1P-S S
+\g INC-E1S-maltrar PL DIM E3S-foto E1P-papá Dios
+\l Maltratas la foto de nuestro padre Dios. (imagen)
+
+\t tijyoq', taq ra jfoot qaqaaj Diyoos.
+\m ti-j-yoq' taq ra j-foot qa-qaaj Dyoos
+\p INC-E3S-VT PL DIM E3S-S E1P-S S
+\g INC-E3S-maltrar PL DIM E3S-foto E1P-papá Dios
+\l Maltrata la foto de nuestro padre Dios. (imagen)
+*********
+\t tqayoq', taq ra jfoot qaqaaj Diyoos.
+\m t-qa-yoq' taq ra j-foot qa-qaaj Dyoos
+\p INC-E1P-VT PL DIM E3S-S E1P-S S
+\g INC-E1P-maltrar PL DIM E3S-foto E1P-papá Dios
+\l Maltratamos la foto de nuestro padre Dios. (imagen)
+
+\t tayoq' taq, taq ra jfoot qaqaaj Diyoos.
+\m t-a-yoq' taq taq ra j-foot qa-qaaj Dyoos
+\p INC-E2S-VT PL PL DIM E3S-S E1P-S S
+\g INC-E2S-maltrar PL PL DIM E3S-foto E1P-papá Dios
+\l Maltratan la foto de nuestro padre Dios. (imagen)
+
+\t Neen chki' tinb'an jq'iij man chee'.
+\m neen chki' t-in-b'an j-q'iij man chee'
+\p INT PART INC-E1S-VT E3S-S ART S
+\g INT PART INC-E1S-hacer E3S-día ART palo
+\l Porque celebro el dia del palo.
+
+\t Neen chki' tab'an jq'iij man chee'.
+\m neen chki' t-a-b'an j-q'iij man chee'
+\p INT PART INC-E2S-VT E3S-S ART S
+\g INT PART INC-E2S-hacer E3S-día ART palo
+\l Porque celebras el dia del palo.
+
+\t Neen chki' tijb'an jq'iij man chee'.
+\m neen chki' ti-j-b'an j-q'iij man chee'
+\p INT PART INC-E3S-VT E3S-S ART S
+\g INT PART INC-E3S-hacer E3S-día ART palo
+\l Porque celebra el dia del palo.
+
+\t Neen chki' tqab'an jq'iij man chee'.
+\m neen chki' ti-qa-b'an j-q'iij man chee'
+\p INT PART INC-E1P-VT E3S-S ART S
+\g INT PART INC-E1P-hacer E3S-día ART palo
+\l Porque celebramos el dia del palo.
+
+\t Neen chki' tijb'an taq jq'iij man chee'.
+\m neen chki' ti-j-b'an taq j-q'iij man chee'
+\p INT PART INC-E3S-VT PL E3S-S ART S
+\g INT PART INC-E3S-hacer PL E3S-día ART palo
+\l Porque celebran el dia del palo.
+
+\t marita' li tinb'an k'ex re chee'.
+\m ma-rita' li t-in-b'an k'ex re chee'
+\p IMP-PART DEM INC-E1S-VT ADJ PART S
+\g IMP-PART DEM INC-E1S-hacer daño PART árbol
+\l No es hasta ahora que le hago daño a los arboles.
+
+\t marita' li tab'an k'ex re chee'.
+\m ma-rita' li t-a-b'an k'ex re chee'
+\p IMP-PART DEM INC-E2S-VT ADJ PART S
+\g IMP-PART DEM INC-E2S-hacer daño PART árbol
+\l No es hasta ahora que le haces daño a los arboles.
+
+\t marita' li tjb'an k'ex re chee'.
+\m ma-rita' li t-j-b'an k'ex re chee'
+\p IMP-PART DEM INC-E3S-VT ADJ PART S
+\g IMP-PART DEM INC-E3S-hacer daño PART árbol
+\l No es hasta ahora que le hace daño a los arboles.
+
+\t marita' li tab'an taq k'ex re chee'.
+\m ma-rita' li t-a-b'an taq k'ex re chee'
+\p IMP-PART DEM INC-E2S-VT PL ADJ PART S
+\g IMP-PART DEM INC-E2S-hacer PL daño PART árbol
+\l No es hasta ahora que le hacen daño a los arboles.
+
+\t marita' li tjb'an taq k'ex re chee'.
+\m ma-rita' li t-j-b'an taq k'ex re chee'
+\p IMP-PART DEM INC-E3S-VT PL ADJ PART S
+\g IMP-PART DEM INC-E3S-hacer PL daño PART árbol
+\l No es hasta ahora que le hacen daño a los arboles.
+
+\t ori tijin tinqasaj nimaq taq chee'.
+\m ori tijin t-in-qasaj nimaq taq chee'
+\p ADV PRG INC-E1S-VT ADJ PL S
+\g hora PRG INC-E1S-bajar grande PL árbol
+\l Ahora estoy botando arboles grandes.
+
+\t ori tijin taqasaj nimaq taq chee'.
+\m ori tijin t-a-qasaj nimaq taq chee'
+\p ADV PRG INC-E2S-VT ADJ PL S
+\g hora PRG INC-E2S-bajar grande PL árbol
+\l Ahora estás botando arboles grandes.
+
+\t ori tijin tijqasaj nimaq taq chee'.
+\m ori tijin ti-j-qasaj nimaq taq chee'
+\p ADV PRG INC-E3S-VT ADJ PL S
+\g hora PRG INC-E3S-bajar grande PL árbol
+\l Ahora está botando arboles grandes.
+
+\t ori tijin tqaqasaj nimaq taq chee'.
+\m ori tijin t-qa-qasaj nimaq taq chee'
+\p ADV PRG INC-E1P-VT ADJ PL S
+\g hora PRG INC-E1P-bajar grande PL árbol
+\l Ahora estamos botando arboles grandes.
+
+\t ori tijin taqasaj taq nimaq taq chee'.
+\m ori tijin t-a-qasaj taq nimaq taq chee'
+\p ADV PRG INC-E2S-VT PL ADJ PL S
+\g hora PRG INC-E2S-bajar PL grande PL árbol
+\l Ahora están botando arboles grandes.
+
+\t Chaj tijin tinen k'ex re.
+\m chaj tijin t-in-en k'ex re
+\p S PRG INC-E1S-VT ADJ PART
+\g pino PRG INC-E1S-hacer daño PART
+\l Al pino le estoy haciendo daño.
+
+\t Chaj tijin tawen k'ex re.
+\m chaj tijin t-aw-en k'ex re
+\p S PRG INC-E2S-VT ADJ PART
+\g pino PRG INC-E2S-hacer daño PART
+\l Al pino le estás haciendo daño.
+
+\t Chaj tijin tren k'ex re.
+\m chaj tijin t-r-en k'ex re
+\p S PRG INC-E3S-VT ADJ PART
+\g pino PRG INC-E3S-hacer daño PART
+\l Al pino le está haciendo daño.
+
+\t Chaj tijin tqen k'ex re.
+\m chaj tijin t-q-en k'ex re
+\p S PRG INC-E1P-VT ADJ PART
+\g pino PRG INC-E1P-hacer daño PART
+\l Al pino le estamos haciendo daño.
+
+\t Chaj tijin tawen taq k'ex re.
+\m chaj tijin t-aw-en taq k'ex re
+\p S PRG INC-E2S-VT taq ADJ PART
+\g pino PRG INC-E2S-hacer PL daño PART
+\l Al pino le están haciendo daño.
+
+\t tqat'o chee'.
+\m t-qa-t'o chee'
+\p INC-E1P-VT S
+\g INC-E1P-ayudar árbol
+\l Ayudemos a los arboles.
+
+\t Pwes inloq'aj taq ra qachee'.
+\m pwes in-loq'a-j taq ra qa-chee'
+\p ADV E1S-VT-SC PL DIM E1P-S
+\g pues E1S-adorar-SC PL DIM E1P-árbol
+\l Pues cuide nuestros árboles.
+
+\t Pwes aloq'aj taq ra qachee'.
+\m pwes a-loq'a-j taq ra qa-chee'
+\p ADV E2S-VT-SC PL DIM E1P-S
+\g pues E2S-adorar-SC PL DIM E1P-árbol
+\l Pues cuides nuestros árboles.
+
+\t Pwes jloq'aj taq ra qachee'.
+\m pwes j-loq'a-j taq ra qa-chee'
+\p ADV E3S-VT-SC PL DIM E1P-S
+\g pues E3S-adorar-SC PL DIM E1P-árbol
+\l Pues cuide nuestros árboles.
+
+\t Pwes aloq'aj taq taq ra qachee'.
+\m pwes a-loq'a-j taq taq ra qa-chee'
+\p ADV E2S-VT-SC PL PL DIM E1P-S
+\g pues E2S-adorar-SC PL PL DIM E1P-árbol
+\l Pues cuiden nuestros árboles.
+
+\t Pwes jloq'aj taq taq ra qachee'.
+\m pwes j-loq'a-j taq taq ra qa-chee'
+\p ADV E3S-VT-SC PL PL DIM E1P-S
+\g pues E3S-adorar-SC PL PL DIM E1P-árbol
+\l Pues cuiden nuestros árboles.
+
+\t Ta' chi' xinil Linee,
+\m ta' chi' x-in-il linee
+\p NEG PREP COM-E1S-VT NOM
+\g NEG PREP COM-E1S-ver Lina
+\l Ya no vi usted lina.
+
+\t Ta' chi' xril Linee,
+\m ta' chi' x-r-il linee
+\p NEG PREP COM-E3S-VT NOM
+\g NEG PREP COM-E3S-ver Lina
+\l Ya no vio usted lina.
+
+\t Ta' chi' xqil Linee,
+\m ta' chi' x-q-il linee
+\p NEG PREP COM-E1P-VT NOM
+\g NEG PREP COM-E1P-ver Lina
+\l Ya no vimos usted lina.
+
+\t Ta' chi' xawil taq Linee,
+\m ta' chi' x-aw-il taq linee
+\p NEG PREP COM-E2S-VT PL NOM
+\g NEG PREP COM-E2S-ver PL Lina
+\l Ya no vieron usted lina.
+
+\t Ta' chi' xril taq Linee,
+\m ta' chi' x-r-il taq linee
+\p NEG PREP COM-E3S-VT PL NOM
+\g NEG PREP COM-E3S-ver PL Lina
+\l Ya no vieron usted lina.
+
+\t Tink'am b'i poom,
+\m t-in-k'am b'i poom
+\p INC-E1S-VT DIR S
+\g INC-E1S-recibir DIR estoraque
+\l Llevo estoraque.
+
+\t Tak'am b'i poom,
+\m t-a-k'am b'i poom
+\p INC-E2S-VT DIR S
+\g INC-E2S-recibir DIR estoraque
+\l Llevas estoraque.
+
+\t Tijk'am b'i poom,
+\m ti-j-k'am b'i poom
+\p INC-E3S-VT DIR S
+\g INC-E3S-recibir DIR estoraque
+\l Lleva estoraque.
+
+\t Tqak'am b'i poom,
+\m t-qa-k'am b'i poom
+\p INC-E1P-VT DIR S
+\g INC-E1P-recibir DIR estoraque
+\l Llevamos estoraque.
+
+\t Tak'am taq b'i poom,
+\m t-a-k'am taq b'i poom
+\p INC-E2S-VT PL DIR S
+\g INC-E2S-recibir PL DIR estoraque
+\l Llevan estoraque.
+
+\t Tons tinpomaj
+\m entoons t-in-poma-j
+\p ADV INC-E1S-VT-SC
+\g entonces INC-E1S-sahumar-SC
+\l Entonces quemo estoraque.
+
+\t Tons tapomaj
+\m entoons t-a-poma-j
+\p ADV INC-E2S-VT-SC
+\g entonces INC-E2S-sahumar-SC
+\l Entonces quemas estoraque.
+
+\t Tons tijpomaj
+\m entoons ti-j-poma-j
+\p ADV INC-E3S-VT-SC
+\g entonces INC-E3S-sahumar-SC
+\l Entonces quema estoraque.
+
+\t Tons tqapomaj
+\m entoons tqa-poma-j
+\p ADV INC-E1P-VT-SC
+\g entonces INC-E1P-sahumar-SC
+\l Entonces quemamos estoraque.
+
+\t Tons tapomaj taq
+\m entoons t-a-poma-j taq
+\p ADV INC-E2S-VT-SC PL
+\g entonces INC-E2S-sahumar-SC PL
+\l Entonces queman estoraque.
+
+\t I kla' tinkoje' wi'w ri kostumbre.
+\m i kla' t-in-koj-e' wi'-w ri kostumbre
+\p CONJ ADV INC-E1S-VT-ENF EXS-PART DEM S
+\g CONJ allí INC-E1S-meter-ENF EXS-PART DEM costumbre
+\l Y allí voy a poner o hhacer la cosumbre. (ceremonia)
+
+\t I kla' takoje' wi'w ri kostumbre.
+\m i kla' t-a-koj-e' wi'-w ri kostumbre
+\p CONJ ADV INC-E2S-VT-ENF EXS-PART DEM S
+\g CONJ allí INC-E2S-meter-ENF EXS-PART DEM costumbre
+\l Y allí vas a poner o hhacer la cosumbre. (ceremonia)
+
+\t I kla' tijkoje' wi'w ri kostumbre.
+\m i kla' ti-j-koj-e' wi'-w ri kostumbre
+\p CONJ ADV INC-E3S-VT-ENF EXS-PART DEM S
+\g CONJ allí INC-E3S-meter-ENF EXS-PART DEM costumbre
+\l Y allí va a poner o hhacer la cosumbre. (ceremonia)
+
+\t I kla' tqakoje' wi'w ri kostumbre.
+\m i kla' t-qa-koj-e' wi'-w ri kostumbre
+\p CONJ ADV INC-E1P-VT-ENF EXS-PART DEM S
+\g CONJ allí INC-E1P-meter-ENF EXS-PART DEM costumbre
+\l Y allí vamos a poner o hhacer la cosumbre. (ceremonia)
+
+\t I kla' takoje' taq wi'w ri kostumbre.
+\m i kla' t-a-koj-e' taq wi'-w ri kostumbre
+\p CONJ ADV INC-E2S-VT-ENF PL EXS-PART DEM S
+\g CONJ allí INC-E2S-meter-ENF PL EXS-PART DEM costumbre
+\l Y allí van a poner o hhacer la cosumbre. (ceremonia)
+
+\t Pero mikta' chki' xataw kla'.
+\m peer mi-kta' chik x-a-taw kla'
+\p ADV PART-PART PART COM-E2S-VI ADV
+\g pero PART-PART PART COM-E2S-llegar allí
+\l Pero ya no llegaste allí.
+
+\t Pero mikta' chki' xjtaw kla'.
+\m peer mi-kta' chik x-j-taw kla'
+\p ADV PART-PART PART COM-E3S-VI ADV
+\g pero PART-PART PART COM-E3S-llegar allí
+\l Pero ya no llegó allí.
+
+\t Pero mikta' chki' xqataw kla'.
+\m peer mi-kta' chik x-qa-taw kla'
+\p ADV PART-PART PART COM-E1P-VI ADV
+\g pero PART-PART PART COM-E1P-llegar allí
+\l Pero ya no llegamos allí.
+
+\t Pero mikta' chki' xataw taq kla'.
+\m peer mi-kta' chik x-a-taw taq kla'
+\p ADV PART-PART PART COM-E2S-VI PL ADV
+\g pero PART-PART PART COM-E2S-llegar PL allí
+\l Pero ya no llegaron allí.
+
+\t Pero mikta' chki' xjtaw taq kla'.
+\m peer mi-kta' chik x-j-taw taq kla'
+\p ADV PART-PART PART COM-E3S-VI PL ADV
+\g pero PART-PART PART COM-E3S-llegar PL allí
+\l Pero ya no llegaron allí.
+
+\t kom ta' tinil.
+\m kom ta' t-in-il
+\p ADV NEG INC-E1S-VT
+\g como NEG INC-E1S-ver
+\l Como no los miro.
+
+\t kom ta' tawil.
+\m kom ta' t-aw-il
+\p ADV NEG INC-E2S-VT
+\g como NEG INC-E2S-ver
+\l Como no los miras.
+
+\t kom ta' tril.
+\m kom ta' t-r-il
+\p ADV NEG INC-E3S-VT
+\g como NEG INC-E3S-ver
+\l Como no los mira.
+
+\t kom ta' tawil taq.
+\m kom ta' t-aw-il taq
+\p ADV NEG INC-E2S-VT PL
+\g como NEG INC-E2S-ver PL
+\l Como no los miran.
+
+\t kom ta' tril taq.
+\m kom ta' t-r-il taq
+\p ADV NEG INC-E3S-VT PL
+\g como NEG INC-E3S-ver PL
+\l Como no los miran.
+
+\t taq o taq ra wunaqtqa'n pwes tinya' jno'jaq tambyeen.
+\m taq o' taq ra wunaq-tq-a'n pwes t-in-ya' j-no'j-aq tambyeen
+\p PL CONJ PL DIM S-PL-ENF ADV INC-E1S-VT E3S-S-PL ADV
+\g PL o PL DIM hombre-PL-ENF pues INC-E1S-dar E3S-conocimiento-PL también
+\l Si son hombrecitos pues les doy buenos consejos también.
+
+\t taq o taq ra wunaqtqa'n pwes taya' jno'jaq tambyeen.
+\m taq o' taq ra wunaq-tq-a'n pwes t-a-ya' j-no'j-aq tambyeen
+\p PL CONJ PL DIM S-PL-ENF ADV INC-E2S-VT E3S-S-PL ADV
+\g PL o PL DIM hombre-PL-ENF pues INC-E2S-dar E3S-conocimiento-PL también
+\l Si son hombrecitos pues les das buenos consejos también.
+
+\t taq o taq ra wunaqtqa'n pwes tijya' jno'jaq tambyeen.
+\m taq o' taq ra wunaq-tq-a'n pwes ti-j-ya' j-no'j-aq tambyeen
+\p PL CONJ PL DIM S-PL-ENF ADV INC-E3S-VT E3S-S-PL ADV
+\g PL o PL DIM hombre-PL-ENF pues INC-E3S-dar E3S-conocimiento-PL también
+\l Si son hombrecitos pues les da buenos consejos también.
+
+\t taq o taq ra wunaqtqa'n pwes taya' taq jno'jaq tambyeen.
+\m taq o' taq ra wunaq-tq-a'n pwes t-a-ya' taq j-no'j-aq tambyeen
+\p PL CONJ PL DIM S-PL-ENF ADV INC-E2S-VT PL E3S-S-PL ADV
+\g PL o PL DIM hombre-PL-ENF pues INC-E2S-dar PL E3S-conocimiento-PL también
+\l Si son hombrecitos pues les dan buenos consejos también.
+
+\t taq o taq ra wunaqtqa'n pwes tijya' taq jno'jaq tambyeen.
+\m taq o' taq ra wunaq-tq-a'n pwes ti-j-ya' taq j-no'j-aq tambyeen
+\p PL CONJ PL DIM S-PL-ENF ADV INC-E3S-VT PL E3S-S-PL ADV
+\g PL o PL DIM hombre-PL-ENF pues INC-E3S-dar PL E3S-conocimiento-PL también
+\l Si son hombrecitos pues les dan buenos consejos también.
+
+\t kwand xinta' ayaj.
+\m kwand x-a-ta' a-yaaj
+\p ADV COM-E2S-VT E2S-S
+\g cuando COM-E2S-encontrar E2S-enfermo
+\l Cuando te enfermaste.
+
+\t kwand xjta' jyaj.
+\m kwand x-j-ta' j-yaaj
+\p ADV COM-E3S-VT E3S-S
+\g cuando COM-E3S-encontrar E3S-enfermo
+\l Cuando se enfermó.
+
+\t kwand xqata' qayaj.
+\m kwand x-qa-ta' qa-yaaj
+\p ADV COM-E1P-VT E1P-S
+\g cuando COM-E1P-encontrar E1P-enfermo
+\l Cuando nos enfermaoms.
+
+\t kwand xinta' taq ayaj.
+\m kwand x-a-ta' taq a-yaaj taq
+\p ADV COM-E2S-VT PL E2S-S PL
+\g cuando COM-E2S-encontrar PL E2S-enfermo PL
+\l Cuando se enfermaron.
+
+\t kwand xjta' taq jyaj taq.
+\m kwand x-j-ta' taq j-yaaj taq
+\p ADV COM-E3S-VT PL E3S-S PL
+\g cuando COM-E3S-encontrar PL E3S-enfermo PL
+\l Cuando se enfermaron.
+
+\t Xatzib'i'n jwi'l wron,
+\m x-a-tzib'-i'n j-wi'l woron
+\p COM-E2S-VT-ENF E3S-SREL S
+\g COM-E2S-curar-ENF E3S-SREL sacate
+\l Te curaste con sacates.
+
+\t Xjtzib'i'n jwi'l wron,
+\m x-j-tzib'-i'n j-wi'l woron
+\p COM-E3S-VT-ENF E3S-SREL S
+\g COM-E3S-curar-ENF E3S-SREL sacate
+\l Se curó con sacates.
+
+\t Xqatzib'i'n jwi'l wron,
+\m x-qa-tzib'-i'n j-wi'l woron
+\p COM-E1P-VT-ENF E3S-SREL S
+\g COM-E1P-curar-ENF E3S-SREL sacate
+\l Nos curamos con sacates.
+
+\t Xatzib'i'n taq jwi'l wron,
+\m x-a-tzib'-i'n taq j-wi'l woron
+\p COM-E2S-VT-ENF PL E3S-SREL S
+\g COM-E2S-curar-ENF PL E3S-SREL sacate
+\l Se curaron con sacates.
+
+\t Xjtzib'i'n taq jwi'l wron,
+\m x-j-tzib'-i'n taq j-wi'l woron
+\p COM-E3S-VT-ENF PL E3S-SREL S
+\g COM-E3S-curar-ENF PL E3S-SREL sacate
+\l Se curaron con sacates.
+
