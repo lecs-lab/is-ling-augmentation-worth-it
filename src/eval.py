@@ -29,11 +29,14 @@ def compute_metrics(labels):
                     continue
                 decoded_labels.append(labels[gold_label] if 0 <= gold_label < len(labels) else labels[-1])
                 decoded_preds.append(labels[pred_label] if 0 <= pred_label < len(labels) else labels[-1])
+            return decoded_preds, decoded_labels
 
-        decoded_preds, decoded_gold = [decode(pred_seq, gold_seq) for pred_seq, gold_seq in zip(preds, gold_labels)]
+        print(preds.shape)
+        print(type(gold_labels))
+        decoded_preds, decoded_gold = zip(*[decode(pred_seq, gold_seq) for pred_seq, gold_seq in zip(preds, gold_labels)])
 
         # Trim preds to the same length as the labels
-        decoded_preds = [pred_seq[:len(label_seq)] for pred_seq, label_seq in zip(decoded_preds, decoded_gold)]
+        # decoded_preds = [pred_seq[:len(label_seq)] for pred_seq, label_seq in zip(decoded_preds, decoded_gold)]
 
         print('Preds:\t', decoded_preds[0])
         print('Labels:\t', decoded_gold[0])
