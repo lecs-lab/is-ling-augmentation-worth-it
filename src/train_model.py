@@ -106,7 +106,7 @@ def train(model_type: str,
         row["glosses"] = split_line(row["glosses"], prefix=None)
         return row
 
-    dataset = dataset.map(segment)
+    dataset = dataset.map(segment, load_from_cache_file=False)
     train_vocab = create_vocab(dataset['train']['morphemes'], threshold=1)
     glosses = create_vocab(dataset['train']['glosses'], threshold=1, should_not_lower=True) + ['<unk>']
     tokenizer = XLMRobertaTokenizerFast.from_pretrained('xlm-roberta-base', model_max_length=64)
