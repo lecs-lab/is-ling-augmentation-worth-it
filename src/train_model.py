@@ -77,6 +77,7 @@ def train(model_type: str,
     wandb.init(project=project, entity="michael-ginn", name=model_type, config={
         "random-seed": seed,
         "experimental_run": model_type,
+        "training_schedule": aug_mode,
         "epochs": epochs,
     })
 
