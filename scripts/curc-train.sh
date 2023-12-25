@@ -20,4 +20,5 @@ module load anaconda
 conda activate AutoIGT
 cd "/projects/migi8081/morpheme-hallucination/src"
 
-python3 train_model.py train --model_type baseline
+#python3 train_model.py train --model_type baseline
+python3 train_model.py train --model_type aug_m2 --aug_mode mixed

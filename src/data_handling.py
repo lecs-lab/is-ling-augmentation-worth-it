@@ -164,7 +164,7 @@ def prepare_dataset(dataset: DatasetDict, tokenizer, glosses: list[str]):
 
         tokenized_inputs["labels"] = labels
         return tokenized_inputs
-    return dataset.map(tokenize_and_align_labels, batched=True)
+    return dataset.map(tokenize_and_align_labels, batched=True, batch_size=1)
 
 
 def write_predictions(data: List[IGTLine], tokenizer, trainer: Trainer, labels, out_path):

@@ -2,7 +2,7 @@ import random
 import click
 import torch
 import wandb
-from datasets import load_dataset
+from datasets import load_dataset, Dataset, concatenate_datasets
 from transformers import (
     TrainerCallback,
     EarlyStoppingCallback,
@@ -14,7 +14,7 @@ from transformers import (
     XLMRobertaTokenizerFast,
     DataCollatorForTokenClassification
 )
-from data_handling import split_line, create_vocab, prepare_dataset
+from data_handling import split_line, create_vocab, prepare_dataset, load_data_file
 from eval import compute_metrics
 
 device = "cuda:0" if torch.cuda.is_available() else "mps"
@@ -40,6 +40,20 @@ class DelayedEarlyStoppingCallback(EarlyStoppingCallback):
             self.patience = 0
 
 
+def load_aug_data(path):
+    aug_data = load_data_file(path)
+
+    aug_data_processed = []
+    for row in aug_data:
+        row.should_segment = False
+        row_dict = row.__dict__()
+        aug_data_processed.append({'transcription': row_dict['segmentation'],
+                                    'glosses': row_dict['glosses'][0],
+                                    'translation': row_dict['translation']})
+
+    return Dataset.from_list(aug_data_processed)
+
+
 @click.group()
 def cli():
     pass
@@ -48,15 +62,16 @@ def cli():
 @cli.command()
 @click.option('--model_type',
               type=click.Choice(['baseline', 'aug_m1', 'aug_m2']))
+@click.option('--aug_mode', type=click.Choice(['mixed', 'curriculum']), default='mixed')
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=200)
 @click.option("--project", type=str, default='morpheme-hallucination')
 def train(model_type: str,
+          aug_mode: str,
           seed: int,
           epochs: int,
           project: str):
 
-    MODEL_INPUT_LENGTH = 64
     BATCH_SIZE = 64
 
     wandb.init(project=project, entity="michael-ginn", name=model_type, config={
@@ -69,6 +84,21 @@ def train(model_type: str,
 
     # Load and process dataset
     dataset = load_dataset('lecslab/usp-igt')
+
+    # Add in hallucinated data as needed
+    if model_type != 'baseline':
+        if model_type == 'aug_m1':
+            aug_dataset = load_aug_data('../data/hallucinated/Method 1')
+        elif model_type == 'aug_m2':
+            aug_dataset = load_aug_data('../data/hallucinated/Method 2/method2.txt')
+        else:
+            raise Exception('Invalid choice!')
+
+        if aug_mode == 'mixed':
+            dataset['train'] = concatenate_datasets([dataset['train'], aug_dataset])
+            dataset['train'] = dataset['train'].shuffle()
+        elif aug_mode == 'curriculum':
+            dataset['aug_train'] = aug_dataset
 
     def segment(row):
         row["morphemes"] = split_line(row["transcription"], prefix="usp_")

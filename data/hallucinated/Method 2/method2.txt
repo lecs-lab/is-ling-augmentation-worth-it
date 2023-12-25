@@ -1,9 +1,9 @@
-(From Uspanteko dict, pg.32)
 \t xinq'alajínik
 \m x-in-q'-alajín-ik
 \p COM-A1S-E1P-VT-SC
 \g COM-A1S-E1P-aparecer-SC
 \l Volví a aparecer.
+
 \t xatq'alajínik
 \m x-at-q'-alajín-ik
 \p COM-A2S-E1P-VT-SC
@@ -27,7 +27,7 @@
 \p COM-A2S-E1P-VT-SC PL
 \g COM-A2S-E1P-aparecer-SC PL
 \l Volvieron a aparecer.
-(????Do we get rid of suffix in plural???)
+
 \t xq'alajínik taq
 \m x-q'-alajín-ik taq
 \p COM-E1P-VT-SC PL
@@ -504,8 +504,8 @@
 
 \t tat'autuwanik taq
 \m t-at-autwan-ik taq
-\p INC-A2S-VI PL 
-\g INC-A2S-aullar PL
+\p INC-A2S-VI-SC PL
+\g INC-A2S-aullar-SC PL
 \l Aúllan
 
 \t ti'autuwan taq
@@ -3420,8 +3420,8 @@
 
 \t kawitz'bene' taq
 \m k-aw-itz'ben-e' taq
-\p IMP-E2S-VT PL
-\g IMP-E2S-jugar PL
+\p IMP-E2S-VT-SC PL
+\g IMP-E2S-jugar-SC PL
 \l Lo jueguen
 
 \t ritz'bene' taq
@@ -5629,7 +5629,7 @@
 \t maajuraje' taq
 \m ma-a-juraj-e' taq
 \p IMP-E2S-VT-SC PL
-\g IMP-E2S-jalarlo PL
+\g IMP-E2S-jalarlo-SC PL
 \l No lo jalen
 
 \t mjjuraje' taq
@@ -5659,7 +5659,7 @@
 \t kajuraje' taq
 \m k-a-juraj-e' taq
 \p IMP-E2S-VT-SC PL
-\g IMP-E2S-jalarlo PL
+\g IMP-E2S-jalarlo-SC PL
 \l Lo jalen
 
 \t jjuraje' taq
