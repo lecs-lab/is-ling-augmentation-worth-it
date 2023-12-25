@@ -48,8 +48,8 @@ def load_aug_data(path):
         row.should_segment = False
         row_dict = row.__dict__()
         aug_data_processed.append({'transcription': row_dict['segmentation'],
-                                    'glosses': row_dict['glosses'][0],
-                                    'translation': row_dict['translation']})
+                                   'glosses': ' '.join(row_dict['glosses']),
+                                   'translation': row_dict['translation']})
 
     return Dataset.from_list(aug_data_processed)
 
@@ -91,7 +91,7 @@ def train(model_type: str,
         if model_type == 'aug_m1':
             aug_dataset = load_aug_data('../data/hallucinated/Method 1')
         elif model_type == 'aug_m2':
-            aug_dataset = load_aug_data('../data/hallucinated/Method 2/method2.txt')
+            aug_dataset = load_aug_data('../data/hallucinated/method2.txt')
         else:
             raise Exception('Invalid choice!')
 

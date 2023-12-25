@@ -155,6 +155,9 @@ def prepare_dataset(dataset: DatasetDict, tokenizer, glosses: list[str]):
                 if word_idx is None:
                     label_ids.append(-100)
                 elif word_idx != previous_word_idx:  # Only label the first token of a given word.
+                    print(word_idx)
+                    if not word_idx < len(label):
+                        print(row)
                     gloss = label[word_idx]
                     label_ids.append(glosses.index(gloss) if gloss in glosses else glosses.index('<unk>'))
                 else:
@@ -164,7 +167,7 @@ def prepare_dataset(dataset: DatasetDict, tokenizer, glosses: list[str]):
 
         tokenized_inputs["labels"] = labels
         return tokenized_inputs
-    return dataset.map(tokenize_and_align_labels, batched=True, load_from_cache_file=False)
+    return dataset.map(tokenize_and_align_labels, batched=True, load_from_cache_file=False, batch_size=1)
 
 
 def write_predictions(data: List[IGTLine], tokenizer, trainer: Trainer, labels, out_path):
