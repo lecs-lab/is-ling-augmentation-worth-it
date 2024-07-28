@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --nodes=1           # Number of requested nodes
-#SBATCH --gres=gpu
-#SBATCH --ntasks=4          # Number of requested cores
+#SBATCH --gres=gpu:2
+#SBATCH --ntasks=2         # Number of requested cores
 #SBATCH --mem=32G
 #SBATCH --time=7-00:00:00          # Max walltime              # Specify QOS
 #SBATCH --qos=blanca-curc-gpu
@@ -20,5 +20,6 @@ module load anaconda
 conda activate AutoIGT
 cd "/projects/migi8081/morpheme-hallucination/src"
 
-#python3 train_model.py train --model_type baseline
-python3 train_model.py train --model_type aug_m2 --aug_mode mixed
+# python3 train_model.py train --model_type baseline --aug_mode mixed
+
+torchrun --nproc_per_node=2 train_model.py train --model_type baseline --aug_mode mixed
