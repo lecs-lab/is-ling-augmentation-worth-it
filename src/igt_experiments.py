@@ -88,7 +88,7 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
         args,
         tokenizer=tokenizer,
         train_dataset=dataset["train"], # type: ignore
-        eval_dataset=dataset["valid"], # type: ignore
+        eval_dataset=dataset["eval"], # type: ignore
         compute_metrics=utils.compute_metrics(tokenizer=tokenizer),
         preprocess_logits_for_metrics=preprocess_logits_for_metrics,
         callbacks=[
