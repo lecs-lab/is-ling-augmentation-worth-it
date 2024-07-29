@@ -62,9 +62,6 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
     model = transformers.T5ForConditionalGeneration.from_pretrained("google/byt5-small")
     model = cast(transformers.T5ForConditionalGeneration, model)
 
-    def preprocess_logits_for_metrics(logits, _):
-        return logits.argmax(dim=2)
-
     args = transformers.Seq2SeqTrainingArguments(
         output_dir=f"../finetune-training-checkpoints",
         evaluation_strategy="epoch",
@@ -90,7 +87,6 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
         train_dataset=dataset["train"], # type: ignore
         eval_dataset=dataset["eval"], # type: ignore
         compute_metrics=utils.compute_metrics(tokenizer=tokenizer),
-        preprocess_logits_for_metrics=preprocess_logits_for_metrics,
         callbacks=[
             utils.LogCallback(),
             utils.DelayedEarlyStoppingCallback(early_stopping_patience=3)
