@@ -63,6 +63,7 @@ def compute_metrics(tokenizer):
         decoded_preds = [pred.strip() for pred in decoded_preds]
         decoded_labels = [label.strip() for label in decoded_labels]
 
+        print("METRICS", decoded_preds, decoded_labels)
         return evaluate_glosses(decoded_preds, decoded_labels)
 
     return _compute_metrics
