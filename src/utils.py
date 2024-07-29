@@ -2,6 +2,7 @@ import transformers
 from transformers import EvalPrediction
 import numpy as np
 from glossing import evaluate_glosses
+from glossing.igt import gloss_string_to_word_glosses
 
 class LogCallback(transformers.TrainerCallback):
     def on_log(self, args, state, control, logs=None, **kwargs):
@@ -63,7 +64,11 @@ def compute_metrics(tokenizer):
         decoded_preds = [pred.strip() for pred in decoded_preds]
         decoded_labels = [label.strip() for label in decoded_labels]
 
-        print("METRICS", decoded_preds, decoded_labels)
+        for s in decoded_labels:
+            if len(gloss_string_to_word_glosses(s)) == 0:
+                print("BAD GLOSS", s)
+
+        # print("METRICS", decoded_preds, decoded_labels)
         return evaluate_glosses(decoded_preds, decoded_labels)
 
     return _compute_metrics
