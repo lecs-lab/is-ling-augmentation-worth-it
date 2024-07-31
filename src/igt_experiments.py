@@ -50,8 +50,8 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
             dataset['aug_train'] = aug_dataset
 
     # Preprocess dataset
-    tokenizer = transformers.ByT5Tokenizer.from_pretrained("google/byt5-base", use_fast=False)
-    tokenizer = cast(transformers.ByT5Tokenizer, tokenizer)
+    model_key = "google/byt5-small"
+    tokenizer = transformers.AutoTokenizer.from_pretrained(model_key)
     dataset = dataset.map(utils.create_byt5_prompt)
     dataset = dataset.map(functools.partial(utils.tokenize, 
                                             tokenizer=tokenizer, 
@@ -59,8 +59,10 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
                           batched=True)
     
     # Create the model
-    model = transformers.T5ForConditionalGeneration.from_pretrained("google/byt5-small")
+    model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
     model = cast(transformers.T5ForConditionalGeneration, model)
+
+    print(f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples.")
 
     args = transformers.Seq2SeqTrainingArguments(
         output_dir=f"../finetune-training-checkpoints",
@@ -74,7 +76,7 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
         load_best_model_at_end=True,
         predict_with_generate=True,
         generation_max_length=1024,
-        fp16=True,
+        # fp16=True,
         logging_strategy='epoch',
         report_to='wandb',
         # dataloader_num_workers=2,
@@ -87,10 +89,10 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
         train_dataset=dataset["train"], # type: ignore
         eval_dataset=dataset["eval"], # type: ignore
         compute_metrics=utils.compute_metrics(tokenizer=tokenizer),
-        callbacks=[
-            utils.LogCallback(),
-            utils.DelayedEarlyStoppingCallback(early_stopping_patience=3)
-        ],
+        # callbacks=[
+        #     utils.LogCallback(),
+        #     utils.DelayedEarlyStoppingCallback(early_stopping_patience=3)
+        # ],
         data_collator=transformers.DataCollatorForSeq2Seq(tokenizer=tokenizer, 
                                                           model=model,
                                                           label_pad_token_id=tokenizer.pad_token_id or -100)
