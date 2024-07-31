@@ -79,6 +79,7 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
         # fp16=True,
         logging_strategy='epoch',
         report_to='wandb',
+        save_safetensors=False,
         # dataloader_num_workers=2,
     )
 
