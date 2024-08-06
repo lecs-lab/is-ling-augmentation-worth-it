@@ -1,0 +1,1381 @@
+
+                                    \t  xink'iyiik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-crecer-SC
+                                    \l  crecí
+                                
+                                    \t  xatk'iyiik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-crecer-SC
+                                    \l  creciste
+                                
+                                    \t  xk'iyiik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-crecer-SC
+                                    \l  creció
+                                
+                                    \t  xojk'iyiik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-crecer-SC
+                                    \l  crecimos
+                                
+                                    \t  xatk'iyiik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-crecer-SC PL
+                                    \l  crecieron
+                                
+                                    \t  xk'iyiik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-crecer-SC PL
+                                    \l  crecieron
+                                
+                                    \t  tink'iyiik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-crecer-SC
+                                    \l  crezco
+                                
+                                    \t  tatk'iyiik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-crecer-SC
+                                    \l  creces
+                                
+                                    \t  tk'iyiik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-crecer-SC
+                                    \l  crece
+                                
+                                    \t  tojk'iyiik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-crecer-SC
+                                    \l  crecemos
+                                
+                                    \t  tatk'iyiik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-crecer-SC PL
+                                    \l  crecen
+                                
+                                    \t  tk'iyiik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-crecer-SC PL
+                                    \l  crecen
+                                
+                                    \t  xinpaxínik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-abundar-SC
+                                    \l  abundé
+                                
+                                    \t  xatpaxínik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-abundar-SC
+                                    \l  abundaste
+                                
+                                    \t  xpaxínik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-abundar-SC
+                                    \l  abundó
+                                
+                                    \t  xojpaxínik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-abundar-SC
+                                    \l  abundamos
+                                
+                                    \t  xatpaxínik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-abundar-SC PL
+                                    \l  abundaron
+                                
+                                    \t  xpaxínik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-abundar-SC PL
+                                    \l  abundaron
+                                
+                                    \t  tinpaxínik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-abundar-SC
+                                    \l  abundo
+                                
+                                    \t  tatpaxínik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-abundar-SC
+                                    \l  abundas
+                                
+                                    \t  tpaxínik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-abundar-SC
+                                    \l  abunda
+                                
+                                    \t  tojpaxínik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-abundar-SC
+                                    \l  abundamos
+                                
+                                    \t  tatpaxínik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-abundar-SC PL
+                                    \l  abundan
+                                
+                                    \t  tpaxínik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-abundar-SC PL
+                                    \l  abundan
+                                
+                                    \t  xinnimajiik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-aceptar-SC
+                                    \l  acepté
+                                
+                                    \t  xatnimajiik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-aceptar-SC
+                                    \l  aceptaste
+                                
+                                    \t  xnimajiik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-aceptar-SC
+                                    \l  aceptó
+                                
+                                    \t  xojnimajiik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-aceptar-SC
+                                    \l  aceptamos
+                                
+                                    \t  xatnimajiik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-aceptar-SC PL
+                                    \l  aceptaron
+                                
+                                    \t  xnimajiik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-aceptar-SC PL
+                                    \l  aceptaron
+                                
+                                    \t  tinnimajiik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-aceptar-SC
+                                    \l  acepto
+                                
+                                    \t  tatnimajiik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-aceptar-SC
+                                    \l  aceptas
+                                
+                                    \t  tnimajiik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-aceptar-SC
+                                    \l  acepta
+                                
+                                    \t  tojnimajiik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-aceptar-SC
+                                    \l  aceptamos
+                                
+                                    \t  tatnimajiik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-aceptar-SC PL
+                                    \l  aceptan
+                                
+                                    \t  tnimajiik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-aceptar-SC PL
+                                    \l  aceptan
+                                
+                                    \t  xinkoch'iik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-aguantar-SC
+                                    \l  aguanté
+                                
+                                    \t  xatkoch'iik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-aguantar-SC
+                                    \l  aguantaste
+                                
+                                    \t  xkoch'iik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-aguantar-SC
+                                    \l  aguantó
+                                
+                                    \t  xojkoch'iik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-aguantar-SC
+                                    \l  aguantamos
+                                
+                                    \t  xatkoch'iik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-aguantar-SC PL
+                                    \l  aguantaron
+                                
+                                    \t  xkoch'iik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-aguantar-SC PL
+                                    \l  aguantaron
+                                
+                                    \t  tinkoch'iik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-aguantar-SC
+                                    \l  aguanto
+                                
+                                    \t  tatkoch'iik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-aguantar-SC
+                                    \l  aguantas
+                                
+                                    \t  tkoch'iik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-aguantar-SC
+                                    \l  aguanta
+                                
+                                    \t  tojkoch'iik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-aguantar-SC
+                                    \l  aguantamos
+                                
+                                    \t  tatkoch'iik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-aguantar-SC PL
+                                    \l  aguantan
+                                
+                                    \t  tkoch'iik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-aguantar-SC PL
+                                    \l  aguantan
+                                
+                                    \t  xinchupxínik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-alumbrar-SC
+                                    \l  alumbré
+                                
+                                    \t  xatchupxínik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-alumbrar-SC
+                                    \l  alumbraste
+                                
+                                    \t  xchupxínik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-alumbrar-SC
+                                    \l  alumbró
+                                
+                                    \t  xojchupxínik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-alumbrar-SC
+                                    \l  alumbramos
+                                
+                                    \t  xatchupxínik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-alumbrar-SC PL
+                                    \l  alumbraron
+                                
+                                    \t  xchupxínik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-alumbrar-SC PL
+                                    \l  alumbraron
+                                
+                                    \t  tinchupxínik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-alumbrar-SC
+                                    \l  alumbro
+                                
+                                    \t  tatchupxínik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-alumbrar-SC
+                                    \l  alumbras
+                                
+                                    \t  tchupxínik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-alumbrar-SC
+                                    \l  alumbra
+                                
+                                    \t  tojchupxínik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-alumbrar-SC
+                                    \l  alumbramos
+                                
+                                    \t  tatchupxínik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-alumbrar-SC PL
+                                    \l  alumbran
+                                
+                                    \t  tchupxínik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-alumbrar-SC PL
+                                    \l  alumbran
+                                
+                                    \t  xinqejiik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-bajar-SC
+                                    \l  bajé
+                                
+                                    \t  xatqejiik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-bajar-SC
+                                    \l  bajaste
+                                
+                                    \t  xqejiik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-bajar-SC
+                                    \l  bajó
+                                
+                                    \t  xojqejiik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-bajar-SC
+                                    \l  bajamos
+                                
+                                    \t  xatqejiik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-bajar-SC PL
+                                    \l  bajaron
+                                
+                                    \t  xqejiik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-bajar-SC PL
+                                    \l  bajaron
+                                
+                                    \t  tinqejiik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-bajar-SC
+                                    \l  bajo
+                                
+                                    \t  tatqejiik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-bajar-SC
+                                    \l  bajas
+                                
+                                    \t  tqejiik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-bajar-SC
+                                    \l  baja
+                                
+                                    \t  tojqejiik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-bajar-SC
+                                    \l  bajamos
+                                
+                                    \t  tatqejiik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-bajar-SC PL
+                                    \l  bajan
+                                
+                                    \t  tqejiik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-bajar-SC PL
+                                    \l  bajan
+                                
+                                    \t  xinatínik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-bañar-SC
+                                    \l  bañé
+                                
+                                    \t  xatatínik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-bañar-SC
+                                    \l  bañaste
+                                
+                                    \t  xatínik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-bañar-SC
+                                    \l  bañó
+                                
+                                    \t  xojatínik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-bañar-SC
+                                    \l  bañamos
+                                
+                                    \t  xatatínik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-bañar-SC PL
+                                    \l  bañaron
+                                
+                                    \t  xatínik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-bañar-SC PL
+                                    \l  bañaron
+                                
+                                    \t  tinatínik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-bañar-SC
+                                    \l  baño
+                                
+                                    \t  tatatínik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-bañar-SC
+                                    \l  bañas
+                                
+                                    \t  tatínik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-bañar-SC
+                                    \l  baña
+                                
+                                    \t  tojatínik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-bañar-SC
+                                    \l  bañamos
+                                
+                                    \t  tatatínik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-bañar-SC PL
+                                    \l  bañan
+                                
+                                    \t  tatínik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-bañar-SC PL
+                                    \l  bañan
+                                
+                                    \t  xinsaysapúnik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-bracear-SC
+                                    \l  braceé
+                                
+                                    \t  xatsaysapúnik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-bracear-SC
+                                    \l  braceaste
+                                
+                                    \t  xsaysapúnik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-bracear-SC
+                                    \l  braceó
+                                
+                                    \t  xojsaysapúnik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-bracear-SC
+                                    \l  braceamos
+                                
+                                    \t  xatsaysapúnik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-bracear-SC PL
+                                    \l  bracearon
+                                
+                                    \t  xsaysapúnik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-bracear-SC PL
+                                    \l  bracearon
+                                
+                                    \t  tinsaysapúnik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-bracear-SC
+                                    \l  braceo
+                                
+                                    \t  tatsaysapúnik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-bracear-SC
+                                    \l  braceas
+                                
+                                    \t  tsaysapúnik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-bracear-SC
+                                    \l  bracea
+                                
+                                    \t  tojsaysapúnik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-bracear-SC
+                                    \l  braceamos
+                                
+                                    \t  tatsaysapúnik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-bracear-SC PL
+                                    \l  bracean
+                                
+                                    \t  tsaysapúnik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-bracear-SC PL
+                                    \l  bracean
+                                
+                                    \t  xinxik'ánik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-brincar-SC
+                                    \l  brinqué
+                                
+                                    \t  xatxik'ánik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-brincar-SC
+                                    \l  brincaste
+                                
+                                    \t  xxik'ánik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-brincar-SC
+                                    \l  brincó
+                                
+                                    \t  xojxik'ánik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-brincar-SC
+                                    \l  brincamos
+                                
+                                    \t  xatxik'ánik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-brincar-SC PL
+                                    \l  brincaron
+                                
+                                    \t  xxik'ánik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-brincar-SC PL
+                                    \l  brincaron
+                                
+                                    \t  tinxik'ánik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-brincar-SC
+                                    \l  brinco
+                                
+                                    \t  tatxik'ánik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-brincar-SC
+                                    \l  brincas
+                                
+                                    \t  txik'ánik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-brincar-SC
+                                    \l  brinca
+                                
+                                    \t  tojxik'ánik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-brincar-SC
+                                    \l  brincamos
+                                
+                                    \t  tatxik'ánik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-brincar-SC PL
+                                    \l  brincan
+                                
+                                    \t  txik'ánik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-brincar-SC PL
+                                    \l  brincan
+                                
+                                    \t  xinch'erxínik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-cacarear-SC
+                                    \l  cacareé
+                                
+                                    \t  xatch'erxínik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-cacarear-SC
+                                    \l  cacareaste
+                                
+                                    \t  xch'erxínik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-cacarear-SC
+                                    \l  cacareó
+                                
+                                    \t  xojch'erxínik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-cacarear-SC
+                                    \l  cacareamos
+                                
+                                    \t  xatch'erxínik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-cacarear-SC PL
+                                    \l  cacarearon
+                                
+                                    \t  xch'erxínik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-cacarear-SC PL
+                                    \l  cacarearon
+                                
+                                    \t  tinch'erxínik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-cacarear-SC
+                                    \l  cacareo
+                                
+                                    \t  tatch'erxínik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-cacarear-SC
+                                    \l  cacareas
+                                
+                                    \t  tch'erxínik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-cacarear-SC
+                                    \l  cacarea
+                                
+                                    \t  tojch'erxínik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-cacarear-SC
+                                    \l  cacareamos
+                                
+                                    \t  tatch'erxínik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-cacarear-SC PL
+                                    \l  cacarean
+                                
+                                    \t  tch'erxínik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-cacarear-SC PL
+                                    \l  cacarean
+                                
+                                    \t  xinkosiik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-cansar-SC
+                                    \l  cansé
+                                
+                                    \t  xatkosiik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-cansar-SC
+                                    \l  cansaste
+                                
+                                    \t  xkosiik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-cansar-SC
+                                    \l  cansó
+                                
+                                    \t  xojkosiik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-cansar-SC
+                                    \l  cansamos
+                                
+                                    \t  xatkosiik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-cansar-SC PL
+                                    \l  cansaron
+                                
+                                    \t  xkosiik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-cansar-SC PL
+                                    \l  cansaron
+                                
+                                    \t  tinkosiik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-cansar-SC
+                                    \l  canso
+                                
+                                    \t  tatkosiik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-cansar-SC
+                                    \l  cansas
+                                
+                                    \t  tkosiik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-cansar-SC
+                                    \l  cansa
+                                
+                                    \t  tojkosiik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-cansar-SC
+                                    \l  cansamos
+                                
+                                    \t  tatkosiik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-cansar-SC PL
+                                    \l  cansan
+                                
+                                    \t  tkosiik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-cansar-SC PL
+                                    \l  cansan
+                                
+                                    \t  xinnach'xínik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-comer-SC
+                                    \l  comí
+                                
+                                    \t  xatnach'xínik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-comer-SC
+                                    \l  comiste
+                                
+                                    \t  xnach'xínik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-comer-SC
+                                    \l  comió
+                                
+                                    \t  xojnach'xínik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-comer-SC
+                                    \l  comimos
+                                
+                                    \t  xatnach'xínik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-comer-SC PL
+                                    \l  comieron
+                                
+                                    \t  xnach'xínik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-comer-SC PL
+                                    \l  comieron
+                                
+                                    \t  tinnach'xínik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-comer-SC
+                                    \l  como
+                                
+                                    \t  tatnach'xínik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-comer-SC
+                                    \l  comes
+                                
+                                    \t  tnach'xínik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-comer-SC
+                                    \l  come
+                                
+                                    \t  tojnach'xínik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-comer-SC
+                                    \l  comemos
+                                
+                                    \t  tatnach'xínik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-comer-SC PL
+                                    \l  comen
+                                
+                                    \t  tnach'xínik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-comer-SC PL
+                                    \l  comen
+                                
+                                    \t  xinrayínik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-desear-SC
+                                    \l  deseé
+                                
+                                    \t  xatrayínik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-desear-SC
+                                    \l  deseaste
+                                
+                                    \t  xrayínik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-desear-SC
+                                    \l  deseó
+                                
+                                    \t  xojrayínik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-desear-SC
+                                    \l  deseamos
+                                
+                                    \t  xatrayínik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-desear-SC PL
+                                    \l  desearon
+                                
+                                    \t  xrayínik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-desear-SC PL
+                                    \l  desearon
+                                
+                                    \t  tinrayínik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-desear-SC
+                                    \l  deseo
+                                
+                                    \t  tatrayínik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-desear-SC
+                                    \l  deseas
+                                
+                                    \t  trayínik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-desear-SC
+                                    \l  desea
+                                
+                                    \t  tojrayínik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-desear-SC
+                                    \l  deseamos
+                                
+                                    \t  tatrayínik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-desear-SC PL
+                                    \l  desean
+                                
+                                    \t  trayínik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-desear-SC PL
+                                    \l  desean
+                                
+                                    \t  xinokiik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-entrar-SC
+                                    \l  entré
+                                
+                                    \t  xatokiik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-entrar-SC
+                                    \l  entraste
+                                
+                                    \t  xokiik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-entrar-SC
+                                    \l  entró
+                                
+                                    \t  xojokiik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-entrar-SC
+                                    \l  entramos
+                                
+                                    \t  xatokiik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-entrar-SC PL
+                                    \l  entraron
+                                
+                                    \t  xokiik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-entrar-SC PL
+                                    \l  entraron
+                                
+                                    \t  tinokiik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-entrar-SC
+                                    \l  entro
+                                
+                                    \t  tatokiik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-entrar-SC
+                                    \l  entras
+                                
+                                    \t  tokiik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-entrar-SC
+                                    \l  entra
+                                
+                                    \t  tojokiik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-entrar-SC
+                                    \l  entramos
+                                
+                                    \t  tatokiik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-entrar-SC PL
+                                    \l  entran
+                                
+                                    \t  tokiik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-entrar-SC PL
+                                    \l  entran
+                                
+                                    \t  xinlakánik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-gatear-SC
+                                    \l  gateé
+                                
+                                    \t  xatlakánik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-gatear-SC
+                                    \l  gateaste
+                                
+                                    \t  xlakánik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-gatear-SC
+                                    \l  gateó
+                                
+                                    \t  xojlakánik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-gatear-SC
+                                    \l  gateamos
+                                
+                                    \t  xatlakánik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-gatear-SC PL
+                                    \l  gatearon
+                                
+                                    \t  xlakánik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-gatear-SC PL
+                                    \l  gatearon
+                                
+                                    \t  tinlakánik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-gatear-SC
+                                    \l  gateo
+                                
+                                    \t  tatlakánik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-gatear-SC
+                                    \l  gateas
+                                
+                                    \t  tlakánik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-gatear-SC
+                                    \l  gatea
+                                
+                                    \t  tojlakánik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-gatear-SC
+                                    \l  gateamos
+                                
+                                    \t  tatlakánik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-gatear-SC PL
+                                    \l  gatean
+                                
+                                    \t  tlakánik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-gatear-SC PL
+                                    \l  gatean
+                                
+                                    \t  xintzawxínik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-gritar-SC
+                                    \l  grité
+                                
+                                    \t  xattzawxínik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-gritar-SC
+                                    \l  gritaste
+                                
+                                    \t  xtzawxínik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-gritar-SC
+                                    \l  gritó
+                                
+                                    \t  xojtzawxínik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-gritar-SC
+                                    \l  gritamos
+                                
+                                    \t  xattzawxínik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-gritar-SC PL
+                                    \l  gritaron
+                                
+                                    \t  xtzawxínik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-gritar-SC PL
+                                    \l  gritaron
+                                
+                                    \t  tintzawxínik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-gritar-SC
+                                    \l  grito
+                                
+                                    \t  tattzawxínik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-gritar-SC
+                                    \l  gritas
+                                
+                                    \t  ttzawxínik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-gritar-SC
+                                    \l  grita
+                                
+                                    \t  tojtzawxínik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-gritar-SC
+                                    \l  gritamos
+                                
+                                    \t  tattzawxínik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-gritar-SC PL
+                                    \l  gritan
+                                
+                                    \t  ttzawxínik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-gritar-SC PL
+                                    \l  gritan
+                                
+                                    \t  xinwet'et'ik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-hablar-SC
+                                    \l  hablé
+                                
+                                    \t  xatwet'et'ik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-hablar-SC
+                                    \l  hablaste
+                                
+                                    \t  xwet'et'ik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-hablar-SC
+                                    \l  habló
+                                
+                                    \t  xojwet'et'ik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-hablar-SC
+                                    \l  hablamos
+                                
+                                    \t  xatwet'et'ik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-hablar-SC PL
+                                    \l  hablaron
+                                
+                                    \t  xwet'et'ik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-hablar-SC PL
+                                    \l  hablaron
+                                
+                                    \t  tinwet'et'ik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-hablar-SC
+                                    \l  hablo
+                                
+                                    \t  tatwet'et'ik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-hablar-SC
+                                    \l  hablas
+                                
+                                    \t  twet'et'ik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-hablar-SC
+                                    \l  habla
+                                
+                                    \t  tojwet'et'ik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-hablar-SC
+                                    \l  hablamos
+                                
+                                    \t  tatwet'et'ik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-hablar-SC PL
+                                    \l  hablan
+                                
+                                    \t  twet'et'ik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-hablar-SC PL
+                                    \l  hablan
+                                
+                                    \t  xinb'anawik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-hacer-SC
+                                    \l  hice
+                                
+                                    \t  xatb'anawik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-hacer-SC
+                                    \l  hiciste
+                                
+                                    \t  xb'anawik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-hacer-SC
+                                    \l  hizo
+                                
+                                    \t  xojb'anawik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-hacer-SC
+                                    \l  hicimos
+                                
+                                    \t  xatb'anawik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-hacer-SC PL
+                                    \l  hicieron
+                                
+                                    \t  xb'anawik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-hacer-SC PL
+                                    \l  hicieron
+                                
+                                    \t  tinb'anawik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-hacer-SC
+                                    \l  hago
+                                
+                                    \t  tatb'anawik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-hacer-SC
+                                    \l  haces
+                                
+                                    \t  tb'anawik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-hacer-SC
+                                    \l  hace
+                                
+                                    \t  tojb'anawik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-hacer-SC
+                                    \l  hacemos
+                                
+                                    \t  tatb'anawik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-hacer-SC PL
+                                    \l  hacen
+                                
+                                    \t  tb'anawik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-hacer-SC PL
+                                    \l  hacen
+                                
+                                    \t  xink'isi'ik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-vivir-SC
+                                    \l  viví
+                                
+                                    \t  xatk'isi'ik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-vivir-SC
+                                    \l  viviste
+                                
+                                    \t  xk'isi'ik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-vivir-SC
+                                    \l  vivió
+                                
+                                    \t  xojk'isi'ik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-vivir-SC
+                                    \l  vivimos
+                                
+                                    \t  xatk'isi'ik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-vivir-SC PL
+                                    \l  vivieron
+                                
+                                    \t  xk'isi'ik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-vivir-SC PL
+                                    \l  vivieron
+                                
+                                    \t  tink'isi'ik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-vivir-SC
+                                    \l  vivo
+                                
+                                    \t  tatk'isi'ik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-vivir-SC
+                                    \l  vives
+                                
+                                    \t  tk'isi'ik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-vivir-SC
+                                    \l  vive
+                                
+                                    \t  tojk'isi'ik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-vivir-SC
+                                    \l  vivimos
+                                
+                                    \t  tatk'isi'ik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-vivir-SC PL
+                                    \l  viven
+                                
+                                    \t  tk'isi'ik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-vivir-SC PL
+                                    \l  viven
+                                
+                                    \t  xinwo'kotiik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-pasear-SC
+                                    \l  paseé
+                                
+                                    \t  xatwo'kotiik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-pasear-SC
+                                    \l  paseaste
+                                
+                                    \t  xwo'kotiik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-pasear-SC
+                                    \l  paseó
+                                
+                                    \t  xojwo'kotiik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-pasear-SC
+                                    \l  paseamos
+                                
+                                    \t  xatwo'kotiik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-pasear-SC PL
+                                    \l  pasearon
+                                
+                                    \t  xwo'kotiik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-pasear-SC PL
+                                    \l  pasearon
+                                
+                                    \t  tinwo'kotiik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-pasear-SC
+                                    \l  paseo
+                                
+                                    \t  tatwo'kotiik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-pasear-SC
+                                    \l  paseas
+                                
+                                    \t  two'kotiik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-pasear-SC
+                                    \l  pasea
+                                
+                                    \t  tojwo'kotiik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-pasear-SC
+                                    \l  paseamos
+                                
+                                    \t  tatwo'kotiik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-pasear-SC PL
+                                    \l  pasean
+                                
+                                    \t  two'kotiik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-pasear-SC PL
+                                    \l  pasean
+                                
+                                    \t  xinch'ob'ólik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-pensar-SC
+                                    \l  pensé
+                                
+                                    \t  xatch'ob'ólik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-pensar-SC
+                                    \l  pensaste
+                                
+                                    \t  xch'ob'ólik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-pensar-SC
+                                    \l  pensó
+                                
+                                    \t  xojch'ob'ólik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-pensar-SC
+                                    \l  pensamos
+                                
+                                    \t  xatch'ob'ólik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-pensar-SC PL
+                                    \l  pensaron
+                                
+                                    \t  xch'ob'ólik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-pensar-SC PL
+                                    \l  pensaron
+                                
+                                    \t  tinch'ob'ólik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-pensar-SC
+                                    \l  pienso
+                                
+                                    \t  tatch'ob'ólik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-pensar-SC
+                                    \l  piensas
+                                
+                                    \t  tch'ob'ólik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-pensar-SC
+                                    \l  piensa
+                                
+                                    \t  tojch'ob'ólik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-pensar-SC
+                                    \l  pensamos
+                                
+                                    \t  tatch'ob'ólik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-pensar-SC PL
+                                    \l  piensan
+                                
+                                    \t  tch'ob'ólik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-pensar-SC PL
+                                    \l  piensan
+                                
+                                    \t  xinmenepúnik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-tartamudear-SC
+                                    \l  tartamudeé
+                                
+                                    \t  xatmenepúnik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-tartamudear-SC
+                                    \l  tartamudeaste
+                                
+                                    \t  xmenepúnik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-tartamudear-SC
+                                    \l  tartamudeó
+                                
+                                    \t  xojmenepúnik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-tartamudear-SC
+                                    \l  tartamudeamos
+                                
+                                    \t  xatmenepúnik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-tartamudear-SC PL
+                                    \l  tartamudearon
+                                
+                                    \t  xmenepúnik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-tartamudear-SC PL
+                                    \l  tartamudearon
+                                
+                                    \t  tinmenepúnik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-tartamudear-SC
+                                    \l  tartamudeo
+                                
+                                    \t  tatmenepúnik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-tartamudear-SC
+                                    \l  tartamudeas
+                                
+                                    \t  tmenepúnik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-tartamudear-SC
+                                    \l  tartamudea
+                                
+                                    \t  tojmenepúnik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-tartamudear-SC
+                                    \l  tartamudeamos
+                                
+                                    \t  tatmenepúnik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-tartamudear-SC PL
+                                    \l  tartamudean
+                                
+                                    \t  tmenepúnik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-tartamudear-SC PL
+                                    \l  tartamudean
+                                
+                                    \t  xinb'iríwik
+                                    \p  COM-A1S-VI-SC
+                                    \g  COM-A1S-temblar-SC
+                                    \l  temblé
+                                
+                                    \t  xatb'iríwik
+                                    \p  COM-A2S-VI-SC
+                                    \g  COM-A2S-temblar-SC
+                                    \l  temblaste
+                                
+                                    \t  xb'iríwik 
+                                    \p  COM-VI-SC 
+                                    \g  COM-temblar-SC
+                                    \l  tembló
+                                
+                                    \t  xojb'iríwik
+                                    \p  COM-A1P-VI-SC
+                                    \g  COM-A1P-temblar-SC
+                                    \l  temblamos
+                                
+                                    \t  xatb'iríwik taq
+                                    \p  COM-A2S-VI-SC PL
+                                    \g  COM-A2S-temblar-SC PL
+                                    \l  temblaron
+                                
+                                    \t  xb'iríwik taq
+                                    \p  COM-VI-SC PL
+                                    \g  COM-temblar-SC PL
+                                    \l  temblaron
+                                
+                                    \t  tinb'iríwik
+                                    \p  INC-A1S-VI-SC
+                                    \g  INC-A1S-temblar-SC
+                                    \l  tiemblo
+                                
+                                    \t  tatb'iríwik
+                                    \p  INC-A2S-VI-SC
+                                    \g  INC-A2S-temblar-SC
+                                    \l  tiemblas
+                                
+                                    \t  tb'iríwik 
+                                    \p  INC-VI-SC 
+                                    \g  INC-temblar-SC
+                                    \l  tiembla
+                                
+                                    \t  tojb'iríwik
+                                    \p  INC-A1P-VI-SC
+                                    \g  INC-A1P-temblar-SC
+                                    \l  temblamos
+                                
+                                    \t  tatb'iríwik taq
+                                    \p  INC-A2S-VI-SC PL
+                                    \g  INC-A2S-temblar-SC PL
+                                    \l  tiemblan
+                                
+                                    \t  tb'iríwik taq
+                                    \p  INC-VI-SC PL
+                                    \g  INC-temblar-SC PL
+                                    \l  tiemblan
+                                
