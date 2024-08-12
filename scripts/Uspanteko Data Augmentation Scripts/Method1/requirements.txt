@@ -1,0 +1,9 @@
+spacy
+mlconjug3
+stanza
+spacy_stanza
+pandas
+pyarrow
+fastparquet
+huggingface 
+huggingface_hub
