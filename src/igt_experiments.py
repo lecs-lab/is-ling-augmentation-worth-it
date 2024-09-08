@@ -1,4 +1,4 @@
-from typing import cast 
+from typing import cast
 import random, functools
 import click, wandb
 import datasets, transformers
@@ -37,7 +37,7 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
         return datasets.Dataset.from_list([ex.__dict__() for ex in aug_data])
     if model_type != 'baseline':
         if model_type == 'aug_m1':
-            aug_dataset = load_aug_data('../data/hallucinated/Method 1')
+            aug_dataset = load_aug_data('../data/hallucinated/Method 1/aug_examples_unseg.txt')
         elif model_type == 'aug_m2':
             aug_dataset = load_aug_data('../data/hallucinated/method2.txt')
         else:
@@ -53,11 +53,11 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
     model_key = "google/byt5-small"
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_key)
     dataset = dataset.map(utils.create_byt5_prompt)
-    dataset = dataset.map(functools.partial(utils.tokenize, 
-                                            tokenizer=tokenizer, 
+    dataset = dataset.map(functools.partial(utils.tokenize,
+                                            tokenizer=tokenizer,
                                             max_length=tokenizer.model_max_length),
                           batched=True)
-    
+
     # Create the model
     model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
     model = cast(transformers.T5ForConditionalGeneration, model)
@@ -94,7 +94,7 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
         #     utils.LogCallback(),
         #     utils.DelayedEarlyStoppingCallback(early_stopping_patience=3)
         # ],
-        data_collator=transformers.DataCollatorForSeq2Seq(tokenizer=tokenizer, 
+        data_collator=transformers.DataCollatorForSeq2Seq(tokenizer=tokenizer,
                                                           model=model,
                                                           label_pad_token_id=tokenizer.pad_token_id or -100)
     )
