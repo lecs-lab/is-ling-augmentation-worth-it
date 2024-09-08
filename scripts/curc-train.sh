@@ -20,6 +20,6 @@ module load anaconda
 conda activate AutoIGT
 cd "/projects/migi8081/morpheme-hallucination/src"
 
-# python3 train_model.py train --model_type baseline --aug_mode mixed
+# python3 train_model.py train --model_type aug_m1 --aug_mode mixed
 
 torchrun --nproc_per_node=2 igt_experiments.py train --model_type baseline --aug_mode mixed

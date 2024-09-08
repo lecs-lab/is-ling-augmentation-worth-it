@@ -68,7 +68,7 @@ def compute_metrics(tokenizer):
             if len(gloss_string_to_word_glosses(s)) == 0:
                 print("BAD GLOSS", s)
 
-        print("METRICS", decoded_preds, decoded_labels)
+        print("LABELS", decoded_labels)
         return evaluate_glosses(decoded_preds, decoded_labels)
 
     return _compute_metrics
