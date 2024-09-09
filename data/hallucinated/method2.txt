@@ -105,7 +105,7 @@
 \p PROG INC-E1P-VT-SC PL
 \g PROG INC-E1P-aparecer-SC PL
 \l Están volviendo a aparecer.
-(From Uspanteko dict pg 33)
+
 \t ti'elechí'nik
 \m ti-'elechí'n-ik
 \p INC-VT-SC
@@ -127,7 +127,7 @@
 \t t'qelechí'nik
 \m t-q-'elechí'n-ik
 \p INC-E1P-VT-SC
-\g INC-E1P-bromear-SC 
+\g INC-E1P-bromear-SC
 \l Lo bromeamos
 
 \t t'awelechí'nik taq
@@ -163,7 +163,7 @@
 \t x'qelechí'nik
 \m x-q-'elechí'n-ik
 \p COM-E1P-VT-SC
-\g COM-E1P-bromear-SC 
+\g COM-E1P-bromear-SC
 \l Lo bromeamos
 
 \t x'awelechí'nik taq
@@ -212,7 +212,7 @@
 \m tijin ti-'elechí'n-ik taq
 \p PROG INC-VT-SC PL
 \g PROG INC-bromear-SC PL
-\l Lo están bromeando 
+\l Lo están bromeando
 
 \t m'awelechí'nik
 \m m-aw-'elechí'n-ik
@@ -243,7 +243,7 @@
 \p IMP-VT-SC PL
 \g IMP-bromear-SC PL
 \l No lo bromeen
-(****REVIEW IK ENDING)
+
 \t k'awelechí'ne'
 \m k-aw-'elechí'n-e'
 \p IMP-E2S-VT-SC
@@ -408,7 +408,7 @@
 
 \t tijin taw'alejínik taq
 \m tijin t-aw-alejín-ik taq
-\p PROG INC-E2S-VT-SC PL 
+\p PROG INC-E2S-VT-SC PL
 \g PROG INC-E2S-reaparecer-SC PL
 \l Están yendo a reaparecer
 
@@ -639,18 +639,18 @@
 \p VI PL
 \g aullar PL
 \l Aúllen
-(Uspanteko dict pg 35)
+
 \t tin'at'iximán-ik
 \m t-in-at'iximán-ik
 \p INC-E1S-VT-SC
 \g INC-E1S-estornudar-SC
-\l Estaba estornudando 
+\l Estaba estornudando
 
 \t taw'at'iximán-ik
 \m t-aw-at'iximán-ik
 \p INC-E2S-VT-SC
 \g INC-E2S-estornudar-SC
-\l Estabas estornudando 
+\l Estabas estornudando
 
 \t ti'at'iximán-ik
 \m ti-at'iximán-ik
@@ -662,13 +662,13 @@
 \m t-q-at'iximán-ik
 \p INC-E1P-VT-SC
 \g INC-E1P-estornudar-SC
-\l Estabamos estornudando 
+\l Estabamos estornudando
 
 \t taw'at'iximán taq
 \m t-aw-at'iximán taq
 \p INC-E2S-VT PL
 \g INC-E2S-estornudar PL
-\l Estaban estornudando 
+\l Estaban estornudando
 
 \t ti'at'iximán taq
 \m ti-at'iximán taq
@@ -1008,13 +1008,13 @@
 
 \t maab'ach'sáj taq
 \m ma-a-b'ach'sáj taq
-\p IMP-E2S-VT PL 
+\p IMP-E2S-VT PL
 \g IMP-E2S-enrollarlo PL
 \l No lo enrollen
 
 \t majb'ach'sáj taq
 \m ma-j-b'ach'sáj taq
-\p IMP-E3S-VT PL 
+\p IMP-E3S-VT PL
 \g IMP-E3S-enrollarlo PL
 \l No lo enrollen
 
@@ -1047,7 +1047,7 @@
 \p VT-SC PL
 \g enrollarlo-SC PL
 \l Lo enrollen
-(From Uspanteko dict pg 41)
+
 \t Matb'alq'atink
 \m M-at-balq'atin-ik
 \p IMP-A2S-VI-SC
@@ -1215,7 +1215,7 @@
 \p COM-VI PL
 \g COM-rodarse PL
 \l Se rodaron
-(Uspanteko dict)
+
 \t tinb'ananaaj
 \m t-in-b'ananaaj
 \p INC-E1S-VI
@@ -1251,7 +1251,7 @@
 \p INC-E3S-VI PL
 \g INC-E3S-creído PL
 \l Son creídas
-(Uspanteko dict pg 43)
+
 \t tijin tib'aqab'
 \m tijin ti-b'aqab'
 \p PROG INC-VI
@@ -1309,7 +1309,7 @@
 \t tojb'aqab'
 \m t-oj-b'aqab'
 \p INC-A1P-VI
-\g INC-A1P-adelgazar 
+\g INC-A1P-adelgazar
 \l Adelgazamos
 
 \t tatb'aqab' taq
@@ -1419,7 +1419,7 @@
 \p VI-SC PL
 \g adelgazar-SC PL
 \l Adelgacen
-(Uspanteko dict pg 46)
+
 \t tib'enb'eej
 \m ti-b'enb'ee-j
 \p INC-VI-SC
@@ -1788,7 +1788,7 @@
 
 \t tinb'ujuwik taq
 \m t-in-b'ujuw-ik taq
-\p INC-E1S-VT-SC PL 
+\p INC-E1S-VT-SC PL
 \g INC-E1S-golpear-SC PL
 \l Los golpeo
 
@@ -2004,7 +2004,7 @@
 
 \t tijin tinb'ujuwik taq
 \m tijin t-in-b'ujuw-ik taq
-\p PROG INC-E1S-VT-SC PL 
+\p PROG INC-E1S-VT-SC PL
 \g PROG INC-E1S-golpear-SC PL
 \l Los estoy golpeando
 
@@ -2040,7 +2040,7 @@
 
 \t tijin tab'ujuwik taq
 \m tijin t-a-b'ujuw-ik taq
-\p PROG INC-E2S-VT-SC PL 
+\p PROG INC-E2S-VT-SC PL
 \g PROG INC-E2S-golpear-SC PL
 \l Los estás golpeando
 
@@ -2076,7 +2076,7 @@
 
 \t tijin tijb'ujuwik taq
 \m tijin ti-j-b'ujuw-ik taq
-\p PROG INC-E3S-VT-SC PL 
+\p PROG INC-E3S-VT-SC PL
 \g PROG INC-E3S-golpear-SC PL
 \l Los está golpeando
 
@@ -2112,7 +2112,7 @@
 
 \t tijin tqab'ujuwik taq
 \m tijin t-qa-b'ujuw-ik taq
-\p PROG INC-E1P-VT-SC PL 
+\p PROG INC-E1P-VT-SC PL
 \g PROG INC-E1P-golpear-SC PL
 \l Los estamos golpeando
 
@@ -2150,7 +2150,7 @@
 \m tijin t-a-b'ujuw taq taq
 \p PROG INC-E2S-VT PL PL
 \g PROG INC-E2S-golpear PL PL
-\l Los están 
+\l Los están
 
 \t tijin tinjb'ujuw taq
 \m tijin t-in-j-b'ujuw taq
@@ -2184,7 +2184,7 @@
 
 \t tijin tijb'ujuw taq taq
 \m tijin ti-j-b'ujuw taq taq
-\p PROG INC-E3S-VT PL PL 
+\p PROG INC-E3S-VT PL PL
 \g PROG INC-E3S-golpear PL PL
 \l Los están golpeando
 
@@ -2368,7 +2368,7 @@
 \g COM-E2S-golpear PL PL
 \l Los golpearon
 
-\t xinjb'ujuw taq 
+\t xinjb'ujuw taq
 \m x-in-j-b'ujuw taq
 \p COM-A1S-E3S-VT PL
 \g COM-A1S-E3S-golpear PL
@@ -2381,7 +2381,7 @@
 \l Te golpearon
 
 \t xjb'ujuw taq
-\m x-j-b'ujuw taq 
+\m x-j-b'ujuw taq
 \p COM-E3S-VT PL
 \g COM-E3S-golpear PL
 \l Lo golpearon
@@ -2393,7 +2393,7 @@
 \l Nos golpearon
 
 \t xatjb'ujuw taq taq
-\m x-at-j-b'ujuw taq taq 
+\m x-at-j-b'ujuw taq taq
 \p COM-A2S-E3S-VT PL PL
 \g COM-A2S-E3S-golpear PL PL
 \l Los golpearon
@@ -2401,7 +2401,7 @@
 \t xjb'ujuw taq taq
 \m x-j-b'ujuw taq taq
 \p COM-E3S-VT PL PL
-\g COM-E3S-golpear PL PL 
+\g COM-E3S-golpear PL PL
 \l Los golpearon
 
 \t tinb'ukaj
@@ -2662,7 +2662,7 @@
 \g COM-A2S-madurar PL
 \l Maduraron
 
-\t xjchaq'eem taq 
+\t xjchaq'eem taq
 \m x-j-chaq'eem taq
 \p COM-A3S-VI PL
 \g COM-A3S-madurar PL
@@ -2694,7 +2694,7 @@
 
 \t matchaq'eeme' taq
 \m m-at-chaq'eem-e' taq
-\p IMP-A2S-VI-SC PL 
+\p IMP-A2S-VI-SC PL
 \g IMP-A2S-madurar-SC PL
 \l No maduren
 
@@ -2726,25 +2726,25 @@
 \m t-a-chub'aj-ik
 \p INC-E2S-VT-SC
 \g INC-E2S-escupirlo-SC
-\l Lo escupes        
+\l Lo escupes
 
 \t tijchub'ajik
 \m ti-j-chub'aj-ik
 \p INC-E3S-VT-SC
 \g INC-E3S-escupirlo-SC
-\l Lo escupe   
+\l Lo escupe
 
 \t tqachub'ajik
 \m t-qa-chub'aj-ik
 \p INC-E1P-VT-SC
 \g INC-E1P-escupirlo-SC
-\l Lo escupimos   
+\l Lo escupimos
 
 \t tachub'aj taq
 \m t-a-chub'aj taq
 \p INC-E2S-VT PL
 \g INC-E2S-escupirlo PL
-\l Lo escupen 
+\l Lo escupen
 
 \t tijchub'aj taq
 \m ti-j-chub'aj taq
@@ -2868,7 +2868,7 @@
 
 \t jchub'aje' taq
 \m j-chub'aj-e' taq
-\p E3S-VT-SC PL 
+\p E3S-VT-SC PL
 \g E3S-escupirlo-SC PL
 \l Lo escupan
 
@@ -3039,7 +3039,7 @@
 \p VI-SC PL
 \g prometer-SC PL
 \l Prometan
-(Uspaneko dic pg 70)
+
 \t tich'ankakánk
 \m ti-ch'ankakán-ik
 \p INC-VI-SC
@@ -3426,7 +3426,7 @@
 
 \t ritz'bene' taq
 \m r-itz'ben-e' taq
-\p E3S-VT-SC PL 
+\p E3S-VT-SC PL
 \g E3S-jugar-SC PL
 \l Lo jueguen
 
@@ -3440,19 +3440,19 @@
 \m t-in-in-ixk'eqinik
 \p INC-A1S-E1S-VT-SC
 \g INC-A1S-E1S-pellizcar-SC
-\l Me pellizco 
+\l Me pellizco
 
 \t tatinixk'eqinik
 \m t-at-in-ixk'eqinik
 \p INC-A2S-E1S-VT-SC
 \g INC-A2S-E1S-pellizcar-SC
-\l Te pellizco 
+\l Te pellizco
 
 \t tinixk'eqinik
 \m t-in-ixk'eqinik
 \p INC-E1S-VT-SC
 \g INC-E1S-pellizcar-SC
-\l Lo pellizco 
+\l Lo pellizco
 
 \t tojinixk'eqinik
 \m t-oj-in-ixk'eqinik
@@ -3464,25 +3464,25 @@
 \m t-at-in-ixk'eqin taq
 \p INC-A2S-E1S-VT PL
 \g INC-A2S-E1S-pellizcar PL
-\l Los pellizco 
+\l Los pellizco
 
 \t tinixk'eqin taq
 \m t-in-ixk'eqin taq
 \p INC-E1S-VT PL
 \g INC-E1S-pellizcar PL
-\l Los pellizco 
+\l Los pellizco
 
 \t tinawixk'eqinik
 \m t-in-aq-ixk'eqinik
 \p INC-A1S-E2S-VT-SC
 \g INC-A1S-E2S-pellizcar-SC
-\l Me pellizcas 
+\l Me pellizcas
 
 \t tatawixk'eqinik
 \m t-at-aw-ixk'eqinik
 \p INC-A2S-E2S-VT-SC
 \g INC-A2S-E2S-pellizcar-SC
-\l Te pellizcas 
+\l Te pellizcas
 
 \t tawixk'eqinik
 \m t-aw-ixk'eqinik
@@ -3584,13 +3584,13 @@
 \m t-in-aq-ixk'eqin taq
 \p INC-A1S-E2S-VT PL
 \g INC-A1S-E2S-pellizcar PL
-\l Me pellizcan 
+\l Me pellizcan
 
 \t tatawixk'eqin taq
 \m t-at-aw-ixk'eqin taq
 \p INC-A2S-E2S-VT PL
 \g INC-A2S-E2S-pellizcar PL
-\l Te pellizcan 
+\l Te pellizcan
 
 \t tawixk'eqin taq
 \m t-aw-ixk'eqin taq
@@ -3606,7 +3606,7 @@
 
 \t tatawixk'eqin taq taq
 \m t-at-aw-ixk'eqin taq taq
-\p INC-A2S-E2S-VT PL PL 
+\p INC-A2S-E2S-VT PL PL
 \g INC-A2S-E2S-pellizcar PL PL
 \l Los pellizcan
 
@@ -3662,13 +3662,13 @@
 \m tijin t-at-in-ixk'eqinik
 \p PROG INC-A2S-E1S-VT-SC
 \g PROG INC-A2S-E1S-pellizcar-SC
-\l Te estoy pellizcando 
+\l Te estoy pellizcando
 
 \t tijin tinixk'eqinik
 \m tijin t-in-ixk'eqinik
 \p PROG INC-E1S-VT-SC
 \g PROG INC-E1S-pellizcar-SC
-\l Lo estoy pellizcando 
+\l Lo estoy pellizcando
 
 \t tijin tojinixk'eqinik
 \m tijin t-oj-in-ixk'eqinik
@@ -3680,7 +3680,7 @@
 \m tijin t-at-in-ixk'eqin taq
 \p PROG INC-A2S-E1S-VT PL
 \g PROG INC-A2S-E1S-pellizcar PL
-\l Los estoy pellizcando 
+\l Los estoy pellizcando
 
 \t tijin tinixk'eqin taq
 \m tijin t-in-ixk'eqin taq
@@ -3698,13 +3698,13 @@
 \m tijin t-at-aw-ixk'eqinik
 \p PROG INC-A2S-E2S-VT-SC
 \g PROG INC-A2S-E2S-pellizcar-SC
-\l Te estás pellizcando 
+\l Te estás pellizcando
 
 \t tijin tawixk'eqinik
 \m tijin t-aw-ixk'eqinik
 \p PROG INC-E2S-VT-SC
 \g PROG INC-E2S-pellizcar-SC
-\l Lo estás pellizcando 
+\l Lo estás pellizcando
 
 \t tijin tojawixk'eqinik
 \m tijin t-oj-aw-ixk'eqinik
@@ -3716,7 +3716,7 @@
 \m tijin t-at-aw-ixk'eqin taq
 \p PROG INC-A2S-E2S-VT PL
 \g PROG INC-A2S-E2S-pellizcar PL
-\l Los estás pellizcando 
+\l Los estás pellizcando
 
 \t tijin tawixk'eqin taq
 \m tijin t-aw-ixk'eqin taq
@@ -3734,13 +3734,13 @@
 \m tijin t-at-r-ixk'eqinik
 \p PROG INC-A2S-E3S-VT-SC
 \g PROG INC-A2S-E3S-pellizcar-SC
-\l Te está pellizcando 
+\l Te está pellizcando
 
 \t tijin trixk'eqinik
 \m tijin t-r-ixk'eqinik
 \p PROG INC-E3S-VT-SC
 \g PROG INC-E3S-pellizcar-SC
-\l Lo está pellizcando 
+\l Lo está pellizcando
 
 \t tijin tojrixk'eqinik
 \m tijin t-oj-r-ixk'eqinik
@@ -3752,7 +3752,7 @@
 \m tijin t-at-r-ixk'eqin taq
 \p PROG INC-A2S-E3S-VT PL
 \g PROG INC-A2S-E3S-pellizcar PL
-\l Los está pellizcando 
+\l Los está pellizcando
 
 \t tijin tirixk'eqin taq
 \m tijin ti-r-ixk'eqin taq
@@ -3770,13 +3770,13 @@
 \m tijin t-at-q-ixk'eqinik
 \p PROG INC-A2S-E1P-VT-SC
 \g PROG INC-A2S-E1P-pellizcar-SC
-\l Te estamos pellizcando 
+\l Te estamos pellizcando
 
 \t tijin tqixk'eqinik
 \m tijin t-q-ixk'eqinik
 \p PROG INC-E1P-VT-SC
 \g PROG INC-E1P-pellizcar-SC
-\l Lo estamos pellizcando 
+\l Lo estamos pellizcando
 
 \t tijin tojqixk'eqinik
 \m tijin t-oj-q-ixk'eqinik
@@ -3788,7 +3788,7 @@
 \m tijin t-at-q-ixk'eqin taq
 \p PROG INC-A2S-E1P-VT PL
 \g PROG INC-A2S-E1P-pellizcar PL
-\l Los estamos pellizcando 
+\l Los estamos pellizcando
 
 \t tijin tqixk'eqin taq
 \m tijin t-q-ixk'eqin taq
@@ -3806,13 +3806,13 @@
 \m tijin t-at-aw-ixk'eqin taq
 \p PROG INC-A2S-E2S-VT PL
 \g PROG INC-A2S-E2S-pellizcar PL
-\l Te están pellizcando 
+\l Te están pellizcando
 
 \t tijin tawixk'eqin taq
 \m tijin t-aw-ixk'eqin taq
 \p PROG INC-E2S-VT PL
 \g PROG INC-E2S-pellizcar PL
-\l Lo están pellizcando 
+\l Lo están pellizcando
 
 \t tijin tojawixk'eqin taq
 \m tijin t-oj-aw-ixk'eqin taq
@@ -3824,7 +3824,7 @@
 \m tijin t-at-aw-ixk'eqin taq taq
 \p PROG INC-A2S-E2S-VT PL PL
 \g PROG INC-A2S-E2S-pellizcar PL PL
-\l Los están pellizcando 
+\l Los están pellizcando
 
 \t tijin tawixk'eqin taq taq
 \m tijin t-aw-ixk'eqin taq taq
@@ -3842,13 +3842,13 @@
 \m tijin t-at-r-ixk'eqin taq
 \p PROG INC-A2S-E3S-VT PL
 \g PROG INC-A2S-E3S-pellizcar PL
-\l Te están pellizcando 
+\l Te están pellizcando
 
 \t tijin trixk'eqin taq
 \m tijin t-r-ixk'eqin taq
 \p PROG INC-E3S-VT PL
 \g PROG INC-E3S-pellizcar PL
-\l Lo están pellizcando 
+\l Lo están pellizcando
 
 \t tijin tojrixk'eqin taq
 \m tijin t-oj-r-ixk'eqin taq
@@ -3860,7 +3860,7 @@
 \m tijin t-at-r-ixk'eqin taq taq
 \p PROG INC-A2S-E3S-VT PL PL
 \g PROG INC-A2S-E3S-pellizcar PL PL
-\l Los están pellizcando 
+\l Los están pellizcando
 
 \t tijin tirixk'eqin taq taq
 \m tijin ti-r-ixk'eqin taq taq
@@ -3872,37 +3872,37 @@
 \m x-in-in-ixk'eqinik
 \p COM-A1S-E1S-VT-SC
 \g COM-A1S-E1S-pellizcar-SC
-\l Me pellizqué 
+\l Me pellizqué
 
 \t xatinixk'eqinik
 \m x-at-in-ixk'eqinik
 \p COM-A2S-E1S-VT-SC
 \g COM-A2S-E1S-pellizcar-SC
-\l Te pellizqué  
+\l Te pellizqué
 
 \t xinixk'eqinik
 \m x-in-ixk'eqinik
 \p COM-E1S-VT-SC
 \g COM-E1S-pellizcar-SC
-\l Lo pellizqué  
+\l Lo pellizqué
 
 \t xojinixk'eqinik
 \m x-oj-in-ixk'eqinik
 \p COM-A1P-E1S-VT-SC
 \g COM-A1P-E1S-pellizcar-SC
-\l Nos pellizqué  
+\l Nos pellizqué
 
 \t xatinixk'eqin taq
 \m x-at-in-ixk'eqin taq
 \p COM-A2S-E1S-VT PL
 \g COM-A2S-E1S-pellizcar PL
-\l Los pellizqué  
+\l Los pellizqué
 
 \t xinixk'eqin taq
 \m x-in-ixk'eqin taq
 \p COM-E1S-VT PL
 \g COM-E1S-pellizcar PL
-\l Los pellizqué  
+\l Los pellizqué
 
 \t xinawixk'eqinik
 \m x-in-aw-ixk'eqinik
@@ -3914,25 +3914,25 @@
 \m x-at-a-ixk'eqinik
 \p COM-A2S-E2S-VT-SC
 \g COM-A2S-E2S-pellizcar-SC
-\l Te pellizcaste 
+\l Te pellizcaste
 
 \t xawixk'eqinik
 \m x-aw-ixk'eqinik
 \p COM-E2S-VT-SC
 \g COM-E2S-pellizcar-SC
-\l Lo pellizcaste  
+\l Lo pellizcaste
 
 \t xojawixk'eqinik
 \m x-oj-aw-ixk'eqinik
 \p COM-A1P-E2S-VT-SC
 \g COM-A1P-E2S-pellizcar-SC
-\l Nos pellizcaste 
+\l Nos pellizcaste
 
 \t xatawixk'eqin taq
 \m x-at-aw-ixk'eqin taq
 \p COM-A2S-E2S-VT PL
 \g COM-A2S-E2S-pellizcar PL
-\l Los pellizcaste  
+\l Los pellizcaste
 
 \t xawixk'eqin taq
 \m x-aw-ixk'eqin taq
@@ -3950,25 +3950,25 @@
 \m x-at-r-ixk'eqinik
 \p COM-A2S-E3S-VT-SC
 \g COM-A2S-E3S-pellizcar-SC
-\l Te pellizcó 
+\l Te pellizcó
 
 \t xrixk'eqinik
 \m x-r-ixk'eqinik
 \p COM-E3S-VT-SC
 \g COM-E3S-pellizcar-SC
-\l Lo pellizcó  
+\l Lo pellizcó
 
 \t xojrixk'eqinik
 \m x-oj-r-ixk'eqinik
 \p COM-A1P-E3S-VT-SC
 \g COM-A1P-E3S-pellizcar-SC
-\l Nos pellizcó 
+\l Nos pellizcó
 
 \t xatrixk'eqin taq
 \m x-at-r-ixk'eqin taq
 \p COM-A2S-E3S-VT PL
 \g COM-A2S-E3S-pellizcar PL
-\l Los pellizcó  
+\l Los pellizcó
 
 \t xrixk'eqin taq
 \m x-r-ixk'eqin taq
@@ -3992,19 +3992,19 @@
 \m x-q-ixk'eqinik
 \p COM-E1P-VT-SC
 \g COM-E1P-pellizcar-SC
-\l Lo pellizcamos 
+\l Lo pellizcamos
 
 \t xojqixk'eqinik
 \m x-oj-q-ixk'eqinik
 \p COM-A1P-E1P-VT-SC
 \g COM-A1P-E1P-pellizcar-SC
-\l Nos pellizcamos 
+\l Nos pellizcamos
 
 \t xatqixk'eqin taq
 \m x-at-q-ixk'eqin taq
 \p COM-A2S-E1P-VT PL
 \g COM-A2S-E1P-pellizcar PL
-\l Los pellizcamos  
+\l Los pellizcamos
 
 \t xqixk'eqin taq
 \m x-q-ixk'eqin taq
@@ -4022,13 +4022,13 @@
 \m x-at-a-ixk'eqin taq
 \p COM-A2S-E2S-VT PL
 \g COM-A2S-E2S-pellizcar PL
-\l Te pellizcaron 
+\l Te pellizcaron
 
 \t xawixk'eqin taq
 \m x-aw-ixk'eqin taq
 \p COM-E2S-VT PL
 \g COM-E2S-pellizcar PL
-\l Lo pellizcaron 
+\l Lo pellizcaron
 
 \t xojawixk'eqin taq
 \m x-oj-aw-ixk'eqin taq
@@ -4038,9 +4038,9 @@
 
 \t xatawixk'eqin taq taq
 \m x-at-aw-ixk'eqin taq taq
-\p COM-A2S-E2S-VT PL PL 
+\p COM-A2S-E2S-VT PL PL
 \g COM-A2S-E2S-pellizcar PL PL
-\l Los pellizcaron  
+\l Los pellizcaron
 
 \t xawixk'eqin taq taq
 \m x-aw-ixk'eqin taq taq
@@ -4058,13 +4058,13 @@
 \m x-at-r-ixk'eqin taq
 \p COM-A2S-E3S-VT PL
 \g COM-A2S-E3S-pellizcar PL
-\l Te pellizcaron 
+\l Te pellizcaron
 
 \t xrixk'eqin taq
 \m x-r-ixk'eqin taq
 \p COM-E3S-VT PL
 \g COM-E3S-pellizcar PL
-\l Lo pellizcaron  
+\l Lo pellizcaron
 
 \t xojrixk'eqin taq
 \m x-oj-r-ixk'eqin taq
@@ -4076,11 +4076,11 @@
 \m x-at-r-ixk'eqin taq taq
 \p COM-A2S-E3S-VT PL PL
 \g COM-A2S-E3S-pellizcar PL PL
-\l Los pellizcaron 
+\l Los pellizcaron
 
 \t xrixk'eqin taq taq
 \m x-r-ixk'eqin taq taq
-\p COM-E3S-VT PL PL 
+\p COM-E3S-VT PL PL
 \g COM-E3S-pellizcar PL PL
 \l Los pellizcaron
 
@@ -4204,7 +4204,7 @@
 \g IMP-A2S-E2S-pellizcar-SC PL
 \l No te pellizquen
 
-\t maawixk'eqine' taq 
+\t maawixk'eqine' taq
 \m ma-aw-ixk'eqin-e' taq
 \p IMP-E2S-VT-SC PL
 \g IMP-E2S-pellizcar-SC PL
@@ -4235,7 +4235,7 @@
 \l No me pellizquen
 
 \t maatrixk'eqine' taq
-\m ma-at-r-ixk'eqin-e' taq 
+\m ma-at-r-ixk'eqin-e' taq
 \p IMP-A2S-E3S-VT-SC PL
 \g IMP-A2S-E3S-pellizcar-SC PL
 \l No te pellizquen
@@ -4386,7 +4386,7 @@
 
 \t kawixk'eqine' taq
 \m k-aw-ixk'eqin-e' taq
-\p IMP-E2S-VT-SC PL 
+\p IMP-E2S-VT-SC PL
 \g IMP-E2S-pellizcar-SC PL
 \l Lo pellizquen
 
@@ -4418,7 +4418,7 @@
 \m at-r-ixk'eqin-e' taq
 \p A2S-E3S-VT-SC PL
 \g A2S-E3S-pellizcar-SC PL
-\l Te pellizquen 
+\l Te pellizquen
 
 \t rixk'eqine' taq
 \m r-ixk'eqin-e' taq
@@ -4427,7 +4427,7 @@
 \l Lo pellizquen
 
 \t qarixk'eqine' taq
-\m qa-r-ixk'eqin-e' taq 
+\m qa-r-ixk'eqin-e' taq
 \p A1P-E3S-VT-SC PL
 \g A1P-E3S-pellizcar-SC PL
 \l Nos pellizquen
@@ -4610,7 +4610,7 @@
 \m jalman-e' taq
 \p VI-SC PL
 \g mejorar-SC PL
-\l Mejoren 
+\l Mejoren
 
 \t tinjek'oweem
 \m t-in-jek'oweem
