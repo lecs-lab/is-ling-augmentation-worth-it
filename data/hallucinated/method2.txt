@@ -447,7 +447,7 @@
 \p IMP-E3S-VT-SC PL
 \g IMP-E3S-reaparecer-SC PL
 \l No vayan a reaparecer
-***CHECK imperative forms****
+
 \t kaw'alejíne'
 \m k-aw-alejín-e'
 \p IMP-E2S-VT-SC
