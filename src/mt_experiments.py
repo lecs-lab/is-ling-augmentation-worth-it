@@ -75,7 +75,7 @@ def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->u
         evaluation_strategy="epoch",
         per_device_train_batch_size=BATCH_SIZE,
         per_device_eval_batch_size=BATCH_SIZE,
-        gradient_accumulation_steps=3,
+        gradient_accumulation_steps=2,
         save_strategy="epoch",
         save_total_limit=3,
         num_train_epochs=epochs,
@@ -96,10 +96,6 @@ def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->u
         train_dataset=dataset["train"], # type: ignore
         eval_dataset=dataset["eval"], # type: ignore
         compute_metrics=utils.compute_metrics(tokenizer=tokenizer, metrics_fn=utils.bleu),
-        # callbacks=[
-        #     utils.LogCallback(),
-        #     utils.DelayedEarlyStoppingCallback(early_stopping_patience=3)
-        # ],
         data_collator=transformers.DataCollatorForSeq2Seq(tokenizer=tokenizer,
                                                           model=model,
                                                           label_pad_token_id=tokenizer.pad_token_id or -100)

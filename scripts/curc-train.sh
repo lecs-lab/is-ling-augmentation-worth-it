@@ -26,18 +26,16 @@ MODE=$1
 shift
 
 
-# purge all existing modules
 module purge
-# Load the python module
-module load anaconda
-# Run Python Script
+source /curc/sw/anaconda3/latest
 conda activate AutoIGT
 cd "/projects/migi8081/morpheme-hallucination/src"
 
 if [ "$MODE" == "igt" ]; then
     torchrun --nproc_per_node=1 igt_experiments.py train --model_type baseline --aug_mode mixed "$@"
 elif [ "$MODE" == "mt" ]; then
-    torchrun --nproc_per_node=1 mt_experiments.py train --model_type baseline --aug_mode mixed "$@"
+    python mt_experiments.py train --model_type baseline --aug_mode mixed "$@"
+    # torchrun --nproc_per_node=1 mt_experiments.py train --model_type baseline --aug_mode mixed "$@"
 elif [ "$MODE" == "segment" ]; then
     echo "Error: segmentation not yet implemented"
     exit 1
