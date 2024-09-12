@@ -90,7 +90,7 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
         tokenizer=tokenizer,
         train_dataset=dataset["train"], # type: ignore
         eval_dataset=dataset["eval"], # type: ignore
-        compute_metrics=utils.compute_metrics(tokenizer=tokenizer),
+        compute_metrics=utils.compute_metrics(tokenizer=tokenizer, metrics_fn=glossing.evaluate_glosses),
         # callbacks=[
         #     utils.LogCallback(),
         #     utils.DelayedEarlyStoppingCallback(early_stopping_patience=3)

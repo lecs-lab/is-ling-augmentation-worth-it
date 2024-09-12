@@ -91,7 +91,7 @@ def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->u
         tokenizer=tokenizer,
         train_dataset=dataset["train"], # type: ignore
         eval_dataset=dataset["eval"], # type: ignore
-        compute_metrics=utils.compute_metrics(tokenizer=tokenizer),
+        compute_metrics=utils.compute_metrics(tokenizer=tokenizer, metrics_fn=utils.bleu),
         # callbacks=[
         #     utils.LogCallback(),
         #     utils.DelayedEarlyStoppingCallback(early_stopping_patience=3)

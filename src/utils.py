@@ -1,4 +1,5 @@
-from typing import Literal
+import torchtext
+from typing import Callable, Literal, List, Dict, Tuple
 import transformers
 from transformers import EvalPrediction
 import numpy as np
@@ -69,7 +70,7 @@ def tokenize(batch, tokenizer, labels_key, max_length: int):
         max_length=max_length,
     )
 
-def compute_metrics(tokenizer):
+def compute_metrics(tokenizer, metrics_fn: Callable[[List[str], List[str]], Dict]):
     """Creates the compute metrics function provided a tokenizer"""
     def _compute_metrics(eval_preds: EvalPrediction):
         preds, labels = eval_preds
@@ -84,11 +85,19 @@ def compute_metrics(tokenizer):
         decoded_preds = [pred.strip() for pred in decoded_preds]
         decoded_labels = [label.strip() for label in decoded_labels]
 
-        for s in decoded_labels:
-            if len(gloss_string_to_word_glosses(s)) == 0:
-                print("BAD GLOSS", s)
+        # for s in decoded_labels:
+        #     if len(gloss_string_to_word_glosses(s)) == 0:
+        #         raise ValueError("Empty string")
 
-        print("LABELS", decoded_labels)
-        return evaluate_glosses(decoded_preds, decoded_labels)
+        # print("LABELS", decoded_labels)
+        return metrics_fn(decoded_preds, decoded_labels)
 
     return _compute_metrics
+
+
+def bleu(preds: List[str], labels: List[str]) -> Dict:
+    """Computes the BLEU score after whitespace tokenization"""
+    tokenized_preds = [pred.split() for pred in preds]
+    tokenized_labels = [[label.split()] for label in labels]
+    bleu_score = torchtext.data.metrics.bleu_score(tokenized_preds, tokenized_labels)
+    return {"bleu_score": bleu_score}
