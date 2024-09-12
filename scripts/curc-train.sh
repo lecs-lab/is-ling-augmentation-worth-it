@@ -1,16 +1,30 @@
 #!/bin/bash
 #SBATCH --nodes=1           # Number of requested nodes
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:1
 #SBATCH --ntasks=2         # Number of requested cores
 #SBATCH --mem=32G
-#SBATCH --time=7-00:00:00          # Max walltime              # Specify QOS
+#SBATCH --time=1-00:00:00          # Max walltime              # Specify QOS
 #SBATCH --qos=blanca-curc-gpu
 #SBATCH --partition=blanca-curc-gpu
 #SBATCH --account=blanca-curc-gpu
-#SBATCH --out=train_glosslm.%j.out      # Output file name
-#SBATCH --error=train_glosslm.%j.err
+#SBATCH --out=log.%j.out      # Output file name
+#SBATCH --error=log.%j.err
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=michael.ginn@colorado.edu
+
+# Check args
+case "$1" in
+    igt|mt|segment)
+        echo "Running mode: $1"
+        ;;
+    *)
+        echo "Error: Invalid first argument. Must be 'igt', 'mt', or 'segment'"
+        exit 1
+        ;;
+esac
+MODE=$1
+shift
+
 
 # purge all existing modules
 module purge
@@ -20,6 +34,12 @@ module load anaconda
 conda activate AutoIGT
 cd "/projects/migi8081/morpheme-hallucination/src"
 
-# python3 train_model.py train --model_type aug_m1 --aug_mode mixed
-
-torchrun --nproc_per_node=2 igt_experiments.py train --model_type baseline --aug_mode mixed
+if [ "$MODE" == "igt" ]; then
+    torchrun --nproc_per_node=1 igt_experiments.py train --model_type baseline --aug_mode mixed "$@"
+elif [ "$MODE" == "mt" ]; then
+    torchrun --nproc_per_node=1 mt_experiments.py train --model_type baseline --aug_mode mixed "$@"
+elif [ "$MODE" == "segment" ]; then
+    echo "Error: segmentation not yet implemented"
+    exit 1
+    torchrun --nproc_per_node=1 segment_experiments.py train --model_type baseline --aug_mode mixed "$@"
+fi

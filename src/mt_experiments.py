@@ -1,4 +1,4 @@
-from typing import cast
+from typing import Literal, cast
 import random, functools
 import click, wandb
 import datasets, transformers
@@ -15,10 +15,11 @@ def cli():
 @click.option('--model_type',
               type=click.Choice(['baseline', 'aug_m1', 'aug_m2']))
 @click.option('--aug_mode', type=click.Choice(['mixed', 'curriculum']), default='mixed')
+@click.option('--direction', type=click.Choice(['usp->esp', 'esp->usp']))
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=200)
-@click.option("--project", type=str, default='morpheme-hallucination-igt')
-def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
+@click.option("--project", type=str, default='morpheme-hallucination-mt')
+def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->usp'], seed: int, epochs: int, project: str):
 
     BATCH_SIZE = 64
     wandb.init(project=project, entity="michael-ginn", name=model_type, config={
@@ -52,10 +53,10 @@ def train(model_type: str, aug_mode: str, seed: int, epochs: int, project: str):
     # Preprocess dataset
     model_key = "google/byt5-small"
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_key)
-    dataset = dataset.map(utils.create_igt_prompt)
+    dataset = dataset.map(functools.partial(utils.create_mt_prompt, direction=direction))
     dataset = dataset.map(functools.partial(utils.tokenize,
                                             tokenizer=tokenizer,
-                                            labels_key="glosses",
+                                            labels_key="translation",
                                             max_length=tokenizer.model_max_length),
                           batched=True)
 

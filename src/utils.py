@@ -1,3 +1,4 @@
+from typing import Literal
 import transformers
 from transformers import EvalPrediction
 import numpy as np
@@ -24,7 +25,7 @@ class DelayedEarlyStoppingCallback(transformers.EarlyStoppingCallback):
             self.patience = 0
 
 
-def create_byt5_prompt(row, use_translation: bool = False):
+def create_igt_prompt(row, use_translation: bool = False):
     """Processing function for rows in the dataset, creates an input prompt from the fields in the row."""
     transcription = ' '.join((row['transcription']).split())
     glosses = ' '.join((row['glosses']).split())
@@ -40,10 +41,29 @@ def create_byt5_prompt(row, use_translation: bool = False):
     return row
 
 
-def tokenize(batch, tokenizer, max_length: int):
+def create_mt_prompt(row, direction: Literal['usp->esp', 'esp->usp']):
+    """Processing function for rows in the dataset, creates an input prompt from the fields in the row."""
+    usp_transc = ' '.join((row['transcription']).split())
+    esp_transc = ' '.join((row['translation']).split())
+    if direction == 'usp->esp':
+        prompt = f"Translate into Spanish: {usp_transc}"
+    elif direction == 'esp->usp':
+        prompt = f"Translate into Uspanteko: {esp_transc}"
+
+    prompt += 'Translation: '
+    row['prompt'] = prompt
+    if direction == 'usp->esp':
+        row['translation'] = esp_transc
+    elif direction == 'esp->usp':
+        row['translation'] = usp_transc
+
+    return row
+
+
+def tokenize(batch, tokenizer, labels_key, max_length: int):
     return tokenizer(
         batch["prompt"],
-        text_target=batch.get("glosses", None),
+        text_target=batch.get(labels_key, None),
         truncation=True,
         padding=False,
         max_length=max_length,
