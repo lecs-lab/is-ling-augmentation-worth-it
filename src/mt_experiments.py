@@ -1,5 +1,6 @@
 from typing import Literal, cast
 import random, functools
+from typing_extensions import ValuesView
 import click, wandb
 import datasets, transformers
 import glossing
@@ -20,6 +21,9 @@ def cli():
 @click.option("--epochs", help="Max # epochs", type=int, default=200)
 @click.option("--project", type=str, default='morpheme-hallucination-mt')
 def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->usp'], seed: int, epochs: int, project: str):
+
+    if direction not in ['usp->esp', 'esp->usp']:
+        raise ValueError("Must be one of 'usp->esp' | 'esp->usp'")
 
     BATCH_SIZE = 64
     wandb.init(project=project, entity="michael-ginn", name=model_type, config={
