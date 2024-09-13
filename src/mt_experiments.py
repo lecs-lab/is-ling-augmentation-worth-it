@@ -75,7 +75,7 @@ def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->u
         evaluation_strategy="epoch",
         per_device_train_batch_size=BATCH_SIZE,
         per_device_eval_batch_size=BATCH_SIZE,
-        gradient_accumulation_steps=2,
+        gradient_accumulation_steps=1,
         save_strategy="epoch",
         save_total_limit=3,
         num_train_epochs=epochs,
