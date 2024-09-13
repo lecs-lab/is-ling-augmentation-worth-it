@@ -18,6 +18,7 @@ Original                             Augmented
 import pandas as pd
 import re, string, spacy, mlconjug3, stanza, spacy_stanza
 from mlconjug3 import Conjugator
+from datasets import load_dataset
 
 # %%
 stanza.download("es")
@@ -26,9 +27,27 @@ nlp = spacy_stanza.load_pipeline("es")
 conjugator = Conjugator(language='es')  # Instantiate Spanish conjugator 
 
 # %%
+# Prompts user to enter the file type and file name. 
+# Currently only works for parquet datasets and CSV files.
+file_type = input("Enter one of the following: csv or parquet")
+if file_type == "parquet":
+    split = input("Enter data split. Format example: data/train-00000-of-00001.parquet. Do not include single or double quotation marks.")
+    base_url = input("Enter base url. Do not include single or double quotation marks.")
+else:
+    data_file = input("Enter file name. Include extension.")
+
+# %%
 # Load in data
-splits = {'train': 'data/train-00000-of-00001.parquet', 'eval': 'data/eval-00000-of-00001.parquet', 'test': 'data/test-00000-of-00001.parquet'}
-df = pd.read_parquet("hf://datasets/lecslab/usp-igt/" + splits["train"])
+# Previously used:
+# splits = {'train': 'data/train-00000-of-00001.parquet', 'eval': 'data/eval-00000-of-00001.parquet', 'test': 'data/test-00000-of-00001.parquet'}
+# df = pd.read_parquet("hf://datasets/lecslab/usp-igt/" + splits["train"])
+if file_type == 'parquet':
+    df = pd.read_parquet(base_url + split)
+else:
+    dataset = load_dataset(file_type, data_files=data_file)
+    df = pd.DataFrame(dataset['train']) 
+
+df.head()
 df = df.drop(columns='segmentation')    # Drop the column with the segmented data
 
 # %%
