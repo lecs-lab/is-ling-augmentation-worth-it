@@ -29,12 +29,12 @@ conjugator = Conjugator(language='es')  # Instantiate Spanish conjugator
 # %%
 # Prompts user to enter the file type and file name. 
 # Currently only works for parquet datasets and CSV files.
-file_type = input("Enter one of the following: csv or parquet")
+file_type = input("Enter one of the following: csv or parquet ")
 if file_type == "parquet":
-    split = input("Enter data split. Format example: data/train-00000-of-00001.parquet. Do not include single or double quotation marks.")
-    base_url = input("Enter base url. Do not include single or double quotation marks.")
+    split = input("Enter data split. Format example: 'data/train-00000-of-00001.parquet'. Do NOT include single or double quotation marks. ")
+    base_url = input("Enter base url. Format example: 'hf://datasets/lecslab/usp-igt/'. Do NOT include single or double quotation marks. ")
 else:
-    data_file = input("Enter file name. Include extension.")
+    data_file = input("Enter file name. Include extension. ")
 
 # %%
 # Load in data
