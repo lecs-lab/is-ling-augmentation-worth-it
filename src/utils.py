@@ -89,7 +89,8 @@ def compute_metrics(tokenizer, metrics_fn: Callable[[List[str], List[str]], Dict
         #     if len(gloss_string_to_word_glosses(s)) == 0:
         #         raise ValueError("Empty string")
 
-        # print("LABELS", decoded_labels)
+        print("PREDS", decoded_preds)
+        print("LABELS", decoded_labels)
         return metrics_fn(decoded_preds, decoded_labels)
 
     return _compute_metrics

@@ -25,7 +25,7 @@ def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->u
     if direction not in ['usp->esp', 'esp->usp']:
         raise ValueError("Must be one of 'usp->esp' | 'esp->usp'")
 
-    BATCH_SIZE = 64
+    BATCH_SIZE = 32
     wandb.init(project=project, entity="michael-ginn", name=model_type, config={
         "random-seed": seed,
         "experimental_run": model_type,
@@ -79,7 +79,8 @@ def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->u
         save_strategy="epoch",
         save_total_limit=3,
         num_train_epochs=epochs,
-        load_best_model_at_end=False,
+        load_best_model_at_end=True,
+        metric_for_best_model="bleu_score",
         predict_with_generate=True,
         generation_max_length=1024,
         # fp16=True,
