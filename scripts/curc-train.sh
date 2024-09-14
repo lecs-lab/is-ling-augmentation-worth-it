@@ -28,7 +28,9 @@ shift
 
 module purge
 source /curc/sw/anaconda3/latest
+
 conda activate AutoIGT
+
 cd "/projects/migi8081/morpheme-hallucination/src"
 
 if [ "$MODE" == "igt" ]; then
