@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --nodes=1           # Number of requested nodes
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:2
 #SBATCH --ntasks=2         # Number of requested cores
 #SBATCH --mem=32G
 #SBATCH --time=1-00:00:00          # Max walltime              # Specify QOS
@@ -36,9 +36,9 @@ cd "/projects/migi8081/morpheme-hallucination/src"
 if [ "$MODE" == "igt" ]; then
     torchrun --nproc_per_node=1 igt_experiments.py train --model_type baseline --aug_mode mixed "$@"
 elif [ "$MODE" == "mt" ]; then
-    python mt_experiments.py train --model_type baseline --aug_mode mixed --direction "usp->esp"
-    python mt_experiments.py train --model_type aug_m1 --aug_mode mixed --direction "usp->esp"
-    python mt_experiments.py train --model_type aug_m2 --aug_mode mixed --direction "usp->esp"
+    torchrun --nproc_per_node=2 mt_experiments.py train --model_type baseline --aug_mode mixed --direction "usp->esp"
+    torchrun --nproc_per_node=2 mt_experiments.py train --model_type aug_m1 --aug_mode mixed --direction "usp->esp"
+    torchrun --nproc_per_node=2 mt_experiments.py train --model_type aug_m2 --aug_mode mixed --direction "usp->esp"
 elif [ "$MODE" == "segment" ]; then
     echo "Error: segmentation not yet implemented"
     exit 1
