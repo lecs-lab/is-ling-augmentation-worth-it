@@ -37,8 +37,8 @@ if [ "$MODE" == "igt" ]; then
     torchrun --nproc_per_node=1 igt_experiments.py train --model_type baseline --aug_mode mixed "$@"
 elif [ "$MODE" == "mt" ]; then
     python mt_experiments.py train --model_type baseline --aug_mode mixed --direction "usp->eng"
-    python mt_experiments.py train --model_type baseline --aug_mode aug_m1 --direction "usp->eng"
-    python mt_experiments.py train --model_type baseline --aug_mode aug_m2 --direction "usp->eng"
+    python mt_experiments.py train --model_type aug_m1 --aug_mode mixed --direction "usp->eng"
+    python mt_experiments.py train --model_type aug_m2 --aug_mode mixed --direction "usp->eng"
     # torchrun --nproc_per_node=1 mt_experiments.py train --model_type baseline --aug_mode mixed "$@"
 elif [ "$MODE" == "segment" ]; then
     echo "Error: segmentation not yet implemented"
