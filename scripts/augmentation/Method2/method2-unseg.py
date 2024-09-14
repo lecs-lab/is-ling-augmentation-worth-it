@@ -14,8 +14,8 @@ The script outputs IGT glosses formatted like the example below to two .txt file
 '''
 
 # %%
-import re
-import mlconjug3 # Install using requirements.txt file
+import re, mlconjug3, os
+import pandas as pd
 from mlconjug3 import Conjugator
 
 # %%
@@ -27,6 +27,7 @@ conjugator = Conjugator(language='es')  # Instantiate Spanish conjugator
 # The elements for each list will be listed in a comment above each building block. 
 
 # [Uspanteko morpheme, Glossing abbrev., Name of Spanish verb tense]
+# NOTE: Can add more aspects/moods
 tam = {'x': ['x', 'COM', 'Indicativo pretérito perfecto simple'], 
        't': ['t', 'INC', 'Indicativo presente']}
 
@@ -47,6 +48,7 @@ ergatives = {'E1S': ['in', 'E1S', 'yo'],
              'E3P': ['j',  'E3S', 'ellos']}
 
 # [Verb root, Glossing abbrev., Verb in Spanish]
+# NOTE: Can add more verbs
 transitive_verbs = {'k\'iliik': ['k\'ili', 'VT', 'tostar'], 
                     'k\'isiik': ['k\'isi', 'VT', 'terminar'],
                     'xutiik': ['xuti', 'VT', 'abandonar'],
@@ -104,6 +106,7 @@ transitive_verbs = {'k\'iliik': ['k\'ili', 'VT', 'tostar'],
                     }
 
 # [Verb root, Glossing abbrev., Verb in Spanish]
+# NOTE: Can add more verbs
 intransitive_verbs = {'k\'iyiik': ['k\'iyi', 'VI', 'crecer'], 
                     'paxínik': ['paxín', 'VI', 'abundar'],
                     'nimajiik': ['nimaji', 'VI', 'aceptar'],
@@ -131,6 +134,7 @@ intransitive_verbs = {'k\'iyiik': ['k\'iyi', 'VI', 'crecer'],
                     }
 
 # [Uspanteko morpheme, Glossing abbrev., Verb type]
+# NOTE: Can add other suffixes
 suffixes = {'j': ['j', 'SC', 'transitive'], 
             'ik': ['ik', 'SC', 'intransitive']} 
 
@@ -147,108 +151,136 @@ spanish_do = {'yo':'me',
 # Intransitive Verbs
 # Morpheme Template: TAM + Absolutive + Verb + Suffix
 
-with open('./Method2/Generated Data/intransitive_examples_unseg.txt', 'w') as f:
-    for iverb in intransitive_verbs:
+intransitive_blocks = []
+for iverb in intransitive_verbs:
         conjugations = conjugator.conjugate(intransitive_verbs[iverb][2])
         for s in suffixes:
             if suffixes[s][2] == 'intransitive':
                 for t in tam:
                     for abs in absolutives:
                         if absolutives[abs][1] == 'A2S' and absolutives[abs][2] == "ellos":
-                            f.write(f"""
-                                    \\t  {tam[t][0]}{absolutives[abs][0]}{intransitive_verbs[iverb][0]}{suffixes[s][0]} taq
-                                    \\p  {tam[t][1]}-{absolutives[abs][1]}-{intransitive_verbs[iverb][1]}-{suffixes[s][1]} PL
-                                    \\g  {tam[t][1]}-{absolutives[abs][1]}-{intransitive_verbs[iverb][2]}-{suffixes[s][1]} PL
-                                    \\l  {conjugations['Indicativo', tam[t][2], absolutives[abs][2]]}
-                                """)
+                             intransitive_blocks.append([
+                                '\\t ' + tam[t][0] + absolutives[abs][0] + intransitive_verbs[iverb][0] + suffixes[s][0] + ' taq',
+                                '\\p ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + intransitive_verbs[iverb][1] + '-' + suffixes[s][1] + ' PL',
+                                '\\g ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + intransitive_verbs[iverb][2] + '-' + suffixes[s][1] + ' PL',
+                                '\\l ' + conjugations['Indicativo', tam[t][2], absolutives[abs][2]]])
                         elif absolutives[abs][1] == 'A2S' and absolutives[abs][2] != "ellos":
-                            f.write(f"""
-                                    \\t  {tam[t][0]}{absolutives[abs][0]}{intransitive_verbs[iverb][0]}{suffixes[s][0]}
-                                    \\p  {tam[t][1]}-{absolutives[abs][1]}-{intransitive_verbs[iverb][1]}-{suffixes[s][1]}
-                                    \\g  {tam[t][1]}-{absolutives[abs][1]}-{intransitive_verbs[iverb][2]}-{suffixes[s][1]}
-                                    \\l  {conjugations['Indicativo', tam[t][2], absolutives[abs][2]]}
-                                """)
+                            intransitive_blocks.append([
+                                '\\t ' + tam[t][0] + absolutives[abs][0] + intransitive_verbs[iverb][0] + suffixes[s][0],
+                                '\\p ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + intransitive_verbs[iverb][1] + '-' + suffixes[s][1],
+                                '\\g ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + intransitive_verbs[iverb][2] + '-' + suffixes[s][1],
+                               ' \\l ' + conjugations['Indicativo', tam[t][2], absolutives[abs][2]]])
                         elif  absolutives[abs][1] == 'A3S' and absolutives[abs][2] == "ellos":
-                            f.write(f"""
-                                    \\t  {tam[t][0]}{intransitive_verbs[iverb][0]}{suffixes[s][0]} taq
-                                    \\p  {tam[t][1]}-{intransitive_verbs[iverb][1]}-{suffixes[s][1]} PL
-                                    \\g  {tam[t][1]}-{intransitive_verbs[iverb][2]}-{suffixes[s][1]} PL
-                                    \\l  {conjugations['Indicativo', tam[t][2], absolutives[abs][2]]}
-                                """)
+                            intransitive_blocks.append([
+                                '\\t ' + tam[t][0] + intransitive_verbs[iverb][0] + suffixes[s][0] + ' taq',
+                                '\\p ' + tam[t][1] + '-' + intransitive_verbs[iverb][1] + '-' + suffixes[s][1] + ' PL',
+                                '\\g ' + tam[t][1] + '-' + intransitive_verbs[iverb][2] + '-' + suffixes[s][1] + ' PL',
+                                '\\l ' + conjugations['Indicativo', tam[t][2], absolutives[abs][2]]])
+                          
                         elif  absolutives[abs][1] == 'A3S' and absolutives[abs][2] != "ellos":
-                            f.write(f"""
-                                    \\t  {tam[t][0]}{intransitive_verbs[iverb][0]}{suffixes[s][0]} 
-                                    \\p  {tam[t][1]}-{intransitive_verbs[iverb][1]}-{suffixes[s][1]} 
-                                    \\g  {tam[t][1]}-{intransitive_verbs[iverb][2]}-{suffixes[s][1]}
-                                    \\l  {conjugations['Indicativo', tam[t][2], absolutives[abs][2]]}
-                                """)
+                            intransitive_blocks.append([
+                                '\\t ' + tam[t][0] + intransitive_verbs[iverb][0] + suffixes[s][0], 
+                                '\\p ' + tam[t][1] + '-' + intransitive_verbs[iverb][1] + '-' + suffixes[s][1],
+                                '\\g ' + tam[t][1] + '-' + intransitive_verbs[iverb][2] + '-' + suffixes[s][1],
+                                '\\l ' + conjugations['Indicativo', tam[t][2], absolutives[abs][2]]])
                         else:
-                            f.write(f"""
-                                    \\t  {tam[t][0]}{absolutives[abs][0]}{intransitive_verbs[iverb][0]}{suffixes[s][0]}
-                                    \\p  {tam[t][1]}-{absolutives[abs][1]}-{intransitive_verbs[iverb][1]}-{suffixes[s][1]}
-                                    \\g  {tam[t][1]}-{absolutives[abs][1]}-{intransitive_verbs[iverb][2]}-{suffixes[s][1]}
-                                    \\l  {conjugations['Indicativo', tam[t][2], absolutives[abs][2]]}
-                                """)
-            
-
+                            intransitive_blocks.append([
+                                '\\t ' + tam[t][0] + absolutives[abs][0] + intransitive_verbs[iverb][0] + suffixes[s][0],
+                                '\\p ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + intransitive_verbs[iverb][1] + '-' + suffixes[s][1],
+                                '\\g ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + intransitive_verbs[iverb][2] + '-' + suffixes[s][1],
+                                '\\l ' + conjugations['Indicativo', tam[t][2], absolutives[abs][2]]])
 
 # %%
 # Transitive Verbs
 # Morpheme Template: TAM + Absolutive + Ergative + Verb + Suffix
 
-with open('./Method2/Generated Data/transitive_examples_unseg.txt', 'w') as file:
-    for tverb in transitive_verbs:
-        conjugations = conjugator.conjugate(transitive_verbs[tverb][2])
-        for s in suffixes:
-            if suffixes[s][2] == 'transitive':
-                for t in tam:
-                    for abs in absolutives:
-                        for erg in ergatives:
-                            if absolutives[abs][1] == 'A2S' and absolutives[abs][2] == "ellos":
-                                if ergatives[erg][2] == "ellos":
-                                    file.write(f"""
-                                            \\t  {tam[t][0]}{absolutives[abs][0]}{ergatives[erg][0]}{transitive_verbs[tverb][0]}{suffixes[s][0]} taq taq
-                                            \\p  {tam[t][1]}-{absolutives[abs][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][1]}-{suffixes[s][1]} PL PL
-                                            \\g  {tam[t][1]}-{absolutives[abs][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][2]}-{suffixes[s][1]} PL PL
-                                            \\l  {spanish_do[ergatives[erg][2]]} {conjugations['Indicativo', tam[t][2], absolutives[abs][2]]}
-                                        """)
-                                else:
-                                    file.write(f"""
-                                            \\t  {tam[t][0]}{absolutives[abs][0]}{ergatives[erg][0]}{transitive_verbs[tverb][0]}{suffixes[s][0]} taq
-                                            \\p  {tam[t][1]}-{absolutives[abs][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][1]}-{suffixes[s][1]} PL
-                                            \\g  {tam[t][1]}-{absolutives[abs][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][2]}-{suffixes[s][1]} PL
-                                            \\l  {spanish_do[ergatives[erg][2]]} {conjugations['Indicativo', tam[t][2], absolutives[abs][2]]}
-                                        """)
-                            elif absolutives[abs][1] == 'A3S' and absolutives[abs][2] == "ellos":
-                                if ergatives[erg][2] == "ellos":
-                                    file.write(f"""
-                                            \\t  {tam[t][0]}{ergatives[erg][0]}{transitive_verbs[tverb][0]}{suffixes[s][0]} taq taq
-                                            \\p  {tam[t][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][1]}-{suffixes[s][1]} PL PL
-                                            \\g  {tam[t][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][2]}-{suffixes[s][1]} PL PL
-                                            \\l  {spanish_do[ergatives[erg][2]]} {conjugations['Indicativo', tam[t][2], absolutives[abs][2]]}
-                                        """)
-                                else:
-                                    file.write(f"""
-                                            \\t  {tam[t][0]}{ergatives[erg][0]}{transitive_verbs[tverb][0]}{suffixes[s][0]} taq
-                                            \\p  {tam[t][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][1]}-{suffixes[s][1]} PL
-                                            \\g  {tam[t][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][2]}-{suffixes[s][1]} PL
-                                            \\l  {spanish_do[ergatives[erg][2]]} {conjugations['Indicativo', tam[t][2], absolutives[abs][2]]}
-                                        """)
-                            elif absolutives[abs][1] == 'A3S' and absolutives[abs][2] != "ellos":
-                                    file.write(f"""
-                                            \\t  {tam[t][0]}{ergatives[erg][0]}{transitive_verbs[tverb][0]}{suffixes[s][0]}
-                                            \\p  {tam[t][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][1]}-{suffixes[s][1]}
-                                            \\g  {tam[t][1]}{ergatives[erg][1]}-{transitive_verbs[tverb][2]}-{suffixes[s][1]}
-                                            \\l  {spanish_do[absolutives[abs][2]]} {conjugations['Indicativo', tam[t][2], ergatives[erg][2]]}
-                                        """)
+transitive_blocks = []
+for tverb in transitive_verbs:
+    conjugations = conjugator.conjugate(transitive_verbs[tverb][2])
+    for s in suffixes:
+        if suffixes[s][2] == 'transitive':
+            for t in tam:
+                for abs in absolutives:
+                    for erg in ergatives:
+                        if absolutives[abs][1] == 'A2S' and absolutives[abs][2] == "ellos":
+                            if ergatives[erg][2] == "ellos":
+                                transitive_blocks.append([
+                                    '\\t ' + tam[t][0] + absolutives[abs][0] + ergatives[erg][0] + transitive_verbs[tverb][0] + suffixes[s][0] + ' taq taq',
+                                    '\\p ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][1] + '-' + suffixes[s][1] + ' PL PL',
+                                    '\\g ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][2] + '-' + suffixes[s][1] + ' PL PL',
+                                    '\\l ' + spanish_do[ergatives[erg][2]] + ' ' + conjugations['Indicativo', tam[t][2], absolutives[abs][2]]])
                             else:
-                                    file.write(f"""
-                                            \\t  {tam[t][0]}{absolutives[abs][0]}{ergatives[erg][0]}{transitive_verbs[tverb][0]}{suffixes[s][0]}
-                                            \\p  {tam[t][1]}-{absolutives[abs][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][1]}-{suffixes[s][1]}
-                                            \\g  {tam[t][1]}-{absolutives[abs][1]}-{ergatives[erg][1]}-{transitive_verbs[tverb][2]}-{suffixes[s][1]}
-                                            \\l  {spanish_do[absolutives[abs][2]]} {conjugations['Indicativo', tam[t][2], ergatives[erg][2]]}
-                                        """)
+                                transitive_blocks.append([
+                                    '\\t ' + tam[t][0] + absolutives[abs][0] + ergatives[erg][0] + transitive_verbs[tverb][0] + suffixes[s][0] + ' taq',
+                                    '\\p ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][1] + '-' + suffixes[s][1] + ' PL',
+                                    '\\g ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][2] + '-' + suffixes[s][1] + ' PL',
+                                    '\\l ' + spanish_do[ergatives[erg][2]] + ' ' + conjugations['Indicativo', tam[t][2], absolutives[abs][2]]])
+                        elif absolutives[abs][1] == 'A3S' and absolutives[abs][2] == "ellos":
+                            if ergatives[erg][2] == "ellos":
+                                transitive_blocks.append([
+                                    '\\t ' + tam[t][0] + ergatives[erg][0] + transitive_verbs[tverb][0] + suffixes[s][0] + ' taq taq',
+                                    '\\p ' + tam[t][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][1] + '-' + suffixes[s][1] + ' PL PL',
+                                    '\\g ' + tam[t][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][2] + '-' + suffixes[s][1] + ' PL PL',
+                                    '\\l ' + spanish_do[ergatives[erg][2]] + ' ' + conjugations['Indicativo', tam[t][2], absolutives[abs][2]]])
+                                    
+                            else:
+                                transitive_blocks.append([
+                                    '\\t ' + tam[t][0] + ergatives[erg][0] + transitive_verbs[tverb][0] + suffixes[s][0] + ' taq',
+                                    '\\p ' + tam[t][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][1] + '-' + suffixes[s][1] + ' PL',
+                                    '\\g ' + tam[t][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][2] + '-' + suffixes[s][1] + ' PL',
+                                    '\\l ' + spanish_do[ergatives[erg][2]] + ' ' + conjugations['Indicativo', tam[t][2], absolutives[abs][2]]])
+                                   
+                        elif absolutives[abs][1] == 'A3S' and absolutives[abs][2] != "ellos":
+                                transitive_blocks.append([
+                                    '\\t ' + tam[t][0] + ergatives[erg][0] + transitive_verbs[tverb][0] + suffixes[s][0],
+                                    '\\p ' + tam[t][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][1] + '-' + suffixes[s][1],
+                                    '\\g ' + tam[t][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][2] + '-' + suffixes[s][1],
+                                    '\\l ' + spanish_do[absolutives[abs][2]] + ' ' + conjugations['Indicativo', tam[t][2], ergatives[erg][2]]])
+                                  
+                        else:
+                                transitive_blocks.append([
+                                    '\\t ' + tam[t][0] + absolutives[abs][0] + ergatives[erg][0] + transitive_verbs[tverb][0] + suffixes[s][0],
+                                    '\\p ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][1] + '-' + suffixes[s][1],
+                                    '\\g ' + tam[t][1] + '-' + absolutives[abs][1] + '-' + ergatives[erg][1] + '-' + transitive_verbs[tverb][2] + '-' + suffixes[s][1],
+                                    '\\l ' + spanish_do[absolutives[abs][2]] + ' ' + conjugations['Indicativo', tam[t][2], ergatives[erg][2]]])
+                               
                                 
-                
+
+# %%
+total_gen = intransitive_blocks + transitive_blocks
+
+# %%
+df = pd.DataFrame(total_gen)
+
+# %%
+fraction = float(input("What percent of the data would you like to use? Enter 1 if you want to use the entire dataset. "))
+if fraction == 1:
+    pass
+else:
+    df = df.sample(frac=fraction, replace = False, random_state= 42)
+
+# %%
+df.head()
+
+# %%
+glosses = df.values.tolist()
+
+# %%
+# %%
+# Change file location as needed
+os.chdir('../../..')
+os.chdir('data/hallucinated/Method 2')
+aug_file = input("What should this file be called? Format: 'data/hallucinated/Method 2/<output_filename.txt>'. Don't forget the extension. ")
+
+
+# %%
+with open(aug_file, 'w') as f:
+    for gloss in glosses:
+        f.write(f"""
+                {gloss[0]}
+                {gloss[1]}
+                {gloss[2]}
+                {gloss[3]}
+            """)
 
 
