@@ -16,8 +16,9 @@ Original                             Augmented
 
 # %%
 import pandas as pd
-import re, string, spacy, mlconjug3, stanza, spacy_stanza
+import re, string, spacy, mlconjug3, stanza, spacy_stanza, os.path
 from mlconjug3 import Conjugator
+from datasets import load_dataset
 
 # %%
 stanza.download("es")
@@ -26,9 +27,27 @@ nlp = spacy_stanza.load_pipeline("es")
 conjugator = Conjugator(language='es')  # Instantiate Spanish conjugator 
 
 # %%
+# Prompts user to enter the file type and file name. 
+# Currently only works for parquet datasets and CSV files.
+file_type = input("Enter one of the following: csv or parquet ")
+if file_type == "parquet":
+    split = input("Enter data split. Format example: 'data/train-00000-of-00001.parquet'. Do NOT include single or double quotation marks. ")
+    base_url = input("Enter base url. Format example: 'hf://datasets/lecslab/usp-igt/'. Do NOT include single or double quotation marks. ")
+else:
+    data_file = input("Enter file name. Include extension. ")
+
+# %%
 # Load in data
-splits = {'train': 'data/train-00000-of-00001.parquet', 'eval': 'data/eval-00000-of-00001.parquet', 'test': 'data/test-00000-of-00001.parquet'}
-df = pd.read_parquet("hf://datasets/lecslab/usp-igt/" + splits["train"])
+# Previously used:
+# splits = {'train': 'data/train-00000-of-00001.parquet', 'eval': 'data/eval-00000-of-00001.parquet', 'test': 'data/test-00000-of-00001.parquet'}
+# df = pd.read_parquet("hf://datasets/lecslab/usp-igt/" + splits["train"])
+if file_type == 'parquet':
+    df = pd.read_parquet(base_url + split)
+else:
+    dataset = load_dataset(file_type, data_files=data_file)
+    df = pd.DataFrame(dataset['train']) 
+
+df.head()
 df = df.drop(columns='segmentation')    # Drop the column with the segmented data
 
 # %%
@@ -47,6 +66,15 @@ df['translation'] = df['translation'].str.replace(',', '').str.replace('.', '').
 
 # %%
 df.head()
+
+# %%
+# This section allows for us to sample a percentage of the dataset.
+fraction = float(input("What percent of the data would you like to use? Enter 1 if you want to use the entire dataset. "))
+if fraction == 1:
+    pass
+else:
+    df = df.sample(frac=fraction, replace = False, random_state= 42)
+
 
 # %%
 # The following section contains the dictionaries for both types of person markers - absolutive and ergative.
@@ -145,7 +173,10 @@ def gloss_processing(glosses):
 processed_glosses = gloss_processing(glosses)
 
 # %%
-aug_file = './Generated Data/aug_examples_unseg.txt'
+# Change file location as needed
+os.chdir('../../..')
+os.chdir('data/hallucinated/Method 1')
+aug_file = input("What should this file be called? Format: 'data/hallucinated/Method 1/<output_filename.txt>. Don't forget the extension.'")
 
 # This section writes the new data to the output file.
 with open(aug_file, 'w') as aug:
@@ -350,3 +381,5 @@ with open(aug_file, 'w') as aug:
                                         pass
 
 
+
+# %%

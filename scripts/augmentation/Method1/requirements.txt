@@ -7,3 +7,4 @@ pyarrow
 fastparquet
 huggingface 
 huggingface_hub
+datasets
