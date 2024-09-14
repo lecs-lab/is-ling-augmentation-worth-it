@@ -16,7 +16,7 @@ Original                             Augmented
 
 # %%
 import pandas as pd
-import re, string, spacy, mlconjug3, stanza, spacy_stanza
+import re, string, spacy, mlconjug3, stanza, spacy_stanza, os.path
 from mlconjug3 import Conjugator
 from datasets import load_dataset
 
@@ -66,6 +66,15 @@ df['translation'] = df['translation'].str.replace(',', '').str.replace('.', '').
 
 # %%
 df.head()
+
+# %%
+# This section allows for us to sample a percentage of the dataset.
+fraction = float(input("What percent of the data would you like to use? Enter 1 if you want to use the entire dataset. "))
+if fraction == 1:
+    pass
+else:
+    df = df.sample(frac=fraction, replace = False, random_state= 42)
+
 
 # %%
 # The following section contains the dictionaries for both types of person markers - absolutive and ergative.
@@ -164,7 +173,10 @@ def gloss_processing(glosses):
 processed_glosses = gloss_processing(glosses)
 
 # %%
-aug_file = './Generated Data/aug_examples_unseg.txt'
+# Change file location as needed
+os.chdir('../../..')
+os.chdir('data/hallucinated/Method 1')
+aug_file = input("What should this file be called? Format: 'data/hallucinated/Method 1/<output_filename.txt>. Don't forget the extension.'")
 
 # This section writes the new data to the output file.
 with open(aug_file, 'w') as aug:
@@ -369,3 +381,5 @@ with open(aug_file, 'w') as aug:
                                         pass
 
 
+
+# %%
