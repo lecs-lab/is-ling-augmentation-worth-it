@@ -89,6 +89,7 @@ def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->u
         report_to='wandb',
         save_safetensors=False,
         # dataloader_num_workers=2,
+        log_on_each_node=False,
     )
 
     trainer = transformers.Seq2SeqTrainer(
