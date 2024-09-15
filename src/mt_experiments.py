@@ -1,11 +1,11 @@
-from typing import Literal, cast
+from typing import Literal, cast, Optional
 import random, functools
-from typing_extensions import ValuesView
 import click, wandb
 import datasets, transformers
 import glossing
 
 import utils
+from method1_unseg import create_augmented_data as create_m1_data
 
 @click.group()
 def cli():
@@ -17,10 +17,19 @@ def cli():
               type=click.Choice(['baseline', 'aug_m1', 'aug_m2']))
 @click.option('--aug_mode', type=click.Choice(['mixed', 'curriculum']), default='mixed')
 @click.option('--direction', type=click.Choice(['usp->esp', 'esp->usp']))
+@click.option("--sample_train_size", type=int, default=None)
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=200)
 @click.option("--project", type=str, default='morpheme-hallucination-mt')
-def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->usp'], seed: int, epochs: int, project: str):
+def train(
+    model_type: str,
+    aug_mode: str,
+    direction: Literal['usp->esp', 'esp->usp'],
+    sample_train_size: Optional[int],
+    seed: int,
+    epochs: int,
+    project: str
+):
 
     if direction not in ['usp->esp', 'esp->usp']:
         raise ValueError("Must be one of 'usp->esp' | 'esp->usp'")
@@ -35,14 +44,20 @@ def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->u
     random.seed(seed)
 
     dataset = cast(datasets.DatasetDict, datasets.load_dataset('lecslab/usp-igt'))
+    if sample_train_size is not None:
+        dataset['train'] = dataset['train'].shuffle(seed=seed).select(range(sample_train_size)) # Need to be deterministic for reproducibility
+    initial_train_size = len(dataset['train'])
+
 
     # Add in hallucinated data as needed
     def load_aug_data(path: str) -> datasets.Dataset:
         aug_data = glossing.load_igt_file(path)
         return datasets.Dataset.from_list([ex.__dict__() for ex in aug_data])
     if model_type != 'baseline':
+        print("Creating augmented data...")
         if model_type == 'aug_m1':
-            aug_dataset = load_aug_data('../data/hallucinated/Method 1/aug_examples_unseg.txt')
+            aug_dataset = create_m1_data(dataset['train'])
+            # aug_dataset = load_aug_data('../data/hallucinated/Method 1/aug_examples_unseg.txt')
         elif model_type == 'aug_m2':
             aug_dataset = load_aug_data('../data/hallucinated/method2.txt')
         else:
@@ -53,6 +68,8 @@ def train(model_type: str, aug_mode: str, direction: Literal['usp->esp', 'esp->u
             dataset['train'] = dataset['train'].shuffle()
         elif aug_mode == 'curriculum':
             dataset['aug_train'] = aug_dataset
+
+        print(f"Created {len(aug_dataset)} augmented rows from {train_size} for a total of {len(aug_dataset) + train_size}")
 
     # Preprocess dataset
     model_key = "google/byt5-small"
