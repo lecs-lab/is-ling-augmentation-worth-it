@@ -57,7 +57,6 @@ def train(
         print("Creating augmented data...")
         if model_type == 'aug_m1':
             aug_dataset = create_m1_data(dataset['train'])
-            # aug_dataset = load_aug_data('../data/hallucinated/Method 1/aug_examples_unseg.txt')
         elif model_type == 'aug_m2':
             aug_dataset = load_aug_data('../data/hallucinated/method2.txt')
         else:
@@ -69,7 +68,7 @@ def train(
         elif aug_mode == 'curriculum':
             dataset['aug_train'] = aug_dataset
 
-        print(f"Created {len(aug_dataset)} augmented rows from {train_size} for a total of {len(aug_dataset) + train_size}")
+        print(f"Created {len(aug_dataset)} augmented rows from {initial_train_size} initial_train_size a total of {len(aug_dataset) + initial_train_size}")
 
     # Preprocess dataset
     model_key = "google/byt5-small"
