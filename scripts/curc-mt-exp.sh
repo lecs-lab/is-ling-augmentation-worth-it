@@ -17,6 +17,8 @@ source /curc/sw/anaconda3/latest
 
 conda activate AutoIGT
 
+EXPORT STANZA_RESOURCES_DIR=/scratch/alpine/migi8081/stanza/
+
 cd "/projects/migi8081/morpheme-hallucination/src"
 
 for size in 10 100 500 1000 5000
