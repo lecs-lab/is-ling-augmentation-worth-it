@@ -88,7 +88,7 @@ def train(
     print(f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples.")
 
     args = transformers.Seq2SeqTrainingArguments(
-        output_dir=f"../finetune-training-checkpoints",
+        output_dir=f"../{model_type}-finetune-training-checkpoints",
         evaluation_strategy="epoch",
         per_device_train_batch_size=BATCH_SIZE,
         per_device_eval_batch_size=BATCH_SIZE,
