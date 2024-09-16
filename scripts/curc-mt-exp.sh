@@ -31,6 +31,10 @@ do
                                         --direction "usp->esp" \
                                         --sample_train_size $size
     done
+done
+
+for model in baseline aug_m1 aug_m
+do
     # Run without a train sample size, ie all data
     torchrun --nproc_per_node=2 mt_experiments.py train \
                                     --model_type baseline \
