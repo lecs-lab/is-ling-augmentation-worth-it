@@ -40,6 +40,7 @@ def train(
         "experimental_run": model_type,
         "training_schedule": aug_mode,
         "epochs": epochs,
+        "training_size": sample_train_size,
     })
     random.seed(seed)
 
