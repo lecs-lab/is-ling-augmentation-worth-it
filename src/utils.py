@@ -1,4 +1,4 @@
-from typing import Callable, Dict, List, Literal
+from typing import Callable, Dict, List, Literal, Tuple
 
 import numpy as np
 import torchtext
@@ -78,26 +78,39 @@ def tokenize(batch, tokenizer, labels_key, max_length: int):
     )
 
 
+def decode(
+    tokenizer,
+    predictions: np.ndarray | Tuple[np.ndarray],
+    labels: np.ndarray | Tuple[np.ndarray] | None,
+) -> Tuple[List[str], List[str] | None]:
+    """Decodes pred and label ids using the tokenizer"""
+    if isinstance(predictions, tuple):
+        predictions = predictions[0]
+    if isinstance(labels, tuple):
+        labels = labels[0]
+
+    preds = np.where(predictions != -100, predictions, tokenizer.pad_token_id)
+    decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
+    decoded_preds = [pred.strip() for pred in decoded_preds]
+
+    decoded_labels = None
+    if labels is not None:
+        labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
+        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
+        decoded_labels = [label.strip() for label in decoded_labels]
+
+    return decoded_preds, decoded_labels
+
+
 def compute_metrics(tokenizer, metrics_fn: Callable[[List[str], List[str]], Dict]):
     """Creates the compute metrics function provided a tokenizer"""
 
     def _compute_metrics(eval_preds: EvalPrediction):
         preds, labels = eval_preds
-        if isinstance(preds, tuple):
-            preds = preds[0]
+        decoded_preds, decoded_labels = decode(tokenizer, preds, labels)
 
-        # Post-processing
-        preds = np.where(preds != -100, preds, tokenizer.pad_token_id)
-        labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
-        decoded_preds = tokenizer.batch_decode(preds, skip_special_tokens=True)
-        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
-        decoded_preds = [pred.strip() for pred in decoded_preds]
-        decoded_labels = [label.strip() for label in decoded_labels]
-
-        # for s in decoded_labels:
-        #     if len(gloss_string_to_word_glosses(s)) == 0:
-        #         raise ValueError("Empty string")
-
+        if decoded_labels is None:
+            raise ValueError("Need to have labels in `compute_metrics`!!")
         print("PREDS", decoded_preds[:5])
         print("LABELS", decoded_labels[:5])
         return metrics_fn(decoded_preds, decoded_labels)

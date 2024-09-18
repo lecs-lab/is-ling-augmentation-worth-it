@@ -1,6 +1,6 @@
 import functools
 import random
-from typing import Literal, Optional, cast
+from typing import List, Literal, Optional, cast
 
 import click
 import datasets
@@ -54,7 +54,7 @@ def train(
     random.seed(seed)
 
     dataset = cast(
-        datasets.DatasetDict, datasets.load_dataset("lecslab/usp-igt-repsplit")
+        datasets.DatasetDict, datasets.load_dataset("lecslab/usp-igt-resplit")
     )
 
     # Make a small validation split
@@ -161,9 +161,21 @@ def train(
     trainer.train()
     trainer.save_model(f"../models/{model_type}")
 
-    test_eval = trainer.evaluate(dataset["test"])  # type: ignore
-    test_eval = {k.replace("eval", "test"): test_eval[k] for k in test_eval}
+    # Testing
+    test_preds = trainer.predict(dataset["test"])  # type: ignore
+    test_eval = test_preds.metrics
+    test_eval = {k.replace("eval", "test"): test_eval[k] for k in test_eval}  # type: ignore
     wandb.log(test_eval)
+
+    # Decode preds and log to wandb
+    predictions, labels = utils.decode(
+        tokenizer, test_preds.predictions, test_preds.label_ids
+    )
+    preds_table = wandb.Table(
+        columns=["predicted", "label"],
+        data=[[p, lab] for p, lab in zip(predictions, cast(List[str], labels))],
+    )
+    wandb.log({"test_predictions": preds_table})
 
 
 if __name__ == "__main__":
