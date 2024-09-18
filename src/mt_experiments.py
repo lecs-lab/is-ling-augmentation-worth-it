@@ -139,7 +139,7 @@ def train(
         train_dataset=dataset["train"],  # type: ignore
         eval_dataset=dataset["eval"],  # type: ignore
         compute_metrics=utils.compute_metrics(
-            tokenizer=tokenizer, metrics_fn=utils.bleu
+            tokenizer=tokenizer, metrics_fn=utils.mt_metrics
         ),
         data_collator=transformers.DataCollatorForSeq2Seq(
             tokenizer=tokenizer,

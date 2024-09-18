@@ -109,7 +109,7 @@ def compute_metrics(tokenizer, metrics_fn: Callable[[List[str], List[str]], Dict
 chrf = CHRF(word_order=0)
 
 
-def compute_mt_metrics(preds: List[str], labels: List[str]) -> Dict:
+def mt_metrics(preds: List[str], labels: List[str]) -> Dict:
     """Computes the BLEU score (after whitespace tokenization) and chrF"""
     tokenized_preds = [pred.split() for pred in preds]
     tokenized_labels = [[label.split()] for label in labels]
