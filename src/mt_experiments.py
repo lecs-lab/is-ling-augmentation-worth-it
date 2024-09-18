@@ -40,7 +40,7 @@ def train(
     BATCH_SIZE = 32
     wandb.init(
         project=project,
-        entity="michael-ginn",
+        entity="lecslab",
         name=model_type,
         config={
             "random-seed": seed,
