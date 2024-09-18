@@ -22,6 +22,7 @@ shift
 
 
 module purge
+module load gcc/11.2.0
 source /curc/sw/anaconda3/latest
 conda activate AutoIGT
 
