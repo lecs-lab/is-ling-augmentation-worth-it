@@ -31,15 +31,23 @@ cd "/projects/migi8081/morpheme-hallucination/src"
 
 for size in 300 500 800 1000 5000
 do
+    for seed in 0 1 2
+    do
+        python mt_experiments.py train \
+                                    --model_type $model \
+                                    --aug_mode mixed \
+                                    --direction "esp->usp" \
+                                    --sample_train_size $size \
+                                    --seed $seed
+    done
+done
+
+for seed in 0 1 2
+do
+    # Run without a train sample size, ie all data
     python mt_experiments.py train \
                                 --model_type $model \
                                 --aug_mode mixed \
                                 --direction "esp->usp" \
-                                --sample_train_size $size
+                                --seed $seed
 done
-
-# Run without a train sample size, ie all data
-python mt_experiments.py train \
-                            --model_type $model \
-                            --aug_mode mixed \
-                            --direction "esp->usp"

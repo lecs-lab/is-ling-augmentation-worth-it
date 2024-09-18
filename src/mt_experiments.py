@@ -53,7 +53,15 @@ def train(
     )
     random.seed(seed)
 
-    dataset = cast(datasets.DatasetDict, datasets.load_dataset("lecslab/usp-igt"))
+    dataset = cast(
+        datasets.DatasetDict, datasets.load_dataset("lecslab/usp-igt-repsplit")
+    )
+
+    # Make a small validation split
+    train_eval_split = dataset["train"].train_test_split(test_size=0.05, seed=seed)
+    dataset["train"] = train_eval_split["train"]
+    dataset["eval"] = train_eval_split["test"]
+
     if sample_train_size is not None:
         dataset["train"] = (
             dataset["train"].shuffle(seed=seed).select(range(sample_train_size))
