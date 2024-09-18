@@ -21,23 +21,24 @@ export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
 
 cd "/projects/migi8081/morpheme-hallucination/src"
 
-for size in 100 500 1000 5000
+if [[ "$1" != "baseline" && "$1" != "aug_m1" && "$1" != "aug_m2" ]]; then
+    echo "Error: First argument must be 'baseline', 'aug_m1', or 'aug_m2'."
+    exit 1
+fi
+
+model=$1
+
+for size in 300 500 800 1000 5000
 do
-    for model in baseline aug_m1 aug_m2
-    do
-        python mt_experiments.py train \
-                                    --model_type $model \
-                                    --aug_mode mixed \
-                                    --direction "usp->esp" \
-                                    --sample_train_size $size
-    done
+    python mt_experiments.py train \
+                                --model_type $model \
+                                --aug_mode mixed \
+                                --direction "esp->usp" \
+                                --sample_train_size $size
 done
 
-for model in baseline aug_m1 aug_m
-do
-    # Run without a train sample size, ie all data
-    python mt_experiments.py train \
-                                --model_type baseline \
-                                --aug_mode mixed \
-                                --direction "usp->esp"
-done
+# Run without a train sample size, ie all data
+python mt_experiments.py train \
+                            --model_type $model \
+                            --aug_mode mixed \
+                            --direction "esp->usp"

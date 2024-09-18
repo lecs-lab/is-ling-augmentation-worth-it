@@ -1,10 +1,11 @@
-import torchtext
-from typing import Callable, Literal, List, Dict, Tuple
-import transformers
-from transformers import EvalPrediction
+from typing import Callable, Dict, List, Literal
+
 import numpy as np
-from glossing import evaluate_glosses
-from glossing.igt import gloss_string_to_word_glosses
+import torchtext
+import transformers
+from sacrebleu import CHRF
+from transformers import EvalPrediction
+
 
 class LogCallback(transformers.TrainerCallback):
     def on_log(self, args, state, control, logs=None, **kwargs):
@@ -17,7 +18,13 @@ class DelayedEarlyStoppingCallback(transformers.EarlyStoppingCallback):
         super().__init__(*args, **kwargs)
         self.start_epoch = start_epoch
 
-    def on_evaluate(self, args, state: transformers.TrainerState, control: transformers.TrainerControl, **kwargs):
+    def on_evaluate(
+        self,
+        args,
+        state: transformers.TrainerState,
+        control: transformers.TrainerControl,
+        **kwargs,
+    ):
         # Only start applying early stopping logic after start_epoch
         if state.epoch is not None and state.epoch >= self.start_epoch:
             super().on_evaluate(args, state, control, **kwargs)
@@ -28,35 +35,35 @@ class DelayedEarlyStoppingCallback(transformers.EarlyStoppingCallback):
 
 def create_igt_prompt(row, use_translation: bool = False):
     """Processing function for rows in the dataset, creates an input prompt from the fields in the row."""
-    transcription = ' '.join((row['transcription']).split())
-    glosses = ' '.join((row['glosses']).split())
+    transcription = " ".join((row["transcription"]).split())
+    glosses = " ".join((row["glosses"]).split())
     prompt = f"Provide the glosses for the following transcription in Uspanteko.\nTranscription: {transcription}"
-    if row['translation'] is not None and use_translation:
-        if len(row['translation'].strip()) > 0:
-            translation = ' '.join((row['translation']).split())
+    if row["translation"] is not None and use_translation:
+        if len(row["translation"].strip()) > 0:
+            translation = " ".join((row["translation"]).split())
             prompt += f"Translation in {row['metalang']}: {translation}\n"
 
-    prompt += 'Glosses: '
-    row['prompt'] = prompt
-    row['glosses'] = glosses
+    prompt += "Glosses: "
+    row["prompt"] = prompt
+    row["glosses"] = glosses
     return row
 
 
-def create_mt_prompt(row, direction: Literal['usp->esp', 'esp->usp']):
+def create_mt_prompt(row, direction: Literal["usp->esp", "esp->usp"]):
     """Processing function for rows in the dataset, creates an input prompt from the fields in the row."""
-    usp_transc = ' '.join((row['transcription']).split())
-    esp_transc = ' '.join((row['translation']).split())
-    if direction == 'usp->esp':
+    usp_transc = " ".join((row["transcription"]).split())
+    esp_transc = " ".join((row["translation"]).split())
+    if direction == "usp->esp":
         prompt = f"Translate into Spanish: {usp_transc}"
-    elif direction == 'esp->usp':
+    elif direction == "esp->usp":
         prompt = f"Translate into Uspanteko: {esp_transc}"
 
-    prompt += 'Translation: '
-    row['prompt'] = prompt
-    if direction == 'usp->esp':
-        row['translation'] = esp_transc
-    elif direction == 'esp->usp':
-        row['translation'] = usp_transc
+    prompt += "Translation: "
+    row["prompt"] = prompt
+    if direction == "usp->esp":
+        row["translation"] = esp_transc
+    elif direction == "esp->usp":
+        row["translation"] = usp_transc
 
     return row
 
@@ -70,8 +77,10 @@ def tokenize(batch, tokenizer, labels_key, max_length: int):
         max_length=max_length,
     )
 
+
 def compute_metrics(tokenizer, metrics_fn: Callable[[List[str], List[str]], Dict]):
     """Creates the compute metrics function provided a tokenizer"""
+
     def _compute_metrics(eval_preds: EvalPrediction):
         preds, labels = eval_preds
         if isinstance(preds, tuple):
@@ -96,9 +105,16 @@ def compute_metrics(tokenizer, metrics_fn: Callable[[List[str], List[str]], Dict
     return _compute_metrics
 
 
-def bleu(preds: List[str], labels: List[str]) -> Dict:
-    """Computes the BLEU score after whitespace tokenization"""
+# Just chrF, not chrF++
+chrf = CHRF(word_order=0)
+
+
+def compute_mt_metrics(preds: List[str], labels: List[str]) -> Dict:
+    """Computes the BLEU score (after whitespace tokenization) and chrF"""
     tokenized_preds = [pred.split() for pred in preds]
     tokenized_labels = [[label.split()] for label in labels]
     bleu_score = torchtext.data.metrics.bleu_score(tokenized_preds, tokenized_labels)
-    return {"bleu_score": bleu_score}
+
+    chrF_score = chrf.corpus_score(preds, [[label] for label in labels]).score
+
+    return {"BLEU": bleu_score, "chrF": chrF_score}
