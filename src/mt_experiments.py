@@ -41,7 +41,7 @@ def train(
 
     project = f"morpheme-hallucination-mt-{direction}"
 
-    BATCH_SIZE = 128
+    BATCH_SIZE = 64
     wandb.init(
         project=project,
         entity="lecslab",
