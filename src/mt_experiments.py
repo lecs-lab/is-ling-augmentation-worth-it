@@ -124,9 +124,19 @@ def train(
     )
 
     # I'm using a custom optimizer and scheduler because some work suggests Adam is not optimal
-    optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
-    lambda_lr = lambda epoch: math.exp(-0.001 * epoch)  # Exponential LR
+    LR = 0.1
+    GAMMA = 0.001
+    optimizer = torch.optim.SGD(model.parameters(), lr=LR)
+    lambda_lr = lambda epoch: math.exp(-GAMMA * epoch)  # Exponential LR
     scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_lr)
+
+    wandb.log(
+        {
+            "optimizer": "sgd",
+            "sgd_lr": LR,
+            "sgd_gamma": GAMMA,
+        }
+    )
 
     args = transformers.Seq2SeqTrainingArguments(
         output_dir=f"/scratch/alpine/migi8081/augmorph/{wandb.run.name}-checkpoints",
