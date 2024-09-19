@@ -46,7 +46,6 @@ def train(
     wandb.init(
         project=project,
         entity="lecslab",
-        name=model_type,
         config={
             "random-seed": seed,
             "experimental_run": model_type,
@@ -129,7 +128,7 @@ def train(
     scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_lr)
 
     args = transformers.Seq2SeqTrainingArguments(
-        output_dir=f"../{model_type}-finetune-training-checkpoints",
+        output_dir=f"/scratch/alpine/migi8081/augmorph/{wandb.run.name}-checkpoints",
         evaluation_strategy="epoch",
         per_device_train_batch_size=BATCH_SIZE,
         per_device_eval_batch_size=BATCH_SIZE,
