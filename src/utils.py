@@ -129,6 +129,6 @@ def mt_metrics(preds: List[str], labels: List[str]) -> Dict:
     bleu_score = torchtext.data.metrics.bleu_score(tokenized_preds, tokenized_labels)
 
     print(preds[:10], [[label] for label in labels][:10])
-    chrF_score = chrf.corpus_score(preds, [[label] for label in labels]).score
+    chrF_score = chrf.corpus_score(preds, [labels]).score
 
     return {"BLEU": bleu_score, "chrF": chrF_score}
