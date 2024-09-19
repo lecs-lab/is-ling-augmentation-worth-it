@@ -3,6 +3,7 @@ datasets==2.20.0
 eval==0.0.5
 glossing==0.0.5
 mlconjug3==3.11.0
+neptune
 numpy==2.1.1
 pandas==2.2.2
 sacrebleu==2.4.1
