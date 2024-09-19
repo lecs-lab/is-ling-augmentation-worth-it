@@ -1,4 +1,5 @@
 import functools
+import math
 import os
 import random
 from typing import List, Literal, Optional, cast
@@ -124,8 +125,7 @@ def train(
 
     # I'm using a custom optimizer and scheduler because some work suggests Adam is not optimal
     optimizer = torch.optim.SGD(model.parameters(), lr=0.0001)
-    GAMMA = 0.9
-    lambda_lr = lambda epoch: GAMMA**epoch  # Exponential LR
+    lambda_lr = lambda epoch: math.exp(-0.1 * epoch)  # Exponential LR
     scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_lr)
 
     args = transformers.Seq2SeqTrainingArguments(
