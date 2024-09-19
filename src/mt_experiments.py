@@ -15,6 +15,7 @@ import wandb
 from method1_unseg import create_augmented_data as create_m1_data
 
 os.environ["WANDB_LOG_MODEL"] = "end"
+os.environ["NEPTUNE_PROJECT"] = "lecslab/aug-ling"
 
 
 @click.group()
@@ -123,7 +124,7 @@ def train(
     )
 
     # I'm using a custom optimizer and scheduler because some work suggests Adam is not optimal
-    optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
     lambda_lr = lambda epoch: math.exp(-0.01 * epoch)  # Exponential LR
     scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_lr)
 
@@ -145,7 +146,7 @@ def train(
         generation_max_length=1024,
         # fp16=True,
         logging_strategy="epoch",
-        report_to="wandb",
+        report_to=["wandb", "neptune"],
         save_safetensors=False,
         # dataloader_num_workers=2,
         log_on_each_node=False,
