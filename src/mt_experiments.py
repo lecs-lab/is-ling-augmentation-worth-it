@@ -1,5 +1,4 @@
 import functools
-import math
 import os
 import random
 from typing import List, Literal, Optional, cast
@@ -7,7 +6,6 @@ from typing import List, Literal, Optional, cast
 import click
 import datasets
 import glossing
-import torch
 import transformers
 
 import utils
@@ -124,19 +122,19 @@ def train(
     )
 
     # I'm using a custom optimizer and scheduler because some work suggests Adam is not optimal
-    LR = 0.1
-    GAMMA = 0.001
-    optimizer = torch.optim.SGD(model.parameters(), lr=LR)
-    lambda_lr = lambda epoch: math.exp(-GAMMA * epoch)  # Exponential LR
-    scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_lr)
+    # LR = 0.1
+    # GAMMA = 0.001
+    # optimizer = torch.optim.SGD(model.parameters(), lr=LR)
+    # lambda_lr = lambda epoch: math.exp(-GAMMA * epoch)  # Exponential LR
+    # scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_lr)
 
-    wandb.log(
-        {
-            "optimizer": "sgd",
-            "sgd_lr": LR,
-            "sgd_gamma": GAMMA,
-        }
-    )
+    # wandb.log(
+    #     {
+    #         "optimizer": "sgd",
+    #         "sgd_lr": LR,
+    #         "sgd_gamma": GAMMA,
+    #     }
+    # )
 
     args = transformers.Seq2SeqTrainingArguments(
         output_dir=f"/scratch/alpine/migi8081/augmorph/{wandb.run.name}-checkpoints",
@@ -147,8 +145,8 @@ def train(
         save_strategy="epoch",
         save_total_limit=3,
         num_train_epochs=epochs,
-        weight_decay=0.1,
-        # learning_rate=0.001,
+        weight_decay=0.2,
+        learning_rate=0.002,
         # lr_scheduler_type="polynomial",
         load_best_model_at_end=False,
         # metric_for_best_model="bleu_score",
@@ -176,7 +174,6 @@ def train(
             model=model,
             label_pad_token_id=tokenizer.pad_token_id or -100,
         ),
-        optimizers=(optimizer, scheduler),
     )
 
     trainer.train()
