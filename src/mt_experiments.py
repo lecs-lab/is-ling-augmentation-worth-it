@@ -1,15 +1,19 @@
 import functools
+import os
 import random
 from typing import List, Literal, Optional, cast
 
 import click
 import datasets
 import glossing
+import torch
 import transformers
 
 import utils
 import wandb
 from method1_unseg import create_augmented_data as create_m1_data
+
+os.environ["WANDB_LOG_MODEL"] = "end"
 
 
 @click.group()
@@ -118,6 +122,12 @@ def train(
         f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples."
     )
 
+    # I'm using a custom optimizer and scheduler because some work suggests Adam is not optimal
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.0001)
+    GAMMA = 0.9
+    lambda_lr = lambda epoch: GAMMA**epoch  # Exponential LR
+    scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_lr)
+
     args = transformers.Seq2SeqTrainingArguments(
         output_dir=f"../{model_type}-finetune-training-checkpoints",
         evaluation_strategy="epoch",
@@ -129,7 +139,7 @@ def train(
         num_train_epochs=epochs,
         weight_decay=0.1,
         # learning_rate=0.001,
-        lr_scheduler_type="polynomial",
+        # lr_scheduler_type="polynomial",
         load_best_model_at_end=False,
         # metric_for_best_model="bleu_score",
         predict_with_generate=True,
@@ -156,6 +166,7 @@ def train(
             model=model,
             label_pad_token_id=tokenizer.pad_token_id or -100,
         ),
+        optimizers=(optimizer, scheduler),
     )
 
     trainer.train()
