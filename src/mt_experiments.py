@@ -124,8 +124,8 @@ def train(
     )
 
     # I'm using a custom optimizer and scheduler because some work suggests Adam is not optimal
-    optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
-    lambda_lr = lambda epoch: math.exp(-0.1 * epoch)  # Exponential LR
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+    lambda_lr = lambda epoch: math.exp(-0.001 * epoch)  # Exponential LR
     scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_lr)
 
     args = transformers.Seq2SeqTrainingArguments(
