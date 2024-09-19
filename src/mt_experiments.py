@@ -41,7 +41,7 @@ def train(
 
     project = f"morpheme-hallucination-mt-{direction}"
 
-    BATCH_SIZE = 32
+    BATCH_SIZE = 128
     wandb.init(
         project=project,
         entity="lecslab",
@@ -145,8 +145,7 @@ def train(
         save_strategy="epoch",
         save_total_limit=3,
         num_train_epochs=epochs,
-        weight_decay=0.2,
-        learning_rate=0.002,
+        weight_decay=0.5,
         # lr_scheduler_type="polynomial",
         load_best_model_at_end=False,
         # metric_for_best_model="bleu_score",
