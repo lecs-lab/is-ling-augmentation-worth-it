@@ -27,7 +27,7 @@ def cli():
 @click.option("--direction", type=click.Choice(["usp->esp", "esp->usp"]))
 @click.option("--sample_train_size", type=int, default=None)
 @click.option("--seed", help="Random seed", type=int, default=0)
-@click.option("--epochs", help="Max # epochs", type=int, default=200)
+@click.option("--epochs", help="Max # epochs", type=int, default=250)
 def train(
     model_type: str,
     aug_mode: str,
