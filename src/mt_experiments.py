@@ -50,7 +50,7 @@ def train(
             "experimental_run": model_type,
             "training_schedule": aug_mode,
             "epochs": epochs,
-            "training_size": sample_train_size,
+            "training_size": sample_train_size or "full",
             "direction": direction,
         },
     )
@@ -121,62 +121,56 @@ def train(
         f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples."
     )
 
-    # I'm using a custom optimizer and scheduler because some work suggests Adam is not optimal
-    # LR = 0.1
-    # GAMMA = 0.001
-    # optimizer = torch.optim.SGD(model.parameters(), lr=LR)
-    # lambda_lr = lambda epoch: math.exp(-GAMMA * epoch)  # Exponential LR
-    # scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda_lr)
+    training_keys = ["train"]
+    if aug_mode == "curriculum":
+        if model_type == "baseline":
+            training_keys.insert(0, "train")
+        else:
+            training_keys.insert(0, "aug_train")
 
-    # wandb.log(
-    #     {
-    #         "optimizer": "sgd",
-    #         "sgd_lr": LR,
-    #         "sgd_gamma": GAMMA,
-    #     }
-    # )
+    for key in training_keys:
+        args = transformers.Seq2SeqTrainingArguments(
+            output_dir=f"/scratch/alpine/migi8081/augmorph/{wandb.run.name}-checkpoints",
+            evaluation_strategy="epoch",
+            per_device_train_batch_size=BATCH_SIZE,
+            per_device_eval_batch_size=BATCH_SIZE,
+            gradient_accumulation_steps=1,
+            save_strategy="epoch",
+            save_total_limit=3,
+            # num_train_epochs=epochs,
+            learning_rate=0.0001,
+            max_steps=4000 if key == "train" else 2000,  # Less steps for initial phase
+            weight_decay=0.5,
+            load_best_model_at_end=False,
+            # metric_for_best_model="bleu_score",
+            predict_with_generate=True,
+            generation_max_length=1024,
+            # fp16=True,
+            logging_strategy="epoch",
+            report_to=["wandb", "neptune"],
+            save_safetensors=False,
+            # dataloader_num_workers=2,
+            log_on_each_node=False,
+        )
 
-    args = transformers.Seq2SeqTrainingArguments(
-        output_dir=f"/scratch/alpine/migi8081/augmorph/{wandb.run.name}-checkpoints",
-        evaluation_strategy="epoch",
-        per_device_train_batch_size=BATCH_SIZE,
-        per_device_eval_batch_size=BATCH_SIZE,
-        gradient_accumulation_steps=1,
-        save_strategy="epoch",
-        save_total_limit=3,
-        # num_train_epochs=epochs,
-        max_steps=4000,
-        weight_decay=0.5,
-        # lr_scheduler_type="polynomial",
-        load_best_model_at_end=False,
-        # metric_for_best_model="bleu_score",
-        predict_with_generate=True,
-        generation_max_length=1024,
-        # fp16=True,
-        logging_strategy="epoch",
-        report_to=["wandb", "neptune"],
-        save_safetensors=False,
-        # dataloader_num_workers=2,
-        log_on_each_node=False,
-    )
-
-    trainer = transformers.Seq2SeqTrainer(
-        model,
-        args,
-        tokenizer=tokenizer,
-        train_dataset=dataset["train"],  # type: ignore
-        eval_dataset=dataset["eval"],  # type: ignore
-        compute_metrics=utils.compute_metrics(
-            tokenizer=tokenizer, metrics_fn=utils.mt_metrics
-        ),
-        data_collator=transformers.DataCollatorForSeq2Seq(
+        trainer = transformers.Seq2SeqTrainer(
+            model,
+            args,
             tokenizer=tokenizer,
-            model=model,
-            label_pad_token_id=tokenizer.pad_token_id or -100,
-        ),
-    )
+            train_dataset=dataset[key],  # type: ignore
+            eval_dataset=dataset["eval"],  # type: ignore
+            compute_metrics=utils.compute_metrics(
+                tokenizer=tokenizer, metrics_fn=utils.mt_metrics
+            ),
+            data_collator=transformers.DataCollatorForSeq2Seq(
+                tokenizer=tokenizer,
+                model=model,
+                label_pad_token_id=tokenizer.pad_token_id or -100,
+            ),
+        )
 
-    trainer.train()
+        trainer.train()
+
     trainer.save_model(f"../models/{model_type}")
 
     # Testing

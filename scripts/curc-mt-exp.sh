@@ -30,14 +30,14 @@ export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
 
 cd "/projects/migi8081/morpheme-hallucination/src"
 
-for size in 300 500 800 1000 5000
+for size in 50 100 300 500 1000 5000
 do
     for seed in 0 1 2
     do
         python mt_experiments.py train \
                                     --model_type $model \
-                                    --aug_mode mixed \
-                                    --direction "esp->usp" \
+                                    --aug_mode curriculum \
+                                    --direction "usp->esp" \
                                     --sample_train_size $size \
                                     --seed $seed
     done
@@ -49,6 +49,6 @@ do
     python mt_experiments.py train \
                                 --model_type $model \
                                 --aug_mode mixed \
-                                --direction "esp->usp" \
+                                --direction "usp->esp" \
                                 --seed $seed
 done
