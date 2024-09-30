@@ -2,6 +2,7 @@ import functools
 import os
 import random
 from typing import List, Literal, Optional, cast
+from tqdm import tqdm
 
 import click
 import datasets
@@ -125,7 +126,9 @@ def train(
     optimizer = torch.optim.adamw.AdamW(model.parameters(), lr=0.0001, weight_decay=0.5)
     stage: Literal["aug", "train"] = "aug"
 
+    progress = tqdm(total=AUG_STEPS + TRAIN_STEPS)
     total_steps = 0
+    epoch = 0
     while total_steps < AUG_STEPS + TRAIN_STEPS:
         model.train()
         train_loss = 0
@@ -143,11 +146,13 @@ def train(
             # Count step, and switch mode if needed
             total_steps += 1
             train_epoch_steps += 1
+            progress.update(1)
             if total_steps >= AUG_STEPS and stage == "aug":
                 stage = "train"
                 break
             if total_steps >= AUG_STEPS + TRAIN_STEPS:
                 break
+
 
         # Eval
         eval_loss = 0
@@ -156,11 +161,15 @@ def train(
             out = cast(Seq2SeqLMOutput, model.forward(batch['input_ids'], labels=batch['label_ids']))
             eval_loss += out.loss.detach().item()
 
+        print(f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}")
+
         wandb.log({
             "train/loss": train_loss / train_epoch_steps,
             "eval/loss": eval_loss / len(eval_dataloader),
             "train/stage": stage,
         })
+
+        epoch += 1
 
 
     # for key in training_keys:
