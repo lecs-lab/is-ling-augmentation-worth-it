@@ -6,7 +6,10 @@ from typing import List, Literal, Optional, cast
 import click
 import datasets
 import glossing
+import torch
+from torch.utils.data import DataLoader
 import transformers
+from transformers.models.t5.modeling_t5 import Seq2SeqLMOutput
 
 import utils
 import wandb
@@ -23,14 +26,12 @@ def cli():
 
 @cli.command()
 @click.option("--model_type", type=click.Choice(["baseline", "aug_m1", "aug_m2"]))
-@click.option("--aug_mode", type=click.Choice(["mixed", "curriculum"]), default="mixed")
 @click.option("--direction", type=click.Choice(["usp->esp", "esp->usp"]))
 @click.option("--sample_train_size", type=int, default=None)
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=250)
 def train(
     model_type: str,
-    aug_mode: str,
     direction: Literal["usp->esp", "esp->usp"],
     sample_train_size: Optional[int],
     seed: int,
@@ -42,13 +43,16 @@ def train(
     project = f"morpheme-hallucination-mt-{direction}"
 
     BATCH_SIZE = 64
+    AUG_STEPS = 500
+    TRAIN_STEPS = 1000
+
     wandb.init(
         project=project,
         entity="lecslab",
         config={
             "random-seed": seed,
             "experimental_run": model_type,
-            "training_schedule": aug_mode,
+            "training_schedule": "curriculum",
             "epochs": epochs,
             "training_size": sample_train_size or "full",
             "direction": direction,
@@ -58,7 +62,7 @@ def train(
 
     dataset = cast(
         datasets.DatasetDict, datasets.load_dataset("lecslab/usp-igt-resplit")
-    )
+    ).with_format("torch")
 
     # Make a small validation split
     train_eval_split = dataset["train"].train_test_split(test_size=0.05, seed=seed)
@@ -79,22 +83,14 @@ def train(
     if model_type != "baseline":
         print("Creating augmented data...")
         if model_type == "aug_m1":
-            aug_dataset = create_m1_data(dataset["train"])
+            dataset["aug_train"] = create_m1_data(dataset["train"])
         elif model_type == "aug_m2":
-            aug_dataset = load_aug_data("../data/hallucinated/method2.txt")
+            dataset["aug_train"] = load_aug_data("../data/hallucinated/method2.txt")
         else:
             raise Exception("Invalid choice!")
 
-        if aug_mode == "mixed":
-            dataset["train"] = datasets.concatenate_datasets(
-                [dataset["train"], aug_dataset]
-            )
-            dataset["train"] = dataset["train"].shuffle()
-        elif aug_mode == "curriculum":
-            dataset["aug_train"] = aug_dataset
-
         print(
-            f"Created {len(aug_dataset)} augmented rows from {initial_train_size} initial_train_size a total of {len(aug_dataset) + initial_train_size}"
+            f"Created {len(dataset["aug_train"])} augmented rows from {initial_train_size} initial_train_size a total of {len(aug_dataset) + initial_train_size}"
         )
 
     # Preprocess dataset
@@ -112,6 +108,10 @@ def train(
         ),
         batched=True,
     )
+    train_dataloader = DataLoader(dataset['train'], BATCH_SIZE)
+    aug_dataloader = train_dataloader if model_type == "baseline" else DataLoader(dataset['aug_train'], BATCH_SIZE)
+    eval_dataloader = DataLoader(dataset['eval'], BATCH_SIZE)
+    test_dataloader = DataLoader(dataset['test'], BATCH_SIZE)
 
     # Create the model
     model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
@@ -121,57 +121,92 @@ def train(
         f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples."
     )
 
-    training_keys = ["train"]
-    if aug_mode == "curriculum":
-        if model_type == "baseline":
-            training_keys.insert(0, "train")
-        else:
-            training_keys.insert(0, "aug_train")
+    # Training loop
+    optimizer = torch.optim.adamw.AdamW(model.parameters(), lr=0.0001, weight_decay=0.5)
+    stage: Literal["aug", "train"] = "aug"
 
-    for key in training_keys:
-        args = transformers.Seq2SeqTrainingArguments(
-            output_dir=f"/scratch/alpine/migi8081/augmorph/{wandb.run.name}-checkpoints",
-            evaluation_strategy="epoch",
-            per_device_train_batch_size=BATCH_SIZE,
-            per_device_eval_batch_size=BATCH_SIZE,
-            gradient_accumulation_steps=1,
-            save_strategy="epoch",
-            save_total_limit=3,
-            # num_train_epochs=epochs,
-            learning_rate=0.0001,
-            max_steps=4000 if key == "train" else 2000,  # Less steps for initial phase
-            weight_decay=0.5,
-            load_best_model_at_end=False,
-            # metric_for_best_model="bleu_score",
-            predict_with_generate=True,
-            generation_max_length=1024,
-            # fp16=True,
-            logging_strategy="epoch",
-            report_to=["wandb", "neptune"],
-            save_safetensors=False,
-            # dataloader_num_workers=2,
-            log_on_each_node=False,
-        )
+    total_steps = 0
+    while total_steps < AUG_STEPS + TRAIN_STEPS:
+        model.train()
+        train_loss = 0
+        train_epoch_steps = 0 # Track the number of steps for the current epoch
 
-        trainer = transformers.Seq2SeqTrainer(
-            model,
-            args,
-            tokenizer=tokenizer,
-            train_dataset=dataset[key],  # type: ignore
-            eval_dataset=dataset["eval"],  # type: ignore
-            compute_metrics=utils.compute_metrics(
-                tokenizer=tokenizer, metrics_fn=utils.mt_metrics
-            ),
-            data_collator=transformers.DataCollatorForSeq2Seq(
-                tokenizer=tokenizer,
-                model=model,
-                label_pad_token_id=tokenizer.pad_token_id or -100,
-            ),
-        )
+        for batch in aug_dataloader if stage == "aug" else train_dataloader:
+            optimizer.zero_grad()
+            loss = model(batch['input_ids'], labels=batch['label_ids']).loss
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            optimizer.step()
 
-        trainer.train()
+            train_loss += loss.detach().item()
 
-    trainer.save_model(f"../models/{model_type}")
+            # Count step, and switch mode if needed
+            total_steps += 1
+            train_epoch_steps += 1
+            if total_steps >= AUG_STEPS and stage == "aug":
+                stage = "train"
+                break
+            if total_steps >= AUG_STEPS + TRAIN_STEPS:
+                break
+
+        # Eval
+        eval_loss = 0
+        model.eval()
+        for batch in eval_dataloader:
+            out = cast(Seq2SeqLMOutput, model.forward(batch['input_ids'], labels=batch['label_ids']))
+            eval_loss += out.loss.detach().item()
+
+        wandb.log({
+            "train/loss": train_loss / train_epoch_steps,
+            "eval/loss": eval_loss / len(eval_dataloader),
+            "train/stage": stage,
+        })
+
+
+    # for key in training_keys:
+    #     args = transformers.Seq2SeqTrainingArguments(
+    #         output_dir=f"/scratch/alpine/migi8081/augmorph/{wandb.run.name}-checkpoints",
+    #         evaluation_strategy="epoch",
+    #         per_device_train_batch_size=BATCH_SIZE,
+    #         per_device_eval_batch_size=BATCH_SIZE,
+    #         gradient_accumulation_steps=1,
+    #         save_strategy="epoch",
+    #         save_total_limit=3,
+    #         # num_train_epochs=epochs,
+    #         learning_rate=0.0001,
+    #         max_steps=4000 if key == "train" else 2000,  # Less steps for initial phase
+    #         weight_decay=0.5,
+    #         load_best_model_at_end=False,
+    #         # metric_for_best_model="bleu_score",
+    #         predict_with_generate=True,
+    #         generation_max_length=1024,
+    #         # fp16=True,
+    #         logging_strategy="epoch",
+    #         report_to=["wandb", "neptune"],
+    #         save_safetensors=False,
+    #         # dataloader_num_workers=2,
+    #         log_on_each_node=False,
+    #     )
+
+    #     trainer = transformers.Seq2SeqTrainer(
+    #         model,
+    #         args,
+    #         tokenizer=tokenizer,
+    #         train_dataset=dataset[key],  # type: ignore
+    #         eval_dataset=dataset["eval"],  # type: ignore
+    #         compute_metrics=utils.compute_metrics(
+    #             tokenizer=tokenizer, metrics_fn=utils.mt_metrics
+    #         ),
+    #         data_collator=transformers.DataCollatorForSeq2Seq(
+    #             tokenizer=tokenizer,
+    #             model=model,
+    #             label_pad_token_id=tokenizer.pad_token_id or -100,
+    #         ),
+    #     )
+
+    #     trainer.train()
+
+    # trainer.save_model(f"../models/{model_type}")
 
     # Testing
     test_preds = trainer.predict(dataset["test"])  # type: ignore
