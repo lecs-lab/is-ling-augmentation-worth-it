@@ -90,7 +90,7 @@ def train(
             raise Exception("Invalid choice!")
 
         print(
-            f"Created {len(dataset["aug_train"])} augmented rows from {initial_train_size} initial_train_size a total of {len(aug_dataset) + initial_train_size}"
+            f"Created {len(dataset['aug_train'])} augmented rows from {initial_train_size} initial_train_size a total of {len(aug_dataset) + initial_train_size}"
         )
 
     # Preprocess dataset
