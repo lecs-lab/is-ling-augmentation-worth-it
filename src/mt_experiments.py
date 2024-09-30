@@ -123,7 +123,7 @@ def train(
     )
 
     # Training loop
-    optimizer = torch.optim.adamw.AdamW(model.parameters(), lr=0.0001, weight_decay=0.5)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001, weight_decay=0.5)
     stage: Literal["aug", "train"] = "aug"
 
     progress = tqdm(total=AUG_STEPS + TRAIN_STEPS)
