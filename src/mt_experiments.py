@@ -20,9 +20,6 @@ os.environ["WANDB_LOG_MODEL"] = "end"
 os.environ["NEPTUNE_PROJECT"] = "lecslab/aug-ling"
 
 
-def train_loop(model)
-
-
 @click.group()
 def cli():
     pass
