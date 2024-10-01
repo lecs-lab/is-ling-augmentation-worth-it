@@ -4,7 +4,7 @@ import numpy as np
 import torchtext
 import transformers
 from sacrebleu import CHRF
-from transformers import EvalPrediction
+from transformers import EvalPrediction, PreTrainedTokenizer
 
 
 class LogCallback(transformers.TrainerCallback):
@@ -68,13 +68,13 @@ def create_mt_prompt(row, direction: Literal["usp->esp", "esp->usp"]):
     return row
 
 
-def tokenize(batch, tokenizer, labels_key, max_length: int):
+def tokenize(batch, tokenizer: PreTrainedTokenizer, labels_key, max_length: int):
     return tokenizer(
         batch["prompt"],
         text_target=batch.get(labels_key, None),
         truncation=True,
         padding=False,
-        max_length=max_length,
+        max_length=max_length
     )
 
 

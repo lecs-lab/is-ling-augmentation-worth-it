@@ -20,6 +20,9 @@ os.environ["WANDB_LOG_MODEL"] = "end"
 os.environ["NEPTUNE_PROJECT"] = "lecslab/aug-ling"
 
 
+def train_loop(model)
+
+
 @click.group()
 def cli():
     pass
@@ -108,11 +111,13 @@ def train(
             max_length=tokenizer.model_max_length,
         ),
         batched=True,
+        remove_columns=['transcription', 'translation', 'segmentation', 'glosses', 'prompt']
     )
-    train_dataloader = DataLoader(dataset['train'], BATCH_SIZE)
-    aug_dataloader = train_dataloader if model_type == "baseline" else DataLoader(dataset['aug_train'], BATCH_SIZE)
-    eval_dataloader = DataLoader(dataset['eval'], BATCH_SIZE)
-    test_dataloader = DataLoader(dataset['test'], BATCH_SIZE)
+    collator = transformers.DataCollatorWithPadding(tokenizer=tokenizer)
+    train_dataloader = DataLoader(dataset['train'], BATCH_SIZE, collate_fn=collator)
+    aug_dataloader = train_dataloader if model_type == "baseline" else DataLoader(dataset['aug_train'], BATCH_SIZE, collate_fn=collator)
+    eval_dataloader = DataLoader(dataset['eval'], BATCH_SIZE, collate_fn=collator)
+    test_dataloader = DataLoader(dataset['test'], BATCH_SIZE, collate_fn=collator)
 
     # Create the model
     model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
