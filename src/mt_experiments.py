@@ -108,7 +108,7 @@ def train(
             max_length=tokenizer.model_max_length,
         ),
         batched=True,
-        remove_columns=['transcription', 'translation', 'segmentation', 'glosses', 'pos_glosses', 'prompt']
+        remove_columns=['transcription', 'translation', 'segmentation', 'glosses', 'pos_glosses', 'prompt', 'labels']
     )
     collator = transformers.DataCollatorWithPadding(tokenizer=tokenizer)
     train_dataloader = DataLoader(dataset['train'], BATCH_SIZE, collate_fn=collator)
