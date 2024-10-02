@@ -4,17 +4,18 @@ import random
 from typing import List, Literal, Optional, cast
 from tqdm import tqdm
 
-import click
+
 import datasets
+import click
 import glossing
 import torch
 from torch.utils.data import DataLoader
 import transformers
 from transformers.models.t5.modeling_t5 import Seq2SeqLMOutput
 
+from data_handling import create_dataset
 import utils
 import wandb
-from method1_unseg import create_augmented_data as create_m1_data
 
 os.environ["WANDB_LOG_MODEL"] = "end"
 os.environ["NEPTUNE_PROJECT"] = "lecslab/aug-ling"
@@ -32,7 +33,7 @@ def cli():
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=250)
 def train(
-    model_type: str,
+    model_type: utils.AUGMENTATION_TYPE,
     direction: Literal["usp->esp", "esp->usp"],
     sample_train_size: Optional[int],
     seed: int,
@@ -57,42 +58,11 @@ def train(
             "epochs": epochs,
             "training_size": sample_train_size or "full",
             "direction": direction,
-        },
+        }
     )
     random.seed(seed)
 
-    dataset = cast(
-        datasets.DatasetDict, datasets.load_dataset("lecslab/usp-igt-resplit")
-    ).with_format("torch")
-
-    # Make a small validation split
-    train_eval_split = dataset["train"].train_test_split(test_size=0.05, seed=seed)
-    dataset["train"] = train_eval_split["train"]
-    dataset["eval"] = train_eval_split["test"]
-
-    if sample_train_size is not None:
-        dataset["train"] = (
-            dataset["train"].shuffle(seed=seed).select(range(sample_train_size))
-        )  # Need to be deterministic for reproducibility
-    initial_train_size = len(dataset["train"])
-
-    # Add in hallucinated data as needed
-    def load_aug_data(path: str) -> datasets.Dataset:
-        aug_data = glossing.load_igt_file(path)
-        return datasets.Dataset.from_list([ex.__dict__() for ex in aug_data])
-
-    if model_type != "baseline":
-        print("Creating augmented data...")
-        if model_type == "aug_m1":
-            dataset["aug_train"] = create_m1_data(dataset["train"])
-        elif model_type == "aug_m2":
-            dataset["aug_train"] = load_aug_data("../data/hallucinated/method2.txt")
-        else:
-            raise Exception("Invalid choice!")
-
-        print(
-            f"Created {len(dataset['aug_train'])} augmented rows from {initial_train_size} initial_train_size a total of {len(aug_dataset) + initial_train_size}"
-        )
+    dataset = create_dataset(model_type=model_type, sample_train_size=sample_train_size, seed=seed)
 
     # Preprocess dataset
     model_key = "google/byt5-small"
@@ -108,13 +78,8 @@ def train(
             max_length=tokenizer.model_max_length,
         ),
         batched=True,
-        remove_columns=['transcription', 'translation', 'segmentation', 'glosses', 'pos_glosses', 'prompt', 'labels']
+        remove_columns=['transcription', 'translation', 'segmentation', 'glosses', 'pos_glosses', 'prompt']
     )
-    collator = transformers.DataCollatorWithPadding(tokenizer=tokenizer)
-    train_dataloader = DataLoader(dataset['train'], BATCH_SIZE, collate_fn=collator)
-    aug_dataloader = train_dataloader if model_type == "baseline" else DataLoader(dataset['aug_train'], BATCH_SIZE, collate_fn=collator)
-    eval_dataloader = DataLoader(dataset['eval'], BATCH_SIZE, collate_fn=collator)
-    test_dataloader = DataLoader(dataset['test'], BATCH_SIZE, collate_fn=collator)
 
     # Create the model
     model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
@@ -123,6 +88,17 @@ def train(
     print(
         f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples."
     )
+
+    # Collation
+    collator=transformers.DataCollatorForSeq2Seq(
+                tokenizer=tokenizer,
+                model=model,
+                label_pad_token_id=tokenizer.pad_token_id or -100,
+            )
+    train_dataloader = DataLoader(dataset['train'], BATCH_SIZE, collate_fn=collator)
+    aug_dataloader = train_dataloader if model_type == "baseline" else DataLoader(dataset['aug_train'], BATCH_SIZE, collate_fn=collator)
+    eval_dataloader = DataLoader(dataset['eval'], BATCH_SIZE, collate_fn=collator)
+    test_dataloader = DataLoader(dataset['test'], BATCH_SIZE, collate_fn=collator)
 
     # Training loop
     optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001, weight_decay=0.5)
@@ -138,7 +114,7 @@ def train(
 
         for batch in aug_dataloader if stage == "aug" else train_dataloader:
             optimizer.zero_grad()
-            loss = model(batch['input_ids'], labels=batch['label_ids']).loss
+            loss = model(batch['input_ids'], labels=batch['labels']).loss
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
             optimizer.step()

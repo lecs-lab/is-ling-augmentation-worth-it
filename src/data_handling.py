@@ -1,45 +1,50 @@
 """Defines models and functions for loading, manipulating, and writing task data"""
 from functools import reduce
-from typing import Optional, List, Union
+from typing import Optional, List, Union, cast, Literal
+import datasets
+import glossing
+from method1_unseg import create_augmented_data as create_m1_data
 
+from utils import AUGMENTATION_TYPE
 
+def create_dataset(
+    model_type: AUGMENTATION_TYPE,
+    sample_train_size: int | None = None,
+    seed: int = 0
+):
+    dataset = cast(
+        datasets.DatasetDict, datasets.load_dataset("lecslab/usp-igt-resplit")
+    ).with_format("torch")
 
+    # Make a small validation split, different each tiem
+    train_eval_split = dataset["train"].train_test_split(test_size=0.05, seed=seed)
+    dataset["train"] = train_eval_split["train"]
+    dataset["eval"] = train_eval_split["test"]
 
+    # Sample some of the training data
+    if sample_train_size is not None:
+        dataset["train"] = (
+            dataset["train"].shuffle(seed=seed).select(range(sample_train_size))
+        )  # Need to be deterministic for reproducibility
+    initial_train_size = len(dataset["train"])
 
+    # Add in hallucinated data as needed
+    def load_aug_data(path: str) -> datasets.Dataset:
+        aug_data = glossing.load_igt_file(path)
+        return datasets.Dataset.from_list([ex.__dict__() for ex in aug_data])
 
-# def write_predictions(data: List[IGT], tokenizer, trainer: Trainer, labels, out_path):
-#     """Runs predictions for a dataset and writes the output IGT"""
-#     dataset = prepare_dataset(data=data, tokenizer=tokenizer, labels=labels, device='cpu')
-#     preds = trainer.predict(dataset).predictions
-#     decoded_preds = [[labels[index] for index in pred_seq if len(labels) > index >= 0] for pred_seq in preds]
+    if model_type != "baseline":
+        print("Creating augmented data...")
+        if model_type == "aug_m1":
+            dataset["aug_train"] = create_m1_data(dataset["train"])
+        elif model_type == "aug_m2":
+            dataset["aug_train"] = load_aug_data("../data/hallucinated/method2.txt")
+        else:
+            raise Exception("Invalid choice!")
 
-#     with open(out_path, 'w') as outfile:
-#         for line, line_preds in zip(data, decoded_preds):
-#             # Write the data in the appropriate format
-#             outfile.write("\\t " + line.transcription)
-#             outfile.write("\n\\m " + line.segmentation)
+        print(
+            f"Created {len(dataset['aug_train'])} augmented rows "
+            f"from {initial_train_size} initial_train_size a total of {len(dataset['aug_train']) + initial_train_size}"
+        )
 
-#             # Trim preds to the number of morphemes
-#             line_preds = line_preds[:len(line.morphemes())]
-#             # Combine predictions into a string
-#             line_pred_string = "\n\\p "
-#             for pred_gloss in line_preds:
-#                 if pred_gloss == "[SEP]":
-#                     line_pred_string += " "
-#                 elif line_pred_string[-1] == " ":
-#                     line_pred_string += pred_gloss
-#                 else:
-#                     line_pred_string += "-" + pred_gloss
-
-#             outfile.write(line_pred_string)
-#             outfile.write("\n\\l " + line.translation + "\n\n")
-
-
-# def write_igt(data: List[IGTLine], out_path):
-#     with open(out_path, 'w') as outfile:
-#         for line in data:
-#             # Write the data in the appropriate format
-#             outfile.write("\\t " + line.transcription)
-#             outfile.write("\n\\m " + line.segmentation)
-#             outfile.write("\n\\p " + line.glosses)
-#             outfile.write("\n\\l " + line.translation + "\n\n")
+    return dataset

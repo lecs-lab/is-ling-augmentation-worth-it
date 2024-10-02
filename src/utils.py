@@ -7,6 +7,9 @@ from sacrebleu import CHRF
 from transformers import EvalPrediction, PreTrainedTokenizer
 
 
+AUGMENTATION_TYPE = Literal['baseline', 'aug_m1', 'aug_m2']
+
+
 class LogCallback(transformers.TrainerCallback):
     def on_log(self, args, state, control, logs=None, **kwargs):
         # Print the logs or push them to your preferred logging framework
