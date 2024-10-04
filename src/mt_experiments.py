@@ -94,7 +94,7 @@ def train(
                 tokenizer=tokenizer,
                 model=model,
                 label_pad_token_id=tokenizer.pad_token_id or -100,
-            )
+    )
     train_dataloader = DataLoader(dataset['train'], BATCH_SIZE, collate_fn=collator)
     aug_dataloader = train_dataloader if model_type == "baseline" else DataLoader(dataset['aug_train'], BATCH_SIZE, collate_fn=collator)
     eval_dataloader = DataLoader(dataset['eval'], BATCH_SIZE, collate_fn=collator)
@@ -136,7 +136,7 @@ def train(
         eval_loss = 0
         model.eval()
         for batch in eval_dataloader:
-            out = cast(Seq2SeqLMOutput, model.forward(batch['input_ids'], labels=batch['label_ids']))
+            out = cast(Seq2SeqLMOutput, model.forward(batch['input_ids'], labels=batch['labels']))
             eval_loss += out.loss.detach().item()
 
         print(f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}")
