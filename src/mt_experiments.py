@@ -155,7 +155,7 @@ def train(
         wandb.log({
             "train/loss": train_loss / train_epoch_steps,
             "eval/loss": eval_loss / len(eval_dataloader),
-            "train/stage": stage,
+            "train/stage": 0 if stage == 'aug' else 1,
         })
 
         epoch += 1
