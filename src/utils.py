@@ -1,39 +1,14 @@
 from typing import Callable, Dict, List, Literal, Tuple
 
 import numpy as np
-import torchtext
+from glossing.bleu import bleu_score
+from sacrebleu.metrics.bleu import BLEU
 import transformers
 from sacrebleu import CHRF
 from transformers import EvalPrediction, PreTrainedTokenizer
 
 
 AUGMENTATION_TYPE = Literal['baseline', 'aug_m1', 'aug_m2']
-
-
-class LogCallback(transformers.TrainerCallback):
-    def on_log(self, args, state, control, logs=None, **kwargs):
-        # Print the logs or push them to your preferred logging framework
-        print(logs)
-
-
-class DelayedEarlyStoppingCallback(transformers.EarlyStoppingCallback):
-    def __init__(self, *args, start_epoch=10, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.start_epoch = start_epoch
-
-    def on_evaluate(
-        self,
-        args,
-        state: transformers.TrainerState,
-        control: transformers.TrainerControl,
-        **kwargs,
-    ):
-        # Only start applying early stopping logic after start_epoch
-        if state.epoch is not None and state.epoch >= self.start_epoch:
-            super().on_evaluate(args, state, control, **kwargs)
-        else:
-            # Reset the patience if we're before the start_epoch
-            self.patience = 0
 
 
 def create_igt_prompt(row, use_translation: bool = False):
@@ -129,9 +104,9 @@ def mt_metrics(preds: List[str], labels: List[str]) -> Dict:
     """Computes the BLEU score (after whitespace tokenization) and chrF"""
     tokenized_preds = [pred.split() for pred in preds]
     tokenized_labels = [[label.split()] for label in labels]
-    bleu_score = torchtext.data.metrics.bleu_score(tokenized_preds, tokenized_labels)
+    bleu = bleu_score(tokenized_preds, tokenized_labels)
 
     print(preds[:10], [[label] for label in labels][:10])
     chrF_score = chrf.corpus_score(preds, [labels]).score
 
-    return {"BLEU": bleu_score, "chrF": chrF_score}
+    return {"BLEU": bleu, "chrF": chrF_score}

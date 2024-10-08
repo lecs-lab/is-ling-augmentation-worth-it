@@ -4,7 +4,6 @@ import random
 from typing import List, Literal, Optional, cast
 from tqdm import tqdm
 
-
 import datasets
 import click
 import glossing
@@ -20,6 +19,11 @@ import wandb
 os.environ["WANDB_LOG_MODEL"] = "end"
 os.environ["NEPTUNE_PROJECT"] = "lecslab/aug-ling"
 
+device = (
+    "cuda"
+    if torch.cuda.is_available()
+    else ("mps" if torch.backends.mps.is_available() else "cpu")
+)
 
 @click.group()
 def cli():
@@ -44,7 +48,7 @@ def train(
 
     project = f"morpheme-hallucination-mt-{direction}"
 
-    BATCH_SIZE = 64
+    BATCH_SIZE = 32
     AUG_STEPS = 500
     TRAIN_STEPS = 1000
 
@@ -71,11 +75,11 @@ def train(
         functools.partial(utils.create_mt_prompt, direction=direction)
     )
     dataset = dataset.map(
-        functools.partial(
-            utils.tokenize,
+        lambda batch: utils.tokenize(
+            batch,
             tokenizer=tokenizer,
             labels_key="translation",
-            max_length=tokenizer.model_max_length,
+            max_length=tokenizer.model_max_length
         ),
         batched=True,
         remove_columns=['transcription', 'translation', 'segmentation', 'glosses', 'pos_glosses', 'prompt']
@@ -84,9 +88,10 @@ def train(
     # Create the model
     model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
     model = cast(transformers.T5ForConditionalGeneration, model)
+    model = model.to(device) # type:ignore
 
     print(
-        f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples."
+        f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples on {device}."
     )
 
     # Collation
@@ -95,10 +100,10 @@ def train(
                 model=model,
                 label_pad_token_id=tokenizer.pad_token_id or -100,
     )
-    train_dataloader = DataLoader(dataset['train'], BATCH_SIZE, collate_fn=collator)
-    aug_dataloader = train_dataloader if model_type == "baseline" else DataLoader(dataset['aug_train'], BATCH_SIZE, collate_fn=collator)
-    eval_dataloader = DataLoader(dataset['eval'], BATCH_SIZE, collate_fn=collator)
-    test_dataloader = DataLoader(dataset['test'], BATCH_SIZE, collate_fn=collator)
+    train_dataloader = DataLoader(dataset['train'], BATCH_SIZE, collate_fn=collator) # type:ignore
+    aug_dataloader = train_dataloader if model_type == "baseline" else DataLoader(dataset['aug_train'], BATCH_SIZE, collate_fn=collator) # type:ignore
+    eval_dataloader = DataLoader(dataset['eval'], BATCH_SIZE, collate_fn=collator) # type:ignore
+    test_dataloader = DataLoader(dataset['test'], BATCH_SIZE, collate_fn=collator) # type:ignore
 
     # Training loop
     optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001, weight_decay=0.5)
@@ -114,7 +119,10 @@ def train(
 
         for batch in aug_dataloader if stage == "aug" else train_dataloader:
             optimizer.zero_grad()
-            loss = model(batch['input_ids'], labels=batch['labels']).loss
+            loss = model(
+                batch['input_ids'].to(device),
+                labels=batch['labels'].to(device)
+            ).loss
             loss.backward()
             torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
             optimizer.step()
@@ -136,7 +144,10 @@ def train(
         eval_loss = 0
         model.eval()
         for batch in eval_dataloader:
-            out = cast(Seq2SeqLMOutput, model.forward(batch['input_ids'], labels=batch['labels']))
+            out = cast(Seq2SeqLMOutput, model.forward(
+                batch['input_ids'].to(device),
+                labels=batch['labels'].to(device)
+            ))
             eval_loss += out.loss.detach().item()
 
         print(f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}")

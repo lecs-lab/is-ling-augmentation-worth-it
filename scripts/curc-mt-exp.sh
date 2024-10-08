@@ -36,7 +36,6 @@ do
     do
         python mt_experiments.py train \
                                     --model_type $model \
-                                    --aug_mode curriculum \
                                     --direction "usp->esp" \
                                     --sample_train_size $size \
                                     --seed $seed
@@ -48,7 +47,6 @@ do
     # Run without a train sample size, ie all data
     python mt_experiments.py train \
                                 --model_type $model \
-                                --aug_mode mixed \
                                 --direction "usp->esp" \
                                 --seed $seed
 done
