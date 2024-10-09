@@ -109,7 +109,7 @@ def train(
     optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001, weight_decay=0.5)
     stage: Literal["aug", "train"] = "aug"
 
-    progress = tqdm(total=AUG_STEPS + TRAIN_STEPS)
+    progress = tqdm(total=AUG_STEPS + TRAIN_STEPS, desc="Training")
     total_steps = 0
     epoch = 0
     while total_steps < AUG_STEPS + TRAIN_STEPS:
@@ -143,7 +143,7 @@ def train(
         # Eval
         eval_loss = 0
         model.eval()
-        for batch in eval_dataloader:
+        for batch in tqdm(eval_dataloader, desc="Evaluating"):
             out = cast(Seq2SeqLMOutput, model.forward(
                 batch['input_ids'].to(device),
                 labels=batch['labels'].to(device)
@@ -153,6 +153,7 @@ def train(
         print(f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}")
 
         wandb.log({
+            "train/step": total_steps,
             "train/loss": train_loss / train_epoch_steps,
             "eval/loss": eval_loss / len(eval_dataloader),
             "train/stage": 0 if stage == 'aug' else 1,
@@ -160,34 +161,16 @@ def train(
 
         epoch += 1
 
-
-    # for key in training_keys:
-    #     args = transformers.Seq2SeqTrainingArguments(
-    #         output_dir=f"/scratch/alpine/migi8081/augmorph/{wandb.run.name}-checkpoints",
-    #         evaluation_strategy="epoch",
-    #         per_device_train_batch_size=BATCH_SIZE,
-    #         per_device_eval_batch_size=BATCH_SIZE,
-    #         gradient_accumulation_steps=1,
-    #         save_strategy="epoch",
-    #         save_total_limit=3,
-    #         # num_train_epochs=epochs,
-    #         learning_rate=0.0001,
-    #         max_steps=4000 if key == "train" else 2000,  # Less steps for initial phase
-    #         weight_decay=0.5,
-    #         load_best_model_at_end=False,
-    #         # metric_for_best_model="bleu_score",
-    #         predict_with_generate=True,
-    #         generation_max_length=1024,
-    #         # fp16=True,
-    #         logging_strategy="epoch",
-    #         report_to=["wandb", "neptune"],
-    #         save_safetensors=False,
-    #         # dataloader_num_workers=2,
-    #         log_on_each_node=False,
-    #     )
+    # Use a Trainer just for prediction
+    args = transformers.Seq2SeqTrainingArguments(
+        output_dir=f"/scratch/alpine/migi8081/augmorph/",
+        predict_with_generate=True,
+        generation_max_length=1024
+    )
 
     trainer = transformers.Seq2SeqTrainer(
         model,
+        args=args,
         compute_metrics=utils.compute_metrics(
             tokenizer=tokenizer, metrics_fn=utils.mt_metrics
         ),
