@@ -186,25 +186,17 @@ def train(
     #         log_on_each_node=False,
     #     )
 
-    #     trainer = transformers.Seq2SeqTrainer(
-    #         model,
-    #         args,
-    #         tokenizer=tokenizer,
-    #         train_dataset=dataset[key],  # type: ignore
-    #         eval_dataset=dataset["eval"],  # type: ignore
-    #         compute_metrics=utils.compute_metrics(
-    #             tokenizer=tokenizer, metrics_fn=utils.mt_metrics
-    #         ),
-    #         data_collator=transformers.DataCollatorForSeq2Seq(
-    #             tokenizer=tokenizer,
-    #             model=model,
-    #             label_pad_token_id=tokenizer.pad_token_id or -100,
-    #         ),
-    #     )
-
-    #     trainer.train()
-
-    # trainer.save_model(f"../models/{model_type}")
+    trainer = transformers.Seq2SeqTrainer(
+        model,
+        compute_metrics=utils.compute_metrics(
+            tokenizer=tokenizer, metrics_fn=utils.mt_metrics
+        ),
+        data_collator=transformers.DataCollatorForSeq2Seq(
+            tokenizer=tokenizer,
+            model=model,
+            label_pad_token_id=tokenizer.pad_token_id or -100,
+        ),
+    )
 
     # Testing
     test_preds = trainer.predict(dataset["test"])  # type: ignore
