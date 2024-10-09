@@ -57,7 +57,7 @@ def train(
         entity="lecslab",
         config={
             "random-seed": seed,
-            "experimental_run": model_type,
+            "augmentation_type": model_type,
             "training_schedule": "curriculum",
             "epochs": epochs,
             "training_size": sample_train_size or "full",

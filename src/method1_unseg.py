@@ -353,4 +353,6 @@ def create_augmented_data(input: Dataset) -> Dataset:
                                     else:
                                         pass
 
-    return Dataset.from_list(augmented_data)
+    dataset = Dataset.from_list(augmented_data)
+    dataset = dataset.map(lambda batch: {**batch, 'segmentation': [None] * len(batch[next(iter(batch))])})
+    return dataset

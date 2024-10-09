@@ -34,7 +34,7 @@ def create_dataset(
         return datasets.Dataset.from_list([ex.__dict__() for ex in aug_data])
 
     if model_type != "baseline":
-        print("Creating augmented data...")
+        print(f"Creating augmented data with method {model_type}...")
         if model_type == "aug_m1":
             dataset["aug_train"] = create_m1_data(dataset["train"])
         elif model_type == "aug_m2":
