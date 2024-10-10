@@ -62,6 +62,7 @@ def train(
             "epochs": epochs,
             "training_size": sample_train_size or "full",
             "direction": direction,
+            "reset_optimizer_between_stages": True,
         }
     )
     random.seed(seed)
@@ -134,7 +135,9 @@ def train(
             train_epoch_steps += 1
             progress.update(1)
             if total_steps >= AUG_STEPS and stage == "aug":
+                # Next stage! Reset optimizer
                 stage = "train"
+                optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001, weight_decay=0.5)
                 break
             if total_steps >= AUG_STEPS + TRAIN_STEPS:
                 break
