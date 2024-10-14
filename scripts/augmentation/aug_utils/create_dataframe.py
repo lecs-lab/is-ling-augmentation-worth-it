@@ -1,7 +1,6 @@
 import pandas as pd
 from datasets import load_dataset
 
-
 def create_dataframe():
     ''' Creates a dataframe from a specified sample of the data.
 
