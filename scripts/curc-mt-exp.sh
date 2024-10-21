@@ -35,7 +35,7 @@ do
     for seed in 0 1 2
     do
         python mt_experiments.py train \
-                                    --model_type $model \
+                                    --augmentation_type $model \
                                     --direction "usp->esp" \
                                     --sample_train_size $size \
                                     --seed $seed
@@ -46,7 +46,7 @@ for seed in 0 1 2
 do
     # Run without a train sample size, ie all data
     python mt_experiments.py train \
-                                --model_type $model \
+                                --augmentation_type $model \
                                 --direction "usp->esp" \
                                 --seed $seed
 done
