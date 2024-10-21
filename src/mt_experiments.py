@@ -7,6 +7,7 @@ import click
 
 # import wandb
 import comet_ml
+from comet_ml.integration.pytorch import log_model, watch
 import torch
 import transformers
 from torch.utils.data import DataLoader
@@ -107,6 +108,7 @@ def train(
     model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
     model = cast(transformers.T5ForConditionalGeneration, model)
     model = model.to(device)  # type:ignore
+    watch(model)
 
     print(
         f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples on {device}."
@@ -134,44 +136,44 @@ def train(
     total_steps = 0
     epoch = 0
     while total_steps < AUG_STEPS + TRAIN_STEPS:
-        model.train()
-        train_loss = 0
-        train_epoch_steps = 0  # Track the number of steps for the current epoch
-
-        for batch in aug_dataloader if stage == "aug" else train_dataloader:
-            optimizer.zero_grad()
-            loss = model(
-                batch["input_ids"].to(device), labels=batch["labels"].to(device)
-            ).loss
-            loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-            optimizer.step()
-
-            train_loss += loss.detach().item()
-
-            # Count step, and switch mode if needed
-            total_steps += 1
-            train_epoch_steps += 1
-            progress.update(1)
-            if total_steps >= AUG_STEPS and stage == "aug":
-                # Next stage! Reset optimizer
-                stage = "train"
-                optimizer = torch.optim.AdamW(
-                    model.parameters(), lr=0.0001, weight_decay=0.5
-                )
-                break
-            if total_steps >= AUG_STEPS + TRAIN_STEPS:
-                break
 
         with experiment.train():
-            experiment.log_metrics(
-                {
-                    "loss": train_loss / train_epoch_steps,
-                    "stage": 0 if stage == "aug" else 1,
-                }, step=total_steps
-            )
+            model.train()
+            train_loss = 0
+            train_epoch_steps = 0  # Track the number of steps for the current epoch
+            for batch in aug_dataloader if stage == "aug" else train_dataloader:
 
-        # Eval
+                optimizer.zero_grad()
+                loss = model(
+                    batch["input_ids"].to(device), labels=batch["labels"].to(device)
+                ).loss
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+                optimizer.step()
+
+                train_loss += loss.detach().item()
+
+                # Count step, and switch mode if needed
+                total_steps += 1
+                train_epoch_steps += 1
+                progress.update(1)
+                if total_steps >= AUG_STEPS and stage == "aug":
+                    # Next stage! Reset optimizer
+                    stage = "train"
+                    optimizer = torch.optim.AdamW(
+                        model.parameters(), lr=0.0001, weight_decay=0.5
+                    )
+                    break
+                if total_steps >= AUG_STEPS + TRAIN_STEPS:
+                    break
+
+                experiment.log_metrics(
+                    {
+                        "loss": train_loss / train_epoch_steps,
+                        "stage": 0 if stage == "aug" else 1,
+                    }, step=total_steps
+                )
+
         with experiment.validate():
             eval_loss = 0
             model.eval()
@@ -234,6 +236,7 @@ def train(
     #     data=[[p, lab] for p, lab in zip(predictions, cast(List[str], labels))],
     # )
     # wandb.log({"test_predictions": preds_table})
+    log_model(experiment, model, "model")
 
 
 if __name__ == "__main__":
