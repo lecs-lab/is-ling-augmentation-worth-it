@@ -236,7 +236,7 @@ def train(
     #     data=[[p, lab] for p, lab in zip(predictions, cast(List[str], labels))],
     # )
     # wandb.log({"test_predictions": preds_table})
-    log_model(experiment, model, "model")
+    # log_model(experiment, model, "model")
 
 
 if __name__ == "__main__":
