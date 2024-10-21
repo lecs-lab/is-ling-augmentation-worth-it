@@ -1,21 +1,22 @@
 # %%
+from datasets import Dataset
 from aug_utils import random_insert_conj, glosses_to_list, create_dataframe, dataset_prep, \
     tam_update, random_duplicate, random_delete, delete_w_exclusions, output_dataset
 
 
-def aug_generation():
-    # %%
-    # Data augmentation methods
-    # Set variable(s) to True to use the method(s).
-    run_random_insert_conj = False
-    run_tam_update = False
-    run_random_duplicate = False
-    run_random_delete = False
-    run_delete_w_exclusions = False
+def aug_generation(
+    initial_dataset: Dataset,
+    fraction: float = 1,
+    run_random_insert_conj = False,
+    run_tam_update = False,
+    run_random_duplicate = False,
+    run_random_delete = False,
+    run_delete_w_exclusions = False,
+):
 
     # %%
     # Load in data
-    df = create_dataframe.create_dataframe()
+    df = create_dataframe.create_dataframe(dataset=initial_dataset, fraction=fraction)
     df = df.dropna()
 
     # %%
@@ -32,7 +33,7 @@ def aug_generation():
 
         for gloss in glosses:
             tam_updates.append(tam_update.tam_update(gloss))
-            
+
         for t in tam_updates:
             if t is not None:
                 tam_final.append(dataset_prep.dataset_prep(t))
@@ -42,7 +43,7 @@ def aug_generation():
     # %%
     # Insert random conjunction/adverb at the start of sentence
     # 20 conjunctions/adverbs grabbed from the Uspanteko gold standard data.
-    conjs = [['Toos', 'ADV', 'entonces', 'Entonces'], 
+    conjs = [['Toos', 'ADV', 'entonces', 'Entonces'],
             ['Ójor', 'ADV', 'antiguamente', 'Antiguamente'],
             ['Kom', 'ADV', 'como', 'Como'],
             ['Kwando', 'ADV', 'cuando', 'cuando'],
@@ -81,12 +82,12 @@ def aug_generation():
 
         for gloss in glosses:
             duplicates.append(random_duplicate.random_duplicate(gloss))
-            
+
         for dup in duplicates:
             if dup is not None:
                 dup_final.append(dataset_prep.dataset_prep(dup))
         final_list.extend(dup_final)
-                
+
     # %%
     # Random delete
     if run_random_delete:
@@ -96,15 +97,15 @@ def aug_generation():
 
         for gloss in glosses:
             deleted.append(random_delete.random_delete(gloss))
-            
+
         for d in deleted:
             if d is not None:
                 del_final.append(dataset_prep.dataset_prep(d))
         final_list.extend(del_final)
-            
+
 
     # %%
-    # Delete with exclusions 
+    # Delete with exclusions
     if run_delete_w_exclusions:
         exclusions = []
         excl_final = []
@@ -112,7 +113,7 @@ def aug_generation():
 
         for gloss in glosses:
             exclusions.append(delete_w_exclusions.exclusion_delete(gloss))
-            
+
         for e in exclusions:
             if e is not None:
                 excl_final.append(dataset_prep.dataset_prep(e))
@@ -122,5 +123,3 @@ def aug_generation():
     #   Create dataset from augmented data
     aug_dataset = output_dataset.output_dataset(final_list)
     return aug_dataset
-
-

@@ -3,12 +3,13 @@ from functools import reduce
 from typing import Optional, List, Union, cast, Literal
 import datasets
 import glossing
-from method1_unseg import create_augmented_data as create_m1_data
+from aug_generation import aug_generation
+# from method1_unseg import create_augmented_data as create_m1_data
 
 from utils import AUGMENTATION_TYPE
 
 def create_dataset(
-    model_type: AUGMENTATION_TYPE,
+    augmentation_type: AUGMENTATION_TYPE,
     sample_train_size: int | None = None,
     seed: int = 0
 ):
@@ -33,12 +34,19 @@ def create_dataset(
         aug_data = glossing.load_igt_file(path)
         return datasets.Dataset.from_list([ex.__dict__() for ex in aug_data])
 
-    if model_type != "baseline":
-        print(f"Creating augmented data with method {model_type}...")
-        if model_type == "aug_m1":
-            dataset["aug_train"] = create_m1_data(dataset["train"])
-        elif model_type == "aug_m2":
+    if augmentation_type != "baseline":
+        print(f"Creating augmented data with method {augmentation_type}...")
+        if augmentation_type == "aug_m1":
+            raise NotImplementedError()
+            # dataset["aug_train"] = create_m1_data(dataset["train"])
+        elif augmentation_type == "aug_m2":
             dataset["aug_train"] = load_aug_data("../data/hallucinated/method2.txt")
+        elif augmentation_type == "combo":
+            dataset["aug_train"] = aug_generation(
+                initial_dataset=dataset["train"],
+                fraction=1,
+                run_random_insert_conj=True,
+            )
         else:
             raise Exception("Invalid choice!")
 

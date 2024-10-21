@@ -8,7 +8,7 @@ from sacrebleu import CHRF
 from transformers import EvalPrediction, PreTrainedTokenizer
 
 
-AUGMENTATION_TYPE = Literal['baseline', 'aug_m1', 'aug_m2']
+AUGMENTATION_TYPE = Literal['baseline', 'aug_m1', 'aug_m2', 'combo']
 
 
 def create_igt_prompt(row, use_translation: bool = False):

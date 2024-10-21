@@ -1,5 +1,5 @@
-def dataset_prep(gloss): 
-    ''' Prepares glosses for dataset creation. 
+def dataset_prep(gloss):
+    ''' Prepares glosses for dataset creation.
 
     Args:
         gloss: A processed IGT gloss.
@@ -15,11 +15,11 @@ def dataset_prep(gloss):
         gloss[2] = ' '.join(gloss[2])
         gloss[2] = gloss[2].replace("\\", "")
         gloss[3] = ' '.join(gloss[3])
-        
+
         aug_row = {
-            'transcription': [gloss[0]],
-            'pos_glosses': [gloss[1]],
-            'glosses': [gloss[2]],          
-            'translation': [gloss[3]]
+            'transcription': gloss[0],
+            'pos_glosses': gloss[1],
+            'glosses': gloss[2],
+            'translation': gloss[3]
          }
         return aug_row
