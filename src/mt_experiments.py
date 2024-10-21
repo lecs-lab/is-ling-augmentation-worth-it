@@ -163,36 +163,36 @@ def train(
             if total_steps >= AUG_STEPS + TRAIN_STEPS:
                 break
 
-        experiment.train()
-        experiment.log_metrics(
-            {
-                "loss": train_loss / train_epoch_steps,
-                "stage": 0 if stage == "aug" else 1,
-            }, step=total_steps
-        )
+        with experiment.train():
+            experiment.log_metrics(
+                {
+                    "loss": train_loss / train_epoch_steps,
+                    "stage": 0 if stage == "aug" else 1,
+                }, step=total_steps
+            )
 
         # Eval
-        eval_loss = 0
-        model.eval()
-        for batch in tqdm(eval_dataloader, desc="Evaluating"):
-            out = cast(
-                Seq2SeqLMOutput,
-                model.forward(
-                    batch["input_ids"].to(device), labels=batch["labels"].to(device)
-                ),
+        with experiment.validate():
+            eval_loss = 0
+            model.eval()
+            for batch in tqdm(eval_dataloader, desc="Evaluating"):
+                out = cast(
+                    Seq2SeqLMOutput,
+                    model.forward(
+                        batch["input_ids"].to(device), labels=batch["labels"].to(device)
+                    ),
+                )
+                eval_loss += out.loss.detach().item()
+
+            print(
+                f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
             )
-            eval_loss += out.loss.detach().item()
 
-        print(
-            f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
-        )
-
-        experiment.validate()
-        experiment.log_metrics(
-            {
-                "loss": eval_loss / len(eval_dataloader),
-            }, step=total_steps,
-        )
+            experiment.log_metrics(
+                {
+                    "loss": eval_loss / len(eval_dataloader),
+                }, step=total_steps,
+            )
 
         epoch += 1
 
