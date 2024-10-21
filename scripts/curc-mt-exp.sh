@@ -12,7 +12,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=michael.ginn@colorado.edu
 
-if [[ "$1" != "baseline" && "$1" != "aug_m1" && "$1" != "aug_m2" ]]; then
+if [[ "$1" != "baseline" && "$1" != "aug_m1" && "$1" != "aug_m2" && "$1" != "combo" ]]; then
     echo "Error: First argument must be 'baseline', 'aug_m1', or 'aug_m2'."
     exit 1
 fi
@@ -28,7 +28,7 @@ conda activate AutoIGT
 
 export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
 
-cd "/projects/migi8081/morpheme-hallucination/src"
+cd "/projects/migi8081/augmorph/src"
 
 for size in 50 100 300 500 1000 5000
 do
