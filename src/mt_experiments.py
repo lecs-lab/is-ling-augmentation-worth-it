@@ -237,6 +237,7 @@ def train(
     # )
     # wandb.log({"test_predictions": preds_table})
     # log_model(experiment, model, "model")
+    experiment.end()
 
 
 if __name__ == "__main__":
