@@ -34,6 +34,7 @@ for size in 50 100 300 500 1000 5000
 do
     for seed in 0 1 2
     do
+        echo "RUNNING EXPERIMENT"
         python mt_experiments.py train \
                                     --augmentation_type $model \
                                     --direction "usp->esp" \

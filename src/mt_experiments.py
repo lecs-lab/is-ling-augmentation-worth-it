@@ -224,15 +224,14 @@ def train(
     test_preds = trainer.predict(dataset["test"])  # type: ignore
     test_eval = test_preds.metrics
     test_eval = {k.replace("eval/", ""): test_eval[k] for k in test_eval}  # type: ignore
-    with experiment.test():
-        experiment.log_metrics(test_eval)
+    experiment.log_metrics(test_eval)
 
-        # Decode preds and log to wandb
-        predictions, labels = utils.decode(
-            tokenizer, test_preds.predictions, test_preds.label_ids
-        )
-        preds_table = pd.DataFrame({"predicted": predictions, "label": labels})
-        experiment.log_table(filename="predictions.csv", tabular_data=preds_table)
+    # Decode preds and log to wandb
+    predictions, labels = utils.decode(
+        tokenizer, test_preds.predictions, test_preds.label_ids
+    )
+    preds_table = pd.DataFrame({"predicted": predictions, "label": labels})
+    experiment.log_table(filename="predictions.csv", tabular_data=preds_table)
     # preds_table = wandb.Table(
     #     columns=["predicted", "label"],
     #     data=[[p, lab] for p, lab in zip(predictions, cast(List[str], labels))],
@@ -241,6 +240,7 @@ def train(
     # log_model(experiment, model, "model")
     print("Ending experiment...")
     experiment.end()
+    print("Ended")
 
 
 if __name__ == "__main__":
