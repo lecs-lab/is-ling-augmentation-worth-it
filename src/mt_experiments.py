@@ -18,7 +18,6 @@ import pandas as pd
 import utils
 from data_handling import create_dataset
 
-os.environ["WANDB_LOG_MODEL"] = "end"
 os.environ["NEPTUNE_PROJECT"] = "lecslab/aug-ling"
 
 device = (
@@ -174,6 +173,7 @@ def train(
                     }, step=total_steps
                 )
 
+
         with experiment.validate():
             eval_loss = 0
             model.eval()
@@ -203,6 +203,7 @@ def train(
         output_dir="/scratch/alpine/migi8081/augmorph/",
         predict_with_generate=True,
         generation_max_length=1024,
+        report_to=None,
     )
 
     trainer = transformers.Seq2SeqTrainer(
@@ -219,24 +220,26 @@ def train(
     )
 
     # Testing
+    print("Running evaluation on test set...")
     test_preds = trainer.predict(dataset["test"])  # type: ignore
     test_eval = test_preds.metrics
     test_eval = {k.replace("eval/", ""): test_eval[k] for k in test_eval}  # type: ignore
-    experiment.test()
-    experiment.log_metrics(test_eval)
+    with experiment.test():
+        experiment.log_metrics(test_eval)
 
-    # Decode preds and log to wandb
-    predictions, labels = utils.decode(
-        tokenizer, test_preds.predictions, test_preds.label_ids
-    )
-    preds_table = pd.DataFrame({"predicted": predictions, "label": labels})
-    experiment.log_table(filename="predictions.csv", tabular_data=preds_table)
+        # Decode preds and log to wandb
+        predictions, labels = utils.decode(
+            tokenizer, test_preds.predictions, test_preds.label_ids
+        )
+        preds_table = pd.DataFrame({"predicted": predictions, "label": labels})
+        experiment.log_table(filename="predictions.csv", tabular_data=preds_table)
     # preds_table = wandb.Table(
     #     columns=["predicted", "label"],
     #     data=[[p, lab] for p, lab in zip(predictions, cast(List[str], labels))],
     # )
     # wandb.log({"test_predictions": preds_table})
     # log_model(experiment, model, "model")
+    print("Ending experiment...")
     experiment.end()
 
 
