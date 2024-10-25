@@ -18,7 +18,8 @@ import pandas as pd
 import utils
 from data_handling import create_dataset
 
-os.environ["NEPTUNE_PROJECT"] = "lecslab/aug-ling"
+os.environ["COMET_LOGGING_FILE"] = "./comet.log"
+os.environ["COMET_LOGGING_FILE_LEVEL"] = "debug"
 
 device = (
     "cuda"
