@@ -240,9 +240,9 @@ def train(
     # wandb.log({"test_predictions": preds_table})
     # log_model(experiment, model, "model")
     print("Ending experiment...")
-    experiment.end()
-    print("Ended")
+    # experiment.end()
 
 
 if __name__ == "__main__":
     cli()
+    print("ended")
