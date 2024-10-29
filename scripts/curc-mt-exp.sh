@@ -27,6 +27,8 @@ source /curc/sw/anaconda3/latest
 conda activate AutoIGT
 
 export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
+export COMET_LOGGING_FILE=/tmp/comet.log
+export COMET_LOGGING_FILE_LEVEL=debug
 
 cd "/projects/migi8081/augmorph/src"
 
