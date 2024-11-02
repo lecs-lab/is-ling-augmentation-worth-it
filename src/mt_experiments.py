@@ -1,25 +1,17 @@
 import functools
-import os
 import random
 from typing import List, Literal, Optional, cast
 
 import click
-
-# import wandb
-import comet_ml
-from comet_ml.integration.pytorch import log_model, watch
 import torch
 import transformers
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 from transformers.models.t5.modeling_t5 import Seq2SeqLMOutput
-import pandas as pd
 
 import utils
+import wandb
 from data_handling import create_dataset
-
-os.environ["COMET_LOGGING_FILE"] = "./comet.log"
-os.environ["COMET_LOGGING_FILE_LEVEL"] = "debug"
 
 device = (
     "cuda"
@@ -57,21 +49,18 @@ def train(
     AUG_STEPS = 500
     TRAIN_STEPS = 1000
 
-    experiment = comet_ml.Experiment(
-        api_key="oHmNB8NqKZBHKxuDN6IDvEdfQ",
-        project_name="augmorph-mt-usp-esp",
-        workspace="lecs",
+    wandb.init(
+        project=project,
+        config={
+            "random-seed": seed,
+            "augmentation_type": augmentation_type,
+            "training_schedule": "curriculum",
+            "epochs": epochs,
+            "training_size": sample_train_size or "full",
+            "direction": direction,
+            "reset_optimizer_between_stages": True,
+        },
     )
-
-    experiment.log_parameters({
-        "random-seed": seed,
-        "augmentation_type": augmentation_type,
-        "training_schedule": "curriculum",
-        "epochs": epochs,
-        "training_size": sample_train_size or "full",
-        "direction": direction,
-        "reset_optimizer_between_stages": True,
-    })
     random.seed(seed)
 
     dataset = create_dataset(
@@ -108,7 +97,6 @@ def train(
     model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
     model = cast(transformers.T5ForConditionalGeneration, model)
     model = model.to(device)  # type:ignore
-    watch(model)
 
     print(
         f"Found {model.num_parameters()} parameters. Training with {len(dataset['train'])} examples on {device}."
@@ -136,67 +124,58 @@ def train(
     total_steps = 0
     epoch = 0
     while total_steps < AUG_STEPS + TRAIN_STEPS:
+        model.train()
+        train_loss = 0
+        train_epoch_steps = 0  # Track the number of steps for the current epoch
+        for batch in aug_dataloader if stage == "aug" else train_dataloader:
+            optimizer.zero_grad()
+            loss = model(
+                batch["input_ids"].to(device), labels=batch["labels"].to(device)
+            ).loss
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            optimizer.step()
 
-        with experiment.train():
-            model.train()
-            train_loss = 0
-            train_epoch_steps = 0  # Track the number of steps for the current epoch
-            for batch in aug_dataloader if stage == "aug" else train_dataloader:
+            train_loss += loss.detach().item()
 
-                optimizer.zero_grad()
-                loss = model(
-                    batch["input_ids"].to(device), labels=batch["labels"].to(device)
-                ).loss
-                loss.backward()
-                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-                optimizer.step()
-
-                train_loss += loss.detach().item()
-
-                # Count step, and switch mode if needed
-                total_steps += 1
-                train_epoch_steps += 1
-                progress.update(1)
-                if total_steps >= AUG_STEPS and stage == "aug":
-                    # Next stage! Reset optimizer
-                    stage = "train"
-                    optimizer = torch.optim.AdamW(
-                        model.parameters(), lr=0.0001, weight_decay=0.5
-                    )
-                    break
-                if total_steps >= AUG_STEPS + TRAIN_STEPS:
-                    break
-
-                experiment.log_metrics(
-                    {
-                        "loss": train_loss / train_epoch_steps,
-                        "stage": 0 if stage == "aug" else 1,
-                    }, step=total_steps
+            # Count step, and switch mode if needed
+            total_steps += 1
+            train_epoch_steps += 1
+            progress.update(1)
+            if total_steps >= AUG_STEPS and stage == "aug":
+                # Next stage! Reset optimizer
+                stage = "train"
+                optimizer = torch.optim.AdamW(
+                    model.parameters(), lr=0.0001, weight_decay=0.5
                 )
+                break
+            if total_steps >= AUG_STEPS + TRAIN_STEPS:
+                break
 
-
-        with experiment.validate():
-            eval_loss = 0
-            model.eval()
-            for batch in tqdm(eval_dataloader, desc="Evaluating"):
-                out = cast(
-                    Seq2SeqLMOutput,
-                    model.forward(
-                        batch["input_ids"].to(device), labels=batch["labels"].to(device)
-                    ),
-                )
-                eval_loss += out.loss.detach().item()
-
-            print(
-                f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
-            )
-
-            experiment.log_metrics(
+            wandb.log(
                 {
-                    "loss": eval_loss / len(eval_dataloader),
-                }, step=total_steps,
+                    "train/loss": train_loss / train_epoch_steps,
+                    "stage": 0 if stage == "aug" else 1,
+                },
+                step=total_steps,
             )
 
+        eval_loss = 0
+        model.eval()
+        for batch in tqdm(eval_dataloader, desc="Evaluating"):
+            out = cast(
+                Seq2SeqLMOutput,
+                model.forward(
+                    batch["input_ids"].to(device), labels=batch["labels"].to(device)
+                ),
+            )
+            eval_loss += out.loss.detach().item()
+
+        print(
+            f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
+        )
+
+        wandb.log({"eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
         epoch += 1
 
     # Use a Trainer just for prediction
@@ -225,22 +204,17 @@ def train(
     test_preds = trainer.predict(dataset["test"])  # type: ignore
     test_eval = test_preds.metrics
     test_eval = {k.replace("eval/", ""): test_eval[k] for k in test_eval}  # type: ignore
-    experiment.log_metrics(test_eval)
+    wandb.log(test_eval)
 
     # Decode preds and log to wandb
     predictions, labels = utils.decode(
         tokenizer, test_preds.predictions, test_preds.label_ids
     )
-    preds_table = pd.DataFrame({"predicted": predictions, "label": labels})
-    experiment.log_table(filename="predictions.csv", tabular_data=preds_table)
-    # preds_table = wandb.Table(
-    #     columns=["predicted", "label"],
-    #     data=[[p, lab] for p, lab in zip(predictions, cast(List[str], labels))],
-    # )
-    # wandb.log({"test_predictions": preds_table})
-    # log_model(experiment, model, "model")
-    print("Ending experiment...")
-    # experiment.end()
+    preds_table = wandb.Table(
+        columns=["predicted", "label"],
+        data=[[p, lab] for p, lab in zip(predictions, cast(List[str], labels))],
+    )
+    wandb.log({"test_predictions": preds_table})
 
 
 if __name__ == "__main__":
