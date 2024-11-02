@@ -3,7 +3,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks=1         # Number of requested cores
 #SBATCH --mem=32G
-#SBATCH --time=7-00:00:00          # Max walltime              # Specify QOS
+#SBATCH --time=3-00:00:00          # Max walltime              # Specify QOS
 #SBATCH --qos=blanca-curc-gpu
 #SBATCH --partition=blanca-curc-gpu
 #SBATCH --account=blanca-curc-gpu
@@ -22,7 +22,7 @@ export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
 cd "/projects/migi8081/augmorph/src"
 
 # Generate all possible combinations of flags
-AUG_FLAGS=(--run_random_insert_conj --run_tam_update --run_random_duplicate --run_random_delete --run_delete_w_exclusions)
+AUG_FLAGS=(--run-random-insert-conj --run-tam-update --run-random-duplicate --run-random-delete --run-delete-w-exclusions)
 NUM_FLAGS=${#AUG_FLAGS[@]}
 TOTAL_COMBOS=$((1 << NUM_FLAGS))
 
