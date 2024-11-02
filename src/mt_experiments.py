@@ -3,12 +3,14 @@ import random
 from typing import List, Literal, Optional, cast
 
 import click
+from dataclass_click import dataclass_click
 import torch
 import transformers
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 from transformers.models.t5.modeling_t5 import Seq2SeqLMOutput
 
+from aug_generation import AugmentationParameters
 import utils
 import wandb
 from data_handling import create_dataset
@@ -26,15 +28,13 @@ def cli():
 
 
 @cli.command()
-@click.option(
-    "--augmentation_type", type=click.Choice(["baseline", "aug_m1", "aug_m2", "combo"])
-)
 @click.option("--direction", type=click.Choice(["usp->esp", "esp->usp"]))
 @click.option("--sample_train_size", type=int, default=None)
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=250)
+@dataclass_click(AugmentationParameters, kw_name="params")
 def train(
-    augmentation_type: utils.AUGMENTATION_TYPE,
+    params: AugmentationParameters,
     direction: Literal["usp->esp", "esp->usp"],
     sample_train_size: Optional[int],
     seed: int,
@@ -54,7 +54,6 @@ def train(
         project=project,
         config={
             "random-seed": seed,
-            "augmentation_type": augmentation_type,
             "training_schedule": "curriculum",
             "epochs": epochs,
             "training_size": sample_train_size or "full",
@@ -65,7 +64,8 @@ def train(
     random.seed(seed)
 
     dataset = create_dataset(
-        augmentation_type=augmentation_type,
+        augmentation_type="combo",
+        params=params,
         sample_train_size=sample_train_size,
         seed=seed,
     )
@@ -220,4 +220,3 @@ def train(
 
 if __name__ == "__main__":
     cli()
-    print("ended")

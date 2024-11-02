@@ -1,17 +1,24 @@
 # %%
+from dataclasses import dataclass
+from dataclass_click import option
+from typing import Annotated
 from datasets import Dataset
 from aug_utils import random_insert_conj, glosses_to_list, create_dataframe, dataset_prep, \
     tam_update, random_duplicate, random_delete, delete_w_exclusions, output_dataset
+
+@dataclass
+class AugmentationParameters:
+    run_random_insert_conj: Annotated[bool, option()] = False
+    run_tam_update: Annotated[bool, option()] = False
+    run_random_duplicate: Annotated[bool, option()] = False
+    run_random_delete: Annotated[bool, option()] = False
+    run_delete_w_exclusions: Annotated[bool, option()] = False
 
 
 def aug_generation(
     initial_dataset: Dataset,
     fraction: float = 1,
-    run_random_insert_conj = False,
-    run_tam_update = False,
-    run_random_duplicate = False,
-    run_random_delete = False,
-    run_delete_w_exclusions = False,
+    params: AugmentationParameters = AugmentationParameters()
 ):
 
     # %%
@@ -26,7 +33,7 @@ def aug_generation(
 
     # %%
     # TAM update
-    if run_tam_update:
+    if params.run_tam_update:
         tam_updates = []
         tam_final = []
         glosses = glosses_to_list.glosses_to_list(df)
@@ -64,7 +71,7 @@ def aug_generation(
             ['Lojori', 'ADV', 'ahora', 'Ahora'],
             ['Si', 'ADV', 'si', 'Si']]
 
-    if run_random_insert_conj:
+    if params.run_random_insert_conj:
         conj_final = []
         glosses = glosses_to_list.glosses_to_list(df)
 
@@ -75,7 +82,7 @@ def aug_generation(
 
     # %%
     # Random Duplicates
-    if run_random_duplicate:
+    if params.run_random_duplicate:
         duplicates = []
         dup_final = []
         glosses = glosses_to_list.glosses_to_list(df)
@@ -90,7 +97,7 @@ def aug_generation(
 
     # %%
     # Random delete
-    if run_random_delete:
+    if params.run_random_delete:
         deleted = []
         del_final = []
         glosses = glosses_to_list.glosses_to_list(df)
@@ -106,7 +113,7 @@ def aug_generation(
 
     # %%
     # Delete with exclusions
-    if run_delete_w_exclusions:
+    if params.run_delete_w_exclusions:
         exclusions = []
         excl_final = []
         glosses = glosses_to_list.glosses_to_list(df)

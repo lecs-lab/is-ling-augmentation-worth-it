@@ -1,17 +1,21 @@
 """Defines models and functions for loading, manipulating, and writing task data"""
-from functools import reduce
-from typing import Optional, List, Union, cast, Literal
+
+from typing import cast
+
 import datasets
 import glossing
-from aug_generation import aug_generation
-# from method1_unseg import create_augmented_data as create_m1_data
 
+from aug_generation import AugmentationParameters, aug_generation
+
+# from method1_unseg import create_augmented_data as create_m1_data
 from utils import AUGMENTATION_TYPE
+
 
 def create_dataset(
     augmentation_type: AUGMENTATION_TYPE,
+    params: AugmentationParameters | None,
     sample_train_size: int | None = None,
-    seed: int = 0
+    seed: int = 0,
 ):
     dataset = cast(
         datasets.DatasetDict, datasets.load_dataset("lecslab/usp-igt-resplit")
@@ -42,10 +46,11 @@ def create_dataset(
         elif augmentation_type == "aug_m2":
             dataset["aug_train"] = load_aug_data("../data/hallucinated/method2.txt")
         elif augmentation_type == "combo":
+            if params is None:
+                raise ValueError()
+
             dataset["aug_train"] = aug_generation(
-                initial_dataset=dataset["train"],
-                fraction=1,
-                run_random_insert_conj=True,
+                initial_dataset=dataset["train"], fraction=1, params=params
             )
         else:
             raise Exception("Invalid choice!")

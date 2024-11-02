@@ -12,44 +12,53 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=michael.ginn@colorado.edu
 
-if [[ "$1" != "baseline" && "$1" != "aug_m1" && "$1" != "aug_m2" && "$1" != "combo" ]]; then
-    echo "Error: First argument must be 'baseline', 'aug_m1', or 'aug_m2'."
-    exit 1
-fi
-
-model=$1
-shift
-
-
 module purge
 module load gcc/11.2.0
 source /curc/sw/anaconda3/latest
 conda activate AutoIGT
 
 export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
-export COMET_LOGGING_FILE=/tmp/comet.log
-export COMET_LOGGING_FILE_LEVEL=debug
 
 cd "/projects/migi8081/augmorph/src"
 
-for size in 50 100 300 500 1000 5000
-do
+# Generate all possible combinations of flags
+AUG_FLAGS=(--run_random_insert_conj --run_tam_update --run_random_duplicate --run_random_delete --run_delete_w_exclusions)
+NUM_FLAGS=${#AUG_FLAGS[@]}
+TOTAL_COMBOS=$((1 << NUM_FLAGS))
+
+for ((i=0; i<TOTAL_COMBOS; i++)); do
+    ARGS=()
+    for ((j=0; j<NUM_FLAGS; j++)); do
+        # Check if the j-th bit in i is set
+        if (( i & (1 << j) )); then
+            ARGS+=("${AUG_FLAGS[j]} True")
+        else
+            ARGS+=("${AUG_FLAGS[j]} False")
+        fi
+    done
+
+
+    for size in 50 100 300 500 1000 5000
+    do
+        for seed in 0 1 2
+        do
+            echo "RUNNING EXPERIMENT WITH AUG FLAGS: ${ARGS[@]}"
+            python mt_experiments.py train \
+                                        --augmentation_type $model \
+                                        --direction "usp->esp" \
+                                        --sample_train_size $size \
+                                        --seed $seed \
+                                        "${ARGS[@]}"
+        done
+    done
+
     for seed in 0 1 2
     do
-        echo "RUNNING EXPERIMENT"
+        # Run without a train sample size, ie all data
         python mt_experiments.py train \
                                     --augmentation_type $model \
                                     --direction "usp->esp" \
-                                    --sample_train_size $size \
-                                    --seed $seed
+                                    --seed $seed \
+                                    "${ARGS[@]}"
     done
-done
-
-for seed in 0 1 2
-do
-    # Run without a train sample size, ie all data
-    python mt_experiments.py train \
-                                --augmentation_type $model \
-                                --direction "usp->esp" \
-                                --seed $seed
 done
