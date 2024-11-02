@@ -16,10 +16,10 @@ module purge
 module load gcc/11.2.0
 source /curc/sw/anaconda3/latest
 conda activate AutoIGT
-
 export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
-
 cd "/projects/migi8081/augmorph/src"
+
+# cd ../src
 
 # Generate all possible combinations of flags
 AUG_FLAGS=(--run-random-insert-conj --run-tam-update --run-random-duplicate --run-random-delete --run-delete-w-exclusions)
@@ -31,9 +31,7 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
     for ((j=0; j<NUM_FLAGS; j++)); do
         # Check if the j-th bit in i is set
         if (( i & (1 << j) )); then
-            ARGS+=("${AUG_FLAGS[j]} True")
-        else
-            ARGS+=("${AUG_FLAGS[j]} False")
+            ARGS+=("${AUG_FLAGS[j]}")
         fi
     done
 

@@ -3,16 +3,14 @@ from dataclasses import dataclass
 from dataclass_click import option
 from typing import Annotated
 from datasets import Dataset
-from aug_utils import random_insert_conj, glosses_to_list, create_dataframe, dataset_prep, \
-    tam_update, random_duplicate, random_delete, delete_w_exclusions, output_dataset
 
 @dataclass
 class AugmentationParameters:
-    run_random_insert_conj: Annotated[bool, option()] = False
-    run_tam_update: Annotated[bool, option()] = False
-    run_random_duplicate: Annotated[bool, option()] = False
-    run_random_delete: Annotated[bool, option()] = False
-    run_delete_w_exclusions: Annotated[bool, option()] = False
+    run_random_insert_conj: Annotated[bool, option(is_flag=True)] = False
+    run_tam_update: Annotated[bool, option(is_flag=True)] = False
+    run_random_duplicate: Annotated[bool, option(is_flag=True)] = False
+    run_random_delete: Annotated[bool, option(is_flag=True)] = False
+    run_delete_w_exclusions: Annotated[bool, option(is_flag=True)] = False
 
 
 def aug_generation(
@@ -20,6 +18,9 @@ def aug_generation(
     fraction: float = 1,
     params: AugmentationParameters = AugmentationParameters()
 ):
+    # Import locally so we don't do this every time we use the module
+    from aug_utils import random_insert_conj, glosses_to_list, create_dataframe, dataset_prep, \
+        tam_update, random_duplicate, random_delete, delete_w_exclusions, output_dataset
 
     # %%
     # Load in data

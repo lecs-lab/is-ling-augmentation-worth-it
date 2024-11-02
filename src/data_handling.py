@@ -49,9 +49,13 @@ def create_dataset(
             if params is None:
                 raise ValueError()
 
-            dataset["aug_train"] = aug_generation(
+            aug_data = aug_generation(
                 initial_dataset=dataset["train"], fraction=1, params=params
             )
+            if len(aug_data) > 0:
+                dataset["aug_train"] = aug_data
+            else:
+                dataset["aug_train"] = dataset["train"]
         else:
             raise Exception("Invalid choice!")
 

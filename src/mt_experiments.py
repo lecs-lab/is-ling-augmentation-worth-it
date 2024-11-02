@@ -111,9 +111,7 @@ def train(
     )
     train_dataloader = DataLoader(dataset["train"], BATCH_SIZE, collate_fn=collator)  # type:ignore
     aug_dataloader = (
-        train_dataloader
-        if augmentation_type == "baseline"
-        else DataLoader(dataset["aug_train"], BATCH_SIZE, collate_fn=collator)
+        DataLoader(dataset["aug_train"], BATCH_SIZE, collate_fn=collator)
     )  # type:ignore
     eval_dataloader = DataLoader(dataset["eval"], BATCH_SIZE, collate_fn=collator)  # type:ignore
 
