@@ -43,7 +43,7 @@ def train(
     if direction not in ["usp->esp", "esp->usp"]:
         raise ValueError("Must be one of 'usp->esp' | 'esp->usp'")
 
-    project = f"morpheme-hallucination-mt-{direction}"
+    project = f"augmorph-mt-{direction}"
 
     BATCH_SIZE = 32
     AUG_STEPS = 500
