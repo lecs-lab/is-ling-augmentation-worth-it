@@ -50,6 +50,7 @@ def train(
     TRAIN_STEPS = 1000
 
     wandb.init(
+        entity="augmorph",
         project=project,
         config={
             "random-seed": seed,
