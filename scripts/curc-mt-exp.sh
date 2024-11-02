@@ -44,7 +44,6 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
         do
             echo "RUNNING EXPERIMENT WITH AUG FLAGS: ${ARGS[@]}"
             python mt_experiments.py train \
-                                        --augmentation_type $model \
                                         --direction "usp->esp" \
                                         --sample_train_size $size \
                                         --seed $seed \
@@ -56,7 +55,6 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
     do
         # Run without a train sample size, ie all data
         python mt_experiments.py train \
-                                    --augmentation_type $model \
                                     --direction "usp->esp" \
                                     --seed $seed \
                                     "${ARGS[@]}"
