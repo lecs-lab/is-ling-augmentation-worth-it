@@ -1,3 +1,4 @@
+from dataclasses import asdict
 import functools
 import random
 from typing import List, Literal, Optional, cast
@@ -59,6 +60,7 @@ def train(
             "training_size": sample_train_size or "full",
             "direction": direction,
             "reset_optimizer_between_stages": True,
+            "aug": asdict(params),
         },
     )
     random.seed(seed)
