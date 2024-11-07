@@ -3,7 +3,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks=1         # Number of requested cores
 #SBATCH --mem=32G
-#SBATCH --time=3-00:00:00          # Max walltime              # Specify QOS
+#SBATCH --time=7-00:00:00          # Max walltime              # Specify QOS
 #SBATCH --qos=blanca-curc-gpu
 #SBATCH --partition=blanca-curc-gpu
 #SBATCH --account=blanca-curc-gpu
