@@ -1,19 +1,19 @@
-from dataclasses import asdict
 import functools
 import random
+from dataclasses import asdict
 from typing import List, Literal, Optional, cast
 
 import click
-from dataclass_click import dataclass_click
 import torch
 import transformers
+from dataclass_click import dataclass_click
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 from transformers.models.t5.modeling_t5 import Seq2SeqLMOutput
 
-from augmentation.aug_generation import AugmentationParameters
 import utils
 import wandb
+from augmentation.aug_generation import AugmentationParameters
 from data_handling import create_dataset
 
 device = (
@@ -21,6 +21,7 @@ device = (
     if torch.cuda.is_available()
     else ("mps" if torch.backends.mps.is_available() else "cpu")
 )
+
 
 @click.command()
 @click.option("--direction", type=click.Choice(["usp->esp", "esp->usp"]))
@@ -44,19 +45,25 @@ def train(
     AUG_STEPS = 500
     TRAIN_STEPS = 1000
 
-    wandb.init(
-        entity="augmorph",
-        project=project,
-        config={
-            "random-seed": seed,
-            "training_schedule": "curriculum",
-            "epochs": epochs,
-            "training_size": sample_train_size or "full",
-            "direction": direction,
-            "reset_optimizer_between_stages": True,
-            "aug": asdict(params),
-        },
+    config = {
+        "random-seed": seed,
+        "training_schedule": "curriculum",
+        "epochs": epochs,
+        "training_size": sample_train_size or "full",
+        "direction": direction,
+        "reset_optimizer_between_stages": True,
+        "aug": asdict(params),
+    }
+
+    runs = wandb.Api().runs(
+        path=f"augmorph/{project}",
+        filters={f"config.{key}": value for key, value in config.items()},
     )
+    if len(runs) > 0 and any(r._state == 'finished' for r in runs):
+        print("Skipping run, identical run already found!!")
+        return
+
+    wandb.init(entity="augmorph", project=project, config=config)
     random.seed(seed)
 
     dataset = create_dataset(
@@ -106,9 +113,7 @@ def train(
         label_pad_token_id=tokenizer.pad_token_id or -100,
     )
     train_dataloader = DataLoader(dataset["train"], BATCH_SIZE, collate_fn=collator)  # type:ignore
-    aug_dataloader = (
-        DataLoader(dataset["aug_train"], BATCH_SIZE, collate_fn=collator)
-    )  # type:ignore
+    aug_dataloader = DataLoader(dataset["aug_train"], BATCH_SIZE, collate_fn=collator)  # type:ignore
     eval_dataloader = DataLoader(dataset["eval"], BATCH_SIZE, collate_fn=collator)  # type:ignore
 
     # Training loop
