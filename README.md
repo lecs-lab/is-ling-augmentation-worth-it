@@ -14,11 +14,15 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+> [!WARNING]
+> If you are trying to install this on an Apple Silicon machine, `mlconjug3` won't install its dependencies correctly.
+> You can fix this by running `pip install defusedxml scikit-learn `
+
 Run experiments:
 
 ```bash
 source .venv/bin/activate
-python src/run.py train --direction usp->esp --sample_train_size 50 --seed 0
+python src/train.py --direction usp->esp --sample_train_size 50 --seed 0
 ```
 
 ## Task
