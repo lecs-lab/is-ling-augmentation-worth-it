@@ -41,20 +41,18 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
         for seed in 0 1 2
         do
             echo "RUNNING EXPERIMENT WITH AUG FLAGS: ${ARGS[@]}"
-            uv run src/run.py train \
-                                    --direction "usp->esp" \
-                                    --sample_train_size $size \
-                                    --seed $seed \
-                                    "${ARGS[@]}"
+            python src/train.py --direction "usp->esp" \
+                                --sample_train_size $size \
+                                --seed $seed \
+                                "${ARGS[@]}"
         done
     done
 
     for seed in 0 1 2
     do
         # Run without a train sample size, ie all data
-        uv run src/run.py train \
-                                --direction "usp->esp" \
-                                --seed $seed \
-                                "${ARGS[@]}"
+        uv run src/train.py --direction "usp->esp" \
+                            --seed $seed \
+                            "${ARGS[@]}"
     done
 done
