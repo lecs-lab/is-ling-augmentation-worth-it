@@ -2,8 +2,6 @@ from typing import Callable, Dict, List, Literal, Tuple
 
 import numpy as np
 from glossing.bleu import bleu_score
-from sacrebleu.metrics.bleu import BLEU
-import transformers
 from sacrebleu import CHRF
 from transformers import EvalPrediction, PreTrainedTokenizer
 

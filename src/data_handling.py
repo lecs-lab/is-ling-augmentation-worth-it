@@ -5,7 +5,7 @@ from typing import cast
 import datasets
 import glossing
 
-from aug_generation import AugmentationParameters, aug_generation
+from augmentation.aug_generation import AugmentationParameters, aug_generation
 
 # from method1_unseg import create_augmented_data as create_m1_data
 from utils import AUGMENTATION_TYPE

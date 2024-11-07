@@ -17,7 +17,7 @@ module load gcc/11.2.0
 source /curc/sw/anaconda3/latest
 conda activate AutoIGT
 export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
-cd "/projects/migi8081/augmorph/src"
+cd "/projects/migi8081/augmorph/"
 
 # cd ../src
 
@@ -41,20 +41,20 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
         for seed in 0 1 2
         do
             echo "RUNNING EXPERIMENT WITH AUG FLAGS: ${ARGS[@]}"
-            python mt_experiments.py train \
-                                        --direction "usp->esp" \
-                                        --sample_train_size $size \
-                                        --seed $seed \
-                                        "${ARGS[@]}"
+            uv run src/run.py train \
+                                    --direction "usp->esp" \
+                                    --sample_train_size $size \
+                                    --seed $seed \
+                                    "${ARGS[@]}"
         done
     done
 
     for seed in 0 1 2
     do
         # Run without a train sample size, ie all data
-        python mt_experiments.py train \
-                                    --direction "usp->esp" \
-                                    --seed $seed \
-                                    "${ARGS[@]}"
+        uv run src/run.py train \
+                                --direction "usp->esp" \
+                                --seed $seed \
+                                "${ARGS[@]}"
     done
 done

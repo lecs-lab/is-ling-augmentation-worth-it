@@ -19,7 +19,7 @@ def aug_generation(
     params: AugmentationParameters = AugmentationParameters()
 ):
     # Import locally so we don't do this every time we use the module
-    from aug_utils import random_insert_conj, glosses_to_list, create_dataframe, dataset_prep, \
+    from augmentation.aug_utils import random_insert_conj, glosses_to_list, create_dataframe, dataset_prep, \
         tam_update, random_duplicate, random_delete, delete_w_exclusions, output_dataset
 
     # %%

@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from transformers.models.t5.modeling_t5 import Seq2SeqLMOutput
 
-from aug_generation import AugmentationParameters
+from augmentation.aug_generation import AugmentationParameters
 import utils
 import wandb
 from data_handling import create_dataset
@@ -22,13 +22,7 @@ device = (
     else ("mps" if torch.backends.mps.is_available() else "cpu")
 )
 
-
-@click.group()
-def cli():
-    pass
-
-
-@cli.command()
+@click.command()
 @click.option("--direction", type=click.Choice(["usp->esp", "esp->usp"]))
 @click.option("--sample_train_size", type=int, default=None)
 @click.option("--seed", help="Random seed", type=int, default=0)
@@ -219,4 +213,4 @@ def train(
 
 
 if __name__ == "__main__":
-    cli()
+    train()

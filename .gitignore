@@ -170,3 +170,5 @@ training-checkpoints/
 
 models/
 *-training-checkpoints/
+
+.zed
