@@ -51,7 +51,7 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
     for seed in 0 1 2
     do
         # Run without a train sample size, ie all data
-        uv run src/train.py --direction "usp->esp" \
+        python src/train.py --direction "usp->esp" \
                             --seed $seed \
                             "${ARGS[@]}"
     done
