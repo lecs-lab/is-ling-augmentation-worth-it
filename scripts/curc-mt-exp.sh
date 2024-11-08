@@ -35,12 +35,12 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
         fi
     done
 
+    >&2 echo "RUNNING EXPERIMENT WITH AUG FLAGS: ${ARGS[@]}"
 
     for size in 50 100 300 500 1000 5000
     do
         for seed in 0 1 2
         do
-            echo "RUNNING EXPERIMENT WITH AUG FLAGS: ${ARGS[@]}"
             python src/train.py --direction "usp->esp" \
                                 --sample_train_size $size \
                                 --seed $seed \
