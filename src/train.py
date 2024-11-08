@@ -1,5 +1,6 @@
 import functools
 import random
+import sys
 from dataclasses import asdict
 from typing import List, Literal, Optional, cast
 
@@ -55,12 +56,13 @@ def train(
         "aug": asdict(params),
     }
 
+    # Check if this run is a duplicate
     runs = wandb.Api().runs(
         path=f"augmorph/{project}",
         filters={f"config.{key}": value for key, value in config.items()},
     )
-    if len(runs) > 0 and any(r._state == 'finished' for r in runs):
-        print("Skipping run, identical run already found!!")
+    if len(runs) > 0 and any(r._state == "finished" for r in runs):
+        print("Skipping run, identical run already found!!", file=sys.stderr)
         return
 
     wandb.init(entity="augmorph", project=project, config=config)
