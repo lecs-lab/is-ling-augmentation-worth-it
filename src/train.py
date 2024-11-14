@@ -202,6 +202,10 @@ def train(
     )
 
     # Testing
+    print("Running last eval on eval set...")
+    eval_preds = trainer.predict(dataset["eval"])
+    wandb.log(eval_preds.metrics)
+
     print("Running evaluation on test set...")
     test_preds = trainer.predict(dataset["test"])  # type: ignore
     test_eval = test_preds.metrics
