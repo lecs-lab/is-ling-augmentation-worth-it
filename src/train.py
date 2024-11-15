@@ -57,13 +57,16 @@ def train(
     }
 
     # Check if this run is a duplicate
-    runs = wandb.Api().runs(
-        path=f"augmorph/{project}",
-        filters={f"config.{key}": value for key, value in config.items()},
-    )
-    if len(runs) > 0 and any(r._state == "finished" for r in runs):
-        print("Skipping run, identical run already found!!", file=sys.stderr)
-        return
+    try:
+        runs = wandb.Api().runs(
+            path=f"augmorph/{project}",
+            filters={f"config.{key}": value for key, value in config.items()},
+        )
+        if len(runs) > 0 and any(r._state == "finished" for r in runs):
+            print("Skipping run, identical run already found!!", file=sys.stderr)
+            return
+    except:
+        print("Project does not exist yet")
 
     wandb.init(entity="augmorph", project=project, config=config)
     random.seed(seed)
