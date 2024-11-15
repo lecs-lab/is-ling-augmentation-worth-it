@@ -215,15 +215,15 @@ def train(
     test_eval = {k.replace("eval/", ""): test_eval[k] for k in test_eval}  # type: ignore
     wandb.log(test_eval)
 
-    # Decode preds and log to wandb
-    predictions, labels = utils.decode(
-        tokenizer, test_preds.predictions, test_preds.label_ids
-    )
-    preds_table = wandb.Table(
-        columns=["predicted", "label"],
-        data=[[p, lab] for p, lab in zip(predictions, cast(List[str], labels))],
-    )
-    wandb.log({"test_predictions": preds_table})
+    # # Decode preds and log to wandb
+    # predictions, labels = utils.decode(
+    #     tokenizer, test_preds.predictions, test_preds.label_ids
+    # )
+    # preds_table = wandb.Table(
+    #     columns=["predicted", "label"],
+    #     data=[[p, lab] for p, lab in zip(predictions, cast(List[str], labels))],
+    # )
+    # wandb.log({"test_predictions": preds_table})
 
 
 if __name__ == "__main__":
