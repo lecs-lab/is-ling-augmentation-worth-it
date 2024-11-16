@@ -14,8 +14,9 @@
 
 module purge
 module load gcc/11.2.0
-source /curc/sw/anaconda3/latest
-conda activate AutoIGT
+module load mambaforge
+mamba activate igt
+
 export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
 cd "/projects/migi8081/augmorph/"
 
