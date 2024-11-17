@@ -128,60 +128,60 @@ def train(
     progress = tqdm(total=AUG_STEPS + TRAIN_STEPS, desc="Training")
     total_steps = 0
     epoch = 0
-    # while total_steps < AUG_STEPS + TRAIN_STEPS:
-    #     model.train()
-    #     train_loss = 0
-    #     train_epoch_steps = 0  # Track the number of steps for the current epoch
-    #     for batch in aug_dataloader if stage == "aug" else train_dataloader:
-    #         optimizer.zero_grad()
-    #         loss = model(
-    #             batch["input_ids"].to(device), labels=batch["labels"].to(device)
-    #         ).loss
-    #         loss.backward()
-    #         torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-    #         optimizer.step()
+    while total_steps < AUG_STEPS + TRAIN_STEPS:
+        model.train()
+        train_loss = 0
+        train_epoch_steps = 0  # Track the number of steps for the current epoch
+        for batch in aug_dataloader if stage == "aug" else train_dataloader:
+            optimizer.zero_grad()
+            loss = model(
+                batch["input_ids"].to(device), labels=batch["labels"].to(device)
+            ).loss
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+            optimizer.step()
 
-    #         train_loss += loss.detach().item()
+            train_loss += loss.detach().item()
 
-    #         # Count step, and switch mode if needed
-    #         total_steps += 1
-    #         train_epoch_steps += 1
-    #         progress.update(1)
-    #         if total_steps >= AUG_STEPS and stage == "aug":
-    #             # Next stage! Reset optimizer
-    #             stage = "train"
-    #             optimizer = torch.optim.AdamW(
-    #                 model.parameters(), lr=0.0001, weight_decay=0.5
-    #             )
-    #             break
-    #         if total_steps >= AUG_STEPS + TRAIN_STEPS:
-    #             break
+            # Count step, and switch mode if needed
+            total_steps += 1
+            train_epoch_steps += 1
+            progress.update(1)
+            if total_steps >= AUG_STEPS and stage == "aug":
+                # Next stage! Reset optimizer
+                stage = "train"
+                optimizer = torch.optim.AdamW(
+                    model.parameters(), lr=0.0001, weight_decay=0.5
+                )
+                break
+            if total_steps >= AUG_STEPS + TRAIN_STEPS:
+                break
 
-    #         wandb.log(
-    #             {
-    #                 "train/loss": train_loss / train_epoch_steps,
-    #                 "stage": 0 if stage == "aug" else 1,
-    #             },
-    #             step=total_steps,
-    #         )
+            wandb.log(
+                {
+                    "train/loss": train_loss / train_epoch_steps,
+                    "stage": 0 if stage == "aug" else 1,
+                },
+                step=total_steps,
+            )
 
-    #     eval_loss = 0
-    #     model.eval()
-    #     for batch in tqdm(eval_dataloader, desc="Evaluating"):
-    #         out = cast(
-    #             Seq2SeqLMOutput,
-    #             model.forward(
-    #                 batch["input_ids"].to(device), labels=batch["labels"].to(device)
-    #             ),
-    #         )
-    #         eval_loss += out.loss.detach().item()
+        eval_loss = 0
+        model.eval()
+        for batch in tqdm(eval_dataloader, desc="Evaluating"):
+            out = cast(
+                Seq2SeqLMOutput,
+                model.forward(
+                    batch["input_ids"].to(device), labels=batch["labels"].to(device)
+                ),
+            )
+            eval_loss += out.loss.detach().item()
 
-    #     print(
-    #         f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
-    #     )
+        print(
+            f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
+        )
 
-    #     wandb.log({"eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
-    #     epoch += 1
+        wandb.log({"eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
+        epoch += 1
 
     # Use a Trainer just for prediction
     args = transformers.Seq2SeqTrainingArguments(
