@@ -11,7 +11,7 @@ class AugmentationParameters:
     run_random_duplicate: Annotated[bool, option(is_flag=True)] = False
     run_random_delete: Annotated[bool, option(is_flag=True)] = False
     run_delete_w_exclusions: Annotated[bool, option(is_flag=True)] = False
-
+    run_random_insert_noise: Annotated[bool, option(is_flag=True)] = False
 
 def aug_generation(
     initial_dataset: Dataset,
@@ -20,7 +20,7 @@ def aug_generation(
 ):
     # Import locally so we don't do this every time we use the module
     from augmentation.aug_utils import random_insert_conj, glosses_to_list, create_dataframe, dataset_prep, \
-        tam_update, random_duplicate, random_delete, delete_w_exclusions, output_dataset
+        tam_update, random_duplicate, random_insert_noise, random_delete, delete_w_exclusions, output_dataset
 
     # %%
     # Load in data
@@ -127,6 +127,39 @@ def aug_generation(
                 excl_final.append(dataset_prep.dataset_prep(e))
         final_list.extend(excl_final)
 
+
+    # %
+    # Insert random word at the start of sentence
+    # 20 random words grabbed from the Uspanteko gold standard data.
+    noise = [['Rechi\'', 'E3-SREL-ENF', 'E3-SREL-ENF', 'Es de'],
+            ['Chiqe', 'PREP-SREL', 'PREP-SREL', 'Entre'],
+            ['Saneb\'', 'S', 'arena@de@rio', 'Harenas del río'],
+            ['Keqiix', 'S', 'culix', 'Kyeqiix'],
+            ['Baya', 'VOC', 'baya', 'Baya'],
+            ['Inchk', 'A1S-S', 'A1S-trabajo', 'Mi trabajo'],
+            ['Xte\'', 'COM-VT', 'COM-encontrar', 'Encontró'],
+            ['Qája', 'E1-S', 'E1-agua', 'El agua'],
+            ['Mismo', 'ADV', 'mismo', 'Mismo'],
+            ['Tijk\'ey', 'INC-E3S-NEG', 'INC-E3S-NEG', 'No le gusta'],
+            ['Tib\'itaq', 'INC-VT-PL', 'INC-levantar-PL', 'Levantarse'],
+            ['Tijut', 'INC-VT', 'INC-meter', 'Metía'],
+            ['Tilin', 'NOM', 'catarina', 'Catarina'],
+            ['Aqaaj', 'E2S-S', 'E2S-papá', 'Tu papá'],
+            ['Tiqatij', 'INC-E1P-VT-ENF', 'INC-E1P-comer-ENF', 'Sufrimos'],
+            ['Mrel ánm', 'ART-DIM S', 'ART-DIM mujer', 'La mujercita'],
+            ['Jwi\'l tzaqoomch\'olaal ', 'E3S-SREL VT-PAS-S-SAB', 'E3S-SREL botar-PAS-estómago-SAB', 'Por miedo'],
+            ['Kinye\' taq', 'VI-VT PL', 'quedar-dar PL', 'Dejarlo'],
+            ['Resureksyon', 'S', 'resurección', 'Resurección'],
+            ['Tinloq\'e\'', 'INC-A1S-VT-ENF', 'INC-A1S-comprar-ENF', 'Compro']]
+
+    if params.run_random_insert_noise:
+        noise_final = []
+        glosses = glosses_to_list.glosses_to_list(df)
+
+        for n in noise:
+            for gloss in glosses:
+                noise_final.append(dataset_prep.dataset_prep(random_insert_noise.random_insert_beginning(gloss, n)))
+        final_list.extend(noise_final)
 
     #   Create dataset from augmented data
     aug_dataset = output_dataset.output_dataset(final_list)
