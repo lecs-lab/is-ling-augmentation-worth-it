@@ -172,3 +172,7 @@ models/
 *-training-checkpoints/
 
 .zed
+
+
+#WIPs
+delete_w_exclusions_aligned.py
