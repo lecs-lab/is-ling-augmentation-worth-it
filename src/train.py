@@ -2,7 +2,7 @@ import functools
 import random
 import sys
 from dataclasses import asdict
-from typing import List, Literal, Optional, cast
+from typing import Literal, Optional, cast
 
 import click
 import torch
@@ -25,20 +25,20 @@ device = (
 
 
 @click.command()
-@click.option("--direction", type=click.Choice(["usp->esp", "esp->usp"]))
+@click.option("--direction", type=click.Choice(["usp->esp", "esp->usp", "usp->gloss", "usp->segment"]))
 @click.option("--sample_train_size", type=int, default=None)
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=250)
 @dataclass_click(AugmentationParameters, kw_name="params")
 def train(
     params: AugmentationParameters,
-    direction: Literal["usp->esp", "esp->usp"],
+    direction: Literal["usp->esp", "esp->usp", "usp->gloss", "usp->segment"],
     sample_train_size: Optional[int],
     seed: int,
     epochs: int,
 ):
-    if direction not in ["usp->esp", "esp->usp"]:
-        raise ValueError("Must be one of 'usp->esp' | 'esp->usp'")
+    if direction not in ["usp->esp", "esp->usp", "usp->gloss", "usp->segment"]:
+        raise ValueError("Must be one of 'usp->esp' | 'esp->usp' | 'usp->gloss' | 'usp->segment'")
 
     project = f"augmorph-mt-{direction}"
 
@@ -88,7 +88,7 @@ def train(
         lambda batch: utils.tokenize(
             batch,
             tokenizer=tokenizer,
-            labels_key="translation",
+            labels_key="target",
             max_length=tokenizer.model_max_length,
         ),
         batched=True,
@@ -174,7 +174,7 @@ def train(
                     batch["input_ids"].to(device), labels=batch["labels"].to(device)
                 ),
             )
-            eval_loss += out.loss.detach().item()
+            eval_loss += out.loss.detach().item() # type: ignore
 
         print(
             f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
@@ -206,7 +206,7 @@ def train(
 
     # Testing
     print("Running last eval on eval set...")
-    eval_metrics = trainer.evaluate(dataset["eval"])
+    eval_metrics = trainer.evaluate(dataset["eval"]) # type: ignore
     wandb.log(eval_metrics)
 
 

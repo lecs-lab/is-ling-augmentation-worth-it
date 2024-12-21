@@ -25,22 +25,24 @@ def create_igt_prompt(row, use_translation: bool = False):
     return row
 
 
-def create_mt_prompt(row, direction: Literal["usp->esp", "esp->usp"]):
+def create_mt_prompt(row, direction: Literal["usp->esp", "esp->usp", "usp->gloss", "usp->segment"]):
     """Processing function for rows in the dataset, creates an input prompt from the fields in the row."""
     usp_transc = " ".join((row["transcription"]).split())
     esp_transc = " ".join((row["translation"]).split())
     if direction == "usp->esp":
-        prompt = f"Translate into Spanish: {usp_transc}"
+        prompt = f"Translate into Spanish: {usp_transc}\nTranslation: "
+        row["target"] = esp_transc
     elif direction == "esp->usp":
-        prompt = f"Translate into Uspanteko: {esp_transc}"
+        prompt = f"Translate into Uspanteko: {esp_transc}\nTranslation: "
+        row["target"] = usp_transc
+    elif direction == "usp->gloss":
+        prompt = f"Output interlinear glosses for the following Uspanteko: {usp_transc}"
+        row["target"] = row["glosses"]
+    elif direction == "usp->segment":
+        prompt = f"Output a morphological segmentation for the following Uspanteko: {usp_transc}"
+        row["target"] = " ".join((row["segmentation"]).split())
 
-    prompt += "Translation: "
     row["prompt"] = prompt
-    if direction == "usp->esp":
-        row["translation"] = esp_transc
-    elif direction == "esp->usp":
-        row["translation"] = usp_transc
-
     return row
 
 
