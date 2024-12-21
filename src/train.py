@@ -99,8 +99,11 @@ def train(
             "glosses",
             "pos_glosses",
             "prompt",
+            "target",
         ],
     )
+
+    breakpoint()
 
     # Create the model
     model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
