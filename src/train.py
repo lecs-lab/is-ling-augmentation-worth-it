@@ -103,8 +103,6 @@ def train(
         ],
     )
 
-    breakpoint()
-
     # Create the model
     model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
     model = cast(transformers.T5ForConditionalGeneration, model)
