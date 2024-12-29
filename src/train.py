@@ -25,20 +25,20 @@ device = (
 
 
 @click.command()
-@click.option("--direction", type=click.Choice(["usp->esp", "esp->usp", "usp->gloss", "usp->segment"]))
+@click.option("--direction", type=click.Choice(["transc->transl", "transl->transc", "usp->gloss", "usp->segment"]))
 @click.option("--sample_train_size", type=int, default=None)
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=250)
 @dataclass_click(AugmentationParameters, kw_name="params")
 def train(
     params: AugmentationParameters,
-    direction: Literal["usp->esp", "esp->usp", "usp->gloss", "usp->segment"],
+    direction: Literal["transc->transl", "transl->transc", "usp->gloss", "usp->segment"],
     sample_train_size: Optional[int],
     seed: int,
     epochs: int,
 ):
-    if direction not in ["usp->esp", "esp->usp", "usp->gloss", "usp->segment"]:
-        raise ValueError("Must be one of 'usp->esp' | 'esp->usp' | 'usp->gloss' | 'usp->segment'")
+    if direction not in ["transc->transl", "transl->transc", "usp->gloss", "usp->segment"]:
+        raise ValueError("Must be one of 'transc->transl' | 'transl->transc' | 'usp->gloss' | 'usp->segment'")
 
     project = f"augmorph-mt-{direction}"
 

@@ -41,7 +41,7 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
     do
         for seed in 0 1 2
         do
-            python src/train.py --direction "usp->esp" \
+            python src/train.py --direction "transc->transl" \
                                 --sample_train_size $size \
                                 --seed $seed \
                                 "${ARGS[@]}"
@@ -51,7 +51,7 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
     for seed in 0 1 2
     do
         # Run without a train sample size, ie all data
-        python src/train.py --direction "usp->esp" \
+        python src/train.py --direction "transc->transl" \
                             --seed $seed \
                             "${ARGS[@]}"
     done

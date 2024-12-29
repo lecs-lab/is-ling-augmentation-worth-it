@@ -25,14 +25,14 @@ def create_igt_prompt(row, use_translation: bool = False):
     return row
 
 
-def create_mt_prompt(row, direction: Literal["usp->esp", "esp->usp", "usp->gloss", "usp->segment"]):
+def create_mt_prompt(row, direction: Literal["transc->transl", "transl->transc", "usp->gloss", "usp->segment"]):
     """Processing function for rows in the dataset, creates an input prompt from the fields in the row."""
     usp_transc = " ".join((row["transcription"]).split())
     esp_transc = " ".join((row["translation"]).split())
-    if direction == "usp->esp":
+    if direction == "transc->transl":
         prompt = f"Translate into Spanish: {usp_transc}\nTranslation: "
         row["target"] = esp_transc
-    elif direction == "esp->usp":
+    elif direction == "transl->transc":
         prompt = f"Translate into Uspanteko: {esp_transc}\nTranslation: "
         row["target"] = usp_transc
     elif direction == "usp->gloss":

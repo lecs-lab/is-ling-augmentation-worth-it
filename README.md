@@ -22,7 +22,7 @@ Run experiments:
 
 ```bash
 source .venv/bin/activate
-python src/train.py --direction usp->esp --sample_train_size 50 --seed 0
+python src/train.py --direction transc->transl --sample_train_size 50 --seed 0
 ```
 
 ## Task
