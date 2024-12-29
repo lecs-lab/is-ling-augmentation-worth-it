@@ -1,14 +1,8 @@
 # %%
-from dataclasses import dataclass
-from dataclass_click import option
-from typing import Annotated
 from datasets import Dataset
 
-@dataclass
-class AugmentationParameters:
-    run_insert_interjection_arapaho: Annotated[bool, option(is_flag=True)] = False
-    run_insert_noise_arapaho: Annotated[bool, option(is_flag=True)] = False
-    run_sentence_permutations_arapaho: Annotated[bool, option(is_flag=True)] = False
+from src.augmentation.aug_parameters import AugmentationParameters
+
 
 def aug_generation(
     initial_dataset: Dataset,
@@ -31,13 +25,13 @@ def aug_generation(
 
     # %%
     # Word order permutations
-    if params.run_sentence_permutations_arapaho:
+    if params.run_sentence_permutations:
         permutations_final = []
         glosses = glosses_to_list.glosses_to_list(df)
 
         for gloss in glosses:
             permutations_final.append(dataset_prep_arapaho.dataset_prep(sentence_permutations_arapaho.permute(gloss)))
-        
+
         final_list.extend(permutations_final)
 
 
@@ -65,7 +59,7 @@ def aug_generation(
                 ['\'Oh ', 'but', 'But'],
                 ['Nii\'ooke\'', 'IC.good.morning', 'Good morning']]
 
-    if params.run_insert_interjection_arapaho:
+    if params.run_insert_interjection:
         interjections_final = []
         glosses = glosses_to_list.glosses_to_list(df)
 
@@ -98,7 +92,7 @@ def aug_generation(
                 ['Tono\'wuuhee', 'cellar,.hole.in.the.ground', 'Cellar'],
                 ['Hoseihoowu\'', 'Sun.Dance', 'Sun Dance']]
 
-    if params.run_insert_noise_arapaho:
+    if params.run_random_insert_noise:
         noise_final = []
         glosses = glosses_to_list.glosses_to_list(df)
 

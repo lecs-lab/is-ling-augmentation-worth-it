@@ -1,6 +1,6 @@
 """Defines models and functions for loading, manipulating, and writing task data"""
 
-from typing import cast
+from typing import Literal, cast
 
 import datasets
 import glossing
@@ -12,13 +12,15 @@ from utils import AUGMENTATION_TYPE
 
 
 def create_dataset(
+    language: Literal['usp', 'arp'],
     augmentation_type: AUGMENTATION_TYPE,
     params: AugmentationParameters | None,
     sample_train_size: int | None = None,
     seed: int = 0,
 ):
+    dataset_key = {'usp': "usp-igt-resplit", 'arp': "arp-igt"}[language]
     dataset = cast(
-        datasets.DatasetDict, datasets.load_dataset("lecslab/usp-igt-resplit")
+        datasets.DatasetDict, datasets.load_dataset(f"lecslab/${dataset_key}")
     ).with_format("torch")
 
     # Make a small validation split, different each tiem

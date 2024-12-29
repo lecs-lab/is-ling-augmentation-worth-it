@@ -1,17 +1,7 @@
 # %%
-from dataclasses import dataclass
-from dataclass_click import option
-from typing import Annotated
 from datasets import Dataset
 
-@dataclass
-class AugmentationParameters:
-    run_random_insert_conj: Annotated[bool, option(is_flag=True)] = False
-    run_tam_update: Annotated[bool, option(is_flag=True)] = False
-    run_random_duplicate: Annotated[bool, option(is_flag=True)] = False
-    run_random_delete: Annotated[bool, option(is_flag=True)] = False
-    run_delete_w_exclusions: Annotated[bool, option(is_flag=True)] = False
-    run_random_insert_noise: Annotated[bool, option(is_flag=True)] = False
+from src.augmentation.aug_parameters import AugmentationParameters
 
 def aug_generation(
     initial_dataset: Dataset,

@@ -25,22 +25,24 @@ device = (
 
 
 @click.command()
-@click.option("--direction", type=click.Choice(["transc->transl", "transl->transc", "usp->gloss", "usp->segment"]))
+@click.option("--language", type=click.Choice(["arp", "usp"]), default="usp")
+@click.option("--direction", type=click.Choice(["transc->transl", "transl->transc", "transc->gloss", "transc->segment"]))
 @click.option("--sample_train_size", type=int, default=None)
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=250)
 @dataclass_click(AugmentationParameters, kw_name="params")
 def train(
     params: AugmentationParameters,
-    direction: Literal["transc->transl", "transl->transc", "usp->gloss", "usp->segment"],
+    language: Literal["usp", "arp"],
+    direction: Literal["transc->transl", "transl->transc", "transc->gloss", "transc->segment"],
     sample_train_size: Optional[int],
     seed: int,
     epochs: int,
 ):
-    if direction not in ["transc->transl", "transl->transc", "usp->gloss", "usp->segment"]:
-        raise ValueError("Must be one of 'transc->transl' | 'transl->transc' | 'usp->gloss' | 'usp->segment'")
+    if direction not in ["transc->transl", "transl->transc", "transc->gloss", "transc->segment"]:
+        raise ValueError("Must be one of 'transc->transl' | 'transl->transc' | 'transc->gloss' | 'transc->segment'")
 
-    project = f"augmorph-mt-{direction}"
+    project = f"augmorph-mt-{direction}-{language}"
 
     BATCH_SIZE = 32
     AUG_STEPS = 500
@@ -72,6 +74,7 @@ def train(
     random.seed(seed)
 
     dataset = create_dataset(
+        language=language,
         augmentation_type="combo",
         params=params,
         sample_train_size=sample_train_size,

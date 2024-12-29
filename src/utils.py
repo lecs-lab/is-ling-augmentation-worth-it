@@ -25,7 +25,7 @@ def create_igt_prompt(row, use_translation: bool = False):
     return row
 
 
-def create_mt_prompt(row, direction: Literal["transc->transl", "transl->transc", "usp->gloss", "usp->segment"]):
+def create_mt_prompt(row, direction: Literal["transc->transl", "transl->transc", "transc->gloss", "transc->segment"]):
     """Processing function for rows in the dataset, creates an input prompt from the fields in the row."""
     usp_transc = " ".join((row["transcription"]).split())
     esp_transc = " ".join((row["translation"]).split())
@@ -35,10 +35,10 @@ def create_mt_prompt(row, direction: Literal["transc->transl", "transl->transc",
     elif direction == "transl->transc":
         prompt = f"Translate into Uspanteko: {esp_transc}\nTranslation: "
         row["target"] = usp_transc
-    elif direction == "usp->gloss":
+    elif direction == "transc->gloss":
         prompt = f"Output interlinear glosses for the following Uspanteko: {usp_transc}"
         row["target"] = row["glosses"]
-    elif direction == "usp->segment":
+    elif direction == "transc->segment":
         prompt = f"Output a morphological segmentation for the following Uspanteko: {usp_transc}"
         row["target"] = " ".join((row["segmentation"]).split())
 
