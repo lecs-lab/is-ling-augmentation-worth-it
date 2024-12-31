@@ -20,7 +20,7 @@ def create_dataset(
 ):
     dataset_key = {'usp': "usp-igt-resplit", 'arp': "arp-igt"}[language]
     dataset = cast(
-        datasets.DatasetDict, datasets.load_dataset(f"lecslab/${dataset_key}")
+        datasets.DatasetDict, datasets.load_dataset(f"lecslab/{dataset_key}")
     ).with_format("torch")
 
     # Make a small validation split, different each tiem

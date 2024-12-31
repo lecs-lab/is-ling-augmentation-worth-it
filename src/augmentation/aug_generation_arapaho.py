@@ -1,7 +1,7 @@
 # %%
 from datasets import Dataset
 
-from src.augmentation.aug_parameters import AugmentationParameters
+from augmentation.aug_parameters import AugmentationParameters
 
 
 def aug_generation(

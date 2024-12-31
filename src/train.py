@@ -87,6 +87,7 @@ def train(
     dataset = dataset.map(
         functools.partial(utils.create_mt_prompt, direction=direction)
     )
+    original_columns = list(dataset['train'].column_names)
     dataset = dataset.map(
         lambda batch: utils.tokenize(
             batch,
@@ -95,15 +96,7 @@ def train(
             max_length=tokenizer.model_max_length,
         ),
         batched=True,
-        remove_columns=[
-            "transcription",
-            "translation",
-            "segmentation",
-            "glosses",
-            "pos_glosses",
-            "prompt",
-            "target",
-        ],
+        remove_columns=original_columns,
     )
 
     # Create the model

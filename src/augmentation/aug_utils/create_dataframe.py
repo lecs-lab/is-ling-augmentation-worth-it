@@ -13,11 +13,12 @@ def create_dataframe(dataset: Dataset, fraction: float) -> pd.DataFrame:
     '''
     df = pd.DataFrame(dataset)
 
-    df = df.drop(columns='segmentation')    # Drop the column with the segmented data
+    df = df.drop(columns='segmentation', errors='ignore')    # Drop the column with the segmented data
     df['transcription'] = df['transcription'].astype(str)
     df['transcription'] = df['transcription'].str.replace(',', '').str.replace('.', '').str.replace('?', '')
 
-    df['pos_glosses'] = df['pos_glosses'].astype(str)
+    if 'pos_glosses' in df.columns:
+        df['pos_glosses'] = df['pos_glosses'].astype(str)
 
     df['glosses'] = df['glosses'].astype(str)
     df['glosses'] = df['glosses'].str.replace(',', '').str.replace('.', '').str.replace('?', '')
