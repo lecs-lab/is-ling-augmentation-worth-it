@@ -14,13 +14,27 @@ def create_dataframe(dataset: Dataset, fraction: float) -> pd.DataFrame:
     '''
     df = pd.DataFrame(dataset)
 
-    segmented = df[df['is_segmented'] == 'no']
-    arapaho_df = segmented[segmented['glottocode'] == 'arap1274']
-    arapaho_df.drop(['glottocode', 'id', 'source', 'metalang_glottocode',
+    df.drop(['glottocode', 'id', 'source', 'metalang_glottocode',
                      'is_segmented', 'language', 'metalang'], axis=1, inplace=True)
 
+    df['transcription'] = df['transcription'].astype(str)
+    df['transcription'] = df['transcription'].str.replace(',', '').str.replace('?', '').str.replace('"', '').str.replace('!', '')
+
+    if 'segmentation' in df.columns:
+        df['segmentation'] = df['segmentation'].astype(str).str.replace(',', '').str.replace('?', '').str.replace('"', '').str.replace('!', '')
+
+    if 'pos_glosses' in df.columns:
+        df['pos_glosses'] = df['pos_glosses'].astype(str)
+
+    df['glosses'] = df['glosses'].astype(str)
+    df['glosses'] = df['glosses'].str.replace(',', '').str.replace('?', '').str.replace('"', '').str.replace('!', '')
+
+    df['translation'] = df['translation'].astype(str)
+    df['translation'] = df['translation'].str.replace(',', '').str.replace('?', '').str.replace('"', '').str.replace('!', '')
+
+
     if fraction != 1:
-        arapaho_df = arapaho_df.sample(
+        df = df.sample(
             frac=fraction, replace=False, random_state=42)
 
-    return arapaho_df
+    return df
