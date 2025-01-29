@@ -39,8 +39,8 @@ def train(
     seed: int,
     epochs: int,
 ):
-    if direction not in ["transc->transl", "transl->transc", "transc->gloss", "transc->segment"]:
-        raise ValueError("Must be one of 'transc->transl' | 'transl->transc' | 'transc->gloss' | 'transc->segment'")
+    if direction not in ["transc->transl", "transl->transc", "transc->gloss"]:
+        raise ValueError("Must be one of 'transc->transl' | 'transl->transc' | 'transc->gloss'")
 
     project = f"augmorph-mt-{direction}-{language}"
 

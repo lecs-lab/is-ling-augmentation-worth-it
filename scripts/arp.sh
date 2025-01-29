@@ -19,10 +19,8 @@ conda activate igt
 export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
 cd "/projects/migi8081/augmorph/"
 
-# cd ../src
-
 # Generate all possible combinations of flags
-AUG_FLAGS=(--run-random-insert-conj --run-tam-update --run-random-duplicate --run-random-delete --run-delete-w-exclusions)
+AUG_FLAGS=(--run-random-insert-noise --run-insert-interjection --run-sentence-permutations)
 NUM_FLAGS=${#AUG_FLAGS[@]}
 TOTAL_COMBOS=$((1 << NUM_FLAGS))
 
@@ -37,22 +35,27 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
 
     >&2 echo "RUNNING EXPERIMENT WITH AUG FLAGS: ${ARGS[@]}"
 
-    for size in 50 100 300 500 1000 5000
+    for direction in "transc->transl" "transl->transc" "transc->gloss"
     do
+        for size in 50 100 300 500 1000 5000
+        do
+            for seed in 0 1 2
+            do
+                python src/train.py --language arp \
+                                    --direction $direction \
+                                    --sample_train_size $size \
+                                    --seed $seed \
+                                    "${ARGS[@]}"
+            done
+        done
+
         for seed in 0 1 2
         do
-            python src/train.py --direction "transc->transl" \
-                                --sample_train_size $size \
+            # Run without a train sample size, ie all data
+            python src/train.py --language arp \
+                                --direction $direction \
                                 --seed $seed \
                                 "${ARGS[@]}"
         done
-    done
-
-    for seed in 0 1 2
-    do
-        # Run without a train sample size, ie all data
-        python src/train.py --direction "transc->transl" \
-                            --seed $seed \
-                            "${ARGS[@]}"
     done
 done
