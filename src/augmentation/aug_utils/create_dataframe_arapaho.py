@@ -14,9 +14,6 @@ def create_dataframe(dataset: Dataset, fraction: float) -> pd.DataFrame:
     '''
     df = pd.DataFrame(dataset)
 
-    df.drop(['glottocode', 'id', 'source', 'metalang_glottocode',
-                     'is_segmented', 'language', 'metalang'], axis=1, inplace=True)
-
     df['transcription'] = df['transcription'].astype(str)
     df['transcription'] = df['transcription'].str.replace(',', '').str.replace('?', '').str.replace('"', '').str.replace('!', '')
 

@@ -5,7 +5,8 @@ from typing import Literal, cast
 import datasets
 import glossing
 
-from augmentation.aug_generation import AugmentationParameters, aug_generation
+from augmentation.aug_generation import AugmentationParameters, aug_generation as usp_gen
+from augmentation.aug_generation_arapaho import aug_generation as arp_gen
 
 # from method1_unseg import create_augmented_data as create_m1_data
 from utils import AUGMENTATION_TYPE
@@ -51,9 +52,14 @@ def create_dataset(
             if params is None:
                 raise ValueError()
 
-            aug_data = aug_generation(
-                initial_dataset=dataset["train"], fraction=1, params=params
-            )
+            if language == "usp":
+                aug_data = usp_gen(
+                    initial_dataset=dataset["train"], fraction=1, params=params
+                )
+            elif language == "arp":
+                aug_data = arp_gen(
+                    initial_dataset=dataset["train"], fraction=1, params=params
+                )
             if len(aug_data) > 0:
                 dataset["aug_train"] = aug_data
             else:
