@@ -42,7 +42,7 @@ def train(
     if direction not in ["transc->transl", "transl->transc", "transc->gloss"]:
         raise ValueError("Must be one of 'transc->transl' | 'transl->transc' | 'transc->gloss'")
 
-    project = f"augmorph-mt-{direction}-{language}"
+    project = f"augmorph-{language}-{direction.replace('>', '')}"
 
     BATCH_SIZE = 32
     AUG_STEPS = 500
