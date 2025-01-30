@@ -20,7 +20,7 @@ export STANZA_RESOURCES_DIR="/scratch/alpine/migi8081/stanza/"
 cd "/projects/migi8081/augmorph/"
 
 # Generate all possible combinations of flags
-AUG_FLAGS=(--run-random-insert-noise --run-insert-interjection --run-sentence-permutations)
+AUG_FLAGS=(--run-random-insert-noise --run-insert-interjection --run-sentence-permutations --run_random_insert_noise)
 NUM_FLAGS=${#AUG_FLAGS[@]}
 TOTAL_COMBOS=$((1 << NUM_FLAGS))
 
