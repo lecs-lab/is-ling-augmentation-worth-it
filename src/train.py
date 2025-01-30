@@ -44,7 +44,7 @@ def train(
 
     project = f"augmorph-{language}-{direction.replace('>', '')}"
 
-    BATCH_SIZE = 32
+    BATCH_SIZE = 32 if language == "usp" else 16
     AUG_STEPS = 500
     TRAIN_STEPS = 1000
 
