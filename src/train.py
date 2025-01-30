@@ -85,7 +85,7 @@ def train(
     model_key = "google/byt5-small"
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_key)
     dataset = dataset.map(
-        functools.partial(utils.create_mt_prompt, direction=direction)
+        functools.partial(utils.create_mt_prompt, direction=direction, language=language)
     )
     original_columns = list(dataset['train'].column_names)
     dataset = dataset.map(

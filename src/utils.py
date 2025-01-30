@@ -25,21 +25,26 @@ def create_igt_prompt(row, use_translation: bool = False):
     return row
 
 
-def create_mt_prompt(row, direction: Literal["transc->transl", "transl->transc", "transc->gloss", "transc->segment"]):
+def create_mt_prompt(row, direction: Literal["transc->transl", "transl->transc", "transc->gloss", "transc->segment"], language: Literal['usp', 'arp']):
     """Processing function for rows in the dataset, creates an input prompt from the fields in the row."""
-    usp_transc = " ".join((row["transcription"]).split())
-    esp_transc = " ".join((row["translation"]).split())
+    if language == 'usp':
+        lang_name, metalang_name = "Uspanteko", "Spanish"
+    elif language == 'arp':
+        lang_name, metalang_name = "Arapaho", "English"
+
+    transc = " ".join((row["transcription"]).split())
+    transl = " ".join((row["translation"]).split())
     if direction == "transc->transl":
-        prompt = f"Translate into Spanish: {usp_transc}\nTranslation: "
-        row["target"] = esp_transc
+        prompt = f"Translate into {metalang_name}: {transc}\nTranslation: "
+        row["target"] = transl
     elif direction == "transl->transc":
-        prompt = f"Translate into Uspanteko: {esp_transc}\nTranslation: "
-        row["target"] = usp_transc
+        prompt = f"Translate into {lang_name}: {transl}\nTranslation: "
+        row["target"] = transc
     elif direction == "transc->gloss":
-        prompt = f"Output interlinear glosses for the following Uspanteko: {usp_transc}"
+        prompt = f"Output interlinear glosses for the following {lang_name}: {transc}"
         row["target"] = row["glosses"]
     elif direction == "transc->segment":
-        prompt = f"Output a morphological segmentation for the following Uspanteko: {usp_transc}"
+        prompt = f"Output a morphological segmentation for the following {lang_name}: {transc}"
         row["target"] = " ".join((row["segmentation"]).split())
 
     row["prompt"] = prompt
