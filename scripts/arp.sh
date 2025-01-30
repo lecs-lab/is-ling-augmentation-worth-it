@@ -37,7 +37,7 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
 
     for direction in "transc->transl" "transl->transc" "transc->gloss"
     do
-        for size in 50 100 300 500 1000 5000
+        for size in 50 100 500 1000 5000
         do
             for seed in 0 1 2
             do
@@ -49,13 +49,10 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
             done
         done
 
-        for seed in 0 1 2
-        do
-            # Run without a train sample size, ie all data
-            python src/train.py --language arp \
-                                --direction $direction \
-                                --seed $seed \
-                                "${ARGS[@]}"
-        done
+        # Run without a train sample size, ie all data
+        python src/train.py --language arp \
+                            --direction $direction \
+                            --seed $seed \
+                            "${ARGS[@]}"
     done
 done
