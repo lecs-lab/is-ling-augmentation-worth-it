@@ -7,7 +7,7 @@ def random_insert_beginning(gloss, noise, is_segmented):
         is_segmented: A bool value to indicate whether the data is segmented.
 
     Returns:
-        processed_gloss: The original IGT gloss with the random word inserted at the beginning. 
+        processed_gloss: The original IGT gloss with the random word inserted at the beginning.
 
     '''
     noises = ['mule.deer', 'leaves', 'tomatoes', 'behold',  '1S-gun',  'who?',
@@ -42,7 +42,7 @@ def random_insert_beginning(gloss, noise, is_segmented):
             processed_gloss.append(gloss[2])
             processed_gloss.append(gloss[3])
             return processed_gloss
-        
+
     elif not is_segmented:
         if gloss[1][0] in noises:
             del gloss[0][0]
