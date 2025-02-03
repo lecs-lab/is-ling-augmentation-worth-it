@@ -55,8 +55,10 @@ def train(
         "training_size": sample_train_size or "full",
         "direction": direction,
         "reset_optimizer_between_stages": True,
-        "aug": asdict(params),
     }
+
+    for key, value in asdict(params).items():
+        config["aug." + key] = value
 
     # Check if this run is a duplicate
     try:
