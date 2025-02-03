@@ -66,7 +66,6 @@ def train(
             path=f"augmorph/{project}",
             filters={f"config.{key}": value for key, value in config.items()},
         )
-        breakpoint()
         if len(runs) > 0 and any(r._state == "finished" or r._state == "running" for r in runs):
             print("Skipping run, identical run already found!!", file=sys.stderr)
             return
