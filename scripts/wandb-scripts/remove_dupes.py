@@ -1,8 +1,6 @@
 import wandb
 from itertools import groupby
 from operator import itemgetter
-from tqdm import tqdm
-from typing import cast
 
 project = "augmorph/augmorph-usp-transc-gloss"
 runs = wandb.Api().runs(path=project)
@@ -11,9 +9,9 @@ aug_keys = [k for k in runs[0].config.keys() if k.startswith("aug_")]
 keys_getter = itemgetter("random-seed", "training_size", *aug_keys) # type:ignore
 
 dupes = 0
-deleted = 0
 runs_to_delete = []
-for key, grp in groupby(runs, lambda r: keys_getter(r.config)):
+sorted_runs = sorted(runs, key=lambda r: tuple(str(x) for x in keys_getter(r.config)))
+for key, grp in groupby(sorted_runs, lambda r: keys_getter(r.config)):
     grp = list(grp)
     if len(grp) > 1:
         dupes += (len(grp) - 1)
