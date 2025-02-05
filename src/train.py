@@ -58,8 +58,8 @@ def train(
     project = f"augmorph-{language}-{direction.replace('>', '')}-baselines"
 
     BATCH_SIZE = 32 if language == "usp" else 16
-    AUG_STEPS = 500 if language == "usp" else 3000
-    TRAIN_STEPS = 1000 if language == "usp" else 6000
+    AUG_STEPS = 500 if language == "usp" else 5000
+    TRAIN_STEPS = 1000 if language == "usp" else 10000
     LR = 2E-4
 
     config = {
