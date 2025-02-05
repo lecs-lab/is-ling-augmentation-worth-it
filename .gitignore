@@ -178,3 +178,6 @@ models/
 delete_w_exclusions_aligned.py
 usp_testing.ipynb
 arp_testing.ipynb
+avg.ipynb
+testing.ipynb
+test-usp-transc-transl.csv
