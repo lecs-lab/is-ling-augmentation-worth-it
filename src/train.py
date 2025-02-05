@@ -23,6 +23,19 @@ device = (
     else ("mps" if torch.backends.mps.is_available() else "cpu")
 )
 
+def eval(model, eval_dataloader):
+    eval_loss = 0
+    model.eval()
+    for batch in tqdm(eval_dataloader, desc="Evaluating"):
+        out = cast(
+            Seq2SeqLMOutput,
+            model.forward(
+                batch["input_ids"].to(device), labels=batch["labels"].to(device)
+            ),
+        )
+        eval_loss += out.loss.detach().item() # type: ignore
+    return eval_loss
+
 
 @click.command()
 @click.option("--language", type=click.Choice(["arp", "usp"]), default="usp")
@@ -47,6 +60,7 @@ def train(
     BATCH_SIZE = 32 if language == "usp" else 16
     AUG_STEPS = 500 if language == "usp" else 2000
     TRAIN_STEPS = 1000 if language == "usp" else 4000
+    LR = 2E-4
 
     config = {
         "random-seed": seed,
@@ -55,6 +69,7 @@ def train(
         "training_size": sample_train_size or "full",
         "direction": direction,
         "reset_optimizer_between_stages": True,
+        "learning_rate": LR
     }
 
     for key, value in asdict(params).items():
@@ -121,7 +136,7 @@ def train(
     eval_dataloader = DataLoader(dataset["eval"], BATCH_SIZE, collate_fn=collator)  # type:ignore
 
     # Training loop
-    optimizer = torch.optim.AdamW(model.parameters(), lr=0.00001, weight_decay=0.5)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.5)
     stage: Literal["aug", "train"] = "aug"
 
     progress = tqdm(total=AUG_STEPS + TRAIN_STEPS, desc="Training")
@@ -150,7 +165,7 @@ def train(
                 # Next stage! Reset optimizer
                 stage = "train"
                 optimizer = torch.optim.AdamW(
-                    model.parameters(), lr=0.00001, weight_decay=0.5
+                    model.parameters(), lr=LR, weight_decay=0.5
                 )
                 break
             if total_steps >= AUG_STEPS + TRAIN_STEPS:
@@ -164,23 +179,17 @@ def train(
                 step=total_steps,
             )
 
-        eval_loss = 0
-        model.eval()
-        for batch in tqdm(eval_dataloader, desc="Evaluating"):
-            out = cast(
-                Seq2SeqLMOutput,
-                model.forward(
-                    batch["input_ids"].to(device), labels=batch["labels"].to(device)
-                ),
-            )
-            eval_loss += out.loss.detach().item() # type: ignore
+            if total_steps % 100:
+                eval_loss = eval(model, eval_dataloader)
+                wandb.log({"eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
 
+
+        eval_loss = eval(model, eval_dataloader)
         print(
             f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
         )
-
-        epoch += 1
         wandb.log({"train/epoch": epoch, "eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
+        epoch += 1
 
     # Use a Trainer just for prediction
     args = transformers.Seq2SeqTrainingArguments(
