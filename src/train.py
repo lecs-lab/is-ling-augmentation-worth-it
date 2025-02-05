@@ -61,16 +61,16 @@ def train(
         config["aug_" + key] = value
 
     # Check if this run is a duplicate
-    try:
-        runs = wandb.Api().runs(
-            path=f"augmorph/{project}",
-            filters={f"config.{key}": value for key, value in config.items()},
-        )
-        if len(runs) > 0 and any(r._state == "finished" or r._state == "running" for r in runs):
-            print("Skipping run, identical run already found!!", file=sys.stderr)
-            return
-    except:
-        print("Project does not exist yet")
+    # try:
+    #     runs = wandb.Api().runs(
+    #         path=f"augmorph/{project}",
+    #         filters={f"config.{key}": value for key, value in config.items()},
+    #     )
+    #     if len(runs) > 0 and any(r._state == "finished" or r._state == "running" for r in runs):
+    #         print("Skipping run, identical run already found!!", file=sys.stderr)
+    #         return
+    # except:
+    #     print("Project does not exist yet")
 
     wandb.init(entity="augmorph", project=project, config=config)
     random.seed(seed)
@@ -121,7 +121,7 @@ def train(
     eval_dataloader = DataLoader(dataset["eval"], BATCH_SIZE, collate_fn=collator)  # type:ignore
 
     # Training loop
-    optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001, weight_decay=0.5)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=0.00001, weight_decay=0.5)
     stage: Literal["aug", "train"] = "aug"
 
     progress = tqdm(total=AUG_STEPS + TRAIN_STEPS, desc="Training")
@@ -150,7 +150,7 @@ def train(
                 # Next stage! Reset optimizer
                 stage = "train"
                 optimizer = torch.optim.AdamW(
-                    model.parameters(), lr=0.0001, weight_decay=0.5
+                    model.parameters(), lr=0.00001, weight_decay=0.5
                 )
                 break
             if total_steps >= AUG_STEPS + TRAIN_STEPS:
