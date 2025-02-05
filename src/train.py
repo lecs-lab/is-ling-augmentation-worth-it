@@ -136,7 +136,7 @@ def train(
     eval_dataloader = DataLoader(dataset["eval"], BATCH_SIZE, collate_fn=collator)  # type:ignore
 
     # Training loop
-    optimizer = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.5)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=LR)
     stage: Literal["aug", "train"] = "aug"
 
     progress = tqdm(total=AUG_STEPS + TRAIN_STEPS, desc="Training")
@@ -165,7 +165,7 @@ def train(
                 # Next stage! Reset optimizer
                 stage = "train"
                 optimizer = torch.optim.AdamW(
-                    model.parameters(), lr=LR, weight_decay=0.5
+                    model.parameters(), lr=LR
                 )
                 break
             if total_steps >= AUG_STEPS + TRAIN_STEPS:
@@ -179,7 +179,7 @@ def train(
                 step=total_steps,
             )
 
-            if total_steps % 100:
+            if total_steps % 100 == 0:
                 eval_loss = eval(model, eval_dataloader)
                 wandb.log({"eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
 
