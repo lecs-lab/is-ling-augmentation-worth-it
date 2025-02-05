@@ -58,8 +58,8 @@ def train(
     project = f"augmorph-{language}-{direction.replace('>', '')}-baselines"
 
     BATCH_SIZE = 32 if language == "usp" else 16
-    AUG_STEPS = 500 if language == "usp" else 2000
-    TRAIN_STEPS = 1000 if language == "usp" else 4000
+    AUG_STEPS = 500 if language == "usp" else 3000
+    TRAIN_STEPS = 1000 if language == "usp" else 6000
     LR = 2E-4
 
     config = {
@@ -99,7 +99,7 @@ def train(
     )
 
     # Preprocess dataset
-    model_key = "google/byt5-small"
+    model_key = "google/byt5-base"
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_key)
     dataset = dataset.map(
         functools.partial(utils.create_mt_prompt, direction=direction, language=language)
@@ -136,7 +136,7 @@ def train(
     eval_dataloader = DataLoader(dataset["eval"], BATCH_SIZE, collate_fn=collator)  # type:ignore
 
     # Training loop
-    optimizer = torch.optim.AdamW(model.parameters(), lr=LR)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.1)
     stage: Literal["aug", "train"] = "aug"
 
     progress = tqdm(total=AUG_STEPS + TRAIN_STEPS, desc="Training")
@@ -164,8 +164,9 @@ def train(
             if total_steps >= AUG_STEPS and stage == "aug":
                 # Next stage! Reset optimizer
                 stage = "train"
+                print("Resetting optimizer...")
                 optimizer = torch.optim.AdamW(
-                    model.parameters(), lr=LR
+                    model.parameters(), lr=LR, weight_decay=0.1
                 )
                 break
             if total_steps >= AUG_STEPS + TRAIN_STEPS:

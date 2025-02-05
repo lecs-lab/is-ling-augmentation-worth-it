@@ -94,8 +94,8 @@ def compute_metrics(tokenizer, metrics_fn: Callable[[List[str], List[str]], Dict
 
         if decoded_labels is None:
             raise ValueError("Need to have labels in `compute_metrics`!!")
-        print("PREDS", decoded_preds[:5])
-        print("LABELS", decoded_labels[:5])
+        print("PREDS", decoded_preds[:10])
+        print("LABELS", decoded_labels[:10])
         return metrics_fn(decoded_preds, decoded_labels)
 
     return _compute_metrics
@@ -110,8 +110,5 @@ def mt_metrics(preds: List[str], labels: List[str]) -> Dict:
     tokenized_preds = [pred.split() for pred in preds]
     tokenized_labels = [[label.split()] for label in labels]
     bleu = bleu_score(tokenized_preds, tokenized_labels)
-
-    print(preds[:10], [[label] for label in labels][:10])
     chrF_score = chrf.corpus_score(preds, [labels]).score
-
     return {"BLEU": bleu, "chrF": chrF_score}
