@@ -17,7 +17,7 @@ def permute(gloss, is_segmented, max_samples: int | None=10, seed=0):
 
     processed_gloss = []
     gloss0 = [list(p) for p in permutations(gloss[0])]
-    if max_samples is not None:
+    if max_samples is not None and len(gloss0) > max_samples:
         gloss0 = random.sample(gloss0, max_samples)
 
     if is_segmented:
