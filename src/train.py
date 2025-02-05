@@ -58,8 +58,8 @@ def train(
     project = f"augmorph-{language}-{direction.replace('>', '')}-baselines"
 
     BATCH_SIZE = 32 if language == "usp" else 16
-    AUG_STEPS = 500 if language == "usp" else 5000
-    TRAIN_STEPS = 1000 if language == "usp" else 10000
+    AUG_STEPS = 500 if language == "usp" else 2000
+    TRAIN_STEPS = 1000 if language == "usp" else 4000
     LR = 2E-4
 
     config = {
@@ -99,8 +99,8 @@ def train(
     )
 
     # Preprocess dataset
-    model_key = "google/byt5-base"
-    tokenizer = transformers.AutoTokenizer.from_pretrained(model_key)
+    model_key = "google/mt5-small"
+    tokenizer = transformers.AutoTokenizer.from_pretrained(model_key, legacy=False)
     dataset = dataset.map(
         functools.partial(utils.create_mt_prompt, direction=direction, language=language)
     )
@@ -110,15 +110,14 @@ def train(
             batch,
             tokenizer=tokenizer,
             labels_key="target",
-            max_length=tokenizer.model_max_length,
         ),
         batched=True,
         remove_columns=original_columns,
     )
 
     # Create the model
-    model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
-    model = cast(transformers.T5ForConditionalGeneration, model)
+    model = transformers.MT5ForConditionalGeneration.from_pretrained(model_key)
+    model = cast(transformers.MT5ForConditionalGeneration, model)
     model = model.to(device)  # type:ignore
 
     print(
@@ -136,7 +135,7 @@ def train(
     eval_dataloader = DataLoader(dataset["eval"], BATCH_SIZE, collate_fn=collator)  # type:ignore
 
     # Training loop
-    optimizer = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.1)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=LR, weight_decay=0.5)
     stage: Literal["aug", "train"] = "aug"
 
     progress = tqdm(total=AUG_STEPS + TRAIN_STEPS, desc="Training")
@@ -166,7 +165,7 @@ def train(
                 stage = "train"
                 print("Resetting optimizer...")
                 optimizer = torch.optim.AdamW(
-                    model.parameters(), lr=LR, weight_decay=0.1
+                    model.parameters(), lr=LR, weight_decay=0.5
                 )
                 break
             if total_steps >= AUG_STEPS + TRAIN_STEPS:

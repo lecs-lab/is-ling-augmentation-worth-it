@@ -51,13 +51,11 @@ def create_mt_prompt(row, direction: Literal["transc->transl", "transl->transc",
     return row
 
 
-def tokenize(batch, tokenizer: PreTrainedTokenizer, labels_key, max_length: int):
+def tokenize(batch, tokenizer: PreTrainedTokenizer, labels_key):
     return tokenizer(
         batch["prompt"],
         text_target=batch.get(labels_key, None),
-        truncation=True,
         padding=False,
-        max_length=max_length
     )
 
 
