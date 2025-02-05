@@ -45,8 +45,8 @@ def train(
     project = f"augmorph-{language}-{direction.replace('>', '')}"
 
     BATCH_SIZE = 32 if language == "usp" else 16
-    AUG_STEPS = 500
-    TRAIN_STEPS = 1000
+    AUG_STEPS = 500 if language == "usp" else 2000
+    TRAIN_STEPS = 1000 if language == "usp" else 4000
 
     config = {
         "random-seed": seed,
@@ -179,8 +179,8 @@ def train(
             f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
         )
 
-        wandb.log({"eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
         epoch += 1
+        wandb.log({"train/epoch": epoch, "eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
 
     # Use a Trainer just for prediction
     args = transformers.Seq2SeqTrainingArguments(
