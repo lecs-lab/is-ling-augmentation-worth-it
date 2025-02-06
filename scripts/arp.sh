@@ -3,7 +3,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --ntasks=1         # Number of requested cores
 #SBATCH --mem=32G
-#SBATCH --time=5-00:00:00          # Max walltime              # Specify QOS
+#SBATCH --time=7-00:00:00          # Max walltime              # Specify QOS
 #SBATCH --qos=blanca-curc-gpu
 #SBATCH --partition=blanca-curc-gpu
 #SBATCH --account=blanca-curc-gpu
@@ -37,7 +37,7 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
 
     for direction in "transc->transl" "transl->transc" "transc->gloss"
     do
-        for size in 50 100 500 1000 5000
+        for size in 100 500 1000 5000
         do
             for seed in 0 1 2
             do
