@@ -99,8 +99,8 @@ def train(
     )
 
     # Preprocess dataset
-    model_key = "google/mt5-small"
-    tokenizer = transformers.AutoTokenizer.from_pretrained(model_key, legacy=False)
+    model_key = "google/byt5-small"
+    tokenizer = transformers.AutoTokenizer.from_pretrained(model_key)
     dataset = dataset.map(
         functools.partial(utils.create_mt_prompt, direction=direction, language=language)
     )
@@ -116,8 +116,8 @@ def train(
     )
 
     # Create the model
-    model = transformers.MT5ForConditionalGeneration.from_pretrained(model_key)
-    model = cast(transformers.MT5ForConditionalGeneration, model)
+    model = transformers.T5ForConditionalGeneration.from_pretrained(model_key)
+    model = cast(transformers.T5ForConditionalGeneration, model)
     model = model.to(device)  # type:ignore
 
     print(

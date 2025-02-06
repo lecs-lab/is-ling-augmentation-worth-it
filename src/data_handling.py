@@ -19,7 +19,7 @@ def create_dataset(
     sample_train_size: int | None = None,
     seed: int = 0,
 ):
-    dataset_key = {'usp': "usp-igt-resplit", 'arp': "arp-igt"}[language]
+    dataset_key = {'usp': "usp-unique-glosses", 'arp': "arp-igt"}[language]
     dataset = cast(
         datasets.DatasetDict, datasets.load_dataset(f"lecslab/{dataset_key}")
     ).with_format("torch")
