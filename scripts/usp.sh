@@ -22,7 +22,7 @@ cd "/projects/migi8081/augmorph/"
 
 
 # Generate all possible combinations of flags
-AUG_FLAGS=(--run-random-insert-conj --run-tam-update --run-random-duplicate --run-random-delete --run-delete-w-exclusions --run_random_insert_noise)
+AUG_FLAGS=(--run-random-insert-conj --run-tam-update --run-random-duplicate --run-random-delete --run-delete-w-exclusions --run-random-insert-noise)
 NUM_FLAGS=${#AUG_FLAGS[@]}
 TOTAL_COMBOS=$((1 << NUM_FLAGS))
 
