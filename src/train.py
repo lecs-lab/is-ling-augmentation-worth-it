@@ -69,7 +69,7 @@ def train(
         "training_size": sample_train_size or "full",
         "direction": direction,
         "reset_optimizer_between_stages": True,
-        "learning_rate": LR
+        "lr": LR
     }
 
     for key, value in asdict(params).items():
@@ -79,7 +79,7 @@ def train(
     try:
         runs = wandb.Api().runs(
             path=f"augmorph/{project}",
-            filters={f"config.{key}": value for key, value in config.items()},
+            filters={f"config.{key}": value for key, value in config.items()  if key != "lr"},
         )
         if len(runs) > 0 and any(r._state == "finished" or r._state == "running" for r in runs):
             print("Skipping run, identical run already found!!", file=sys.stderr)
