@@ -43,6 +43,7 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
         do
             for seed in 0 1 2
             do
+                >&2 echo "DIRECTION: $direction - SIZE: $size - SEED: $seed"
                 python src/train.py --language usp \
                                     --direction $direction \
                                     --sample_train_size $size \
@@ -53,6 +54,7 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
 
         for seed in 0 1 2
         do
+            >&2 echo "DIRECTION: $direction - SIZE: full - SEED: $seed"
             # Run without a train sample size, ie all data
             python src/train.py --direction $direction \
                                 --seed $seed \
