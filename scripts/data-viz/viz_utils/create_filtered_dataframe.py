@@ -15,28 +15,23 @@ def create_filtered_dataframe(csv_file):
     df = df[df['State'] == 'finished']
 
     filtered_df = df.filter(['Name', 
-        'aug.run_delete_w_exclusions',
-        'aug.run_insert_interjection',
-        'aug.run_random_delete',
-        'aug.run_random_duplicate',
-        'aug.run_random_insert_conj', 
-        'aug.run_random_insert_noise',
-        'aug.run_sentence_permutations',
-        'aug.run_tam_update',
+        'aug_run_delete_w_exclusions',
+        'aug_run_insert_interjection',
+        'aug_run_random_delete',
+        'aug_run_random_duplicate',
+        'aug_run_random_insert_conj', 
+        'aug_run_random_insert_noise',
+        'aug_run_sentence_permutations',
+        'aug_run_tam_update',
         'direction',
         'random-seed',
         'training_size',
         'eval/BLEU',
         'eval/chrF',
         'eval/loss',
-        'eval/samples_per_second',
-        'eval/steps_per_second',
         'test/BLEU',
         'test/chrF',
         'test/loss',
-        'test/samples_per_second',
-        'test/steps_per_second',
-        'train/global_step',
         'train/loss'
     ]).copy()
 
@@ -50,6 +45,6 @@ def create_filtered_dataframe(csv_file):
             filtered_df[column] = filtered_df[column].astype(bool).astype(int)  # Convert boolean T/F values to 1/0
     
     # Put categories in ascending order
-    filtered_df['training_size'] = pd.Categorical(filtered_df['training_size'], ordered=True, categories=['50', '100', '300', '500', '1000', '5000', 'full'])
+    filtered_df['training_size'] = pd.Categorical(filtered_df['training_size'], ordered=True, categories=['100', '500', '1000', '5000', 'full'])
 
     return filtered_df
