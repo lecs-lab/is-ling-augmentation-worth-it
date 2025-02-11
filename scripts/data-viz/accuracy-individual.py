@@ -9,6 +9,16 @@ from viz_utils import create_filtered_dataframe, method_names
 # Have user enter csv file name
 csv_file = input("Enter CSV file name, including its relative path: ")
 
+if "transl-transc" in csv_file:
+    experiment_name = "transl-transc"
+elif "transc-transl" in csv_file:
+    experiment_name = "transc-transl"
+elif "gloss" in csv_file:
+    experiment_name = "gloss"
+else:
+    raise ValueError()
+
+
 filtered_df = create_filtered_dataframe.create_filtered_dataframe(csv_file)
 if "usp" in csv_file:
     language = "Uspanteko"
@@ -51,7 +61,7 @@ individual_bleu = sns.relplot(
 individual_bleu.set_axis_labels("Training Size", "BLEU Score")
 
 # Output to file
-individual_bleu.savefig("individual_bleu.pdf", format="pdf")
+individual_bleu.savefig(f"{experiment_name}_individual_bleu.pdf", format="pdf")
 
 # %%
 # chrF Score visualization
@@ -66,7 +76,8 @@ individual_chrf = sns.relplot(
 individual_chrf.set_axis_labels("Training Size", "chrF Score")
 
 # Output to file
-individual_chrf.savefig("individual_chrf.pdf", format="pdf")
+individual_chrf.savefig(f"{experiment_name}_individual_chrf.pdf", format="pdf")
+
 
 # %%
 # Loss Curve Visualization
@@ -81,6 +92,7 @@ individual_loss = sns.relplot(
 individual_loss.set_axis_labels("Training Size", "Loss")
 
 # Output to file
-individual_loss.savefig("individual_loss.pdf", format="pdf")
+individual_loss.savefig(f"{experiment_name}_individual_loss.pdf", format="pdf")
+
 
 print("Done. Check data-viz folder for the outputted PNG files.")

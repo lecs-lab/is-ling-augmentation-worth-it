@@ -7,6 +7,13 @@ from viz_utils import create_filtered_dataframe, method_names
 # Have user enter csv file name
 csv_file = input("Enter CSV file name, including its relative path: ")
 
+if 'transl-transc' in csv_file:
+    experiment_name = 'transl-transc'
+elif 'transc-transl' in csv_file:
+    experiment_name = 'transc-transl'
+elif 'gloss' in csv_file:
+    experiment_name = 'gloss'
+
 filtered_df = create_filtered_dataframe.create_filtered_dataframe(csv_file)
 if 'usp' in csv_file:
     language = 'Uspanteko'
@@ -56,7 +63,7 @@ combined_bleu = sns.relplot(
 combined_bleu.set_axis_labels('Training Size', 'BLEU Score')
 
 # Output to file
-combined_bleu.savefig('combined_bleu.png')
+combined_bleu.savefig(f'{experiment_name}_combined_bleu.png')
 
 # %%
 # chrF Score visualization
@@ -67,7 +74,7 @@ combined_chrf = sns.relplot(
 combined_chrf.set_axis_labels('Training Size', 'chrF Score')
 
 # Output to file
-combined_chrf.savefig('combined_chrf.png')
+combined_chrf.savefig(f'{experiment_name}_combined_chrf.png')
 
 # %%
 # Loss Curve Visualization
@@ -78,6 +85,6 @@ combined_loss = sns.relplot(
 combined_loss.set_axis_labels('Training Size', 'Loss')
 
 # Output to file
-combined_loss.savefig('combined_loss.png')
+combined_loss.savefig(f'{experiment_name}_combined_loss.png')
 
 

@@ -7,6 +7,13 @@ from viz_utils import create_filtered_dataframe, method_names
 # Have user enter csv file name
 csv_file = input("Enter CSV file name, including its relative path: ")
 
+if 'transl-transc' in csv_file:
+    experiment_name = 'transl-transc'
+elif 'transc-transl' in csv_file:
+    experiment_name = 'transc-transl'
+elif 'gloss' in csv_file:
+    experiment_name = 'gloss'
+
 filtered_df = create_filtered_dataframe.create_filtered_dataframe(csv_file)
 filtered_df = method_names.method_names(filtered_df)
 
@@ -159,7 +166,7 @@ average_difference_bleu.set_axis_labels('Training Size', 'Difference in BLEU Sco
 average_difference_bleu.legend.set_title('Method')
 
 # Output to file
-average_difference_bleu.savefig('average_difference_bleu.png')
+average_difference_bleu.savefig(f'{experiment_name}_average_difference_bleu.png')
 
 
 # %%
@@ -171,7 +178,7 @@ average_difference_chrf = sns.catplot(
 average_difference_chrf.set_axis_labels('Training Size', 'Difference in chrF Score')
 average_difference_chrf.legend.set_title('Method')
 # Output to file
-average_difference_chrf.savefig('average_difference_chrf.png')
+average_difference_chrf.savefig(f'{experiment_name}_average_difference_chrf.png')
 
 
 # %%
@@ -183,4 +190,4 @@ average_difference_loss = sns.catplot(
 average_difference_loss.set_axis_labels('Training Size', 'Difference in Loss')
 average_difference_loss.legend.set_title('Method')
 # Output to file
-average_difference_loss.savefig('average_difference_loss.png')
+average_difference_loss.savefig(f'{experiment_name}_average_difference_loss.png')
