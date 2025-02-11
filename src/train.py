@@ -23,6 +23,7 @@ device = (
     else ("mps" if torch.backends.mps.is_available() else "cpu")
 )
 
+
 def eval(model, eval_dataloader):
     eval_loss = 0
     model.eval()
@@ -33,13 +34,18 @@ def eval(model, eval_dataloader):
                 batch["input_ids"].to(device), labels=batch["labels"].to(device)
             ),
         )
-        eval_loss += out.loss.detach().item() # type: ignore
+        eval_loss += out.loss.detach().item()  # type: ignore
     return eval_loss
 
 
 @click.command()
 @click.option("--language", type=click.Choice(["arp", "usp"]), default="usp")
-@click.option("--direction", type=click.Choice(["transc->transl", "transl->transc", "transc->gloss", "transc->segment"]))
+@click.option(
+    "--direction",
+    type=click.Choice(
+        ["transc->transl", "transl->transc", "transc->gloss", "transc->segment"]
+    ),
+)
 @click.option("--sample_train_size", type=int, default=None)
 @click.option("--seed", help="Random seed", type=int, default=0)
 @click.option("--epochs", help="Max # epochs", type=int, default=250)
@@ -47,20 +53,24 @@ def eval(model, eval_dataloader):
 def train(
     params: AugmentationParameters,
     language: Literal["usp", "arp"],
-    direction: Literal["transc->transl", "transl->transc", "transc->gloss", "transc->segment"],
+    direction: Literal[
+        "transc->transl", "transl->transc", "transc->gloss", "transc->segment"
+    ],
     sample_train_size: Optional[int],
     seed: int,
     epochs: int,
 ):
     if direction not in ["transc->transl", "transl->transc", "transc->gloss"]:
-        raise ValueError("Must be one of 'transc->transl' | 'transl->transc' | 'transc->gloss'")
+        raise ValueError(
+            "Must be one of 'transc->transl' | 'transl->transc' | 'transc->gloss'"
+        )
 
     project = f"augmorph-{language}-{direction.replace('>', '')}-v2"
 
-    BATCH_SIZE = 32 if language == "usp" else 16
+    BATCH_SIZE = 32 if language == "usp" else 24
     AUG_STEPS = 500 if language == "usp" else 2000
     TRAIN_STEPS = 1000 if language == "usp" else 4000
-    LR = 2E-4
+    LR = 2e-4
 
     config = {
         "random-seed": seed,
@@ -69,7 +79,7 @@ def train(
         "training_size": sample_train_size or "full",
         "direction": direction,
         "reset_optimizer_between_stages": True,
-        "lr": LR
+        "lr": LR,
     }
 
     for key, value in asdict(params).items():
@@ -79,9 +89,13 @@ def train(
     try:
         runs = wandb.Api().runs(
             path=f"augmorph/{project}",
-            filters={f"config.{key}": value for key, value in config.items()  if key != "lr"},
+            filters={
+                f"config.{key}": value for key, value in config.items() if key != "lr"
+            },
         )
-        if len(runs) > 0 and any(r._state == "finished" or r._state == "running" for r in runs):
+        if len(runs) > 0 and any(
+            r._state == "finished" or r._state == "running" for r in runs
+        ):
             print("Skipping run, identical run already found!!", file=sys.stderr)
             return
     except:
@@ -102,9 +116,11 @@ def train(
     model_key = "google/byt5-small"
     tokenizer = transformers.AutoTokenizer.from_pretrained(model_key)
     dataset = dataset.map(
-        functools.partial(utils.create_mt_prompt, direction=direction, language=language)
+        functools.partial(
+            utils.create_mt_prompt, direction=direction, language=language
+        )
     )
-    original_columns = list(dataset['train'].column_names)
+    original_columns = list(dataset["train"].column_names)
     dataset = dataset.map(
         lambda batch: utils.tokenize(
             batch,
@@ -179,21 +195,25 @@ def train(
                 step=total_steps,
             )
 
-            if total_steps % 100 == 0:
+            if total_steps % 400 == 0:
                 eval_loss = eval(model, eval_dataloader)
-                wandb.log({"eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
+                wandb.log(
+                    {"eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps
+                )
 
-
-        eval_loss = eval(model, eval_dataloader)
-        print(
-            f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}\tEval loss: {eval_loss / len(eval_dataloader)}"
+        # eval_loss = eval(model, eval_dataloader)
+        print(f"Epoch {epoch}\tLoss: {train_loss / train_epoch_steps}")
+        wandb.log(
+            {
+                "train/epoch": epoch,
+            },
+            step=total_steps,
         )
-        wandb.log({"train/epoch": epoch, "eval/loss": eval_loss / len(eval_dataloader)}, step=total_steps)
         epoch += 1
 
     # Use a Trainer just for prediction
     args = transformers.Seq2SeqTrainingArguments(
-        output_dir="..", #"/scratch/alpine/migi8081/augmorph/",
+        output_dir="..",  # "/scratch/alpine/migi8081/augmorph/",
         predict_with_generate=True,
         generation_max_length=1024,
         report_to=None,
@@ -214,9 +234,8 @@ def train(
 
     # Testing
     print("Running last eval on eval set...")
-    eval_metrics = trainer.evaluate(dataset["eval"]) # type: ignore
+    eval_metrics = trainer.evaluate(dataset["eval"])  # type: ignore
     wandb.log(eval_metrics)
-
 
     print("Running evaluation on test set...")
     test_preds = trainer.predict(dataset["test"])  # type: ignore
