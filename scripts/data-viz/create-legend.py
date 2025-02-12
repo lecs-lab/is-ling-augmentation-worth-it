@@ -4,13 +4,13 @@ import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 
 method_colors = {
-    "Insert noise": "#bbbbbb",  # gray
+    "Insert noise": "#254653", #dark blue 
     "Delete with exclusions": "#299D8F",  # teal
     "Random delete": "#F4A261",  # light orange
     "Insert conjunction/interjection": "#43E0D8",  # light blue
     "TAM update": "#E76F51",  # dark orange
     "Random duplicate": "#E9C46A",  # yellow
-    "Sentence permutations": "#254653",  # dark blue
+    "Sentence permutations": "#bbbbbb",  # gray
 }
 handles = [
     mlines.Line2D(

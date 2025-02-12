@@ -157,37 +157,68 @@ plot_df['chrf_difference'] = with_final_df['test/chrF'] - without_final_df['test
 plot_df['bleu_difference'] = with_final_df['test/BLEU'] - without_final_df['test/BLEU']
 
 # %%
+method_colors = {
+    "Insert noise": "#254653",  # blue
+    "Delete with exclusions": "#299D8F",  # teal
+    "Random delete": "#F4A261",  # light orange
+    "Insert conjunction": "#43E0D8",  # light blue
+    "TAM update": "#E76F51",  # dark orange
+    "Random duplicate": "#E9C46A",  # yellow
+    "Insert interjection": "#43E0D8",  # light blue
+    "Sentence permutations": "#bbbbbb",  # gray
+}
+
+unique_training_sizes = sorted(plot_df["training_size"].unique())
+
+
+def add_grid_lines(facetgrid):
+    for ax in facetgrid.axes.flat:
+        for tx in unique_training_sizes:
+            ax.axvline(
+                tx, color="gray", linestyle="--", alpha=0.2, zorder=0, linewidth=0.5
+            )
+        ax.axhline(0, color="black", linestyle="-", alpha=1.0, zorder=0, linewidth=2)
+
+# %%
 # BLEU Score visualization
 average_difference_bleu = sns.catplot(
     data=plot_df,
-    x="training_size", y="bleu_difference", kind='bar', hue='Includes', errorbar=None
+    x="training_size",
+    y="bleu_difference",
+    kind="bar",
+    hue="Includes",
+    palette=method_colors,
+    errorbar=None,
+    legend=False,
 )
-average_difference_bleu.set_axis_labels('Training Size', 'Difference in BLEU Score')
-average_difference_bleu.legend.set_title('Method')
+average_difference_bleu.set_axis_labels('Training Size', "Δ BLEU")
+add_grid_lines(average_difference_bleu)
 
 # Output to file
-average_difference_bleu.savefig(f'{experiment_name}_average_difference_bleu.png')
+average_difference_bleu.savefig(
+    f"{language}_{experiment_name}_average_difference_bleu.pdf", format="pdf"
+)
 
 
 # %%
 # chrF Score visualization
-average_difference_chrf = sns.catplot(
-    data=plot_df,
-    x="training_size", y="chrf_difference", kind='bar', hue='Includes', errorbar=None
-)
-average_difference_chrf.set_axis_labels('Training Size', 'Difference in chrF Score')
-average_difference_chrf.legend.set_title('Method')
-# Output to file
-average_difference_chrf.savefig(f'{experiment_name}_average_difference_chrf.png')
+# average_difference_chrf = sns.catplot(
+#     data=plot_df,
+#     x="training_size", y="chrf_difference", kind='bar', hue='Includes', errorbar=None
+# )
+# average_difference_chrf.set_axis_labels('Training Size', 'Difference in chrF Score')
+# average_difference_chrf.legend.set_title('Method')
+# # Output to file
+# average_difference_chrf.savefig(f'{experiment_name}_average_difference_chrf.png')
 
 
-# %%
-# Loss visualization
-average_difference_loss = sns.catplot(
-    data=plot_df,
-    x="training_size", y="loss_difference", kind='bar', hue='Includes', errorbar=None
-)
-average_difference_loss.set_axis_labels('Training Size', 'Difference in Loss')
-average_difference_loss.legend.set_title('Method')
-# Output to file
-average_difference_loss.savefig(f'{experiment_name}_average_difference_loss.png')
+# # %%
+# # Loss visualization
+# average_difference_loss = sns.catplot(
+#     data=plot_df,
+#     x="training_size", y="loss_difference", kind='bar', hue='Includes', errorbar=None
+# )
+# average_difference_loss.set_axis_labels('Training Size', 'Difference in Loss')
+# average_difference_loss.legend.set_title('Method')
+# # Output to file
+# average_difference_loss.savefig(f'{experiment_name}_average_difference_loss.png')
