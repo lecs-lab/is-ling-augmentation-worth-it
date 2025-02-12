@@ -58,7 +58,6 @@ df["BLEU_diff"] = df["test/BLEU"] - df["baseline_BLEU"]
 
 
 method_colors = {
-    "Baseline": "#aaaaaa",  # grey
     "Insert noise": "#254653",  # blue
     "Delete with exclusions": "#299D8F",  # teal
     "Random delete": "#F4A261",  # light orange
@@ -66,7 +65,7 @@ method_colors = {
     "TAM update": "#E76F51",  # dark orange
     "Random duplicate": "#E9C46A",  # yellow
     "Insert interjection": "#43E0D8",  # light blue
-    "Sentence permutations": "#E76F51",  # dark orange
+    "Sentence permutations": "#bbbbbb",  # gray
 }
 
 unique_training_sizes = sorted(df["training_size"].unique())
