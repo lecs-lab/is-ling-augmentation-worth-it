@@ -3,9 +3,11 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import math
+import typing
 import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 from viz_utils import create_filtered_dataframe, method_names
+import pandas.io.formats.style
 
 # %%
 # Have user enter csv file name
@@ -21,6 +23,7 @@ else:
     raise ValueError()
 
 filtered_df = create_filtered_dataframe.create_filtered_dataframe(csv_file)
+
 if "usp" in csv_file:
     language = "Uspanteko"
 elif "arp" in csv_file:
@@ -87,8 +90,6 @@ def add_grid_lines(facetgrid):
             )
         ax.axhline(0, color="black", linestyle="-", alpha=1.0, zorder=0, linewidth=2)
 
-
-
 # %%
 # Create legend for combined methods plot
 method_colors = {
@@ -117,7 +118,7 @@ fig_legend.canvas.draw()
 bbox = legend.get_window_extent().transformed(fig_legend.dpi_scale_trans.inverted())
 
 fig_legend.savefig(
-    f"{language}_{experiment_name}_combined_bleu_legen.pdf",
+    f"{language}_{experiment_name}_combined_by_avg_bleu_legend.pdf",
     format="pdf",
     bbox_inches=bbox,
     pad_inches=0,
@@ -141,8 +142,45 @@ add_grid_lines(combined_bleu)
 
 # Output to file
 combined_bleu.savefig(
-    f"{language}_{experiment_name}_combined_bleu.pdf", format="pdf"
+    f"{language}_{experiment_name}_combined_by_avg_bleu.pdf", format="pdf"
 )
+
+# %%
+# Get mean and std for each method/training size combo
+result['mean'] = result.groupby(['Method', 'training_size'])['BLEU_diff'].transform('mean')
+result['std'] = result.groupby(['Method', 'training_size'])['BLEU_diff'].transform('std')
+
+# %%
+# Remove duplicates of the same runs
+result.sort_values(by='BLEU_diff', ascending=False, inplace=True)
+result.drop_duplicates(subset=['Method', 'training_size'], inplace=True)
+
+# %%
+# Format output for Latex table 'mean (std)'
+for index, row in result.iterrows():
+    result.at[index,'final'] = f"{row['mean']:.2f} ({row['std']:.2f})"
+
+# %%
+# Clean up columns and reformat so the columns correspond to training sizes
+output = result.melt(id_vars=['Method', 'training_size'], value_vars='final', value_name='BLEU')
+
+output.drop(columns='variable', inplace=True)
+output.reset_index(drop=True, inplace=True)
+
+output = output.pivot(columns='training_size', index=['Method'])
+
+# %%
+s = pd.io.formats.style.Styler(output, precision=2)
+
+latex = s.to_latex(
+    column_format='p{4cm}| ccccc',
+    clines= 'all;index',
+    caption="BLEU scores across the top five method combinations. Reported as the mean over three runs, with the format mean(std).",
+    label='tab:accuracy_combined_scores'
+)
+
+# %%
+print(latex)
 
 # %%
 # chrF Score visualization
