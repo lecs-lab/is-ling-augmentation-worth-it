@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import math
+import typing
 import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 from viz_utils import create_filtered_dataframe, method_names
@@ -21,6 +22,7 @@ else:
     raise ValueError()
 
 filtered_df = create_filtered_dataframe.create_filtered_dataframe(csv_file)
+
 if "usp" in csv_file:
     language = "Uspanteko"
 elif "arp" in csv_file:
@@ -32,51 +34,62 @@ else:
 final_df = method_names.method_names(filtered_df)
 
 # %%
-# Average across runs for each method combo
-final_bleu = final_df.groupby(['Method'], as_index=False)[['eval/BLEU', 'test/BLEU']].mean()
-
-# %%
-top_runs = final_bleu.nlargest(5, ['eval/BLEU'])
-
-# %%
-# Isolate baseline and top 5 combination runs
+# Isolate baseline runs and create baseline BLEU column
 baseline_df = filtered_df[filtered_df["Method"] == "Baseline"][
     ["training_size", "test/BLEU"]
 ].copy()
 baseline_df = baseline_df.rename(columns={"test/BLEU": "baseline_BLEU"})
 
+# %%
+final_df = pd.merge(final_df, baseline_df, on="training_size", how="left")
+
+# %%
+# Create copy of combined dataframe to ID top runs from
+df = final_df.copy()
+
+# %%
+df["BLEU_diff"] = df["eval/BLEU"] - df["baseline_BLEU"]
+
+# %%
+# Force unique combinations in the top 5
+df = df.sort_values('BLEU_diff', ascending=False)
+df.drop_duplicates(subset='Name', inplace=True)
+df.drop_duplicates(subset='Method', inplace=True)
+
+# %%
+top_runs = df.nlargest(5, 'BLEU_diff')
+
+# %%
+# Isolate top 5 combination runs
 num_one = top_runs.iloc[0]['Method']
-aug_one = (filtered_df['Method'] == num_one)
-first_df = filtered_df[aug_one]
+aug_one = (final_df['Method'] == num_one)
+first_df = final_df[aug_one]
 
 num_two = top_runs.iloc[1]['Method']
-aug_two = (filtered_df['Method'] == num_two)
-second_df = filtered_df[aug_two]
+aug_two = (final_df['Method'] == num_two)
+second_df = final_df[aug_two]
 
 num_three = top_runs.iloc[2]['Method']
-aug_three = (filtered_df['Method'] == num_three)
-third_df = filtered_df[aug_three]
+aug_three = (final_df['Method'] == num_three)
+third_df = final_df[aug_three]
 
 num_four = top_runs.iloc[3]['Method']
-aug_four = (filtered_df['Method'] == num_four)
-fourth_df = filtered_df[aug_four]
+aug_four = (final_df['Method'] == num_four)
+fourth_df = final_df[aug_four]
 
 num_five = top_runs.iloc[4]['Method']
-aug_five = (filtered_df['Method'] == num_five)
-fifth_df = filtered_df[aug_five]
+aug_five = (final_df['Method'] == num_five)
+fifth_df = final_df[aug_five]
 
 
 # %%
-df = pd.concat([first_df, second_df, third_df, fourth_df, fifth_df])
-
-# %%
-result = pd.merge(df, baseline_df, on="training_size", how="left")
+result = pd.concat([first_df, second_df, third_df, fourth_df, fifth_df])
 
 # %%
 result["BLEU_diff"] = result["test/BLEU"] - result["baseline_BLEU"]
 
 # %%
-unique_training_sizes = sorted(df["training_size"].unique())
+unique_training_sizes = sorted(result["training_size"].unique())
 
 
 def add_grid_lines(facetgrid):
@@ -117,7 +130,7 @@ fig_legend.canvas.draw()
 bbox = legend.get_window_extent().transformed(fig_legend.dpi_scale_trans.inverted())
 
 fig_legend.savefig(
-    f"{language}_{experiment_name}_combined_bleu_legen.pdf",
+    f"{language}_{experiment_name}_combined_diff_bleu_legend.pdf",
     format="pdf",
     bbox_inches=bbox,
     pad_inches=0,
@@ -141,7 +154,7 @@ add_grid_lines(combined_bleu)
 
 # Output to file
 combined_bleu.savefig(
-    f"{language}_{experiment_name}_combined_bleu.pdf", format="pdf"
+    f"{language}_{experiment_name}_combined_diff_bleu.pdf", format="pdf"
 )
 
 # %%
