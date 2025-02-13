@@ -23,8 +23,8 @@ elif 'arp' in csv_file:
     language = 'Arapaho'
 
 # %%
-# Create two dataframes for each method: 
-# (1) Contains all runs with a method 
+# Create two dataframes for each method:
+# (1) Contains all runs with a method
 # (2) Contains all runs without the method
 
 # Insert noise -- shared method
@@ -43,7 +43,7 @@ if language == 'Uspanteko':
     with_random_delete = filtered_df['Method'].str.contains('Random delete')
     with_random_delete_df = filtered_df[with_random_delete]
     with_random_delete_df['Filter'] = 'With'
-    
+
     without_random_delete_df = filtered_df[~with_random_delete]
     without_random_delete_df['Filter'] = 'Without'
 
@@ -127,19 +127,19 @@ elif language == 'Arapaho':
 results.dropna(inplace=True)
 
 # %%
-# Split into with and without 
+# Split into with and without
 with_final_df = results[results['Filter']== 'With']
 without_final_df = results[results['Filter']== 'Without']
 
 # %%
 # Find average for each metric
-with_final_bleu = with_final_df.groupby(['training_size','Includes'], as_index=False)['test/BLEU'].mean()
-with_final_chrf = with_final_df.groupby(['training_size','Includes'], as_index=False)['test/chrF'].mean()
-with_final_loss = with_final_df.groupby(['training_size','Includes'], as_index=False)['test/loss'].mean()
+with_final_bleu = with_final_df.groupby(['Includes'], as_index=False)['test/BLEU'].mean()
+with_final_chrf = with_final_df.groupby(['Includes'], as_index=False)['test/chrF'].mean()
+with_final_loss = with_final_df.groupby(['Includes'], as_index=False)['test/loss'].mean()
 
-without_final_bleu = without_final_df.groupby(['training_size','Includes'], as_index=False)['test/BLEU'].mean()
-without_final_chrf = without_final_df.groupby(['training_size','Includes'], as_index=False)['test/chrF'].mean()
-without_final_loss = without_final_df.groupby(['training_size','Includes'], as_index=False)['test/loss'].mean()
+without_final_bleu = without_final_df.groupby(['Includes'], as_index=False)['test/BLEU'].mean()
+without_final_chrf = without_final_df.groupby(['Includes'], as_index=False)['test/chrF'].mean()
+without_final_loss = without_final_df.groupby(['Includes'], as_index=False)['test/loss'].mean()
 
 # %%
 # Merge metric dataframes into one
@@ -168,31 +168,41 @@ method_colors = {
     "Sentence permutations": "#bbbbbb",  # gray
 }
 
-unique_training_sizes = sorted(plot_df["training_size"].unique())
+# unique_training_sizes = sorted(plot_df["training_size"].unique())
 
 
 def add_grid_lines(facetgrid):
     for ax in facetgrid.axes.flat:
-        for tx in unique_training_sizes:
-            ax.axvline(
-                tx, color="gray", linestyle="--", alpha=0.2, zorder=0, linewidth=0.5
-            )
+        # for tx in unique_training_sizes:
+        #     ax.axvline(
+        #         tx, color="gray", linestyle="--", alpha=0.2, zorder=0, linewidth=0.5
+        #     )
         ax.axhline(0, color="black", linestyle="-", alpha=1.0, zorder=0, linewidth=2)
 
 # %%
 # BLEU Score visualization
+
+if language == "Uspanteko":
+    method_order = ["Insert noise", "Insert conjunction", "Random delete", "Delete with exclusions", "Random duplicate", "TAM update"]
+else:
+    method_order = [] # FIXME
+
 average_difference_bleu = sns.catplot(
     data=plot_df,
-    x="training_size",
+    x="Includes",
     y="bleu_difference",
     kind="bar",
     hue="Includes",
+    order=method_order,
     palette=method_colors,
     errorbar=None,
     legend=False,
 )
-average_difference_bleu.set_axis_labels('Training Size', "Δ BLEU")
+average_difference_bleu.set_axis_labels('Strategy', "Δ BLEU")
 add_grid_lines(average_difference_bleu)
+
+for ax in average_difference_bleu.axes.flat:
+    ax.set_xticklabels([])
 
 # Output to file
 average_difference_bleu.savefig(
