@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 
 method_colors = {
     "Insert noise": "#254653", #dark blue 
-    "Delete with exclusions": "#299D8F",  # teal
-    "Random delete": "#F4A261",  # light orange
     "Insert conjunction/interjection": "#43E0D8",  # light blue
-    "TAM update": "#E76F51",  # dark orange
+    "Random delete": "#F4A261",  # light orange
+    "Delete with exclusions": "#299D8F",  # teal
     "Random duplicate": "#E9C46A",  # yellow
+    "TAM update": "#E76F51",  # dark orange
     "Sentence permutations": "#bbbbbb",  # gray
 }
 handles = [

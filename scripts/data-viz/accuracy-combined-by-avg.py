@@ -91,7 +91,10 @@ method_colors = {
     "Random delete,  Insert conjunction": "#E9C46A",  # yellow
     "Random delete,  Random duplicate,  Insert conjunction,  TAM update": "#aaaaaa",  # gray
     "Delete with exclusions,  Random delete,  Insert conjunction,  TAM update": "#000000", # black
-    "Insert conjunction,  TAM update": "#CC7722" #ochre
+    "Insert conjunction,  TAM update": "#CC7722", #ochre
+    "Insert interjection, Insert noise": "#43E0D8",  # light blue
+    "Insert noise": "#E76F51",  # dark orange
+    "Insert interjection": "#E9C46A",  # yellow
     
 }
 
