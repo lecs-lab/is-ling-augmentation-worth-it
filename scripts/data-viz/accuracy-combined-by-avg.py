@@ -39,7 +39,7 @@ final_df = method_names.method_names(filtered_df)
 final_bleu = final_df.groupby(['Method'], as_index=False)[['eval/BLEU', 'test/BLEU']].mean()
 
 # %%
-top_runs = final_bleu.nlargest(5, 'eval/BLEU')
+top_runs = final_bleu.nlargest(3, 'eval/BLEU')
 
 # %%
 # Isolate baseline and top 5 combination runs
@@ -60,17 +60,9 @@ num_three = top_runs.iloc[2]['Method']
 aug_three = (filtered_df['Method'] == num_three)
 third_df = filtered_df[aug_three]
 
-num_four = top_runs.iloc[3]['Method']
-aug_four = (filtered_df['Method'] == num_four)
-fourth_df = filtered_df[aug_four]
-
-num_five = top_runs.iloc[4]['Method']
-aug_five = (filtered_df['Method'] == num_five)
-fifth_df = filtered_df[aug_five]
-
 
 # %%
-df = pd.concat([first_df, second_df, third_df, fourth_df, fifth_df])
+df = pd.concat([first_df, second_df, third_df])
 
 # %%
 result = pd.merge(df, baseline_df, on="training_size", how="left")
@@ -90,40 +82,18 @@ def add_grid_lines(facetgrid):
             )
         ax.axhline(0, color="black", linestyle="-", alpha=1.0, zorder=0, linewidth=2)
 
-# %%
-# Create legend for combined methods plot
 method_colors = {
-    num_one: "#254653",  # blue
-    num_two: "#299D8F",  # teal
-    num_three: "#F4A261",  # light orange
-    num_four: "#43E0D8",  # light blue
-    num_five: "#E76F51",  # dark orange
+    "Delete with exclusions,  Random delete,  Random duplicate,  Insert conjunction": "#254653", #dark blue 
+    "Delete with exclusions,  Random delete,  Insert conjunction": "#299D8F",  # teal
+    "Delete with exclusions,  Random duplicate,  Insert conjunction,  Insert noise": "#F4A261",  # light orange
+    "Random duplicate,  Insert noise,  TAM update": "#43E0D8",  # light blue
+    "Delete with exclusions,  Random duplicate,  Insert conjunction,  Insert noise,  TAM update": "#E76F51",  # dark orange
+    "Random delete,  Insert conjunction": "#E9C46A",  # yellow
+    "Random delete,  Random duplicate,  Insert conjunction,  TAM update": "#aaaaaa",  # gray
+    "Delete with exclusions,  Random delete,  Insert conjunction,  TAM update": "#000000", # black
+    "Insert conjunction,  TAM update": "#CC7722" #ochre
+    
 }
-
-handles = [
-    mlines.Line2D(
-        [], [], color=color, marker="o", linestyle="None", markersize=8, label=label
-    )
-    for label, color in method_colors.items()
-]
-num_columns = math.ceil(len(handles) / 2)
-fig_legend, ax_legend = plt.subplots(figsize=(8, 0.5))
-legend = ax_legend.legend(
-    handles=handles, title="Method", loc="center", ncol=num_columns, frameon=False
-)
-ax_legend.axis("off")
-legend.set_title(None)
-
-fig_legend.canvas.draw()
-bbox = legend.get_window_extent().transformed(fig_legend.dpi_scale_trans.inverted())
-
-fig_legend.savefig(
-    f"{language}_{experiment_name}_combined_by_avg_bleu_legend.pdf",
-    format="pdf",
-    bbox_inches=bbox,
-    pad_inches=0,
-)
-plt.close(fig_legend)
 
 # %%
 # BLEU Score visualization
@@ -173,9 +143,9 @@ output = output.pivot(columns='training_size', index=['Method'])
 s = pd.io.formats.style.Styler(output, precision=2)
 
 latex = s.to_latex(
-    column_format='p{4cm}| ccccc',
+    column_format='p{5cm}| ccccc',
     clines= 'all;index',
-    caption="BLEU scores across the top five method combinations. Reported as the mean over three runs, with the format mean(std).",
+    caption="BLEU score differential between baseline and test across the top three method combinations. Reported as the mean over three runs, with the format mean(std).",
     label='tab:accuracy_combined_scores'
 )
 

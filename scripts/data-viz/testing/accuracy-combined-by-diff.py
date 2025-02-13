@@ -105,11 +105,16 @@ def add_grid_lines(facetgrid):
 # %%
 # Create legend for combined methods plot
 method_colors = {
-    num_one: "#254653",  # blue
-    num_two: "#299D8F",  # teal
-    num_three: "#F4A261",  # light orange
-    num_four: "#43E0D8",  # light blue
-    num_five: "#E76F51",  # dark orange
+    "Delete with exclusions,  Random delete,  Random duplicate,  Insert conjunction": "#254653", #dark blue 
+    "Delete with exclusions,  Random delete,  Insert conjunction": "#299D8F",  # teal
+    "Delete with exclusions,  Random duplicate,  Insert conjunction,  Insert noise": "#F4A261",  # light orange
+    "Random duplicate,  Insert noise,  TAM update": "#43E0D8",  # light blue
+    "Delete with exclusions,  Random duplicate,  Insert conjunction,  Insert noise,  TAM update": "#E76F51",  # dark orange
+    "Random delete,  Insert conjunction": "#E9C46A",  # yellow
+    "Random delete,  Random duplicate,  Insert conjunction,  TAM update": "#aaaaaa",  # gray
+    "Delete with exclusions,  Random delete,  Insert conjunction,  TAM update": "#000000", # black
+    "Insert conjunction,  TAM update": "#CC7722" #ochre
+    
 }
 
 handles = [
