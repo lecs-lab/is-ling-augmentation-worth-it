@@ -1,12 +1,13 @@
-import wandb
 from itertools import groupby
 from operator import itemgetter
 
-project = "augmorph/augmorph-usp-transc-gloss"
+import wandb
+
+project = "augmorph/augmorph-arp-transc-gloss-v2"
 runs = wandb.Api().runs(path=project)
 
 aug_keys = [k for k in runs[0].config.keys() if k.startswith("aug_")]
-keys_getter = itemgetter("random-seed", "training_size", *aug_keys) # type:ignore
+keys_getter = itemgetter("random-seed", "training_size", *aug_keys)  # type:ignore
 
 dupes = 0
 runs_to_delete = []
@@ -14,7 +15,7 @@ sorted_runs = sorted(runs, key=lambda r: tuple(str(x) for x in keys_getter(r.con
 for key, grp in groupby(sorted_runs, lambda r: keys_getter(r.config)):
     grp = list(grp)
     if len(grp) > 1:
-        dupes += (len(grp) - 1)
+        dupes += len(grp) - 1
 
         # Keep the oldest run in the group
         grp = sorted(grp, key=lambda r: r.createdAt)
