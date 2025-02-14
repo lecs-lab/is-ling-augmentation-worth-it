@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 from viz_utils import create_filtered_dataframe, method_names
 import pandas.io.formats.style
 
+METRIC = "chrF"
+
 # %%
 # Have user enter csv file name
 csv_file = input("Enter CSV file name, including its relative path: ")
@@ -36,20 +38,20 @@ final_df = method_names.method_names(filtered_df)
 
 # %%
 # Average across runs for each method combo
-final_bleu = final_df.groupby(['Method'], as_index=False)[['eval/BLEU', 'test/BLEU']].mean()
+final_scores = final_df.groupby(['Method'], as_index=False)[[f'eval/{METRIC}', f'test/{METRIC}']].mean()
 
 if language == 'Arapaho':
-    index = final_bleu[final_bleu['Method']=='Baseline'].index
-    final_bleu.drop(index, inplace=True)
+    index = final_scores[final_scores['Method']=='Baseline'].index
+    final_scores.drop(index, inplace=True)
 # %%
-top_runs = final_bleu.nlargest(3, 'eval/BLEU')
+top_runs = final_scores.nlargest(3, f'eval/{METRIC}')
 
 # %%
 # Isolate baseline and top 5 combination runs
 baseline_df = filtered_df[filtered_df["Method"] == "Baseline"][
-    ["training_size", "test/BLEU"]
+    ["training_size", f"test/{METRIC}"]
 ].copy()
-baseline_df = baseline_df.rename(columns={"test/BLEU": "baseline_BLEU"})
+baseline_df = baseline_df.rename(columns={f"test/{METRIC}": f"baseline_{METRIC}"})
 
 num_one = top_runs.iloc[0]['Method']
 aug_one = (filtered_df['Method'] == num_one)
@@ -71,7 +73,7 @@ df = pd.concat([first_df, second_df, third_df])
 result = pd.merge(df, baseline_df, on="training_size", how="left")
 
 # %%
-result["BLEU_diff"] = result["test/BLEU"] - result["baseline_BLEU"]
+result[f"{METRIC}_diff"] = result[f"test/{METRIC}"] - result[f"baseline_{METRIC}"]
 
 # %%
 unique_training_sizes = sorted(df["training_size"].unique())
@@ -86,49 +88,53 @@ def add_grid_lines(facetgrid):
         ax.axhline(0, color="black", linestyle="-", alpha=1.0, zorder=0, linewidth=2)
 
 method_colors = {
-    "Delete with exclusions,  Random delete,  Random duplicate,  Insert conjunction": "#254653", #dark blue 
-    "Delete with exclusions,  Random delete,  Insert conjunction": "#299D8F",  # teal
-    "Delete with exclusions,  Random duplicate,  Insert conjunction,  Insert noise": "#F4A261",  # light orange
-    "Random duplicate,  Insert noise,  TAM update": "#43E0D8",  # light blue
-    "Delete with exclusions,  Random duplicate,  Insert conjunction,  Insert noise,  TAM update": "#E76F51",  # dark orange
-    "Random delete,  Insert conjunction": "#E9C46A",  # yellow
-    "Random delete,  Random duplicate,  Insert conjunction,  TAM update": "#aaaaaa",  # gray
-    "Delete with exclusions,  Random delete,  Insert conjunction,  TAM update": "#000000", # black
-    "Insert conjunction,  TAM update": "#CC7722", #ochre
-    "Insert interjection,  Insert noise": "#43E0D8",  # light blue
-    "Insert noise": "#E76F51",  # dark orange
-    "Insert interjection": "#E9C46A",  # yellow
-    
+    "Del-Excl + Dup + Ins-Conj": "#254653", #dark blue
+    "Del-Excl + Dup + Ins-Conj + Ins-Noise": "#299D8F",  # teal
+    "Dup + Ins-Conj + Ins-Noise": "#F4A261",  # light orange
+    "Del + Dup + Ins-Conj + Upd-TAM": "#43E0D8",  # light blue
+    "Ins-Conj + Upd-TAM": "#E76F51",  # dark orange
+    "Del-Excl + Del + Ins-Conj + Upd-TAM": "#E9C46A",  # yellow
+    "Del-Excl + Dup + Ins-Conj + Ins-Noise + Upd-TAM": "#aaaaaa",  # gray
+    "Del + Dup + Ins-Conj + Ins-Noise": "#000000", # black
+    "Del-Excl + Del + Ins-Conj": "#CC7722", #ochre
+
+    # Arapaho
+    "Ins-Intj": "#254653", #dark blue
+    "Ins-Intj + Ins-Noise": "#299D8F",  # teal
+    "Ins-Noise": "#F4A261",  # light orange
+    # "Insert interjection,  Insert noise": "#43E0D8",  # light blue
+    # "Del-Excl": "#E76F51",  # dark orange
+    # "Ins-Intj": "#E9C46A",  # yellow
 }
 
 # %%
 # BLEU Score visualization
-combined_bleu = sns.relplot(
+combined_results = sns.relplot(
     data=result,
     x="training_size",
-    y="BLEU_diff",
+    y=f"{METRIC}_diff",
     kind="line",
     palette=method_colors,
     hue="Method",
     errorbar=None,
     legend=False,
 )
-combined_bleu.set_axis_labels('Training Size', 'Δ BLEU')
-add_grid_lines(combined_bleu)
+combined_results.set_axis_labels('Training Size', f'Δ {METRIC}')
+add_grid_lines(combined_results)
 
 # Output to file
-combined_bleu.savefig(
-    f"{language}_{experiment_name}_combined_by_avg_bleu.pdf", format="pdf"
+combined_results.savefig(
+    f"{language}_{experiment_name}_combined_by_avg_{METRIC}.pdf", format="pdf"
 )
 
 # %%
 # Get mean and std for each method/training size combo
-result['mean'] = result.groupby(['Method', 'training_size'])['BLEU_diff'].transform('mean')
-result['std'] = result.groupby(['Method', 'training_size'])['BLEU_diff'].transform('std')
+result['mean'] = result.groupby(['Method', 'training_size'])[f'{METRIC}_diff'].transform('mean')
+result['std'] = result.groupby(['Method', 'training_size'])[f'{METRIC}_diff'].transform('std')
 
 # %%
 # Remove duplicates of the same runs
-result.sort_values(by='BLEU_diff', ascending=False, inplace=True)
+result.sort_values(by=f'{METRIC}_diff', ascending=False, inplace=True)
 result.drop_duplicates(subset=['Method', 'training_size'], inplace=True)
 
 # %%
@@ -138,7 +144,7 @@ for index, row in result.iterrows():
 
 # %%
 # Clean up columns and reformat so the columns correspond to training sizes
-output = result.melt(id_vars=['Method', 'training_size'], value_vars='final', value_name='BLEU')
+output = result.melt(id_vars=['Method', 'training_size'], value_vars='final', value_name=METRIC)
 
 output.drop(columns='variable', inplace=True)
 output.reset_index(drop=True, inplace=True)
@@ -151,33 +157,9 @@ s = pd.io.formats.style.Styler(output, precision=2)
 latex = s.to_latex(
     column_format='p{5cm}| ccccc',
     clines= 'all;index',
-    caption="BLEU score differential between baseline and test across the top three method combinations. Reported as the mean over three runs, with the format mean(std).",
+    caption=f"{METRIC} score differential between baseline and test across the top three method combinations. Reported as the mean over three runs, with the format mean(std).",
     label='tab:accuracy_combined_scores'
 )
 
 # %%
 print(latex)
-
-# %%
-# chrF Score visualization
-# combined_chrf = sns.relplot(
-#     data=result,
-#     x="training_size", y="test/chrF", kind='line', hue='Method', errorbar=None
-# )
-# combined_chrf.set_axis_labels('Training Size', 'chrF Score')
-
-# # Output to file
-# combined_chrf.savefig('combined_chrf.png')
-
-# %%
-# # Loss Curve Visualization
-# combined_loss = sns.relplot(
-#     data=result,
-#     x="training_size", y="test/loss", kind='line', hue='Method', errorbar=None
-# )
-# combined_loss.set_axis_labels('Training Size', 'Loss')
-
-# # Output to file
-# combined_loss.savefig('combined_bleu.png')
-
-

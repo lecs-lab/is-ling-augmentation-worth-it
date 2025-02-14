@@ -3,14 +3,18 @@ import math
 import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 
+plt.rcParams["text.usetex"] = True
+
 method_colors = {
-    "Insert interjection, Insert noise": "#43E0D8",  # light blue
-    "Insert noise": "#E76F51",  # dark orange
-    "Insert interjection": "#E9C46A",  # yellow
+    r"\textsc{Ins-Intj}": "#254653", #dark blue
+    r"\textsc{Ins-Intj + Ins-Noise}": "#299D8F",  # teal
+    r"\textsc{Ins-Noise}": "#F4A261",  # light orange
+
+
     # "Random delete,  Random duplicate,  Insert conjunction,  TAM update": "#aaaaaa",  # gray
     # "Delete with exclusions,  Random delete,  Insert conjunction,  TAM update": "#000000", # black
     # "Insert conjunction,  TAM update": "#CC7722", #ochre
-    # "Delete with exclusions,  Random delete,  Random duplicate,  Insert conjunction": "#254653", #dark blue 
+    # "Delete with exclusions,  Random delete,  Random duplicate,  Insert conjunction": "#254653", #dark blue
     # "Delete with exclusions,  Random delete,  Insert conjunction": "#299D8F",  # teal
     # "Delete with exclusions,  Random duplicate,  Insert conjunction,  Insert noise": "#F4A261",  # light orange
 }
@@ -27,7 +31,7 @@ legend = ax_legend.legend(
     handles=handles, title="Method", loc="center", ncol=num_columns, frameon=False
 )
 ax_legend.axis("off")
-legend.set_title(None)
+legend.set_title(None) # type:ignore
 
 fig_legend.canvas.draw()
 bbox = legend.get_window_extent().transformed(fig_legend.dpi_scale_trans.inverted())

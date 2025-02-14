@@ -27,8 +27,8 @@ elif 'arp' in csv_file:
 # (1) Contains all runs with a method
 # (2) Contains all runs without the method
 
-# Insert noise -- shared method
-with_insert_noise = filtered_df['Method'].str.contains('Insert noise')
+# Ins-Noise -- shared method
+with_insert_noise = filtered_df['Method'].str.contains('Ins-Noise')
 with_insert_noise_df = filtered_df[with_insert_noise]
 with_insert_noise_df['Filter'] = 'With'
 
@@ -36,11 +36,11 @@ without_insert_noise_df = filtered_df[~with_insert_noise]
 without_insert_noise_df['Filter'] = 'Without'
 
 insert_noise_df = pd.concat([with_insert_noise_df, without_insert_noise_df])    # Recombine after adding Filter column
-insert_noise_df['Includes'] = 'Insert noise'
+insert_noise_df['Includes'] = 'Ins-Noise'
 
 if language == 'Uspanteko':
-    # Random Delete
-    with_random_delete = filtered_df['Method'].str.contains('Random delete')
+    # Del
+    with_random_delete = filtered_df['Method'].str.contains('Del')
     with_random_delete_df = filtered_df[with_random_delete]
     with_random_delete_df['Filter'] = 'With'
 
@@ -48,10 +48,10 @@ if language == 'Uspanteko':
     without_random_delete_df['Filter'] = 'Without'
 
     random_delete_df = pd.concat([with_random_delete_df, without_random_delete_df])
-    random_delete_df['Includes'] = 'Random delete'
+    random_delete_df['Includes'] = 'Del'
 
     # Exclusion delete
-    with_exclusion_delete = filtered_df['Method'].str.contains('Delete with exclusions')
+    with_exclusion_delete = filtered_df['Method'].str.contains('Del-Excl')
     with_exclusion_delete_df = filtered_df[with_exclusion_delete]
     with_exclusion_delete_df['Filter'] = 'With'
 
@@ -59,10 +59,10 @@ if language == 'Uspanteko':
     without_exclusion_delete_df['Filter'] = 'Without'
 
     exclusion_delete_df = pd.concat([with_exclusion_delete_df, without_exclusion_delete_df])
-    exclusion_delete_df['Includes'] = 'Delete with exclusions'
+    exclusion_delete_df['Includes'] = 'Del-Excl'
 
-    # Random duplicate
-    with_random_duplicate = filtered_df['Method'].str.contains('Random duplicate')
+    # Dup
+    with_random_duplicate = filtered_df['Method'].str.contains('Dup')
     with_random_duplicate_df = filtered_df[with_random_duplicate]
     with_random_duplicate_df['Filter'] = 'With'
 
@@ -70,10 +70,10 @@ if language == 'Uspanteko':
     without_random_duplicate_df['Filter'] = 'Without'
 
     random_duplicate_df = pd.concat([with_random_duplicate_df, without_random_duplicate_df])
-    random_duplicate_df['Includes'] = 'Random duplicate'
+    random_duplicate_df['Includes'] = 'Dup'
 
-    # Insert conjunction
-    with_insert_conjunction = filtered_df['Method'].str.contains('Insert conjunction')
+    # Ins-Conj
+    with_insert_conjunction = filtered_df['Method'].str.contains('Ins-Conj')
     with_insert_conjunction_df = filtered_df[with_insert_conjunction]
     with_insert_conjunction_df['Filter'] = 'With'
 
@@ -81,10 +81,10 @@ if language == 'Uspanteko':
     without_insert_conjunction_df['Filter'] = 'Without'
 
     insert_conjunction_df = pd.concat([with_insert_conjunction_df, without_insert_conjunction_df])
-    insert_conjunction_df['Includes'] = 'Insert conjunction'
+    insert_conjunction_df['Includes'] = 'Ins-Conj'
 
-    # TAM update
-    with_tam_update = filtered_df['Method'].str.contains('TAM update')
+    # Upd-TAM
+    with_tam_update = filtered_df['Method'].str.contains('Upd-TAM')
     with_tam_update_df = filtered_df[with_tam_update]
     with_tam_update_df['Filter'] = 'With'
 
@@ -92,14 +92,14 @@ if language == 'Uspanteko':
     without_tam_update_df['Filter'] = 'Without'
 
     tam_update_df = pd.concat([with_tam_update_df, without_tam_update_df])
-    tam_update_df['Includes'] = 'TAM update'
+    tam_update_df['Includes'] = 'Upd-TAM'
 
     # Combine method dataframes
     results = pd.concat([insert_noise_df, random_delete_df, exclusion_delete_df, random_duplicate_df, insert_conjunction_df, tam_update_df])
 
 elif language == 'Arapaho':
-    # Insert interjection
-    with_insert_interjection = filtered_df['Method'].str.contains('Insert interjection')
+    # Ins-Intj
+    with_insert_interjection = filtered_df['Method'].str.contains('Ins-Intj')
     with_insert_interjection_df = filtered_df[with_insert_interjection]
     with_insert_interjection_df['Filter'] = 'With'
 
@@ -107,10 +107,10 @@ elif language == 'Arapaho':
     without_insert_interjection_df['Filter'] = 'Without'
 
     insert_interjection_df = pd.concat([with_insert_interjection_df, without_insert_interjection_df])
-    insert_interjection_df['Includes'] = 'Insert interjection'
+    insert_interjection_df['Includes'] = 'Ins-Intj'
 
-    # Sentence permutations
-    with_sentence_permutations = filtered_df['Method'].str.contains('Sentence permutations')
+    # Perm
+    with_sentence_permutations = filtered_df['Method'].str.contains('Perm')
     with_sentence_permutations_df = filtered_df[with_sentence_permutations]
     with_sentence_permutations_df['Filter'] = 'With'
 
@@ -118,7 +118,7 @@ elif language == 'Arapaho':
     without_sentence_permutations_df['Filter'] = 'Without'
 
     sentence_permutations_df = pd.concat([with_sentence_permutations_df, without_sentence_permutations_df])
-    sentence_permutations_df['Includes'] = 'Sentence permutations'
+    sentence_permutations_df['Includes'] = 'Perm'
 
     # Combine method dataframes
     results = pd.concat([insert_noise_df, insert_interjection_df, sentence_permutations_df])
@@ -158,14 +158,14 @@ plot_df['bleu_difference'] = with_final_df['test/BLEU'] - without_final_df['test
 
 # %%
 method_colors = {
-    "Insert noise": "#254653",  # blue
-    "Delete with exclusions": "#299D8F",  # teal
-    "Random delete": "#F4A261",  # light orange
-    "Insert conjunction": "#43E0D8",  # light blue
-    "TAM update": "#E76F51",  # dark orange
-    "Random duplicate": "#E9C46A",  # yellow
-    "Insert interjection": "#43E0D8",  # light blue
-    "Sentence permutations": "#bbbbbb",  # gray
+    "Ins-Noise": "#254653",  # blue
+    "Del-Excl": "#299D8F",  # teal
+    "Del": "#F4A261",  # light orange
+    "Ins-Conj": "#43E0D8",  # light blue
+    "Upd-TAM": "#E76F51",  # dark orange
+    "Dup": "#E9C46A",  # yellow
+    "Ins-Intj": "#43E0D8",  # light blue
+    "Perm": "#bbbbbb",  # gray
 }
 
 # unique_training_sizes = sorted(plot_df["training_size"].unique())
@@ -183,9 +183,9 @@ def add_grid_lines(facetgrid):
 # BLEU Score visualization
 
 if language == "Uspanteko":
-    method_order = ["Insert noise", "Insert conjunction", "Random delete", "Delete with exclusions", "Random duplicate", "TAM update"]
+    method_order = ["Upd-TAM", "Ins-Conj", "Ins-Noise", "Del", "Del-Excl", "Dup"]
 else:
-    method_order = ["Insert noise", "Insert interjection", "Sentence permutations"] 
+    method_order = ["Ins-Intj", "Ins-Noise", "Perm"]
 
 average_difference_bleu = sns.catplot(
     data=plot_df,
@@ -210,25 +210,26 @@ average_difference_bleu.savefig(
 )
 
 
-# %%
-# chrF Score visualization
-# average_difference_chrf = sns.catplot(
-#     data=plot_df,
-#     x="training_size", y="chrf_difference", kind='bar', hue='Includes', errorbar=None
-# )
-# average_difference_chrf.set_axis_labels('Training Size', 'Difference in chrF Score')
-# average_difference_chrf.legend.set_title('Method')
-# # Output to file
-# average_difference_chrf.savefig(f'{experiment_name}_average_difference_chrf.png')
+# CHRF
 
+average_difference_chrf = sns.catplot(
+    data=plot_df,
+    x="Includes",
+    y="chrf_difference",
+    kind="bar",
+    hue="Includes",
+    order=method_order,
+    palette=method_colors,
+    errorbar=None,
+    legend=False,
+)
+average_difference_chrf.set_axis_labels('Strategy', "Δ chrF")
+add_grid_lines(average_difference_chrf)
 
-# # %%
-# # Loss visualization
-# average_difference_loss = sns.catplot(
-#     data=plot_df,
-#     x="training_size", y="loss_difference", kind='bar', hue='Includes', errorbar=None
-# )
-# average_difference_loss.set_axis_labels('Training Size', 'Difference in Loss')
-# average_difference_loss.legend.set_title('Method')
-# # Output to file
-# average_difference_loss.savefig(f'{experiment_name}_average_difference_loss.png')
+for ax in average_difference_chrf.axes.flat:
+    ax.set_xticklabels([])
+
+# Output to file
+average_difference_chrf.savefig(
+    f"{language}_{experiment_name}_average_difference_chrf.pdf", format="pdf"
+)

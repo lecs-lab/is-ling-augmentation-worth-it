@@ -32,40 +32,41 @@ final_df = method_names.method_names(filtered_df)
 
 # %%
 # Isolate baseline and individual method runs
-strategies = ["Insert noise"]
+strategies = ["Ins-Noise"]
 
 if language == "Uspanteko":
     strategies += [
-        "Delete with exclusions",
-        "Random delete",
-        "Insert conjunction",
-        "TAM update",
-        "Random duplicate",
+        "Del-Excl",
+        "Del",
+        "Ins-Conj",
+        "Upd-TAM",
+        "Dup",
     ]
 elif language == "Arapaho":
-    strategies += ["Insert noise", "Insert interjection", "Sentence permutations"]
+    strategies += ["Ins-Intj", "Perm"]
 
 baseline_df = filtered_df[filtered_df["Method"] == "Baseline"][
-    ["training_size", "test/BLEU"]
+    ["training_size", "test/BLEU", "test/chrF"]
 ].copy()
-baseline_df = baseline_df.rename(columns={"test/BLEU": "baseline_BLEU"})
+baseline_df = baseline_df.rename(columns={"test/BLEU": "baseline_BLEU", "test/chrF": "baseline_chrF"}) # type:ignore
 
 df = filtered_df[filtered_df["Method"].isin(strategies)]
 df = typing.cast(pd.DataFrame, df)
 
 df = pd.merge(df, baseline_df, on="training_size", how="left")
 df["BLEU_diff"] = df["test/BLEU"] - df["baseline_BLEU"]
+df["chrF_diff"] = df["test/chrF"] - df["baseline_chrF"]
 
 
 method_colors = {
-    "Insert noise": "#254653",  # blue
-    "Delete with exclusions": "#299D8F",  # teal
-    "Random delete": "#F4A261",  # light orange
-    "Insert conjunction": "#43E0D8",  # light blue
-    "TAM update": "#E76F51",  # dark orange
-    "Random duplicate": "#E9C46A",  # yellow
-    "Insert interjection": "#43E0D8",  # light blue
-    "Sentence permutations": "#bbbbbb",  # gray
+    "Ins-Noise": "#254653",  # blue
+    "Del-Excl": "#299D8F",  # teal
+    "Del": "#F4A261",  # light orange
+    "Ins-Conj": "#43E0D8",  # light blue
+    "Upd-TAM": "#E76F51",  # dark orange
+    "Dup": "#E9C46A",  # yellow
+    "Ins-Intj": "#43E0D8",  # light blue
+    "Perm": "#bbbbbb",  # gray
 }
 
 unique_training_sizes = sorted(df["training_size"].unique())
@@ -105,13 +106,15 @@ individual_bleu.savefig(
 individual_chrf = sns.relplot(
     data=df,
     x="training_size",
-    y="test/chrF",
+    y="chrF_diff",
     kind="line",
     hue="Method",
     palette=method_colors,
     errorbar=None,
+    legend=False,
 )
-individual_chrf.set_axis_labels("Training Size", "chrF Score")
+individual_chrf.set_axis_labels("Training Size", "Δ chrF")
+add_grid_lines(individual_chrf)
 
 # Output to file
 individual_chrf.savefig(

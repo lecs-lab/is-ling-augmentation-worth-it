@@ -10,21 +10,24 @@ import matplotlib.pyplot as plt
 #     "Random delete,  Random duplicate,  Insert conjunction,  TAM update": "#aaaaaa",  # gray
 #     "Delete with exclusions,  Random delete,  Insert conjunction,  TAM update": "#000000", # black
 #     "Insert conjunction,  TAM update": "#CC7722", #ochre
-#     "Delete with exclusions,  Random delete,  Random duplicate,  Insert conjunction": "#254653", #dark blue 
+#     "Delete with exclusions,  Random delete,  Random duplicate,  Insert conjunction": "#254653", #dark blue
 #     "Delete with exclusions,  Random delete,  Insert conjunction": "#299D8F",  # teal
 #     "Delete with exclusions,  Random duplicate,  Insert conjunction,  Insert noise": "#F4A261",  # light orange
 # }
+#
+plt.rcParams["text.usetex"] = True
+
 
 method_colors = {
-    "Duplicate,  Insert noise,  TAM update": "#43E0D8",  # light blue
-    "Delete (w/ exclusions),  Duplicate,  Insert conjunction,  Insert noise,  TAM update": "#E76F51",  # dark orange
-    "Delete,  Insert conjunction": "#E9C46A",  # yellow
-    "Delete,  Duplicate,  Insert conjunction,  TAM update": "#aaaaaa",  # gray
-    "Delete (w/ exclusions),  Delete,  Insert conjunction,  TAM update": "#000000", # black
-    "Insert conjunction,  TAM update": "#CC7722", #ochre
-    "Delete (w/ exclusions),  Delete,  Duplicate,  Insert conjunction": "#254653", #dark blue 
-    "Delete (w/ exclusions),  Delete,  Insert conjunction": "#299D8F",  # teal
-    "Delete (w/ exclusions),  Duplicate,  Insert conjunction,  Insert noise": "#F4A261",  # light orange
+    r"\textsc{Del-Excl + Dup + Ins-Conj}": "#254653", #dark blue
+    r"\textsc{Del-Excl + Dup + Ins-Conj + Ins-Noise}": "#299D8F",  # teal
+    r"\textsc{Dup + Ins-Conj + Ins-Noise}": "#F4A261",  # light orange
+    r"\textsc{Del + Dup + Ins-Conj + Upd-TAM}": "#43E0D8",  # light blue
+    r"\textsc{Ins-Conj + Upd-TAM}": "#E76F51",  # dark orange
+    r"\textsc{Del-Excl + Del + Ins-Conj + Upd-TAM}": "#E9C46A",  # yellow
+    r"\textsc{Del-Excl + Dup + Ins-Conj + Ins-Noise + Upd-TAM}": "#aaaaaa",  # gray
+    r"\textsc{Del + Dup + Ins-Conj + Ins-Noise}": "#000000", # black
+    r"\textsc{Del-Excl + Del + Ins-Conj}": "#CC7722", #ochre
 }
 
 
@@ -46,7 +49,7 @@ fig_legend.canvas.draw()
 bbox = legend.get_window_extent().transformed(fig_legend.dpi_scale_trans.inverted())
 
 fig_legend.savefig(
-    "legend-combined.pdf",
+    "legend-combined-usp.pdf",
     format="pdf",
     bbox_inches=bbox,
     pad_inches=0,

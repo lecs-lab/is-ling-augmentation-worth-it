@@ -9,26 +9,26 @@ def method_names(df):
     '''
 
     for index, row in df.iterrows():
-        
+
         methods = []
         for column in df:
             if column == 'aug_run_delete_w_exclusions' and row['aug_run_delete_w_exclusions'] == 1:
-                methods.append('Delete with exclusions')
+                methods.append('Del-Excl')
             elif column == 'aug_run_random_delete' and row['aug_run_random_delete'] ==1:
-                methods.append('Random delete')
+                methods.append('Del')
             elif column =='aug_run_insert_interjection' and row['aug_run_insert_interjection'] == 1:
-                methods.append('Insert interjection')
+                methods.append('Ins-Intj')
             elif column == 'aug_run_random_duplicate' and row['aug_run_random_duplicate'] == 1:
-                methods.append('Random duplicate')
+                methods.append('Dup')
             elif column == 'aug_run_random_insert_conj' and row['aug_run_random_insert_conj'] == 1:
-                methods.append('Insert conjunction')
+                methods.append('Ins-Conj')
             elif column ==  'aug_run_random_insert_noise' and row['aug_run_random_insert_noise'] == 1:
-                methods.append('Insert noise')
+                methods.append('Ins-Noise')
             elif column == 'aug_run_sentence_permutations' and row['aug_run_sentence_permutations'] == 1:
-                methods.append('Sentence permutations')
+                methods.append('Perm')
             elif column == 'aug_run_tam_update' and row['aug_run_tam_update'] == 1:
-                methods.append('TAM update')
+                methods.append('Upd-TAM')
         if not methods:
             methods.append('Baseline')
-        df['Method'][index] = ',  '.join(methods)
+        df['Method'][index] = ' + '.join(methods)
     return df

@@ -3,14 +3,17 @@ import math
 import matplotlib.lines as mlines
 import matplotlib.pyplot as plt
 
+plt.rcParams["text.usetex"] = True
+
+
 method_colors = {
-    "Insert noise": "#254653", #dark blue 
-    "Insert conjunction/interjection": "#43E0D8",  # light blue
-    "Delete": "#F4A261",  # light orange
-    "Delete (w/ exclusions)": "#299D8F",  # teal
-    "Duplicate": "#E9C46A",  # yellow
-    "TAM update": "#E76F51",  # dark orange
-    "Permute": "#bbbbbb",  # gray
+    r"\textsc{Upd-TAM}": "#E76F51",
+    r"\textsc{Del-Excl}": "#299D8F",
+    r"\textsc{Ins-Conj, Ins-Intj}": "#43E0D8",
+    r"\textsc{Dup}": "#E9C46A",
+    r"\textsc{Ins-Noise}": "#254653",
+    r"\textsc{Perm}": "#bbbbbb",
+    r"\textsc{Del}": "#F4A261",
 }
 handles = [
     mlines.Line2D(
