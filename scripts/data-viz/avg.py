@@ -118,7 +118,7 @@ elif language == 'Arapaho':
     without_sentence_permutations_df['Filter'] = 'Without'
 
     sentence_permutations_df = pd.concat([with_sentence_permutations_df, without_sentence_permutations_df])
-    sentence_permutations_df['Includes'] = 'Sentence Permutations'
+    sentence_permutations_df['Includes'] = 'Sentence permutations'
 
     # Combine method dataframes
     results = pd.concat([insert_noise_df, insert_interjection_df, sentence_permutations_df])
@@ -185,7 +185,7 @@ def add_grid_lines(facetgrid):
 if language == "Uspanteko":
     method_order = ["Insert noise", "Insert conjunction", "Random delete", "Delete with exclusions", "Random duplicate", "TAM update"]
 else:
-    method_order = [] # FIXME
+    method_order = ["Insert noise", "Insert interjection", "Sentence permutations"] 
 
 average_difference_bleu = sns.catplot(
     data=plot_df,

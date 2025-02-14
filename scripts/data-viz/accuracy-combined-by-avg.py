@@ -38,6 +38,9 @@ final_df = method_names.method_names(filtered_df)
 # Average across runs for each method combo
 final_bleu = final_df.groupby(['Method'], as_index=False)[['eval/BLEU', 'test/BLEU']].mean()
 
+if language == 'Arapaho':
+    index = final_bleu[final_bleu['Method']=='Baseline'].index
+    final_bleu.drop(index, inplace=True)
 # %%
 top_runs = final_bleu.nlargest(3, 'eval/BLEU')
 
@@ -92,7 +95,7 @@ method_colors = {
     "Random delete,  Random duplicate,  Insert conjunction,  TAM update": "#aaaaaa",  # gray
     "Delete with exclusions,  Random delete,  Insert conjunction,  TAM update": "#000000", # black
     "Insert conjunction,  TAM update": "#CC7722", #ochre
-    "Insert interjection, Insert noise": "#43E0D8",  # light blue
+    "Insert interjection,  Insert noise": "#43E0D8",  # light blue
     "Insert noise": "#E76F51",  # dark orange
     "Insert interjection": "#E9C46A",  # yellow
     
