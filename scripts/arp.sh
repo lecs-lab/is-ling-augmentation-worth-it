@@ -49,10 +49,13 @@ for ((i=0; i<TOTAL_COMBOS; i++)); do
             done
         done
 
-        # Run without a train sample size, ie all data
-        python src/train.py --language arp \
-                            --direction $direction \
-                            --seed $seed \
-                            "${ARGS[@]}"
+        for seed in 0 1 2
+	do
+		# Run without a train sample size, ie all data
+        	python src/train.py --language arp \
+                            	--direction $direction \
+                            	--seed $seed \
+                            	"${ARGS[@]}"
+	done
     done
 done
