@@ -65,7 +65,7 @@ def train(
             "Must be one of 'transc->transl' | 'transl->transc' | 'transc->gloss'"
         )
 
-    project = f"augmorph-{language}-{direction.replace('>', '')}-v2"
+    project = f"augmorph-{language}-{direction.replace('>', '')}-v3"
 
     BATCH_SIZE = 32 if language == "usp" else 24
     AUG_STEPS = 500 if language == "usp" else 2000
