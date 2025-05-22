@@ -5,7 +5,7 @@ from glossing.bleu import bleu_score
 from sacrebleu import CHRF
 from transformers import EvalPrediction, PreTrainedTokenizer
 
-from src.free_word_chrf import free_word_chrf
+from free_word_chrf import free_word_chrf
 
 AUGMENTATION_TYPE = Literal["baseline", "aug_m1", "aug_m2", "combo"]
 
