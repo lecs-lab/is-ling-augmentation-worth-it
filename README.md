@@ -9,7 +9,7 @@ The objective of this study is to utilize linguistic resources (a grammar book) 
 Set up environment:
 
 ```bash
-python -m venv .venv # Please use Python >3.12
+python -m venv .venv # Please use Python >=3.12
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
