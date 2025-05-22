@@ -5,8 +5,9 @@ from glossing.bleu import bleu_score
 from sacrebleu import CHRF
 from transformers import EvalPrediction, PreTrainedTokenizer
 
+from src.free_word_chrf import free_word_chrf
 
-AUGMENTATION_TYPE = Literal['baseline', 'aug_m1', 'aug_m2', 'combo']
+AUGMENTATION_TYPE = Literal["baseline", "aug_m1", "aug_m2", "combo"]
 
 
 def create_igt_prompt(row, use_translation: bool = False):
@@ -25,11 +26,17 @@ def create_igt_prompt(row, use_translation: bool = False):
     return row
 
 
-def create_mt_prompt(row, direction: Literal["transc->transl", "transl->transc", "transc->gloss", "transc->segment"], language: Literal['usp', 'arp']):
+def create_mt_prompt(
+    row,
+    direction: Literal[
+        "transc->transl", "transl->transc", "transc->gloss", "transc->segment"
+    ],
+    language: Literal["usp", "arp"],
+):
     """Processing function for rows in the dataset, creates an input prompt from the fields in the row."""
-    if language == 'usp':
+    if language == "usp":
         lang_name, metalang_name = "Uspanteko", "Spanish"
-    elif language == 'arp':
+    elif language == "arp":
         lang_name, metalang_name = "Arapaho", "English"
 
     transc = " ".join((row["transcription"]).split())
@@ -109,4 +116,5 @@ def mt_metrics(preds: List[str], labels: List[str]) -> Dict:
     tokenized_labels = [[label.split()] for label in labels]
     bleu = bleu_score(tokenized_preds, tokenized_labels)
     chrF_score = chrf.corpus_score(preds, [labels]).score
-    return {"BLEU": bleu, "chrF": chrF_score}
+    free_word_chrF_score = free_word_chrf(preds, labels).score
+    return {"BLEU": bleu, "chrF": chrF_score, "freeword_chrF": free_word_chrF_score}
