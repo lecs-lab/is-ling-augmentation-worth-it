@@ -1,5 +1,7 @@
 # Is linguistically-motivated data augmentation worth it?
 
+📈 [Results](https://wandb.ai/augmorph?shareProfileType=copy)
+
 [Data augmentation](https://arxiv.org/abs/2105.03075), where novel examples are created from existing data, has been an effective strategy in NLP, particularly in low-resource settings. Augmentation typically relies on simple perturbations, such as concatenating, permuting, and replacing substrings. However, these transformations generally fail to preserve linguistic validity, resulting in augmentated examples which are similar to valid examples, but are themselves ungrammatical or strange. Other research uses linguistic knowledge to constrain the newly-created augmented examples to (hypothetically) grammatical instances. 
 
 This study provides a **head-to-head comparison of linguistically-naive and linguistically-motivated data augmentation strategies**. We use a case study on two low-resource languages, Uspanteko and Arapaho, and study machine translation and interlinear gloss prediction. 
