@@ -1,8 +1,9 @@
-# AugMorph
+# Is linguistically-motivated data augmentation worth it?
 
-[Data augmentation](https://arxiv.org/abs/2105.03075), where novel examples are created from existing data, has been an effective strategy in NLP, particularly in low-resource settings. Augmentation typically relies on simple perturbations, such as concatenating, permuting, and replacing substrings. However, these transformations generally fail to preserve linguistic validity, resulting in augmentated examples which are similar to valid examples, but are themselves ungrammatical or strange.
+[Data augmentation](https://arxiv.org/abs/2105.03075), where novel examples are created from existing data, has been an effective strategy in NLP, particularly in low-resource settings. Augmentation typically relies on simple perturbations, such as concatenating, permuting, and replacing substrings. However, these transformations generally fail to preserve linguistic validity, resulting in augmentated examples which are similar to valid examples, but are themselves ungrammatical or strange. Other research uses linguistic knowledge to constrain the newly-created augmented examples to (hypothetically) grammatical instances. 
 
-The objective of this study is to utilize linguistic resources (a grammar book) and a linguist (who is not an expert in the language) to develop intentional augmentation strategies that leverage knowledge about the language to create novel, but still valid, examples. This approach is more expensive and time-consuming, but we hypothesize it can result in higher-quality augmented data, and thereby greater performance benefits.
+This study provides a **head-to-head comparison of linguistically-naive and linguistically-motivated data augmentation strategies**. We use a case study on two low-resource languages, Uspanteko and Arapaho, and study machine translation and interlinear gloss prediction. 
+
 
 ## Usage
 
@@ -41,14 +42,13 @@ The richness of IGT enables us to evaluate several tasks with the same dataset. 
 
 | Task                | Inputs -> Outputs            |
 | ------------------- | ---------------------------- |
-| Morpheme tagging    | segmentation -> glosses      |
 | Gloss generation    | transcription -> glosses     |
 | Translation         | transcription -> translation |
 | Reverse translation | translation -> transcription |
 
 ## Augmentation strategies
 
-We consider several strategies. TBD
+We consider several strategies. TODO
 
 ## Experimental variations
 
