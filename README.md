@@ -6,6 +6,11 @@
 
 This study provides a **head-to-head comparison of linguistically-naive and linguistically-motivated data augmentation strategies**. We use a case study on two low-resource languages, Uspanteko and Arapaho, and study machine translation and interlinear gloss prediction. 
 
+## Datsets 
+
+Both IGT datasets are publicly available on Huggingface:
+- [Uspanteko](https://huggingface.co/datasets/lecslab/usp-igt)
+- [Arapaho](https://huggingface.co/datasets/lecslab/arp-igt)
 
 ## Usage
 
@@ -50,7 +55,21 @@ The richness of IGT enables us to evaluate several tasks with the same dataset. 
 
 ## Augmentation strategies
 
-We consider several strategies. TODO
+We consider linguistically-motivated and linguistically-naive strategies for both languages. 
+
+### Uspanteko
+UPD-TAM: Updates the aspect marker of the verb \
+INS-CONJ: Inserts a random conjunction at the start of the sentence  
+INS-NOISE: Inserts a random word at the start of the sentence 
+DEL: Randomly deletes a word by index \
+DEL-EXCL: Randomly deletes a word by index, excluding verbs \
+DUP: Randomly duplicates a word by index
+
+### Arapaho
+
+INS-INTJ: Inserts a random interjection at the start of the sentence \
+INS-NOISE: Inserts a random word at the start of the sentence \
+PERM: Produces up to 10 permutations of the original word order
 
 ## Experimental variations
 
