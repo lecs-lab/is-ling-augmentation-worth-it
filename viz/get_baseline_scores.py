@@ -1,6 +1,11 @@
+"""Usage: python viz/get_baseline_scores.py <results_file>
+
+Produces a Latex-formatted table for the baseline results (no augmentation)
+"""
+
 import argparse
 
-from viz_utils import create_filtered_dataframe, method_names
+from utils import create_filtered_dataframe, method_names
 
 parser = argparse.ArgumentParser()
 parser.add_argument("results_file")
