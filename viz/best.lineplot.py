@@ -10,9 +10,8 @@ from typing import Any, Dict, Set, Tuple
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
+import shared
 from matplotlib.lines import Line2D
-
-from utils import create_filtered_dataframe, method_names
 
 plt.rcParams["font.family"] = "Arial"
 plt.rcParams["font.weight"] = "bold"
@@ -36,15 +35,15 @@ def get_methods_by_language(
         if file.suffix != ".csv":
             continue
 
-        df = create_filtered_dataframe.create_filtered_dataframe(file)
-        df = method_names.method_names(df)
+        df = shared.create_filtered_dataframe(file)
+        df = shared.method_names(df)
 
         # Select best strategies
         df = df[df["Method"] != "Baseline"]
         averages_by_method = df.groupby(["Method"], as_index=False)[
             [f"eval/{metric}", f"test/{metric}"]
         ].mean()
-        best_methods = averages_by_method.nlargest(num_best, f"eval/{metric}")
+        best_methods = averages_by_method.nlargest(num_best, f"eval/{metric}")  # type:ignore
 
         # Determine language from filename
         if "arp" in file.stem:
@@ -64,22 +63,22 @@ def create_plot(
 ) -> Set[str]:
     """Create individual plot and return the methods used."""
     language, task = csv_path.stem.split(".")
-    df = create_filtered_dataframe.create_filtered_dataframe(csv_path)
-    df = method_names.method_names(df)
+    df = shared.create_filtered_dataframe(csv_path)
+    df = shared.method_names(df)
 
     baseline_df = df[df["Method"] == "Baseline"][
         ["training_size", f"test/{metric}"]
     ].copy()
-    baseline_df = baseline_df.rename(columns={f"test/{metric}": f"baseline_{metric}"})
+    baseline_df = baseline_df.rename(columns={f"test/{metric}": f"baseline_{metric}"})  # type:ignore
 
     # Select best strategies
     df = df[df["Method"] != "Baseline"]
     averages_by_method = df.groupby(["Method"], as_index=False)[
         [f"eval/{metric}", f"test/{metric}"]
     ].mean()
-    best_methods = averages_by_method.nlargest(num_best, f"eval/{metric}")
-    df = df[df["Method"].isin(best_methods["Method"])]
-    df = pd.merge(df, baseline_df, on="training_size", how="left")
+    best_methods = averages_by_method.nlargest(num_best, f"eval/{metric}")  # type:ignore
+    df = df[df["Method"].isin(best_methods["Method"])]  # type:ignore
+    df = pd.merge(df, baseline_df, on="training_size", how="left")  # type:ignore
     df[f"{metric}_diff"] = df[f"test/{metric}"] - df[f"baseline_{metric}"]
 
     unique_training_sizes = sorted(df["training_size"].unique())
@@ -177,19 +176,19 @@ def main():
         create_plot(
             csv_path=file,
             output_dir=output_folder,
-            color_palette=color_palette,
+            color_palette=color_palette,  # type:ignore
         )
 
     # Create separate legends for each language
     create_language_legend(
         methods=arp_methods,
-        color_palette=color_palette,
+        color_palette=color_palette,  # type:ignore
         output_dir=output_folder,
         language="arp",
     )
     create_language_legend(
         methods=usp_methods,
-        color_palette=color_palette,
+        color_palette=color_palette,  # type:ignore
         output_dir=output_folder,
         language="usp",
     )

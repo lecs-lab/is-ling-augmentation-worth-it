@@ -12,8 +12,6 @@ import seaborn as sns
 import shared
 from matplotlib.lines import Line2D
 
-from utils import create_filtered_dataframe, method_names
-
 plt.rcParams["font.family"] = "Arial"
 plt.rcParams["font.weight"] = "bold"
 plt.rcParams["axes.labelweight"] = "bold"
@@ -21,8 +19,8 @@ plt.rcParams["axes.labelweight"] = "bold"
 
 def create_plot(csv_path: pathlib.Path, output_dir: pathlib.Path, metric="chrF"):
     language, task = csv_path.stem.split(".")
-    df = create_filtered_dataframe.create_filtered_dataframe(csv_path)
-    df = method_names.method_names(df)
+    df = shared.create_filtered_dataframe(csv_path)
+    df = shared.method_names(df)
 
     baseline_df = df[df["Method"] == "Baseline"][
         ["training_size", f"test/{metric}"]
@@ -32,7 +30,7 @@ def create_plot(csv_path: pathlib.Path, output_dir: pathlib.Path, metric="chrF")
     # Select individual strategies
     strategies = ["Ins-Noise"]
     if language == "usp":
-        strategies += ["Del-Excl", "Del", "Ins-Conj", "Upd-TAM", "Dup"]
+        strategies += ["Del-Excl", "Del-Any", "Ins-Conj", "Upd-TAM", "Dup"]
     elif language == "arp":
         strategies += ["Ins-Intj", "Perm"]
     df = df[df["Method"].isin(strategies)]
