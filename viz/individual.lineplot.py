@@ -73,8 +73,14 @@ def create_plot(csv_path: pathlib.Path, output_dir: pathlib.Path, metric="chrF")
 def create_legend(output_dir: pathlib.Path):
     def _handle(m):
         ls = "-" if shared.method_dashes[m] == "" else ":"
+        if m == "Ins-Conj":
+            label = "Ins-Conj (usp)"
+        elif m == "Ins-Intj":
+            label = "Ins-Intj (arp)"
+        else:
+            label = m
         return Line2D(
-            [0], [0], lw=4, color=shared.method_colors[m], linestyle=ls, label=m
+            [0], [0], lw=4, color=shared.method_colors[m], linestyle=ls, label=label
         )
 
     fig, ax = plt.subplots(figsize=(8, 6))
